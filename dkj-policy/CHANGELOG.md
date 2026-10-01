@@ -2,7 +2,39 @@
 
 ## [Unreleased]
 
-**2 patch entries** <!-- pending-tally -->
+**0 / 3 patch entries** <!-- pending-tally -->
+
+### DEPLOY: chore/release-audience-tier-2 · 20261001-095529Z
+
+#### What does the change on this branch deploy to main?
+
+##### Tier 0
+
+Release notes worden voortaan geschreven voor de gebruikers van de app (tier 2). Nieuwe
+branch-documenten vragen alleen nog naar Tier 0 en de gebruikers, niet meer naar management of
+opdrachtgever.
+
+**Score:** 2
+
+##### Tier 1
+
+Geen opdrachtgever of management bij deze repo.
+
+**Score:** N/A
+
+##### Tier 2
+
+Gebruikers van de app merken hier zelf niets van; het bepaalt alleen voor wie de notes worden geschreven.
+
+**Score:** N/A
+
+#### Pull Request
+
+Release notes schrijven voor de app-gebruikers (tier 2)
+
+[PR #5](https://github.com/DKJ-Solutions/dkj-recipes/pull/5)
+
+---
 
 ### DEPLOY: chore/ci-workflow · 20261001-094226Z
 
