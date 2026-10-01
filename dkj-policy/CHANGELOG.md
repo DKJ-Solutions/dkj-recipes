@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**1 / 5 minor entries** <!-- pending-tally -->
+**2 / 6 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/12-update-melding · 20261001-141231Z
+
+De service worker van de app meldt een nieuwe versie nu in de pagina zelf, en controleert bij elke
+terugkeer naar de app of er een update is.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+Na een nieuwe versie verschijnt onderin "Nieuwe versie beschikbaar — Verversen"; één tik en je ziet de
+wijziging, zonder de app eerst af te sluiten.
+
+**Score:** 3
+
+#### Pull Request
+
+Melding bij een nieuwe versie van de app
+
+[PR #13](https://github.com/DKJ-Solutions/dkj-recipes/pull/13)
+
+---
 
 ### DEPLOY: chore/remove-plan-md · 20261001-102716Z
 
