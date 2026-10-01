@@ -51,9 +51,9 @@ function Get-RepoBlobUrl {
     return "https://github.com/$($script:RepoName)/blob/main/"
 }
 
-# VUL-IN: repo-root-relative path to lint gate executed by open-pr before PR,
+# Repo-root-relative path to lint gate executed by open-pr before PR,
 # e.g. 'scripts/lint/check-plugin-integrity.ps1' or 'scripts/maintenance/lint-brain.ps1'.
-$script:LintScript = 'VUL-IN'
+$script:LintScript = 'scripts/lint/lint.ps1'
 
 function Get-LintScript {
     return $script:LintScript

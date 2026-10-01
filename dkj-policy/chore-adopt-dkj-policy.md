@@ -49,6 +49,7 @@ de lege prefix-tabel.
 - [x] Part 5: statusline-shim `.claude/statusline/dkj-progress.ps1` en de `statusLine`-key in `.claude/settings.json`
 - [x] `CLAUDE.md` teruggebracht tot imports; repo-feiten naar `.claude/rules/this-repo.md`
 - [x] Prefix-tabel in `scripts/lib/branch-info.ps1` gevuld met `feat`/`fix`/`docs`/`chore`
+- [x] Minimale lint-gate `scripts/lint/lint.ps1` (PowerShell parse + ASCII, `settings.json` valide JSON) en `Get-LintScript` erop gezet
 
 ### TEST
 
