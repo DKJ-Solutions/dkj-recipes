@@ -39,19 +39,41 @@
 
 ### PLAN
 
+Issue #1, fase 1 t/m 4 uit `PLAN.md`. Dave koos op 2026-10-01 voor Astro als PWA op GitHub Pages en
+voor fase 1 t/m 4 in één branch. `@vite-pwa/astro` ondersteunt Astro 7 nog niet (peer tot en met ^5),
+dus de service worker wordt na de build los gemaakt met `workbox-build`.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Astro-project (`package.json`, `astro.config.mjs` met base `/dkj-recipes`)
+- [x] Receptformaat: het schema in `src/content.config.ts`, `recipes/_SJABLOON.md` en een voorbeeldrecept
+- [x] Receptenlijst met zoeken tijdens het typen (accentongevoelig, op titel, tag en ingrediënt)
+- [x] Receptpagina met de ingrediënten bovenaan, grote tikvlakken en afvinken dat per toestel wordt onthouden
+- [x] PWA: manifest, iconen (`scripts/make-icons.mjs`), service worker (`scripts/build-sw.mjs`)
+- [x] `.github/workflows/deploy.yml` naar GitHub Pages; de CI bouwt de app nu ook
+- [x] README en PLAN bijgewerkt
 
 ### TEST
 
+- [x] `npm run build` is groen: 2 pagina's, 8 bestanden vooraf in de cache, het sjabloon wordt overgeslagen
+- [x] In Chrome op de preview: zoeken filtert (ook "geen recept gevonden"), afvinken blijft staan na herladen, de service worker is geactiveerd
+- [x] Offline: met de server gestopt laden de lijst en de receptpagina uit de cache
+- [~] Safari/iOS en Dave's eigen telefoon: kon ik hier niet testen; dat gebeurt bij Dave's blik op de live-URL
+
 ### DEPLOY: feat/1-recepten-app
 
-**Score:**
+De eerste versie van de recepten-app. Er komt nog geen gebruiker bij, maar de app staat er nu: Astro,
+GitHub Pages en een CI die bouwt.
+
+**Score:** 5
 
 #### What makes this deploy extra special
 
-**Score:**
+De recepten-app bestaat. Op de telefoon zoek je een recept, zie je de ingrediënten bovenaan en vink je ze
+af terwijl je winkelt. De app werkt ook zonder bereik en kun je op het startscherm zetten. Live op
+<https://dkj-solutions.github.io/dkj-recipes/>.
+
+**Score:** 5
 
 #### Pull Request
 

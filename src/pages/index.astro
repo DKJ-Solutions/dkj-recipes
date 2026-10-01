@@ -1,0 +1,138 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { searchKey } from '../lib/format';
+
+const recipes = (await getCollection('recipes')).sort((a, b) =>
+  a.data.titel.localeCompare(b.data.titel, 'nl'),
+);
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+
+<Base title="Recepten">
+  <header class="top">
+    <h1>Recepten</h1>
+    <label class="search">
+      <span class="sr-only">Zoek een recept</span>
+      <input
+        id="zoek"
+        type="search"
+        placeholder="Zoek op recept, tag of ingrediënt"
+        autocomplete="off"
+        enterkeyhint="search"
+      />
+    </label>
+  </header>
+  <main>
+    <ul class="list" id="lijst">
+      {
+        recipes.map((r) => (
+          <li
+            data-zoek={searchKey(r.data.titel, ...r.data.tags, ...r.data.ingredienten.map((i) => i.naam))}
+          >
+            <a href={`${base}recept/${r.id}/`}>
+              <span class="title">{r.data.titel}</span>
+              <span class="meta">
+                {[
+                  r.data.tijd && `${r.data.tijd} min`,
+                  `${r.data.ingredienten.length} ingrediënten`,
+                  ...r.data.tags,
+                ]
+                  .filter(Boolean)
+                  .join(' · ')}
+              </span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="empty" id="leeg" hidden>Geen recept gevonden.</p>
+  </main>
+</Base>
+
+<script>
+  const input = document.getElementById('zoek') as HTMLInputElement;
+  const items = Array.from(document.querySelectorAll<HTMLLIElement>('#lijst > li'));
+  const empty = document.getElementById('leeg')!;
+  const norm = (s: string) =>
+    s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
+
+  function filter() {
+    const words = norm(input.value).split(/\s+/).filter(Boolean);
+    let shown = 0;
+    for (const li of items) {
+      const hay = li.dataset.zoek ?? '';
+      const match = words.every((w) => hay.includes(w));
+      li.hidden = !match;
+      if (match) shown++;
+    }
+    empty.hidden = shown > 0;
+  }
+  input.addEventListener('input', filter);
+  filter();
+</script>
+
+<style>
+  .top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--bg);
+    padding: calc(12px + env(safe-area-inset-top)) 16px 12px;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 0 0 10px;
+  }
+  .search input {
+    width: 100%;
+    min-height: var(--tap);
+    font: inherit;
+    padding: 0 16px;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+  }
+  .search input:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+  }
+  .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .list a {
+    display: block;
+    min-height: var(--tap);
+    padding: 14px 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    color: var(--text);
+    text-decoration: none;
+  }
+  .list a:active {
+    background: var(--line);
+  }
+  .title {
+    display: block;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .meta {
+    display: block;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .empty {
+    color: var(--muted);
+    text-align: center;
+    padding: 24px 0;
+  }
+</style>
