@@ -22,10 +22,29 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
   </head>
   <body>
     <slot />
+    <div class="update" id="update" role="status" hidden>
+      <span>Nieuwe versie beschikbaar</span>
+      <button type="button" id="update-reload">Verversen</button>
+    </div>
     <script is:inline define:vars={{ base }}>
       if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register(`${base}sw.js`, { scope: base }).catch(() => {});
+          // Zonder controller is dit de eerste installatie: dan is er niets nieuws te melden.
+          const hadController = Boolean(navigator.serviceWorker.controller);
+          navigator.serviceWorker.addEventListener('controllerchange', () => {
+            if (hadController) document.getElementById('update').hidden = false;
+          });
+          document.getElementById('update-reload').addEventListener('click', () => location.reload());
+          navigator.serviceWorker
+            .register(`${base}sw.js`, { scope: base })
+            .then((reg) => {
+              // Een app op het beginscherm wordt vaak hervat in plaats van opnieuw geladen:
+              // kijk dan ook of er een nieuwe versie is.
+              document.addEventListener('visibilitychange', () => {
+                if (document.visibilityState === 'visible') reg.update().catch(() => {});
+              });
+            })
+            .catch(() => {});
         });
       }
     </script>
@@ -80,6 +99,38 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
   }
   a {
     color: var(--accent);
+  }
+  .update {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: calc(16px + env(safe-area-inset-bottom));
+    max-width: calc(40rem - 32px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 8px 8px 8px 16px;
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: 0 6px 24px rgb(0 0 0 / 0.18);
+    font-size: 0.95rem;
+  }
+  .update[hidden] {
+    display: none;
+  }
+  .update button {
+    min-height: 44px;
+    padding: 0 16px;
+    font: inherit;
+    font-weight: 600;
+    color: var(--accent-text);
+    background: var(--accent);
+    border: 0;
+    border-radius: 999px;
   }
   .sr-only {
     position: absolute;

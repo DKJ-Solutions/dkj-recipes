@@ -39,19 +39,34 @@
 
 ### PLAN
 
+Melding in plaats van automatisch herladen: een reload midden in een recept kost je plek in de
+supermarkt (#12).
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `src/layouts/Base.astro`: melding "Nieuwe versie beschikbaar" + knop Verversen, getoond op
+  `controllerchange` wanneer er al een service worker actief was (niet bij de eerste installatie)
+- [x] Bij terugkeer naar de app (`visibilitychange`) zoekt de service worker naar een update, omdat een
+  app op het beginscherm vaak wordt hervat in plaats van herladen
 
 ### TEST
 
+- [x] `npm run build` groen; de melding staat verborgen in `dist/index.html`
+- [ ] Dave bekijkt de melding (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+
 ### DEPLOY: feat/12-update-melding
 
-**Score:**
+De service worker van de app meldt een nieuwe versie nu in de pagina zelf, en controleert bij elke
+terugkeer naar de app of er een update is.
+
+**Score:** 2
 
 #### What makes this deploy extra special
 
-**Score:**
+Na een nieuwe versie verschijnt onderin "Nieuwe versie beschikbaar — Verversen"; één tik en je ziet de
+wijziging, zonder de app eerst af te sluiten.
+
+**Score:** 3
 
 #### Pull Request
 
