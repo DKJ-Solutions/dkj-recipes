@@ -32,11 +32,17 @@
 
 ### PLAN
 
+De `decide`-seam `Get-ReleaseAudienceTier` beantwoorden. De eigenaar koos op 2026-10-01 voor tier 2:
+de release notes zijn voor de gebruikers van de recepten-app.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `Get-ReleaseAudienceTier` toegevoegd aan `scripts/repo-config.ps1`, met als antwoord `2` en de reden erbij
 
 ### TEST
+
+- [x] `scripts/repo-config.ps1` dot-gesourcet: `Get-ReleaseAudienceTier` geeft `2`
+- [x] Lint-gate groen
 
 ### DEPLOY: chore/release-audience-tier-2
 
@@ -44,7 +50,11 @@
 
 ##### Tier 0
 
-**Score:**
+Release notes worden voortaan geschreven voor de gebruikers van de app (tier 2). Nieuwe
+branch-documenten vragen alleen nog naar Tier 0 en de gebruikers, niet meer naar management of
+opdrachtgever.
+
+**Score:** 2
 
 <!--
      Is this change also relevant to management and the employer/commissioner? Then continue to Tier 1.
@@ -53,7 +63,9 @@
 
 ##### Tier 1
 
-**Score:**
+Geen opdrachtgever of management bij deze repo.
+
+**Score:** N/A
 
 <!--
      Is this change also relevant to a subscriber of the service? Then continue to Tier 2.
@@ -62,7 +74,9 @@
 
 ##### Tier 2
 
-**Score:**
+Gebruikers van de app merken hier zelf niets van; het bepaalt alleen voor wie de notes worden geschreven.
+
+**Score:** N/A
 
 #### Pull Request
 
