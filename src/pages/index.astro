@@ -7,6 +7,8 @@ const recipes = (await getCollection('recipes')).sort((a, b) =>
   a.data.titel.localeCompare(b.data.titel, 'nl'),
 );
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+// Alle tags die in de recepten voorkomen, op alfabet: dat zijn de filters boven de lijst.
+const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.localeCompare(b, 'nl'));
 ---
 
 <Base title="Recepten">
@@ -25,6 +27,17 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
         enterkeyhint="search"
       />
     </label>
+    {
+      tags.length > 0 && (
+        <div class="tags" role="group" aria-label="Filter op tag">
+          {tags.map((t) => (
+            <button type="button" class="tag" aria-pressed="false" value={t}>
+              {t}
+            </button>
+          ))}
+        </div>
+      )
+    }
   </header>
   <main>
     <ul class="list" id="lijst">
@@ -32,13 +45,14 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
         recipes.map((r) => (
           <li
             data-zoek={searchKey(r.data.titel, ...r.data.tags, ...r.data.ingredienten.map((i) => i.naam))}
+            data-tags={JSON.stringify(r.data.tags)}
           >
             <a href={`${base}recept/${r.id}/`}>
               <span class="title">{r.data.titel}</span>
               <span class="meta">
                 {[
                   r.data.tijd && `${r.data.tijd} min`,
-                  `${r.data.ingredienten.length} ingrediënten`,
+                  `${r.data.ingredienten.length} ${r.data.ingredienten.length === 1 ? 'ingrediënt' : 'ingrediënten'}`,
                   ...r.data.tags,
                 ]
                   .filter(Boolean)
@@ -60,16 +74,28 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
   const norm = (s: string) =>
     s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 
+  // Een aangetikte tag filtert de lijst; met meer tags aan moet een recept ze allemaal hebben.
+  const tagButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.tag'));
+  const recipeTags = new Map(items.map((li) => [li, JSON.parse(li.dataset.tags ?? '[]') as string[]]));
+
   function filter() {
     const words = norm(input.value).split(/\s+/).filter(Boolean);
+    const active = tagButtons.filter((b) => b.getAttribute('aria-pressed') === 'true').map((b) => b.value);
     let shown = 0;
     for (const li of items) {
       const hay = li.dataset.zoek ?? '';
-      const match = words.every((w) => hay.includes(w));
+      const own = recipeTags.get(li)!;
+      const match = words.every((w) => hay.includes(w)) && active.every((t) => own.includes(t));
       li.hidden = !match;
       if (match) shown++;
     }
     empty.hidden = shown > 0;
+  }
+  for (const b of tagButtons) {
+    b.addEventListener('click', () => {
+      b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true'));
+      filter();
+    });
   }
   input.addEventListener('input', filter);
   filter();
@@ -122,6 +148,35 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
   .search input:focus {
     outline: 2px solid var(--accent);
     outline-offset: 1px;
+  }
+  /* Eén rij die horizontaal scrolt, zodat de lijst bij veel tags niet naar beneden schuift. */
+  .tags {
+    display: flex;
+    gap: 8px;
+    margin: 10px -16px 0;
+    padding: 0 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .tags::-webkit-scrollbar {
+    display: none;
+  }
+  .tag {
+    flex: none;
+    min-height: 44px;
+    padding: 0 16px;
+    font: inherit;
+    font-size: 0.95rem;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .tag[aria-pressed='true'] {
+    color: var(--accent-text);
+    background: var(--accent);
+    border-color: var(--accent);
   }
   .list {
     list-style: none;
