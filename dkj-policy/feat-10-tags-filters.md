@@ -57,7 +57,9 @@ basis van `tijd`: een tag is wat in het recept staat.
   daarna weer zijn verwijderd: 6 van 6 checks geslaagd. Tags op alfabet; "snel" toont twee recepten;
   "snel" en "vegetarisch" samen toont er één; met een zoekwoord erbij geen resultaat en de lege melding;
   alles uit toont alles weer
-- [ ] Dave bekijkt de tagknoppen op zijn telefoon (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+- [x] Na de merge van `main` (#7, #8, #9; schoon, zonder conflict) dezelfde checks opnieuw, plus de knop
+  "Boodschappenlijst" van #7 in de kop: 7 van 7 geslaagd
+- [x] Dave bekijkt de tagknoppen: gezien en goedgekeurd (2026-10-01), op de branch vóór de merge van `main`
 
 ### DEPLOY: feat/10-tags-filters
 
