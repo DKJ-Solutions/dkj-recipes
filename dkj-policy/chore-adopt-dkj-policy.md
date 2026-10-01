@@ -32,11 +32,28 @@
 
 ### PLAN
 
+De `adopt-dkj-policy`-skill (dkj-policy 5.11.0) in alle vijf delen draaien, plus wat de session checks
+daarna nog openlieten: de constitutie-import in `CLAUDE.md`, de repo-feiten in een ongescopete rule en
+de lege prefix-tabel.
+
+#### Wat bij de eigenaar ligt
+
+`FOLD_PUSH_TOKEN` aanmaken (vóór de merge) en `ci` als required check zetten (ná de merge): #2.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Part 1: `dkj-policy/CHANGELOG.md`, `branch-entry.yml`, `always-on-budget.yml`, PR-template, `Get-ReleaseNoteRoot` en de constitutie-import
+- [x] Part 2: 13 `copy`-functies in `scripts/repo-config.ps1`; de 20 `decide`-records staan in `config-adoption-proposal.md` (niet gecommit, wordt bij een re-run opnieuw gegenereerd)
+- [x] Part 3: `fold-on-merge.yml`, `verify-resolved.yml`, `repo-settings.yml`, `merge-on-green.yml` en een minimale `ci.yml`
+- [x] Part 4: label `minor` op de tracker, met de tier-2-omschrijving
+- [x] Part 5: statusline-shim `.claude/statusline/dkj-progress.ps1` en de `statusLine`-key in `.claude/settings.json`
+- [x] `CLAUDE.md` teruggebracht tot imports; repo-feiten naar `.claude/rules/this-repo.md`
+- [x] Prefix-tabel in `scripts/lib/branch-info.ps1` gevuld met `feat`/`fix`/`docs`/`chore`
 
 ### TEST
+
+- [x] Alle vier de scripts eerst als dry run gedraaid, daarna met `-Apply`: niets bestond al, niets overschreven
+- [x] `check-script-contract.ps1` na de adoptie gedraaid
 
 ### DEPLOY: chore/adopt-dkj-policy
 
@@ -44,7 +61,11 @@
 
 ##### Tier 0
 
-**Score:**
+De repo draait nu op de dkj-policy-workflow: branch-document en changelog per branch, CI-gates op elke
+PR (branch-entry, always-on-budget), de fold- en resolves-runners na een merge, en een progress-bar in
+de statusline. Pas na #2 staat de staleness-guard van `ship-pr` aan.
+
+**Score:** 4
 
 <!--
      Is this change also relevant to management and the employer/commissioner? Then continue to Tier 1.
@@ -53,7 +74,9 @@
 
 ##### Tier 1
 
-**Score:**
+Interne werkwijze; niets wat opdrachtgever of management merkt.
+
+**Score:** N/A
 
 <!--
      Is this change also relevant to a subscriber of the service? Then continue to Tier 2.
@@ -62,7 +85,9 @@
 
 ##### Tier 2
 
-**Score:**
+Gebruikers van de app merken hier niets van.
+
+**Score:** N/A
 
 #### Pull Request
 
