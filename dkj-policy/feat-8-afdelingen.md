@@ -39,19 +39,48 @@
 
 ### PLAN
 
+Ingrediënten groeperen per supermarktafdeling (#8), op de receptpagina én op de boodschappenlijst.
+
+**Gestapeld op `feat/7-boodschappenlijst`** (#7): de lijst is waar je in de supermarkt mee rondloopt, dus
+daar hoort het groeperen het meest. Deze branch wordt pas na #7 gemerged. Wordt #7 afgekeurd, dan gaat
+het lijstdeel eruit en blijft het deel op de receptpagina over.
+
+Het veld `afdeling` stond al in het schema en het sjabloon. De volgorde van de afdelingen staat vast
+(winkelvolgorde, in `src/lib/afdeling.ts`). Een onbekende afdeling komt daarna, een ingrediënt zonder
+afdeling onder "Overig". Een recept zonder enige afdeling blijft één lijst zonder koppen.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `src/lib/afdeling.ts`: `groupByAfdeling` met de vaste winkelvolgorde
+- [x] Receptpagina: kopjes per afdeling; de afgevinkte ingrediënten blijven op hun oorspronkelijke
+  nummer bewaard, dus eerder afgevinkt blijft afgevinkt
+- [x] Boodschappenlijst: de samengevoegde ingrediënten per afdeling; bij het samenvoegen neemt een
+  regel zonder afdeling die van een later recept over
+- [x] Sjabloon: de afdelingen en hun volgorde beschreven
 
 ### TEST
 
+- [x] `npm run build` groen
+- [x] Headless Chrome (390 px, mobiel) tegen `astro preview`, met twee tijdelijke testrecepten die
+  daarna weer zijn verwijderd: 9 van 9 checks geslaagd. Winkelvolgorde Groente, Vlees, Zuivel, Houdbaar,
+  Overig op de receptpagina; afvinken blijft bewaard; recept zonder afdelingen heeft geen koppen; op de
+  lijst gaan "Groente" en "groente" samen, krijgt zout de afdeling van het tweede recept en komt de
+  onbekende afdeling "bakker" achteraan
+- [ ] Dave bekijkt de groepen op zijn telefoon (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+
 ### DEPLOY: feat/8-afdelingen
 
-**Score:**
+Nieuwe `src/lib/afdeling.ts`; de ingrediënten op de receptpagina en de lijst staan nu in een container
+met een lijst per afdeling.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+Ingrediënten staan nu onder kopjes per afdeling (groente, vlees, zuivel, houdbaar, ...) in de volgorde
+waarin je door de supermarkt loopt, op elk recept en op de boodschappenlijst.
+
+**Score:** 3
 
 #### Pull Request
 
