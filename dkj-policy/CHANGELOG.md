@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**6 / 10 minor entries** <!-- pending-tally -->
+**7 / 11 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/14-lijst-porties · 20261001-151449Z
+
+`roundAmount` is los van `scaleAmount`; de opslag van het gekozen aantal porties zit nu in
+`src/lib/lijst.ts`.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Kies je op een recept een ander aantal porties, dan rekent de boodschappenlijst daar nu ook mee. Op de
+lijst zie je bij elk recept voor hoeveel porties het meetelt.
+
+**Score:** 3
+
+#### Pull Request
+
+Boodschappenlijst rekent met het gekozen aantal porties
+
+[PR #19](https://github.com/DKJ-Solutions/dkj-recipes/pull/19)
+
+---
 
 ### DEPLOY: feat/10-tags-filters · 20261001-144657Z
 
