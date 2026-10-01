@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**4 / 8 minor entries** <!-- pending-tally -->
+**5 / 9 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/9-porties · 20261001-144453Z
+
+`formatIngredient` kan nu schalen (`scaleAmount`). De receptpagina zet porties niet meer in de kop, maar
+in een eigen keuzeknop.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Op een recept met porties kies je met − en + voor hoeveel mensen je kookt, en de hoeveelheden rekenen
+mee, afgerond op wat je in de winkel kunt pakken. Het aantal blijft staan als je later terugkomt.
+
+**Score:** 3
+
+#### Pull Request
+
+Porties aanpassen met meeschalende hoeveelheden
+
+[PR #17](https://github.com/DKJ-Solutions/dkj-recipes/pull/17)
+
+---
 
 ### DEPLOY: feat/8-afdelingen · 20261001-144152Z
 
