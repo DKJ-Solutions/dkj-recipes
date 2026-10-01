@@ -2,7 +2,28 @@
 
 ## [Unreleased]
 
-**5 / 9 minor entries** <!-- pending-tally -->
+**6 / 10 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/10-tags-filters · 20261001-144657Z
+
+Alleen de startpagina verandert.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Onder het zoekveld staan nu de tags als knoppen (bijvoorbeeld "pasta" of "snel"). Tik er een aan en je
+ziet alleen de recepten met die tag.
+
+**Score:** 3
+
+#### Pull Request
+
+Tags en filters in de receptenlijst
+
+[PR #18](https://github.com/DKJ-Solutions/dkj-recipes/pull/18)
+
+---
 
 ### DEPLOY: feat/9-porties · 20261001-144453Z
 
