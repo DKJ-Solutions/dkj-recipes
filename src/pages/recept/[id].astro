@@ -1,0 +1,185 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { formatIngredient } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const recipes = await getCollection('recipes');
+  return recipes.map((recipe) => ({ params: { id: recipe.id }, props: { recipe } }));
+}
+
+const { recipe } = Astro.props;
+const { Content } = await render(recipe);
+const { titel, porties, tijd, tags, bron, ingredienten } = recipe.data;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].filter(Boolean);
+---
+
+<Base title={`${titel} · Recepten`}>
+  <main>
+    <nav class="back">
+      <a href={base}>‹ Alle recepten</a>
+    </nav>
+    <h1>{titel}</h1>
+    {meta.length > 0 && <p class="meta">{meta.join(' · ')}</p>}
+
+    <section aria-labelledby="ingr">
+      <div class="section-head">
+        <h2 id="ingr">Ingrediënten</h2>
+        <button type="button" class="reset" id="reset" hidden>Alles weer aan</button>
+      </div>
+      <ul class="ingredients" id="ingredienten" data-recept={recipe.id}>
+        {
+          ingredienten.map((i, n) => (
+            <li>
+              <label>
+                <input type="checkbox" value={n} />
+                <span>{formatIngredient(i)}</span>
+              </label>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section aria-labelledby="bereiding" class="steps">
+      <h2 id="bereiding">Bereiding</h2>
+      <Content />
+      {
+        bron && (
+          <p class="bron">
+            Bron: {/^https?:\/\//.test(bron) ? <a href={bron} rel="noopener">{bron}</a> : bron}
+          </p>
+        )
+      }
+    </section>
+  </main>
+</Base>
+
+<script>
+  // Afgevinkte ingrediënten worden per recept op dit toestel onthouden.
+  const list = document.getElementById('ingredienten')!;
+  const reset = document.getElementById('reset')!;
+  const key = `afgevinkt:${list.dataset.recept}`;
+  const boxes = Array.from(list.querySelectorAll<HTMLInputElement>('input[type=checkbox]'));
+
+  function load(): string[] {
+    try {
+      return JSON.parse(localStorage.getItem(key) ?? '[]');
+    } catch {
+      return [];
+    }
+  }
+  function save() {
+    const checked = boxes.filter((b) => b.checked).map((b) => b.value);
+    try {
+      if (checked.length) localStorage.setItem(key, JSON.stringify(checked));
+      else localStorage.removeItem(key);
+    } catch {
+      /* geen opslag beschikbaar: afvinken werkt dan alleen tot de pagina sluit */
+    }
+    reset.hidden = checked.length === 0;
+  }
+
+  const saved = new Set(load());
+  for (const b of boxes) {
+    b.checked = saved.has(b.value);
+    b.addEventListener('change', save);
+  }
+  reset.addEventListener('click', () => {
+    for (const b of boxes) b.checked = false;
+    save();
+  });
+  reset.hidden = saved.size === 0;
+</script>
+
+<style>
+  .back {
+    padding: calc(8px + env(safe-area-inset-top)) 0 0;
+  }
+  .back a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 4px 0 4px;
+  }
+  .meta {
+    color: var(--muted);
+    margin: 0 0 16px;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .section-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 8px 0 10px;
+  }
+  .reset {
+    min-height: 44px;
+    padding: 0 14px;
+    font: inherit;
+    font-size: 0.95rem;
+    color: var(--accent);
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  .ingredients {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .ingredients li + li {
+    border-top: 1px solid var(--line);
+  }
+  .ingredients label {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: var(--tap);
+    padding: 10px 16px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .ingredients input {
+    flex: none;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    accent-color: var(--accent);
+  }
+  .ingredients input:checked + span {
+    color: var(--done);
+    text-decoration: line-through;
+  }
+  .steps {
+    margin-top: 28px;
+  }
+  .steps :global(ol),
+  .steps :global(ul) {
+    padding-left: 1.4em;
+  }
+  .steps :global(li) {
+    margin-bottom: 0.6em;
+  }
+  .bron {
+    color: var(--muted);
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+  }
+</style>
