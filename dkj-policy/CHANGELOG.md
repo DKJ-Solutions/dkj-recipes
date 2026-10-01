@@ -2,7 +2,74 @@
 
 ## [Unreleased]
 
-**2 / 6 minor entries** <!-- pending-tally -->
+**5 / 9 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/9-porties · 20261001-144453Z
+
+`formatIngredient` kan nu schalen (`scaleAmount`). De receptpagina zet porties niet meer in de kop, maar
+in een eigen keuzeknop.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Op een recept met porties kies je met − en + voor hoeveel mensen je kookt, en de hoeveelheden rekenen
+mee, afgerond op wat je in de winkel kunt pakken. Het aantal blijft staan als je later terugkomt.
+
+**Score:** 3
+
+#### Pull Request
+
+Porties aanpassen met meeschalende hoeveelheden
+
+[PR #17](https://github.com/DKJ-Solutions/dkj-recipes/pull/17)
+
+---
+
+### DEPLOY: feat/8-afdelingen · 20261001-144152Z
+
+Nieuwe `src/lib/afdeling.ts`; de ingrediënten op de receptpagina en de lijst staan nu in een container
+met een lijst per afdeling.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Ingrediënten staan nu onder kopjes per afdeling (groente, vlees, zuivel, houdbaar, ...) in de volgorde
+waarin je door de supermarkt loopt, op elk recept en op de boodschappenlijst.
+
+**Score:** 3
+
+#### Pull Request
+
+Ingrediënten groeperen per supermarktafdeling
+
+[PR #16](https://github.com/DKJ-Solutions/dkj-recipes/pull/16)
+
+---
+
+### DEPLOY: feat/7-boodschappenlijst · 20261001-143937Z
+
+Nieuwe pagina `/lijst/` en een gedeelde `src/lib/lijst.ts`. De stijlen voor de ingrediëntenlijst
+staan nu in `Base.astro` in plaats van op de receptpagina.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+Zet je meerdere recepten op de boodschappenlijst, dan krijg je hun ingrediënten in één lijst om af te
+vinken, met de hoeveelheden opgeteld. Op elk recept staat de knop "Op de boodschappenlijst", en op de
+startpagina zie je hoeveel recepten erop staan.
+
+**Score:** 4
+
+#### Pull Request
+
+Meerdere recepten samenvoegen tot één boodschappenlijst
+
+[PR #15](https://github.com/DKJ-Solutions/dkj-recipes/pull/15)
+
+---
 
 ### DEPLOY: feat/12-update-melding · 20261001-141231Z
 

@@ -13,7 +13,10 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
 
 <Base title="Recepten">
   <header class="top">
-    <h1>Recepten</h1>
+    <div class="head">
+      <h1>Recepten</h1>
+      <a class="pill" href={`${base}lijst/`} id="lijst-link">Boodschappenlijst</a>
+    </div>
     <label class="search">
       <span class="sr-only">Zoek een recept</span>
       <input
@@ -98,6 +101,19 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
   filter();
 </script>
 
+<script>
+  import { loadList } from '../lib/lijst';
+
+  // Het aantal recepten op de boodschappenlijst, ook na terugkeren met de terugknop.
+  const link = document.getElementById('lijst-link')!;
+  function count() {
+    const n = loadList().length;
+    link.textContent = n ? `Boodschappenlijst · ${n}` : 'Boodschappenlijst';
+  }
+  window.addEventListener('pageshow', count);
+  count();
+</script>
+
 <style>
   .top {
     position: sticky;
@@ -108,9 +124,16 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     max-width: 40rem;
     margin: 0 auto;
   }
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 0 0 10px;
+  }
   h1 {
     font-size: 1.6rem;
-    margin: 0 0 10px;
+    margin: 0;
   }
   .search input {
     width: 100%;

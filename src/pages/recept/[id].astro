@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { groupByAfdeling } from '../../lib/afdeling';
 import { formatIngredient } from '../../lib/format';
 
 export async function getStaticPaths() {
@@ -12,7 +13,8 @@ const { recipe } = Astro.props;
 const { Content } = await render(recipe);
 const { titel, porties, tijd, tags, bron, ingredienten } = recipe.data;
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
-const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].filter(Boolean);
+// Met porties in het recept zet de keuzeknop het aantal neer; anders staat er niets over in de kop.
+const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
 ---
 
 <Base title={`${titel} · Recepten`}>
@@ -22,24 +24,50 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
     </nav>
     <h1>{titel}</h1>
     {meta.length > 0 && <p class="meta">{meta.join(' · ')}</p>}
+    <div class="actions">
+      <button type="button" class="pill" id="op-lijst" aria-pressed="false">
+        Op de boodschappenlijst
+      </button>
+      <a class="pill" id="naar-lijst" href={`${base}lijst/`} hidden>Naar de lijst ›</a>
+    </div>
+    {
+      porties && (
+        <div class="porties" id="porties" data-porties={porties}>
+          <button type="button" id="minder" aria-label="Minder porties">−</button>
+          <output id="aantal" aria-live="polite">{porties} porties</output>
+          <button type="button" id="meer" aria-label="Meer porties">+</button>
+        </div>
+      )
+    }
 
     <section aria-labelledby="ingr">
       <div class="section-head">
         <h2 id="ingr">Ingrediënten</h2>
-        <button type="button" class="reset" id="reset" hidden>Alles weer aan</button>
+        <button type="button" class="pill" id="reset" hidden>Alles weer aan</button>
       </div>
-      <ul class="ingredients" id="ingredienten" data-recept={recipe.id}>
+      <div
+        id="ingredienten"
+        data-recept={recipe.id}
+        data-ingredienten={JSON.stringify(ingredienten)}
+      >
         {
-          ingredienten.map((i, n) => (
-            <li>
-              <label>
-                <input type="checkbox" value={n} />
-                <span>{formatIngredient(i)}</span>
-              </label>
-            </li>
+          groupByAfdeling(ingredienten.map((i, n) => ({ ...i, n }))).map((g) => (
+            <>
+              {g.titel && <h3 class="afdeling">{g.titel}</h3>}
+              <ul class="ingredients">
+                {g.items.map((i) => (
+                  <li>
+                    <label>
+                      <input type="checkbox" value={i.n} />
+                      <span>{formatIngredient(i)}</span>
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            </>
           ))
         }
-      </ul>
+      </div>
     </section>
 
     <section aria-labelledby="bereiding" class="steps">
@@ -57,10 +85,13 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
 </Base>
 
 <script>
+  import { loadList, saveList } from '../../lib/lijst';
+
   // Afgevinkte ingrediënten worden per recept op dit toestel onthouden.
   const list = document.getElementById('ingredienten')!;
   const reset = document.getElementById('reset')!;
-  const key = `afgevinkt:${list.dataset.recept}`;
+  const id = list.dataset.recept!;
+  const key = `afgevinkt:${id}`;
   const boxes = Array.from(list.querySelectorAll<HTMLInputElement>('input[type=checkbox]'));
 
   function load(): string[] {
@@ -91,19 +122,75 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
     save();
   });
   reset.hidden = saved.size === 0;
+
+  // Het recept op de boodschappenlijst zetten of eraf halen.
+  const toggle = document.getElementById('op-lijst')!;
+  const toList = document.getElementById('naar-lijst')!;
+  function show(on: boolean) {
+    toggle.setAttribute('aria-pressed', String(on));
+    toggle.textContent = on ? '✓ Op de boodschappenlijst' : 'Op de boodschappenlijst';
+    toList.hidden = !on;
+  }
+  toggle.addEventListener('click', () => {
+    const ids = loadList().filter((x) => x !== id);
+    const on = toggle.getAttribute('aria-pressed') !== 'true';
+    saveList(on ? [...ids, id] : ids);
+    show(on);
+  });
+  show(loadList().includes(id));
+</script>
+
+<script>
+  import { formatIngredient } from '../../lib/format';
+
+  // Porties aanpassen: de hoeveelheden schalen mee. Het gekozen aantal wordt per recept op dit
+  // toestel onthouden, zodat het er nog staat als je in de winkel terugkomt op het recept.
+  const box = document.getElementById('porties');
+  if (box) {
+    const list = document.getElementById('ingredienten')!;
+    // Per afdeling gegroepeerd is de volgorde op de pagina niet die van het recept: het vakje draagt
+    // het nummer van het ingrediënt.
+    const rows = Array.from(list.querySelectorAll('label'), (l) => ({
+      span: l.querySelector('span')!,
+      n: Number(l.querySelector('input')!.value),
+    }));
+    const ingredienten = JSON.parse(list.dataset.ingredienten!);
+    const origineel = Number(box.dataset.porties);
+    const key = `porties:${list.dataset.recept}`;
+    const aantal = document.getElementById('aantal')!;
+    const minder = document.getElementById('minder') as HTMLButtonElement;
+
+    let n = origineel;
+    try {
+      n = Number(localStorage.getItem(key)) || origineel;
+    } catch {
+      /* geen opslag: begin bij het aantal uit het recept */
+    }
+
+    function show() {
+      aantal.textContent = `${n} ${n === 1 ? 'portie' : 'porties'}`;
+      minder.disabled = n <= 1;
+      for (const r of rows) r.span.textContent = formatIngredient(ingredienten[r.n], n / origineel);
+      try {
+        if (n === origineel) localStorage.removeItem(key);
+        else localStorage.setItem(key, String(n));
+      } catch {
+        /* geen opslag beschikbaar */
+      }
+    }
+    minder.addEventListener('click', () => {
+      n = Math.max(1, n - 1);
+      show();
+    });
+    document.getElementById('meer')!.addEventListener('click', () => {
+      n = Math.min(99, n + 1);
+      show();
+    });
+    show();
+  }
 </script>
 
 <style>
-  .back {
-    padding: calc(8px + env(safe-area-inset-top)) 0 0;
-  }
-  .back a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
-    text-decoration: none;
-    font-weight: 600;
-  }
   h1 {
     font-size: 1.6rem;
     line-height: 1.2;
@@ -111,61 +198,46 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
   }
   .meta {
     color: var(--muted);
+    margin: 0 0 12px;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 12px;
+  }
+  .porties {
+    display: inline-flex;
+    align-items: center;
     margin: 0 0 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  .porties button {
+    width: var(--tap);
+    height: var(--tap);
+    font: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--accent);
+    background: transparent;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .porties button:disabled {
+    color: var(--done);
+    cursor: default;
+  }
+  .porties output {
+    min-width: 7.5em;
+    text-align: center;
+    font-weight: 600;
   }
   h2 {
     font-size: 1.2rem;
     margin: 0;
-  }
-  .section-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin: 8px 0 10px;
-  }
-  .reset {
-    min-height: 44px;
-    padding: 0 14px;
-    font: inherit;
-    font-size: 0.95rem;
-    color: var(--accent);
-    background: transparent;
-    border: 1px solid var(--line);
-    border-radius: 999px;
-  }
-  .ingredients {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-  .ingredients li + li {
-    border-top: 1px solid var(--line);
-  }
-  .ingredients label {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    min-height: var(--tap);
-    padding: 10px 16px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .ingredients input {
-    flex: none;
-    width: 26px;
-    height: 26px;
-    margin: 0;
-    accent-color: var(--accent);
-  }
-  .ingredients input:checked + span {
-    color: var(--done);
-    text-decoration: line-through;
   }
   .steps {
     margin-top: 28px;
