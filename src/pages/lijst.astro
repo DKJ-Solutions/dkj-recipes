@@ -7,6 +7,7 @@ import Base from '../layouts/Base.astro';
 const recipes = (await getCollection('recipes')).map((r) => ({
   id: r.id,
   titel: r.data.titel,
+  porties: r.data.porties,
   ingredienten: r.data.ingredienten,
 }));
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
@@ -45,9 +46,9 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 <script>
   import { formatIngredient } from '../lib/format';
   import { groupByAfdeling } from '../lib/afdeling';
-  import { loadList, mergeIngredients, saveList, type Merged, type Recipe } from '../lib/lijst';
+  import { loadList, loadPorties, mergeIngredients, saveList, type Merged, type Recipe } from '../lib/lijst';
 
-  const all: Recipe[] = JSON.parse(document.getElementById('data')!.textContent ?? '[]');
+  const all: (Recipe & { porties?: number })[] = JSON.parse(document.getElementById('data')!.textContent ?? '[]');
   const byId = new Map(all.map((r) => [r.id, r]));
   const base = document.querySelector<HTMLAnchorElement>('.back a')!.getAttribute('href')!;
 
@@ -79,7 +80,12 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
   function render() {
     // Een recept dat niet meer bestaat, valt stilletjes van de lijst.
     const ids = loadList().filter((id) => byId.has(id));
-    const recipes = ids.map((id) => byId.get(id)!);
+    // Elk recept telt mee voor het aantal porties dat op zijn receptpagina is gekozen.
+    const recipes = ids.map((id) => {
+      const r = byId.get(id)!;
+      const gekozen = r.porties ? (loadPorties(id) ?? r.porties) : undefined;
+      return { ...r, gekozen, factor: r.porties && gekozen ? gekozen / r.porties : 1 };
+    });
     vol.hidden = recipes.length === 0;
     leeg.hidden = recipes.length > 0;
 
@@ -89,6 +95,11 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
         const a = document.createElement('a');
         a.href = `${base}recept/${r.id}/`;
         a.textContent = r.titel;
+        if (r.gekozen) {
+          const p = document.createElement('small');
+          p.textContent = ` · ${r.gekozen} ${r.gekozen === 1 ? 'portie' : 'porties'}`;
+          a.append(p);
+        }
         const x = document.createElement('button');
         x.type = 'button';
         x.className = 'remove';
@@ -147,6 +158,8 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     saveList([]);
     render();
   });
+  // Terug met de terugknop na het aanpassen van porties: de pagina komt dan uit de cache van de browser.
+  window.addEventListener('pageshow', (e) => e.persisted && render());
   render();
 </script>
 
@@ -163,6 +176,11 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+  }
+  .chips :global(small) {
+    color: var(--muted);
+    font-weight: 400;
+    font-size: 0.9rem;
   }
   .chips :global(li) {
     display: inline-flex;

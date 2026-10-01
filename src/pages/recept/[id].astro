@@ -142,9 +142,10 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
 
 <script>
   import { formatIngredient } from '../../lib/format';
+  import { loadPorties, savePorties } from '../../lib/lijst';
 
   // Porties aanpassen: de hoeveelheden schalen mee. Het gekozen aantal wordt per recept op dit
-  // toestel onthouden, zodat het er nog staat als je in de winkel terugkomt op het recept.
+  // toestel onthouden, zodat het er nog staat als je terugkomt, en de boodschappenlijst rekent ermee.
   const box = document.getElementById('porties');
   if (box) {
     const list = document.getElementById('ingredienten')!;
@@ -156,27 +157,17 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     }));
     const ingredienten = JSON.parse(list.dataset.ingredienten!);
     const origineel = Number(box.dataset.porties);
-    const key = `porties:${list.dataset.recept}`;
+    const id = list.dataset.recept!;
     const aantal = document.getElementById('aantal')!;
     const minder = document.getElementById('minder') as HTMLButtonElement;
 
-    let n = origineel;
-    try {
-      n = Number(localStorage.getItem(key)) || origineel;
-    } catch {
-      /* geen opslag: begin bij het aantal uit het recept */
-    }
+    let n = loadPorties(id) ?? origineel;
 
     function show() {
       aantal.textContent = `${n} ${n === 1 ? 'portie' : 'porties'}`;
       minder.disabled = n <= 1;
       for (const r of rows) r.span.textContent = formatIngredient(ingredienten[r.n], n / origineel);
-      try {
-        if (n === origineel) localStorage.removeItem(key);
-        else localStorage.setItem(key, String(n));
-      } catch {
-        /* geen opslag beschikbaar */
-      }
+      savePorties(id, n, origineel);
     }
     minder.addEventListener('click', () => {
       n = Math.max(1, n - 1);
