@@ -12,7 +12,8 @@ const { recipe } = Astro.props;
 const { Content } = await render(recipe);
 const { titel, porties, tijd, tags, bron, ingredienten } = recipe.data;
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
-const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].filter(Boolean);
+// Met porties in het recept zet de keuzeknop het aantal neer; anders staat er niets over in de kop.
+const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
 ---
 
 <Base title={`${titel} · Recepten`}>
@@ -22,13 +23,27 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
     </nav>
     <h1>{titel}</h1>
     {meta.length > 0 && <p class="meta">{meta.join(' · ')}</p>}
+    {
+      porties && (
+        <div class="porties" id="porties" data-porties={porties}>
+          <button type="button" id="minder" aria-label="Minder porties">−</button>
+          <output id="aantal" aria-live="polite">{porties} porties</output>
+          <button type="button" id="meer" aria-label="Meer porties">+</button>
+        </div>
+      )
+    }
 
     <section aria-labelledby="ingr">
       <div class="section-head">
         <h2 id="ingr">Ingrediënten</h2>
         <button type="button" class="reset" id="reset" hidden>Alles weer aan</button>
       </div>
-      <ul class="ingredients" id="ingredienten" data-recept={recipe.id}>
+      <ul
+        class="ingredients"
+        id="ingredienten"
+        data-recept={recipe.id}
+        data-ingredienten={JSON.stringify(ingredienten)}
+      >
         {
           ingredienten.map((i, n) => (
             <li>
@@ -93,6 +108,51 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
   reset.hidden = saved.size === 0;
 </script>
 
+<script>
+  import { formatIngredient } from '../../lib/format';
+
+  // Porties aanpassen: de hoeveelheden schalen mee. Het gekozen aantal wordt per recept op dit
+  // toestel onthouden, zodat het er nog staat als je in de winkel terugkomt op het recept.
+  const box = document.getElementById('porties');
+  if (box) {
+    const list = document.getElementById('ingredienten')!;
+    const spans = Array.from(list.querySelectorAll('label span'));
+    const ingredienten = JSON.parse(list.dataset.ingredienten!);
+    const origineel = Number(box.dataset.porties);
+    const key = `porties:${list.dataset.recept}`;
+    const aantal = document.getElementById('aantal')!;
+    const minder = document.getElementById('minder') as HTMLButtonElement;
+
+    let n = origineel;
+    try {
+      n = Number(localStorage.getItem(key)) || origineel;
+    } catch {
+      /* geen opslag: begin bij het aantal uit het recept */
+    }
+
+    function show() {
+      aantal.textContent = `${n} ${n === 1 ? 'portie' : 'porties'}`;
+      minder.disabled = n <= 1;
+      spans.forEach((s, i) => (s.textContent = formatIngredient(ingredienten[i], n / origineel)));
+      try {
+        if (n === origineel) localStorage.removeItem(key);
+        else localStorage.setItem(key, String(n));
+      } catch {
+        /* geen opslag beschikbaar */
+      }
+    }
+    minder.addEventListener('click', () => {
+      n = Math.max(1, n - 1);
+      show();
+    });
+    document.getElementById('meer')!.addEventListener('click', () => {
+      n = Math.min(99, n + 1);
+      show();
+    });
+    show();
+  }
+</script>
+
 <style>
   .back {
     padding: calc(8px + env(safe-area-inset-top)) 0 0;
@@ -111,7 +171,36 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
   }
   .meta {
     color: var(--muted);
+    margin: 0 0 12px;
+  }
+  .porties {
+    display: inline-flex;
+    align-items: center;
     margin: 0 0 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  .porties button {
+    width: var(--tap);
+    height: var(--tap);
+    font: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--accent);
+    background: transparent;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .porties button:disabled {
+    color: var(--done);
+    cursor: default;
+  }
+  .porties output {
+    min-width: 7.5em;
+    text-align: center;
+    font-weight: 600;
   }
   h2 {
     font-size: 1.2rem;

@@ -39,19 +39,44 @@
 
 ### PLAN
 
+Het aantal porties op de receptpagina aanpassen, waarbij de hoeveelheden meeschalen (#9). Alleen voor
+recepten met `porties` in de frontmatter. Een recept zonder porties heeft niets om vanuit te rekenen.
+
+Afronden op wat je in de winkel kunt pakken: vanaf 10 op hele getallen (188 g, niet 187,5 g), daaronder
+op kwarten (0,75 potje), nooit naar 0. Het gekozen aantal wordt per recept op het toestel onthouden.
+
+Los gebouwd vanaf `main`. De boodschappenlijst (#7, nog niet gemerged) rekent nog met het aantal porties
+uit het recept; die twee koppelen kan pas als beide gemerged zijn.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `scaleAmount` en een `factor` voor `formatIngredient` in `src/lib/format.ts`
+- [x] Receptpagina: keuzeknop "− 4 porties +" (1 tot 99) in plaats van "4 porties" in de kop; de
+  hoeveelheden schalen mee, het aantal blijft per recept bewaard en gaat terug naar het origineel
+  zonder dat er iets opgeslagen blijft
 
 ### TEST
 
+- [x] `npm run build` groen
+- [x] Headless Chrome (390 px, mobiel) tegen `astro preview`: 13 van 13 checks geslaagd. Begint op 4;
+  3 porties geeft 300 g penne, 0,75 potje pesto en 188 g tomaten; zout en peper blijft gelijk; niet
+  onder 1 (knop grijs); 8 porties geeft 800 g en 2 potjes; het aantal blijft bewaard na herladen;
+  afvinken werkt nog; terug naar 4 wist de opslag
+- [ ] Dave bekijkt de keuzeknop op zijn telefoon (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+
 ### DEPLOY: feat/9-porties
 
-**Score:**
+`formatIngredient` kan nu schalen (`scaleAmount`). De receptpagina zet porties niet meer in de kop, maar
+in een eigen keuzeknop.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+Op een recept met porties kies je met − en + voor hoeveel mensen je kookt, en de hoeveelheden rekenen
+mee, afgerond op wat je in de winkel kunt pakken. Het aantal blijft staan als je later terugkomt.
+
+**Score:** 3
 
 #### Pull Request
 
