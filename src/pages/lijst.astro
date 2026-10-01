@@ -27,7 +27,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
           <h2 id="ingr">Ingrediënten</h2>
           <button type="button" class="pill" id="reset" hidden>Alles weer aan</button>
         </div>
-        <ul class="ingredients" id="ingredienten"></ul>
+        <div id="ingredienten"></div>
       </section>
 
       <p class="clear">
@@ -44,7 +44,8 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
 <script>
   import { formatIngredient } from '../lib/format';
-  import { loadList, mergeIngredients, saveList, type Recipe } from '../lib/lijst';
+  import { groupByAfdeling } from '../lib/afdeling';
+  import { loadList, mergeIngredients, saveList, type Merged, type Recipe } from '../lib/lijst';
 
   const all: Recipe[] = JSON.parse(document.getElementById('data')!.textContent ?? '[]');
   const byId = new Map(all.map((r) => [r.id, r]));
@@ -104,25 +105,35 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
     const checked = loadChecked();
     const many = recipes.length > 1;
+    const row = (i: Merged) => {
+      const li = document.createElement('li');
+      const label = document.createElement('label');
+      const box = document.createElement('input');
+      box.type = 'checkbox';
+      box.value = i.key;
+      box.checked = checked.has(i.key);
+      box.addEventListener('change', saveChecked);
+      const text = document.createElement('span');
+      text.textContent = formatIngredient(i);
+      if (many) {
+        const from = document.createElement('small');
+        from.textContent = i.recepten.join(', ');
+        text.append(from);
+      }
+      label.append(box, text);
+      li.append(label);
+      return li;
+    };
     list.replaceChildren(
-      ...mergeIngredients(recipes).map((i) => {
-        const li = document.createElement('li');
-        const label = document.createElement('label');
-        const box = document.createElement('input');
-        box.type = 'checkbox';
-        box.value = i.key;
-        box.checked = checked.has(i.key);
-        box.addEventListener('change', saveChecked);
-        const text = document.createElement('span');
-        text.textContent = formatIngredient(i);
-        if (many) {
-          const from = document.createElement('small');
-          from.textContent = i.recepten.join(', ');
-          text.append(from);
-        }
-        label.append(box, text);
-        li.append(label);
-        return li;
+      ...groupByAfdeling(mergeIngredients(recipes)).flatMap((g) => {
+        const ul = document.createElement('ul');
+        ul.className = 'ingredients';
+        ul.append(...g.items.map(row));
+        if (!g.titel) return [ul];
+        const h = document.createElement('h3');
+        h.className = 'afdeling';
+        h.textContent = g.titel;
+        return [h, ul];
       }),
     );
     saveChecked();
@@ -178,7 +189,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     border-radius: 999px;
     cursor: pointer;
   }
-  .ingredients :global(small) {
+  #ingredienten :global(small) {
     display: block;
     color: var(--muted);
     font-size: 0.85rem;

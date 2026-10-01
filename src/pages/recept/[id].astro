@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { groupByAfdeling } from '../../lib/afdeling';
 import { formatIngredient } from '../../lib/format';
 
 export async function getStaticPaths() {
@@ -34,18 +35,25 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
         <h2 id="ingr">Ingrediënten</h2>
         <button type="button" class="pill" id="reset" hidden>Alles weer aan</button>
       </div>
-      <ul class="ingredients" id="ingredienten" data-recept={recipe.id}>
+      <div id="ingredienten" data-recept={recipe.id}>
         {
-          ingredienten.map((i, n) => (
-            <li>
-              <label>
-                <input type="checkbox" value={n} />
-                <span>{formatIngredient(i)}</span>
-              </label>
-            </li>
+          groupByAfdeling(ingredienten.map((i, n) => ({ ...i, n }))).map((g) => (
+            <>
+              {g.titel && <h3 class="afdeling">{g.titel}</h3>}
+              <ul class="ingredients">
+                {g.items.map((i) => (
+                  <li>
+                    <label>
+                      <input type="checkbox" value={i.n} />
+                      <span>{formatIngredient(i)}</span>
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            </>
           ))
         }
-      </ul>
+      </div>
     </section>
 
     <section aria-labelledby="bereiding" class="steps">

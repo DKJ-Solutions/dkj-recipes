@@ -1,6 +1,6 @@
 import { searchKey } from './format';
 
-type Ingredient = { naam: string; hoeveelheid?: number; eenheid?: string };
+type Ingredient = { naam: string; hoeveelheid?: number; eenheid?: string; afdeling?: string };
 export type Recipe = { id: string; titel: string; ingredienten: Ingredient[] };
 export type Merged = Ingredient & { key: string; recepten: string[] };
 
@@ -40,6 +40,7 @@ export function mergeIngredients(recipes: Recipe[]): Merged[] {
         continue;
       }
       if (i.hoeveelheid !== undefined) m.hoeveelheid = (m.hoeveelheid ?? 0) + i.hoeveelheid;
+      m.afdeling ??= i.afdeling;
       if (!m.recepten.includes(r.titel)) m.recepten.push(r.titel);
     }
   }
