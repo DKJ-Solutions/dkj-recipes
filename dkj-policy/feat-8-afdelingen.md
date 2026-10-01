@@ -66,7 +66,7 @@ afdeling onder "Overig". Een recept zonder enige afdeling blijft één lijst zon
   Overig op de receptpagina; afvinken blijft bewaard; recept zonder afdelingen heeft geen koppen; op de
   lijst gaan "Groente" en "groente" samen, krijgt zout de afdeling van het tweede recept en komt de
   onbekende afdeling "bakker" achteraan
-- [ ] Dave bekijkt de groepen op zijn telefoon (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+- [x] Dave bekijkt de groepen: gezien en goedgekeurd (2026-10-01)
 
 ### DEPLOY: feat/8-afdelingen
 
