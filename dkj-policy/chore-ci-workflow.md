@@ -32,11 +32,18 @@
 
 ### PLAN
 
+`adopt-ci-floor` beloofde in de dry run een `ci.yml`, maar plaatste hem bij `-Apply` niet: Part 1's
+PR-gates onderdrukken de skeleton (inbound DKJ-Solutions/dkj-claude-plugins#2677). Zonder die workflow
+bestaat er geen check die als required check op `main` kan dienen (#2).
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `.github/workflows/ci.yml`: workflow `CI`, job `ci`, draait `scripts/lint/lint.ps1` op `pull_request` en op push naar `main`
+- [x] `merge-on-green.yml`: `CI` toegevoegd aan de `workflow_run`-trigger
 
 ### TEST
+
+- [x] `scripts/lint/lint.ps1` lokaal onder Windows PowerShell 5.1 gedraaid: groen (`pwsh` staat niet op deze machine; de `pwsh`-run is de `ci`-job op de PR, en die is `ship-pr`'s gate)
 
 ### DEPLOY: chore/ci-workflow
 
@@ -44,7 +51,10 @@
 
 ##### Tier 0
 
-**Score:**
+Er is nu een CI-check `ci` die de lint-gate op elke PR en elke push naar `main` draait. Dat is de check
+die als required check op `main` kan dienen, zodat de staleness-guard van `ship-pr` aangaat.
+
+**Score:** 3
 
 <!--
      Is this change also relevant to management and the employer/commissioner? Then continue to Tier 1.
@@ -53,7 +63,9 @@
 
 ##### Tier 1
 
-**Score:**
+Interne werkwijze; niets wat opdrachtgever of management merkt.
+
+**Score:** N/A
 
 <!--
      Is this change also relevant to a subscriber of the service? Then continue to Tier 2.
@@ -62,7 +74,9 @@
 
 ##### Tier 2
 
-**Score:**
+Gebruikers van de app merken hier niets van.
+
+**Score:** N/A
 
 #### Pull Request
 
