@@ -1,0 +1,22 @@
+# CI -- what a merge to main has to prove. The job id 'ci' is the check the trunk ruleset requires,
+# and ship-pr dates its staleness guard from it, so it runs on pull_request AND on push to main.
+# Today it runs the repo's lint gate (scripts/lint/lint.ps1); extend it as the app layer arrives.
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint gate
+        shell: pwsh
+        run: ./scripts/lint/lint.ps1

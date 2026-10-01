@@ -65,7 +65,7 @@ permissions:
 
 on:
   workflow_run:
-    workflows: ["Always-on budget", "Branch entry"]
+    workflows: ["Always-on budget", "Branch entry", "CI"]
     types: [completed]
   schedule:
     # Every 3 hours: a backstop for what workflow_run misses, not the ordinary path -- sparser than
