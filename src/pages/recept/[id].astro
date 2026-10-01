@@ -13,7 +13,8 @@ const { recipe } = Astro.props;
 const { Content } = await render(recipe);
 const { titel, porties, tijd, tags, bron, ingredienten } = recipe.data;
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
-const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].filter(Boolean);
+// Met porties in het recept zet de keuzeknop het aantal neer; anders staat er niets over in de kop.
+const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
 ---
 
 <Base title={`${titel} · Recepten`}>
@@ -29,13 +30,26 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
       </button>
       <a class="pill" id="naar-lijst" href={`${base}lijst/`} hidden>Naar de lijst ›</a>
     </div>
+    {
+      porties && (
+        <div class="porties" id="porties" data-porties={porties}>
+          <button type="button" id="minder" aria-label="Minder porties">−</button>
+          <output id="aantal" aria-live="polite">{porties} porties</output>
+          <button type="button" id="meer" aria-label="Meer porties">+</button>
+        </div>
+      )
+    }
 
     <section aria-labelledby="ingr">
       <div class="section-head">
         <h2 id="ingr">Ingrediënten</h2>
         <button type="button" class="pill" id="reset" hidden>Alles weer aan</button>
       </div>
-      <div id="ingredienten" data-recept={recipe.id}>
+      <div
+        id="ingredienten"
+        data-recept={recipe.id}
+        data-ingredienten={JSON.stringify(ingredienten)}
+      >
         {
           groupByAfdeling(ingredienten.map((i, n) => ({ ...i, n }))).map((g) => (
             <>
@@ -126,6 +140,56 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
   show(loadList().includes(id));
 </script>
 
+<script>
+  import { formatIngredient } from '../../lib/format';
+
+  // Porties aanpassen: de hoeveelheden schalen mee. Het gekozen aantal wordt per recept op dit
+  // toestel onthouden, zodat het er nog staat als je in de winkel terugkomt op het recept.
+  const box = document.getElementById('porties');
+  if (box) {
+    const list = document.getElementById('ingredienten')!;
+    // Per afdeling gegroepeerd is de volgorde op de pagina niet die van het recept: het vakje draagt
+    // het nummer van het ingrediënt.
+    const rows = Array.from(list.querySelectorAll('label'), (l) => ({
+      span: l.querySelector('span')!,
+      n: Number(l.querySelector('input')!.value),
+    }));
+    const ingredienten = JSON.parse(list.dataset.ingredienten!);
+    const origineel = Number(box.dataset.porties);
+    const key = `porties:${list.dataset.recept}`;
+    const aantal = document.getElementById('aantal')!;
+    const minder = document.getElementById('minder') as HTMLButtonElement;
+
+    let n = origineel;
+    try {
+      n = Number(localStorage.getItem(key)) || origineel;
+    } catch {
+      /* geen opslag: begin bij het aantal uit het recept */
+    }
+
+    function show() {
+      aantal.textContent = `${n} ${n === 1 ? 'portie' : 'porties'}`;
+      minder.disabled = n <= 1;
+      for (const r of rows) r.span.textContent = formatIngredient(ingredienten[r.n], n / origineel);
+      try {
+        if (n === origineel) localStorage.removeItem(key);
+        else localStorage.setItem(key, String(n));
+      } catch {
+        /* geen opslag beschikbaar */
+      }
+    }
+    minder.addEventListener('click', () => {
+      n = Math.max(1, n - 1);
+      show();
+    });
+    document.getElementById('meer')!.addEventListener('click', () => {
+      n = Math.min(99, n + 1);
+      show();
+    });
+    show();
+  }
+</script>
+
 <style>
   h1 {
     font-size: 1.6rem;
@@ -140,7 +204,36 @@ const meta = [porties && `${porties} porties`, tijd && `${tijd} min`, ...tags].f
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
+    margin: 0 0 12px;
+  }
+  .porties {
+    display: inline-flex;
+    align-items: center;
     margin: 0 0 16px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+  }
+  .porties button {
+    width: var(--tap);
+    height: var(--tap);
+    font: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--accent);
+    background: transparent;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .porties button:disabled {
+    color: var(--done);
+    cursor: default;
+  }
+  .porties output {
+    min-width: 7.5em;
+    text-align: center;
+    font-weight: 600;
   }
   h2 {
     font-size: 1.2rem;
