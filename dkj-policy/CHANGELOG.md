@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**3 / 7 minor entries** <!-- pending-tally -->
+**4 / 8 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/8-afdelingen · 20261001-144152Z
+
+Nieuwe `src/lib/afdeling.ts`; de ingrediënten op de receptpagina en de lijst staan nu in een container
+met een lijst per afdeling.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Ingrediënten staan nu onder kopjes per afdeling (groente, vlees, zuivel, houdbaar, ...) in de volgorde
+waarin je door de supermarkt loopt, op elk recept en op de boodschappenlijst.
+
+**Score:** 3
+
+#### Pull Request
+
+Ingrediënten groeperen per supermarktafdeling
+
+[PR #16](https://github.com/DKJ-Solutions/dkj-recipes/pull/16)
+
+---
 
 ### DEPLOY: feat/7-boodschappenlijst · 20261001-143937Z
 
