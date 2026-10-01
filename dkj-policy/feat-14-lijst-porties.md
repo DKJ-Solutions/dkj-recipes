@@ -62,7 +62,8 @@ zonder `porties` telt mee zoals het staat.
   pasta op 2 en soep (2) op 4 porties geeft 125 + 1000 = 1.125 g tomaten en 0,5 + 2 = 2,5 potje pesto;
   37,5 g rucola wordt 38 g; een recept zonder porties blijft ongeschaald; de chips tonen het gekozen aantal
 - [x] Regressie op de receptpagina (de 13 checks van #9): 13 van 13 geslaagd
-- [ ] Dave bekijkt de lijst met aangepaste porties (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+- [x] Dave bekijkt de lijst met aangepaste porties: gezien en goedgekeurd op 2026-10-01 (preview van deze
+  branch)
 
 ### DEPLOY: feat/14-lijst-porties
 
