@@ -1,0 +1,206 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+
+// Welke recepten op de lijst staan, weet alleen het toestel; de pagina krijgt daarom de ingrediënten
+// van alle recepten mee en stelt de lijst in de browser samen.
+const recipes = (await getCollection('recipes')).map((r) => ({
+  id: r.id,
+  titel: r.data.titel,
+  ingredienten: r.data.ingredienten,
+}));
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
+---
+
+<Base title="Boodschappenlijst · Recepten">
+  <main>
+    <nav class="back">
+      <a href={base}>‹ Alle recepten</a>
+    </nav>
+    <h1>Boodschappenlijst</h1>
+
+    <div id="vol" hidden>
+      <ul class="chips" id="recepten" aria-label="Recepten op de lijst"></ul>
+
+      <section aria-labelledby="ingr">
+        <div class="section-head">
+          <h2 id="ingr">Ingrediënten</h2>
+          <button type="button" class="pill" id="reset" hidden>Alles weer aan</button>
+        </div>
+        <div id="ingredienten"></div>
+      </section>
+
+      <p class="clear">
+        <button type="button" class="pill" id="leegmaken">Lijst leegmaken</button>
+      </p>
+    </div>
+
+    <p class="empty" id="leeg" hidden>
+      Je lijst is leeg. Open een recept en tik op <strong>Op de boodschappenlijst</strong>.
+    </p>
+    <script id="data" type="application/json" set:html={JSON.stringify(recipes)} />
+  </main>
+</Base>
+
+<script>
+  import { formatIngredient } from '../lib/format';
+  import { groupByAfdeling } from '../lib/afdeling';
+  import { loadList, mergeIngredients, saveList, type Merged, type Recipe } from '../lib/lijst';
+
+  const all: Recipe[] = JSON.parse(document.getElementById('data')!.textContent ?? '[]');
+  const byId = new Map(all.map((r) => [r.id, r]));
+  const base = document.querySelector<HTMLAnchorElement>('.back a')!.getAttribute('href')!;
+
+  const vol = document.getElementById('vol')!;
+  const leeg = document.getElementById('leeg')!;
+  const chips = document.getElementById('recepten')!;
+  const list = document.getElementById('ingredienten')!;
+  const reset = document.getElementById('reset')!;
+  const KEY = 'afgevinkt:lijst';
+
+  function loadChecked(): Set<string> {
+    try {
+      return new Set(JSON.parse(localStorage.getItem(KEY) ?? '[]'));
+    } catch {
+      return new Set();
+    }
+  }
+  function saveChecked() {
+    const checked = Array.from(list.querySelectorAll<HTMLInputElement>('input:checked'), (b) => b.value);
+    try {
+      if (checked.length) localStorage.setItem(KEY, JSON.stringify(checked));
+      else localStorage.removeItem(KEY);
+    } catch {
+      /* geen opslag beschikbaar: afvinken werkt dan alleen tot de pagina sluit */
+    }
+    reset.hidden = checked.length === 0;
+  }
+
+  function render() {
+    // Een recept dat niet meer bestaat, valt stilletjes van de lijst.
+    const ids = loadList().filter((id) => byId.has(id));
+    const recipes = ids.map((id) => byId.get(id)!);
+    vol.hidden = recipes.length === 0;
+    leeg.hidden = recipes.length > 0;
+
+    chips.replaceChildren(
+      ...recipes.map((r) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = `${base}recept/${r.id}/`;
+        a.textContent = r.titel;
+        const x = document.createElement('button');
+        x.type = 'button';
+        x.className = 'remove';
+        x.textContent = '×';
+        x.setAttribute('aria-label', `${r.titel} van de lijst halen`);
+        x.addEventListener('click', () => {
+          saveList(loadList().filter((id) => id !== r.id));
+          render();
+        });
+        li.append(a, x);
+        return li;
+      }),
+    );
+
+    const checked = loadChecked();
+    const many = recipes.length > 1;
+    const row = (i: Merged) => {
+      const li = document.createElement('li');
+      const label = document.createElement('label');
+      const box = document.createElement('input');
+      box.type = 'checkbox';
+      box.value = i.key;
+      box.checked = checked.has(i.key);
+      box.addEventListener('change', saveChecked);
+      const text = document.createElement('span');
+      text.textContent = formatIngredient(i);
+      if (many) {
+        const from = document.createElement('small');
+        from.textContent = i.recepten.join(', ');
+        text.append(from);
+      }
+      label.append(box, text);
+      li.append(label);
+      return li;
+    };
+    list.replaceChildren(
+      ...groupByAfdeling(mergeIngredients(recipes)).flatMap((g) => {
+        const ul = document.createElement('ul');
+        ul.className = 'ingredients';
+        ul.append(...g.items.map(row));
+        if (!g.titel) return [ul];
+        const h = document.createElement('h3');
+        h.className = 'afdeling';
+        h.textContent = g.titel;
+        return [h, ul];
+      }),
+    );
+    saveChecked();
+  }
+
+  reset.addEventListener('click', () => {
+    for (const b of list.querySelectorAll<HTMLInputElement>('input')) b.checked = false;
+    saveChecked();
+  });
+  document.getElementById('leegmaken')!.addEventListener('click', () => {
+    saveList([]);
+    render();
+  });
+  render();
+</script>
+
+<style>
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin: 4px 0 12px;
+  }
+  .chips {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chips :global(li) {
+    display: inline-flex;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding-left: 14px;
+  }
+  .chips :global(a) {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .chips :global(.remove) {
+    min-width: 44px;
+    min-height: 44px;
+    font: inherit;
+    font-size: 1.3rem;
+    line-height: 1;
+    color: var(--muted);
+    background: transparent;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  #ingredienten :global(small) {
+    display: block;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  .clear {
+    margin: 20px 0 0;
+    text-align: center;
+  }
+  .empty {
+    color: var(--muted);
+    text-align: center;
+    padding: 24px 0;
+  }
+</style>

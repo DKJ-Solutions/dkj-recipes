@@ -45,8 +45,16 @@ recepten met `porties` in de frontmatter. Een recept zonder porties heeft niets 
 Afronden op wat je in de winkel kunt pakken: vanaf 10 op hele getallen (188 g, niet 187,5 g), daaronder
 op kwarten (0,75 potje), nooit naar 0. Het gekozen aantal wordt per recept op het toestel onthouden.
 
-Los gebouwd vanaf `main`. De boodschappenlijst (#7, nog niet gemerged) rekent nog met het aantal porties
-uit het recept; die twee koppelen kan pas als beide gemerged zijn.
+Los gebouwd vanaf `main`. De boodschappenlijst (#7) rekent nog met het aantal porties uit het recept.
+Die twee koppelen is #14.
+
+#### Na de goedkeuring: `main` met #7 en #8 erin gemerged
+
+Daves review was van deze branch los. Daarna zijn #7 (PR #15) en #8 (PR #16) gemerged, en `main` is
+in deze branch gemerged. Daarbij bleek een koppelfout: sinds #8 staan de ingrediënten per afdeling, dus
+de volgorde op de pagina is niet meer die van het recept. Het schalen koppelde op die volgorde en zou
+hoeveelheden bij het verkeerde ingrediënt zetten. Het koppelt nu op het nummer in het vakje. De knop
+"Op de boodschappenlijst" (#7) staat boven de portieknop.
 
 ### CREATE
 
@@ -54,6 +62,8 @@ uit het recept; die twee koppelen kan pas als beide gemerged zijn.
 - [x] Receptpagina: keuzeknop "− 4 porties +" (1 tot 99) in plaats van "4 porties" in de kop; de
   hoeveelheden schalen mee, het aantal blijft per recept bewaard en gaat terug naar het origineel
   zonder dat er iets opgeslagen blijft
+- [x] Merge van `main` (#7, #8): conflict in de receptpagina opgelost; schalen koppelt op het nummer
+  van het ingrediënt, niet op de volgorde op de pagina
 
 ### TEST
 
@@ -62,7 +72,9 @@ uit het recept; die twee koppelen kan pas als beide gemerged zijn.
   3 porties geeft 300 g penne, 0,75 potje pesto en 188 g tomaten; zout en peper blijft gelijk; niet
   onder 1 (knop grijs); 8 porties geeft 800 g en 2 potjes; het aantal blijft bewaard na herladen;
   afvinken werkt nog; terug naar 4 wist de opslag
-- [ ] Dave bekijkt de keuzeknop op zijn telefoon (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+- [x] Na de merge van `main` dezelfde 13 checks opnieuw, nu met de groepen van #8: 13 van 13 geslaagd
+  (bij 2 porties staat 150 g bij kipfilet, ook al staat die onder "Vlees")
+- [x] Dave bekijkt de keuzeknop: gezien en goedgekeurd (2026-10-01), op de branch vóór de merge van `main`
 
 ### DEPLOY: feat/9-porties
 

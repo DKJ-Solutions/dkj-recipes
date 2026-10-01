@@ -2,7 +2,52 @@
 
 ## [Unreleased]
 
-**2 / 6 minor entries** <!-- pending-tally -->
+**4 / 8 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/8-afdelingen · 20261001-144152Z
+
+Nieuwe `src/lib/afdeling.ts`; de ingrediënten op de receptpagina en de lijst staan nu in een container
+met een lijst per afdeling.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Ingrediënten staan nu onder kopjes per afdeling (groente, vlees, zuivel, houdbaar, ...) in de volgorde
+waarin je door de supermarkt loopt, op elk recept en op de boodschappenlijst.
+
+**Score:** 3
+
+#### Pull Request
+
+Ingrediënten groeperen per supermarktafdeling
+
+[PR #16](https://github.com/DKJ-Solutions/dkj-recipes/pull/16)
+
+---
+
+### DEPLOY: feat/7-boodschappenlijst · 20261001-143937Z
+
+Nieuwe pagina `/lijst/` en een gedeelde `src/lib/lijst.ts`. De stijlen voor de ingrediëntenlijst
+staan nu in `Base.astro` in plaats van op de receptpagina.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+Zet je meerdere recepten op de boodschappenlijst, dan krijg je hun ingrediënten in één lijst om af te
+vinken, met de hoeveelheden opgeteld. Op elk recept staat de knop "Op de boodschappenlijst", en op de
+startpagina zie je hoeveel recepten erop staan.
+
+**Score:** 4
+
+#### Pull Request
+
+Meerdere recepten samenvoegen tot één boodschappenlijst
+
+[PR #15](https://github.com/DKJ-Solutions/dkj-recipes/pull/15)
+
+---
 
 ### DEPLOY: feat/12-update-melding · 20261001-141231Z
 
