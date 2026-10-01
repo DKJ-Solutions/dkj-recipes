@@ -41,17 +41,25 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] De nog open wensen uit `PLAN.md` als issues gefiled (#7, #8, #9, #10)
+- [x] `PLAN.md` verwijderd; de verwijzingen in `README.md` en `.claude/rules/this-repo.md` wijzen naar issue #1 en de tracker
+- [x] Het besluit "recepten komen via Claude in de repo" bewaard in `.claude/rules/this-repo.md`
 
 ### TEST
 
 ### DEPLOY: chore/remove-plan-md
 
-**Score:**
+`PLAN.md` is verwijderd: fase 1 tot en met 3 en de deploy zijn gebouwd, de eisen en besluiten staan in
+issue #1, en de wensen staan nu als losse issues in de tracker (#7, #8, #9, #10). Het besluit dat
+recepten via Claude in de repo komen, staat in de repo-regels.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+Alleen documentatie in de repo; wie de app gebruikt merkt er niets van.
+
+**Score:** N/A
 
 #### Pull Request
 

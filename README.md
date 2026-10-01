@@ -1,7 +1,8 @@
 # dkj-recipes
 
 Een mobile-first recepten-app: in de supermarkt snel bij je recepten, zodat je makkelijk de
-ingrediënten kunt kopen. Het plan staat in [`PLAN.md`](PLAN.md).
+ingrediënten kunt kopen. De eisen en besluiten staan in
+[issue #1](https://github.com/DKJ-Solutions/dkj-recipes/issues/1); wensen staan als issues in de tracker.
 
 Live: <https://dkj-solutions.github.io/dkj-recipes/>. De app werkt offline en is op het startscherm te
 zetten.
