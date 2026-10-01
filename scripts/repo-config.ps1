@@ -510,3 +510,16 @@ function Get-InternalNoteWording {
     <# Overrides for the internal note's headings, audience line and fill-in hints. Empty = English. #>
     return $script:InternalNoteWording
 }
+
+# --- Which audience this repo publishes to (answered 2026-10-01) ----------------------------------
+#
+# 2: the users of the recipe app -- the people who rely on what this repo ships, in the supermarket.
+# Not 1: nothing here is delivered to a commissioner, and no management reads these notes. The reach
+# label 'minor' on the tracker carries the matching tier-2 description.
+$script:ReleaseAudienceTier = 2
+
+function Get-ReleaseAudienceTier {
+    <# The one audience tier this repo publishes to: 2 (the users of the app). Tier 0 -- the people
+       maintaining the repo -- is always asked for, so it is deliberately not this function's business. #>
+    return $script:ReleaseAudienceTier
+}
