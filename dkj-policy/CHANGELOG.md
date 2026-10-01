@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**0 / 3 patch entries** <!-- pending-tally -->
+**1 / 4 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/1-recepten-app · 20261001-101700Z
+
+De eerste versie van de recepten-app. Er komt nog geen gebruiker bij, maar de app staat er nu: Astro,
+GitHub Pages en een CI die bouwt.
+
+**Score:** 5
+
+#### What makes this deploy extra special
+
+De recepten-app bestaat. Op de telefoon zoek je een recept, zie je de ingrediënten bovenaan en vink je ze
+af terwijl je winkelt. De app werkt ook zonder bereik en kun je op het startscherm zetten. Live op
+<https://dkj-solutions.github.io/dkj-recipes/>.
+
+**Score:** 5
+
+#### Pull Request
+
+Mobile-first recepten-app als statische PWA op GitHub Pages
+
+[PR #6](https://github.com/DKJ-Solutions/dkj-recipes/pull/6)
+
+---
 
 ### DEPLOY: chore/release-audience-tier-2 · 20261001-095529Z
 
