@@ -39,19 +39,38 @@
 
 ### PLAN
 
+Tags als filters in de receptenlijst (#10). De tags stonden al in de frontmatter en waren al
+doorzoekbaar. Nu staan ze ook als knoppen onder het zoekveld. Met meerdere tags aan moet een recept ze
+allemaal hebben, en het filter werkt samen met het zoekveld. Er is geen afgeleide tag zoals "snel" op
+basis van `tijd`: een tag is wat in het recept staat.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Startpagina: een rij tag-knoppen (op alfabet, scrolt horizontaal bij veel tags) die aan en uit
+  gaan; alleen zichtbaar als er tags zijn
+- [x] Meegenomen: "1 ingrediënten" wordt "1 ingrediënt"
 
 ### TEST
 
+- [x] `npm run build` groen
+- [x] Headless Chrome (390 px, mobiel) tegen `astro preview`, met twee tijdelijke testrecepten die
+  daarna weer zijn verwijderd: 6 van 6 checks geslaagd. Tags op alfabet; "snel" toont twee recepten;
+  "snel" en "vegetarisch" samen toont er één; met een zoekwoord erbij geen resultaat en de lege melding;
+  alles uit toont alles weer
+- [ ] Dave bekijkt de tagknoppen op zijn telefoon (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+
 ### DEPLOY: feat/10-tags-filters
 
-**Score:**
+Alleen de startpagina verandert.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+Onder het zoekveld staan nu de tags als knoppen (bijvoorbeeld "pasta" of "snel"). Tik er een aan en je
+ziet alleen de recepten met die tag.
+
+**Score:** 3
 
 #### Pull Request
 
