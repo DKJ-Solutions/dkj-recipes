@@ -29,10 +29,12 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     <script is:inline define:vars={{ base }}>
       if ('serviceWorker' in navigator && location.hostname !== 'localhost') {
         window.addEventListener('load', () => {
-          // Zonder controller is dit de eerste installatie: dan is er niets nieuws te melden.
-          const hadController = Boolean(navigator.serviceWorker.controller);
+          // De eerste controller is de eerste installatie: niets nieuws te melden. Elke wissel daarna is
+          // een nieuwe versie.
+          let hadController = Boolean(navigator.serviceWorker.controller);
           navigator.serviceWorker.addEventListener('controllerchange', () => {
             if (hadController) document.getElementById('update').hidden = false;
+            hadController = true;
           });
           document.getElementById('update-reload').addEventListener('click', () => location.reload());
           navigator.serviceWorker
