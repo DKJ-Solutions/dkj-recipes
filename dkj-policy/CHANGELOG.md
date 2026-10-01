@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**1 / 4 minor entries** <!-- pending-tally -->
+**1 / 5 minor entries** <!-- pending-tally -->
+
+### DEPLOY: chore/remove-plan-md · 20261001-102716Z
+
+`PLAN.md` is verwijderd: fase 1 tot en met 3 en de deploy zijn gebouwd, de eisen en besluiten staan in
+issue #1, en de wensen staan nu als losse issues in de tracker (#7, #8, #9, #10). Het besluit dat
+recepten via Claude in de repo komen, staat in de repo-regels.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Alleen documentatie in de repo; wie de app gebruikt merkt er niets van.
+
+**Score:** N/A
+
+#### Pull Request
+
+PLAN.md verwijderd; wensen naar issues
+
+[PR #11](https://github.com/DKJ-Solutions/dkj-recipes/pull/11)
+
+---
 
 ### DEPLOY: feat/1-recepten-app · 20261001-101700Z
 
