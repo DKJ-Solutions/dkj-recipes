@@ -39,19 +39,49 @@
 
 ### PLAN
 
+Meerdere recepten kiezen en hun ingrediënten samenvoegen tot één boodschappenlijst (#7). Zonder
+database: welke recepten op de lijst staan, onthoudt het toestel (`localStorage`), net als het afvinken.
+De lijstpagina krijgt de ingrediënten van alle recepten mee en stelt de lijst in de browser samen.
+
+Samenvoegen: dezelfde naam (zonder hoofdletters of accenten) met dezelfde eenheid wordt één regel, met
+de hoeveelheden opgeteld. "ui" en "uien" blijven twee regels; dat herkennen vraagt taalkennis die de
+app niet heeft. Groeperen per afdeling is #8.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `src/lib/lijst.ts`: de lijst op het toestel bewaren en `mergeIngredients`
+- [x] Receptpagina: knop "Op de boodschappenlijst" (aan/uit) en "Naar de lijst ›"
+- [x] Nieuwe pagina `/lijst/`: de gekozen recepten als chips (× haalt er een af), de samengevoegde
+  ingrediënten om af te vinken (met het recept waar ze vandaan komen, als er meer dan één is),
+  "Alles weer aan" en "Lijst leegmaken"
+- [x] Startpagina: knop "Boodschappenlijst" in de kop, met het aantal recepten erop
+- [x] Stijlen voor de ingrediëntenlijst, de terugknop en de knoppen (`.pill`) naar `Base.astro`, zodat
+  de receptpagina en de lijst dezelfde gebruiken
 
 ### TEST
 
+- [x] `npm run build` groen; `/lijst/` staat in de service worker en werkt dus ook offline
+- [x] Headless Chrome (390 px, mobiel) tegen `astro preview`, met een tijdelijk tweede testrecept dat
+  daarna weer is verwijderd: 16 van 16 checks geslaagd. Lege lijst toont de lege melding; aan/uit op
+  het recept; teller op de startpagina; 250 g + 500 g cherrytomaten wordt 750 g; "groene pesto" en
+  "Groene pesto" worden één regel (2 potje); "zout en peper" komt één keer voor; afvinken blijft
+  bewaard na herladen; "Alles weer aan", × en "Lijst leegmaken" werken
+- [ ] Dave bekijkt de lijst op zijn telefoon (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+
 ### DEPLOY: feat/7-boodschappenlijst
 
-**Score:**
+Nieuwe pagina `/lijst/` en een gedeelde `src/lib/lijst.ts`. De stijlen voor de ingrediëntenlijst
+staan nu in `Base.astro` in plaats van op de receptpagina.
+
+**Score:** 2
 
 #### What makes this deploy extra special
 
-**Score:**
+Zet je meerdere recepten op de boodschappenlijst, dan krijg je hun ingrediënten in één lijst om af te
+vinken, met de hoeveelheden opgeteld. Op elk recept staat de knop "Op de boodschappenlijst", en op de
+startpagina zie je hoeveel recepten erop staan.
+
+**Score:** 4
 
 #### Pull Request
 
