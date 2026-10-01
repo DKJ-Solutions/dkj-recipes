@@ -66,7 +66,7 @@ app niet heeft. Groeperen per afdeling is #8.
   het recept; teller op de startpagina; 250 g + 500 g cherrytomaten wordt 750 g; "groene pesto" en
   "Groene pesto" worden één regel (2 potje); "zout en peper" komt één keer voor; afvinken blijft
   bewaard na herladen; "Alles weer aan", × en "Lijst leegmaken" werken
-- [ ] Dave bekijkt de lijst op zijn telefoon (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+- [x] Dave bekijkt de lijst: gezien en goedgekeurd (2026-10-01)
 
 ### DEPLOY: feat/7-boodschappenlijst
 
