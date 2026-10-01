@@ -55,7 +55,7 @@ supermarkt (#12).
 - [x] Headless Chrome tegen `astro preview`: geen melding bij het eerste bezoek, wel na een nieuwe
   `sw.js` + tabwissel, en weg na Verversen. Vond een bug: een pagina die bij het eerste bezoek zonder
   controller laadde, negeerde daarna elke update; nu telt alleen de allereerste wissel als installatie
-- [ ] Dave bekijkt de melding (zichtbaar resultaat, wacht op zijn oog vóór de merge)
+- [x] Dave bekijkt de melding: groene knop Verversen verschijnt onderin, goedgekeurd
 
 ### DEPLOY: feat/12-update-melding
 
