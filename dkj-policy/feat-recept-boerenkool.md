@@ -41,17 +41,23 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `recipes/boerenkool-met-rookworst.md` volgens `_SJABLOON.md`, voor 2 personen, met Daves ingrediënten
 
 ### TEST
 
+- [x] `npm run build` groen; `/recept/boerenkool-met-rookworst/` wordt gebouwd
+
 ### DEPLOY: feat/recept-boerenkool
 
-**Score:**
+Nieuw recept: boerenkoolstamppot met rookworst voor twee personen, met kooktijden per stap.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+Een nieuw recept in de app, met de kooktijd in de stappen.
+
+**Score:** 2
 
 #### Pull Request
 
