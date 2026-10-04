@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**7 / 11 minor entries** <!-- pending-tally -->
+**8 / 12 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/recept-boerenkool · 20261004-155158Z
+
+Nieuw recept: boerenkoolstamppot met rookworst voor twee personen, met kooktijden per stap.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Een nieuw recept in de app, met de kooktijd in de stappen.
+
+**Score:** 2
+
+#### Pull Request
+
+Recept boerenkoolstamppot met rookworst
+
+[PR #20](https://github.com/DKJ-Solutions/dkj-recipes/pull/20)
+
+---
 
 ### DEPLOY: feat/14-lijst-porties · 20261001-151449Z
 
