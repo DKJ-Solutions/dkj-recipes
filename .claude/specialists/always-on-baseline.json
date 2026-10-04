@@ -1,15 +1,15 @@
 {
     "schema":  1,
-    "bytes":  32839,
-    "recorded":  "2026-10-01",
+    "bytes":  26239,
+    "recorded":  "2026-10-04",
     "reason":  "",
     "note":  "LF bytes of the always-on document path. Written by the always-on budget gate -- see always-on-budget-lib.ps1. Do not hand-edit this to make room: the gate lowers it on its own and raises it only behind -Raise, with a reason.",
     "documents":  {
-                      ".claude/rules/this-repo.md":  608,
-                      ".claude/specialists/SPECIALISTS.md":  1007,
-                      "~/.claude/plugins/marketplaces/dkj-claude-plugins/plugins/dkj-policy/CLAUDE.md":  8150,
-                      "~/.claude/plugins/marketplaces/dkj-claude-plugins/plugins/dkj-subagents/dkj-subagents-alpha/personas/specialist-01-01-persona.md":  21819,
-                      "CLAUDE.md":  274,
-                      "lenses/specialist-01-01-lens.md":  981
+                      ".claude/rules/this-repo.md":  843,
+                      ".claude/specialists/SPECIALISTS.md":  351,
+                      "~/.claude/plugins/marketplaces/dkj-claude-plugins/plugins/dkj-policy/CLAUDE.md":  8183,
+                      "~/.claude/plugins/marketplaces/dkj-claude-plugins/plugins/dkj-subagents/dkj-subagents-alpha/personas/specialist-01-01-persona.md":  16246,
+                      "CLAUDE.md":  130,
+                      "lenses/specialist-01-01-lens.md":  486
                   }
 }
