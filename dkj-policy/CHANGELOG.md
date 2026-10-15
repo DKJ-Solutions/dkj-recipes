@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**9 / 13 minor entries** <!-- pending-tally -->
+**10 / 14 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/22-house-style-v3 · 20261015-151458Z
+
+The app now renders from the DKJ-Solutions house style (`house-style-v3`, vendored unchanged in
+`src/styles/`), with its own layer in `src/styles/recepten.css` on house tokens, and a
+`House style` CI check that holds both.
+
+**Score:** 3
+
+#### What makes this deploy extra special
+
+The recipe app looks like the other DKJ-Solutions apps, and a round settings button lets you pick one of
+twelve colour themes, remembered on your phone. It opens in Petrol (light) or Cyaan (dark).
+
+**Score:** 3
+
+#### Pull Request
+
+Adopt the DKJ-Solutions house style (house-style-v3) and its settings button
+
+[PR #25](https://github.com/DKJ-Solutions/dkj-recipes/pull/25)
+
+---
 
 ### DEPLOY: feat/enable-dkj-solutions · 20261013-084852Z
 
