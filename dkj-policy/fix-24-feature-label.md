@@ -39,19 +39,32 @@
 
 ### PLAN
 
+Issue #24: `feat/` pull requests carry `feature`, never `enhancement` (the `dkj-solutions` extension,
+DKJ-Solutions/dkj-claude-plugins#2961). Both labels already existed on this tracker, so the README's
+rename route did not apply: the items move over by hand instead.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Relabel the eleven merged `feat/` PRs (#6, #13, #15-#21, #25, #26) from `enhancement` to `feature`.
+- [x] `scripts/lib/branch-info.ps1`: `feat = @{ Label = 'feature'; Type = 'Feat' }`, the example
+      comment above it too.
 
 ### TEST
 
+- [x] `gh pr list --state all --label enhancement` returns none; `feature` carries all eleven.
+
 ### DEPLOY: fix/24-feature-label
 
-**Score:**
+`feat/` pull requests are now labelled `feature`, as in every DKJ-Solutions repo; the earlier ones were
+moved over from `enhancement`.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+Nothing a user of the recipe app sees.
+
+**Score:** N/A
 
 #### Pull Request
 
