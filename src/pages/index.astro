@@ -12,10 +12,13 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
 ---
 
 <Base title="Recepten">
-  <header class="top">
+  <div class="top" role="banner">
     <div class="head">
       <h1>Recepten</h1>
-      <a class="pill" href={`${base}lijst/`} id="lijst-link">Boodschappenlijst</a>
+      <div class="head-actions">
+        <a class="pill" href={`${base}lijst/`} id="lijst-link">Boodschappenlijst</a>
+        <div data-theme-settings></div>
+      </div>
     </div>
     <label class="search">
       <span class="sr-only">Zoek een recept</span>
@@ -38,8 +41,8 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
         </div>
       )
     }
-  </header>
-  <main>
+  </div>
+  <main class="narrow">
     <ul class="list" id="lijst">
       {
         recipes.map((r) => (
@@ -49,7 +52,7 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
           >
             <a href={`${base}recept/${r.id}/`}>
               <span class="title">{r.data.titel}</span>
-              <span class="meta">
+              <span class="recept-meta">
                 {[
                   r.data.tijd && `${r.data.tijd} min`,
                   `${r.data.ingredienten.length} ${r.data.ingredienten.length === 1 ? 'ingrediënt' : 'ingrediënten'}`,
@@ -115,46 +118,49 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
 </script>
 
 <style>
+  /* Geen <header>: body > header is de kop van de huisstijl, een rij; deze kop is een kolom. */
   .top {
     position: sticky;
     top: 0;
     z-index: 1;
-    background: var(--bg);
-    padding: calc(12px + env(safe-area-inset-top)) 16px 12px;
-    max-width: 40rem;
+    background: var(--primary-1);
+    padding: calc(var(--spacing-3) + env(safe-area-inset-top)) var(--spacing-4) var(--spacing-3);
+    max-width: var(--column-narrow);
     margin: 0 auto;
   }
   .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px;
-    margin: 0 0 10px;
+    gap: var(--spacing-3);
+    margin: 0 0 var(--spacing-2-5);
   }
-  h1 {
-    font-size: 1.6rem;
-    margin: 0;
+  .head-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
   }
   .search input {
     width: 100%;
-    min-height: var(--tap);
+    min-height: var(--recept-tap);
     font: inherit;
-    padding: 0 16px;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    background: var(--surface);
-    color: var(--text);
+    font-size: 16px; /* letterlijk: iOS zoomt bij focus in onder 16px */
+    padding: 0 var(--spacing-4);
+    border: 1px solid var(--primary-3);
+    border-radius: var(--recept-radius);
+    background: var(--primary-2);
+    color: var(--primary-9);
   }
   .search input:focus {
-    outline: 2px solid var(--accent);
+    outline: 2px solid var(--primary-5);
     outline-offset: 1px;
   }
   /* Eén rij die horizontaal scrolt, zodat de lijst bij veel tags niet naar beneden schuift. */
   .tags {
     display: flex;
-    gap: 8px;
-    margin: 10px -16px 0;
-    padding: 0 16px;
+    gap: var(--spacing-2);
+    margin: var(--spacing-2-5) calc(-1 * var(--spacing-4)) 0;
+    padding: 0 var(--spacing-4);
     overflow-x: auto;
     scrollbar-width: none;
   }
@@ -163,54 +169,57 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
   }
   .tag {
     flex: none;
-    min-height: 44px;
-    padding: 0 16px;
+    min-height: var(--tap);
+    padding: 0 var(--spacing-4);
     font: inherit;
-    font-size: 0.95rem;
-    color: var(--text);
-    background: var(--surface);
-    border: 1px solid var(--line);
+    color: var(--primary-9);
+    background: var(--primary-2);
+    border: 1px solid var(--primary-3);
     border-radius: 999px;
     cursor: pointer;
   }
+  .tag:focus-visible {
+    outline: 2px solid var(--primary-5);
+    outline-offset: 2px;
+  }
   .tag[aria-pressed='true'] {
-    color: var(--accent-text);
-    background: var(--accent);
-    border-color: var(--accent);
+    color: var(--primary-1);
+    background: var(--primary-7);
+    border-color: var(--primary-7);
   }
   .list {
     list-style: none;
     margin: 0;
     padding: 0;
     display: grid;
-    gap: 10px;
+    gap: var(--spacing-2-5);
   }
   .list a {
     display: block;
-    min-height: var(--tap);
-    padding: 14px 16px;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    color: var(--text);
+    min-height: var(--recept-tap);
+    padding: var(--spacing-3-5) var(--spacing-4);
+    background: var(--primary-2);
+    border: 1px solid var(--primary-3);
+    border-radius: var(--recept-radius);
+    color: var(--primary-9);
     text-decoration: none;
   }
   .list a:active {
-    background: var(--line);
+    background: var(--primary-3);
   }
   .title {
     display: block;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: var(--text-lg);
   }
-  .meta {
+  .recept-meta {
     display: block;
-    color: var(--muted);
-    font-size: 0.9rem;
+    color: var(--primary-6);
+    font-size: var(--text-sm);
   }
   .empty {
-    color: var(--muted);
+    color: var(--primary-6);
     text-align: center;
-    padding: 24px 0;
+    padding: var(--spacing-6) 0;
   }
 </style>

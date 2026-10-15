@@ -1,0 +1,4 @@
+# De huisstijl is een byte-gelijke kopie uit dkj-brandbook, gecontroleerd op sha256: geen
+# regeleinde-omzetting, ook niet bij een checkout op Windows.
+src/styles/house-style.css -text
+src/styles/house-theme.js -text

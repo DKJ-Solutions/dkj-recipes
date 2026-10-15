@@ -39,19 +39,53 @@
 
 ### PLAN
 
+Issue #22: adopt the DKJ-Solutions house style at `house-style-v3`, with its settings button and the
+`check-house-style` CI gate. A visible result, so the branch stops for the owner's look.
+
+#### What to look at
+
+- Every page in light and dark, and a few of the twelve themes through the round settings button
+  (top right of the start page, beside "Alle recepten" on the other two).
+- The app's own default pair is Petrol (light) and Cyaan (dark), the nearest to the old green.
+- Body text is now the house's 14px; the ingredient rows, recipe titles and the search field keep 18px/16px
+  for use in the supermarket. Headings take the house type scale and its serif.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Vendor `house-style.css` and `house-theme.js` from dkj-brandbook at `house-style-v3` into
+      `src/styles/`, byte for byte (sha256 checked against the skill), with `-text` in `.gitattributes`
+      so a Windows checkout keeps the bytes.
+- [x] Move the app's own styling into `src/styles/recepten.css` after the house file, on house tokens;
+      own tokens are `--recept-*` (`--tap` was a house name, now `--recept-tap`).
+- [x] Drop the redefined house names: `.sr-only`, `main`, `.meta` (now `.recept-meta`), and the start
+      page's `<header>` (now `div role="banner"`, since `body > header` is the house's row).
+- [x] Inline `house-theme.js` in `<head>` and draw `DKJTheme.settings` wherever a page puts
+      `[data-theme-settings]`; there was no own toggle to replace.
+- [x] Add `.github/workflows/house-style.yml`, calling `reusable-house-style.yml`.
+- [x] Answer the gate's one false positive (`.sort(` in `src/lib/afdeling.ts`, an array method) in
+      `Get-HouseStyleAllowlist`.
 
 ### TEST
 
+- [x] `check-house-style.ps1` on this checkout: `[OK] the house style holds at house-style-v3`.
+- [x] `npm run build`: four pages built; the theme script is inlined and the house CSS comes before the
+      app's own.
+- [~] A look in the browser: no browser connection in this session, so the look is the owner's.
+
 ### DEPLOY: feat/22-house-style-v3
 
-**Score:**
+The app now renders from the DKJ-Solutions house style (`house-style-v3`, vendored unchanged in
+`src/styles/`), with its own layer in `src/styles/recepten.css` on house tokens, and a
+`House style` CI check that holds both.
+
+**Score:** 3
 
 #### What makes this deploy extra special
 
-**Score:**
+The recipe app looks like the other DKJ-Solutions apps, and a round settings button lets you pick one of
+twelve colour themes, remembered on your phone. It opens in Petrol (light) or Cyaan (dark).
+
+**Score:** 3
 
 #### Pull Request
 

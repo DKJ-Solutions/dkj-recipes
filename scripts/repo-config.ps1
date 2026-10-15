@@ -523,3 +523,13 @@ function Get-ReleaseAudienceTier {
        maintaining the repo -- is always asked for, so it is deliberately not this function's business. #>
     return $script:ReleaseAudienceTier
 }
+# --- The house-style gate's false positives (answered 2026-10-15, issue #22) -----------------------
+#
+# check-house-style greps every .ts file for house class names. `.sort(` in src/lib/afdeling.ts is
+# Array.prototype.sort, not the house class .sort: nothing in this repo styles a .sort element.
+function Get-HouseStyleAllowlist {
+    <# Entries the house-style gate reports but that are not a redefinition of the house style. #>
+    return @(
+        @{ Path = 'src/lib/afdeling.ts'; Name = '.sort'; Reason = 'Array.prototype.sort() in TypeScript, not a CSS selector' }
+    )
+}
