@@ -39,19 +39,33 @@
 
 ### PLAN
 
+Issue #23: opt in to the `dkj-solutions` plugin's dev-preview SessionStart hook, so a session here starts
+(or reuses) `astro dev` and opens the app in VS Code's Simple Browser.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `Get-DevPreview` in `scripts/repo-config.ps1`: `astro dev` on 127.0.0.1, ports 4321-4328, path
+      `/dkj-recipes/` (the site's base path), only once `node_modules` exists.
+- [x] `.vscode/settings.json` routes `localhost:4321`-`4328` to the Simple Browser.
 
 ### TEST
 
+- [x] The hook run against this checkout: `Recepten: http://localhost:4321/dkj-recipes/ (started, opened
+      in VS Code)`, the page answers 200; a second run reports `already running` instead of a second server.
+
 ### DEPLOY: feat/23-dev-preview
 
-**Score:**
+A session in this repo now starts or reuses the local `astro dev` server and opens
+`http://localhost:4321/dkj-recipes/` in VS Code's Simple Browser, through the `dkj-solutions` dev-preview
+hook (`Get-DevPreview` in `scripts/repo-config.ps1`, routing in `.vscode/settings.json`).
+
+**Score:** 3
 
 #### What makes this deploy extra special
 
-**Score:**
+Nothing a user of the recipe app sees: it changes only how the repo is worked on.
+
+**Score:** N/A
 
 #### Pull Request
 

@@ -533,3 +533,19 @@ function Get-HouseStyleAllowlist {
         @{ Path = 'src/lib/afdeling.ts'; Name = '.sort'; Reason = 'Array.prototype.sort() in TypeScript, not a CSS selector' }
     )
 }
+
+# --- The dev-preview hook (answered 2026-10-15, issue #23) -----------------------------------------
+#
+# The dkj-solutions plugin's SessionStart hook starts (or reuses) `astro dev` and hands out its link.
+# The site lives under the base path /dkj-recipes/ (astro.config.mjs), so that is where the link points.
+function Get-DevPreview {
+    <# The local dev server the dev-preview hook starts at session start. #>
+    @{
+        Command      = 'npm run dev -- --port {port} --host 127.0.0.1'
+        Ports        = 4321..4328
+        Path         = '/dkj-recipes/'
+        Requires     = 'node_modules'
+        Name         = 'Recepten'
+        OpenInVsCode = $true
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "workbench.externalUriOpeners": {
+    "localhost:4321": "simpleBrowser.open",
+    "localhost:4322": "simpleBrowser.open",
+    "localhost:4323": "simpleBrowser.open",
+    "localhost:4324": "simpleBrowser.open",
+    "localhost:4325": "simpleBrowser.open",
+    "localhost:4326": "simpleBrowser.open",
+    "localhost:4327": "simpleBrowser.open",
+    "localhost:4328": "simpleBrowser.open"
+  }
+}
