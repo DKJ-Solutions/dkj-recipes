@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 14 minor entries** <!-- pending-tally -->
+**10 / 15 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/23-dev-preview · 20261015-151756Z
+
+A session in this repo now starts or reuses the local `astro dev` server and opens
+`http://localhost:4321/dkj-recipes/` in VS Code's Simple Browser, through the `dkj-solutions` dev-preview
+hook (`Get-DevPreview` in `scripts/repo-config.ps1`, routing in `.vscode/settings.json`).
+
+**Score:** 3
+
+#### What makes this deploy extra special
+
+Nothing a user of the recipe app sees: it changes only how the repo is worked on.
+
+**Score:** N/A
+
+#### Pull Request
+
+Opt in to the dev-preview hook for a Simple Browser link at session start
+
+[PR #26](https://github.com/DKJ-Solutions/dkj-recipes/pull/26)
+
+---
 
 ### DEPLOY: feat/22-house-style-v3 · 20261015-151458Z
 
