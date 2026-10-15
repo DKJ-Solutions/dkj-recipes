@@ -15,12 +15,12 @@
 $script:BranchTypeOrder = @('Feat', 'Fix', 'Docs', 'Chore')
 
 # VUL-IN: prefix -> GitHub label (PR) + branch type (changelog entry). Example:
-#   feat  = @{ Label = 'enhancement';   Type = 'Feat' }
+#   feat  = @{ Label = 'feature';       Type = 'Feat' }
 #   fix   = @{ Label = 'bug';           Type = 'Fix' }
 #   docs  = @{ Label = 'documentation'; Type = 'Docs' }
 #   chore = @{ Label = 'documentation'; Type = 'Chore' }
 $script:BranchPrefixTable = @{
-    feat  = @{ Label = 'enhancement';   Type = 'Feat' }
+    feat  = @{ Label = 'feature';       Type = 'Feat' }
     fix   = @{ Label = 'bug';           Type = 'Fix' }
     docs  = @{ Label = 'documentation'; Type = 'Docs' }
     chore = @{ Label = 'documentation'; Type = 'Chore' }
