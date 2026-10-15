@@ -2,7 +2,28 @@
 
 ## [Unreleased]
 
-**10 / 15 minor entries** <!-- pending-tally -->
+**10 / 16 minor entries** <!-- pending-tally -->
+
+### DEPLOY: fix/24-feature-label · 20261015-152051Z
+
+`feat/` pull requests are now labelled `feature`, as in every DKJ-Solutions repo; the earlier ones were
+moved over from `enhancement`.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+Nothing a user of the recipe app sees.
+
+**Score:** N/A
+
+#### Pull Request
+
+Label feat/ pull requests 'feature', not 'enhancement'
+
+[PR #27](https://github.com/DKJ-Solutions/dkj-recipes/pull/27)
+
+---
 
 ### DEPLOY: feat/23-dev-preview · 20261015-151756Z
 
