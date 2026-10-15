@@ -18,12 +18,13 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
 ---
 
 <Base title={`${titel} · Recepten`}>
-  <main>
+  <main class="narrow">
     <nav class="back">
       <a href={base}>‹ Alle recepten</a>
+      <div data-theme-settings></div>
     </nav>
     <h1>{titel}</h1>
-    {meta.length > 0 && <p class="meta">{meta.join(' · ')}</p>}
+    {meta.length > 0 && <p class="recept-meta">{meta.join(' · ')}</p>}
     <div class="actions">
       <button type="button" class="pill" id="op-lijst" aria-pressed="false">
         Op de boodschappenlijst
@@ -183,42 +184,44 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
 
 <style>
   h1 {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin: 4px 0 4px;
+    margin: var(--spacing-1) 0;
   }
-  .meta {
-    color: var(--muted);
-    margin: 0 0 12px;
+  .recept-meta {
+    color: var(--primary-6);
+    margin: 0 0 var(--spacing-3);
   }
   .actions {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin: 0 0 12px;
+    gap: var(--spacing-2);
+    margin: 0 0 var(--spacing-3);
   }
   .porties {
     display: inline-flex;
     align-items: center;
-    margin: 0 0 16px;
-    background: var(--surface);
-    border: 1px solid var(--line);
+    margin: 0 0 var(--spacing-4);
+    background: var(--primary-2);
+    border: 1px solid var(--primary-3);
     border-radius: 999px;
   }
   .porties button {
-    width: var(--tap);
-    height: var(--tap);
+    width: var(--recept-tap);
+    height: var(--recept-tap);
     font: inherit;
-    font-size: 1.5rem;
+    font-size: var(--text-h3);
     line-height: 1;
-    color: var(--accent);
+    color: var(--primary-7);
     background: transparent;
     border: 0;
     border-radius: 999px;
     cursor: pointer;
   }
+  .porties button:focus-visible {
+    outline: 2px solid var(--primary-5);
+    outline-offset: 2px;
+  }
   .porties button:disabled {
-    color: var(--done);
+    color: var(--recept-done);
     cursor: default;
   }
   .porties output {
@@ -226,12 +229,8 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     text-align: center;
     font-weight: 600;
   }
-  h2 {
-    font-size: 1.2rem;
-    margin: 0;
-  }
   .steps {
-    margin-top: 28px;
+    margin-top: var(--spacing-7);
   }
   .steps :global(ol),
   .steps :global(ul) {
@@ -241,8 +240,8 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     margin-bottom: 0.6em;
   }
   .bron {
-    color: var(--muted);
-    font-size: 0.9rem;
+    color: var(--primary-6);
+    font-size: var(--text-sm);
     overflow-wrap: anywhere;
   }
 </style>

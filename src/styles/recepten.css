@@ -1,0 +1,143 @@
+/* De eigen laag van de recepten-app, na house-style.css. Hij gebruikt huistokens en definieert er
+   geen opnieuw; eigen tokens heten --recept-*. Een waarde die voor elke app fout is, wordt in
+   dkj-brandbook aangepast, niet hier. */
+
+:root {
+  /* In de supermarkt, met één hand: de vinkrijen zijn ruimer dan de 44px van --tap. */
+  --recept-tap: 52px;
+  --recept-radius: 12px;
+  /* Een afgevinkt ingrediënt: een stap richting de achtergrond. */
+  --recept-done: var(--primary-4);
+}
+
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.update {
+  position: fixed;
+  left: var(--spacing-4);
+  right: var(--spacing-4);
+  bottom: calc(var(--spacing-4) + env(safe-area-inset-bottom));
+  max-width: calc(var(--column-narrow) - 2 * var(--spacing-4));
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-3);
+  padding: var(--spacing-2) var(--spacing-2) var(--spacing-2) var(--spacing-4);
+  background: var(--primary-2);
+  color: var(--primary-9);
+  border: 1px solid var(--primary-3);
+  border-radius: var(--recept-radius);
+  box-shadow: var(--shadow-pop);
+}
+.update[hidden] {
+  display: none;
+}
+.update button {
+  min-height: var(--tap);
+  padding: 0 var(--spacing-4);
+  font: inherit;
+  font-weight: 600;
+  color: var(--primary-1);
+  background: var(--primary-7);
+  border: 0;
+  border-radius: 999px;
+}
+
+/* Gedeeld door de receptpagina en de boodschappenlijst. */
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-3);
+  padding-top: env(safe-area-inset-top);
+}
+.back a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--tap);
+  text-decoration: none;
+  font-weight: 600;
+}
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-3);
+  margin: var(--spacing-2) 0 var(--spacing-2-5);
+}
+.section-head h2 {
+  margin: 0;
+}
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-1-5);
+  min-height: var(--tap);
+  padding: 0 var(--spacing-3-5);
+  font: inherit;
+  color: var(--primary-7);
+  background: transparent;
+  border: 1px solid var(--primary-3);
+  border-radius: 999px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.pill[hidden] {
+  display: none;
+}
+.pill:focus-visible {
+  outline: 2px solid var(--primary-5);
+  outline-offset: 2px;
+}
+.pill[aria-pressed='true'] {
+  color: var(--primary-1);
+  background: var(--primary-7);
+  border-color: var(--primary-7);
+}
+.ingredients {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--primary-2);
+  border: 1px solid var(--primary-3);
+  border-radius: var(--recept-radius);
+  overflow: hidden;
+}
+.ingredients li + li {
+  border-top: 1px solid var(--primary-3);
+}
+.ingredients + .afdeling {
+  margin-top: var(--spacing-4-5);
+}
+.afdeling {
+  margin: 0 0 var(--spacing-1-5) var(--spacing-1);
+  font-family: inherit;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-6);
+}
+.ingredients label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3-5);
+  min-height: var(--recept-tap);
+  padding: var(--spacing-2-5) var(--spacing-4);
+  font-size: var(--text-lg);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.ingredients input {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  margin: 0;
+}
+.ingredients input:checked + span {
+  color: var(--recept-done);
+  text-decoration: line-through;
+}

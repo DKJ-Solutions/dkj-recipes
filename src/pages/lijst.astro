@@ -14,9 +14,10 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 ---
 
 <Base title="Boodschappenlijst · Recepten">
-  <main>
+  <main class="narrow">
     <nav class="back">
       <a href={base}>‹ Alle recepten</a>
+      <div data-theme-settings></div>
     </nav>
     <h1>Boodschappenlijst</h1>
 
@@ -165,60 +166,62 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
 <style>
   h1 {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin: 4px 0 12px;
+    margin: var(--spacing-1) 0 var(--spacing-3);
   }
   .chips {
     list-style: none;
-    margin: 0 0 16px;
+    margin: 0 0 var(--spacing-4);
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: var(--spacing-2);
   }
   .chips :global(small) {
-    color: var(--muted);
+    color: var(--primary-6);
     font-weight: 400;
-    font-size: 0.9rem;
+    font-size: var(--text-sm);
   }
   .chips :global(li) {
     display: inline-flex;
     align-items: center;
-    background: var(--surface);
-    border: 1px solid var(--line);
+    background: var(--primary-2);
+    border: 1px solid var(--primary-3);
     border-radius: 999px;
-    padding-left: 14px;
+    padding-left: var(--spacing-3-5);
   }
   .chips :global(a) {
-    color: var(--text);
+    color: var(--primary-9);
     text-decoration: none;
     font-weight: 600;
   }
   .chips :global(.remove) {
-    min-width: 44px;
-    min-height: 44px;
+    min-width: var(--tap);
+    min-height: var(--tap);
     font: inherit;
-    font-size: 1.3rem;
+    font-size: var(--text-h4);
     line-height: 1;
-    color: var(--muted);
+    color: var(--primary-6);
     background: transparent;
     border: 0;
     border-radius: 999px;
     cursor: pointer;
   }
+  .chips :global(.remove:focus-visible) {
+    outline: 2px solid var(--primary-5);
+    outline-offset: 2px;
+  }
   #ingredienten :global(small) {
     display: block;
-    color: var(--muted);
-    font-size: 0.85rem;
+    color: var(--primary-6);
+    font-size: var(--text-sm);
   }
   .clear {
-    margin: 20px 0 0;
+    margin: var(--spacing-5) 0 0;
     text-align: center;
   }
   .empty {
-    color: var(--muted);
+    color: var(--primary-6);
     text-align: center;
-    padding: 24px 0;
+    padding: var(--spacing-6) 0;
   }
 </style>
