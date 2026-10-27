@@ -7,6 +7,16 @@
     "localhost:4325": "simpleBrowser.open",
     "localhost:4326": "simpleBrowser.open",
     "localhost:4327": "simpleBrowser.open",
-    "localhost:4328": "simpleBrowser.open"
+    "localhost:4328": "simpleBrowser.open",
+    "localhost:4890": "simpleBrowser.open",
+    "localhost:4891": "simpleBrowser.open",
+    "localhost:4892": "simpleBrowser.open",
+    "localhost:4893": "simpleBrowser.open",
+    "localhost:4894": "simpleBrowser.open",
+    "localhost:4895": "simpleBrowser.open",
+    "localhost:4896": "simpleBrowser.open",
+    "localhost:4897": "simpleBrowser.open",
+    "localhost:4898": "simpleBrowser.open",
+    "localhost:4899": "simpleBrowser.open"
   }
 }

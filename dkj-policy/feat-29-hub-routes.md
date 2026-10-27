@@ -39,19 +39,33 @@
 
 ### PLAN
 
+Issue #29, this repo's row of DKJ-Solutions/dkj-claude-plugins#3464: bring `Get-DevPreview` and the
+Simple Browser routes up to the plugin's hub contract (`hub/README.md`).
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Plugins in this checkout updated to v5.34.0 (`update-plugins`; per machine, nothing to commit)
+- [x] `Get-DevPreview`: drop `Name` (ignored since the plugin hub), state `DefaultTheme = 'teal'` (the product opens in teal)
+- [x] `.vscode/settings.json`: route the hub's ports 4890-4899 to the Simple Browser, beside the product's
 
 ### TEST
 
+- [x] `ConvertTo-DevPreviewConfig` (the plugin's own validator) accepts the config: Ok, no problem, theme `teal`
+- [x] `Get-DevPreviewDriftClauses` names both drifts on `main` and nothing on this branch
+
 ### DEPLOY: feat/29-hub-routes
 
-**Score:**
+The dev preview follows the plugin's hub contract: the hub's ports 4890-4899 open in VS Code's Simple
+Browser, the hub opens in the product's own theme (`teal`), and the ignored `Name` is gone, so the
+session-start config-drift line no longer fires.
+
+**Score:** 2
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A -- the recipes app itself is unchanged; this only touches the local development hub.
+
+**Score:** N/A
 
 #### Pull Request
 
