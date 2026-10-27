@@ -63,6 +63,8 @@ The tag filters on the home page now carry their own class `.recept-tag` instead
 
 #### What makes this deploy extra special
 
+Nothing reaches a reader of this app beyond the unchanged look of the filter row.
+
 **Score:** N/A
 
 #### Pull Request
