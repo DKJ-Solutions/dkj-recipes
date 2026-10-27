@@ -538,6 +538,9 @@ function Get-HouseStyleAllowlist {
 #
 # The dkj-solutions plugin's SessionStart hook starts (or reuses) `astro dev` and hands out its link.
 # The site lives under the base path /dkj-recipes/ (astro.config.mjs), so that is where the link points.
+# Since dkj-claude-plugins#3245 the plugin serves the hub (4890-4899) and this server is the product
+# card on it; OpenInVsCode hands out the hub's url. DefaultTheme keeps the hub in the product's theme
+# (Base.astro opens in teal), issue #29.
 function Get-DevPreview {
     <# The local dev server the dev-preview hook starts at session start. #>
     @{
@@ -545,7 +548,7 @@ function Get-DevPreview {
         Ports        = 4321..4328
         Path         = '/dkj-recipes/'
         Requires     = 'node_modules'
-        Name         = 'Recepten'
         OpenInVsCode = $true
+        DefaultTheme = 'teal'
     }
 }
