@@ -2,7 +2,28 @@
 
 ## [Unreleased]
 
-**10 / 18 minor entries** <!-- pending-tally -->
+**10 / 19 minor entries** <!-- pending-tally -->
+
+### DEPLOY: fix/33-recept-tag-class · 20261027-222003Z
+
+The tag filters on the home page now carry their own class `.recept-tag` instead of the house class
+`.tag`, so the house style's tag look no longer bleeds into them and the `house-style` check is clean.
+
+**Score:** 1 -- prevents the house `.tag` rule from repainting the filter buttons at a later house-style update.
+
+#### What makes this deploy extra special
+
+Nothing reaches a reader of this app beyond the unchanged look of the filter row.
+
+**Score:** N/A
+
+#### Pull Request
+
+Home page tag filters get a domain class instead of the house .tag
+
+[PR #34](https://github.com/DKJ-Solutions/dkj-recipes/pull/34)
+
+---
 
 ### DEPLOY: feat/house-style-v0-2-0 · 20261027-221419Z
 
