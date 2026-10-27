@@ -52,7 +52,7 @@ locally, so the `house-style` check reported three `[redefine]` findings (#33).
 
 ### TEST
 
-- [ ] The owner has looked at the tag filter row on the home page (visible result, parked for review).
+- [x] The owner has looked at the tag filter row on the home page and approved it (October 27, 2026).
 
 ### DEPLOY: fix/33-recept-tag-class
 
