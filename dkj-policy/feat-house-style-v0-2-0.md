@@ -39,28 +39,34 @@
 
 ### PLAN
 
-Bring this repo's vendored house style from `house-style-v3` to the brand book's latest release, `v0.2.0`, the tag the `dkj-solutions` v5.23.0 `house-style` skill pins.
+Bring this repo's vendored house style from `house-style-v3` to the copy the `house-style` skill pins at `v5.35.0` (in `dkj-policy`'s `assets/house-style/` since dkj-claude-plugins#3130 and #3531), and take what that copy requires in the repo's own layer: the retired token names (#31) and the default theme `rust` (#28). The branch started on `v0.2.0`; that pin has since been superseded twice, so it now lands the current one instead.
+
+#### Token mapping
+
+The layer was on the nine-step `--primary-*` scale, so the README's tables are chained 9 -> 12 -> paper/fg: `-1`, `-2`, `-3` -> `--paper-1`, `-2`, `-3`; `-5`, `-6` -> `--muted`; `-7` -> `--primary`; `-8` -> `--fg-3`; `-9` -> `--fg-1`. One deliberate departure: `-4` (the light grey of a ticked ingredient and a disabled stepper button) maps to `--paper-4` by the tables, a border tint that would not read as text, so `--recept-done` takes `--muted` and keeps the strike-through. Sizes: `--text-h4` (the chip's remove glyph) and `--text-h3` (the portions stepper, 14px now) move to `--text-lg`, as the README's heading cut prescribes for a large figure.
 
 ### CREATE
 
-- [x] Replace `src/styles/house-style.css` and `src/styles/house-theme.js` with the files served at `v0.2.0`, unchanged (sha256 `4527c1c8...` and `294c9543...`, matching the skill's table; the theme script makes no network call, no `eval`, and the stylesheet has no `@import` or remote `url()`)
+- [x] Replace `src/styles/house-style.css` and `src/styles/house-theme.js` with the files served at `v5.35.0`, unchanged (sha256 `0a2664f6...` and `24ed94dd...`, matching the skill's table; the theme script makes no network call, no `eval`, touches no cookie and stores only `dkj-theme`/`dkj-width`; the stylesheet has no `@import` or remote `url()`)
+- [x] Rename every retired token in `src/styles/recepten.css`, `src/pages/index.astro`, `src/pages/lijst.astro` and `src/pages/recept/[id].astro` per the mapping above (#31)
+- [x] Declare `<html data-theme-default="rust">` in `src/layouts/Base.astro`, replacing the `data-theme-light`/`data-theme-dark` pair (#28)
 
 ### TEST
 
-- [x] `check-house-style` (dkj-solutions v5.23.0) passes: both copies pinned at v0.2.0, no redefinition, no retired token
-- [ ] An owner has looked at the app with the v0.2.0 copy and approved it
+- [x] No `--primary-<n>`, `--text-h4`..`-h6` or `data-theme-light`/`-dark` left in the repo's own layer (`git grep`)
+- [ ] An owner has looked at the app in Roest (and one other theme) and approved it
 ### DEPLOY: feat/house-style-v0-2-0
 
-The app now renders from the brand book's house style at `v0.2.0` instead of `house-style-v3` (a tag the brand book has since deleted): `src/styles/house-style.css` and `src/styles/house-theme.js` are the bytes served at that tag, unchanged, and match the `dkj-solutions` v5.23.0 pin. The repo's own layer needed no change: it reads no token v0.2.0 retired. The visible change is the house style's own: the grey steps `--primary-4` to `-6` are greyer in every theme, and the settings panel's open toggle and title take the theme colour (`--primary-7`).
+The app now renders from the house style the `house-style` skill pins at `v5.35.0` instead of `house-style-v3`, and opens in its own default theme, Roest (`rust`), until the user picks another (#28). The repo's own layer reads the current token names (#31): pages, cards and lines take `--paper-*`, text `--fg-*`, the highlight `--primary` and greys `--muted`, so the `house-style` check is green again. Visible: every colour follows the new palette, headings follow the house's smaller scale (`h1` 32px), and the portions stepper and the chip's remove glyph sit at 18px.
 
 **Score:** 2
 
 #### What makes this deploy extra special
 
-N/A -- the same app in slightly greyer neutrals; nothing new for its user to learn or decide.
+N/A -- the same app in the house's current look and its own colour; nothing new to learn or decide.
 
 **Score:** N/A
 
 #### Pull Request
 
-Take the house style at v0.2.0
+Take the house style at v5.35.0, with the default theme rust
