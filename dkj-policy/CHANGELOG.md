@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 16 minor entries** <!-- pending-tally -->
+**10 / 17 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/29-hub-routes · 20261027-190224Z
+
+The dev preview follows the plugin's hub contract: the hub's ports 4890-4899 open in VS Code's Simple
+Browser, the hub opens in the product's own theme (`teal`), and the ignored `Name` is gone, so the
+session-start config-drift line no longer fires.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+N/A -- the recipes app itself is unchanged; this only touches the local development hub.
+
+**Score:** N/A
+
+#### Pull Request
+
+Bring the dev preview up to the plugin's hub
+
+[PR #30](https://github.com/DKJ-Solutions/dkj-recipes/pull/30)
+
+---
 
 ### DEPLOY: fix/24-feature-label · 20261015-152051Z
 
