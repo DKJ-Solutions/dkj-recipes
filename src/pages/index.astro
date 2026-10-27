@@ -34,7 +34,7 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
       tags.length > 0 && (
         <div class="tags" role="group" aria-label="Filter op tag">
           {tags.map((t) => (
-            <button type="button" class="tag" aria-pressed="false" value={t}>
+            <button type="button" class="recept-tag" aria-pressed="false" value={t}>
               {t}
             </button>
           ))}
@@ -78,7 +78,7 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().trim();
 
   // Een aangetikte tag filtert de lijst; met meer tags aan moet een recept ze allemaal hebben.
-  const tagButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.tag'));
+  const tagButtons = Array.from(document.querySelectorAll<HTMLButtonElement>('.recept-tag'));
   const recipeTags = new Map(items.map((li) => [li, JSON.parse(li.dataset.tags ?? '[]') as string[]]));
 
   function filter() {
@@ -167,7 +167,7 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
   .tags::-webkit-scrollbar {
     display: none;
   }
-  .tag {
+  .recept-tag {
     flex: none;
     min-height: var(--tap);
     padding: 0 var(--spacing-4);
@@ -178,11 +178,11 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     border-radius: 999px;
     cursor: pointer;
   }
-  .tag:focus-visible {
+  .recept-tag:focus-visible {
     outline: 2px solid var(--muted);
     outline-offset: 2px;
   }
-  .tag[aria-pressed='true'] {
+  .recept-tag[aria-pressed='true'] {
     color: var(--paper-1);
     background: var(--primary);
     border-color: var(--primary);

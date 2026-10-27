@@ -39,19 +39,31 @@
 
 ### PLAN
 
+#### Why
+
+The house style at v5.35.0 defines `.tag`, and the home page's tag filter buttons styled that class
+locally, so the `house-style` check reported three `[redefine]` findings (#33).
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Rename the filter buttons' class to the domain class `.recept-tag` in `src/pages/index.astro`:
+      the markup, the `querySelectorAll` and the three `<style>` rules. The `.tags` row is no house
+      class and stays.
 
 ### TEST
 
+- [ ] The owner has looked at the tag filter row on the home page (visible result, parked for review).
+
 ### DEPLOY: fix/33-recept-tag-class
 
-**Score:**
+The tag filters on the home page now carry their own class `.recept-tag` instead of the house class
+`.tag`, so the house style's tag look no longer bleeds into them and the `house-style` check is clean.
+
+**Score:** 1 -- prevents the house `.tag` rule from repainting the filter buttons at a later house-style update.
 
 #### What makes this deploy extra special
 
-**Score:**
+**Score:** N/A
 
 #### Pull Request
 
