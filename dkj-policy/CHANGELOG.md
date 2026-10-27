@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 17 minor entries** <!-- pending-tally -->
+**10 / 18 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/house-style-v0-2-0 · 20261027-221419Z
+
+The app now renders from the house style the `house-style` skill pins at `v5.35.0` instead of `house-style-v3`, and opens in its own default theme, Roest (`rust`), until the user picks another (#28). The repo's own layer reads the current token names (#31): pages, cards and lines take `--paper-*`, text `--fg-*`, the highlight `--primary` and greys `--muted`, so the `house-style` check is green again. Visible: every colour follows the new palette, headings follow the house's smaller scale (`h1` 32px), and the portions stepper and the chip's remove glyph sit at 18px.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+N/A -- the same app in the house's current look and its own colour; nothing new to learn or decide.
+
+**Score:** N/A
+
+#### Pull Request
+
+Take the house style at v5.35.0, with the default theme rust
+
+[PR #32](https://github.com/DKJ-Solutions/dkj-recipes/pull/32)
+
+---
 
 ### DEPLOY: feat/29-hub-routes · 20261027-190224Z
 
