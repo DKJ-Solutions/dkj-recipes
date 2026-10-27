@@ -54,7 +54,7 @@ The layer was on the nine-step `--primary-*` scale, so the README's tables are c
 ### TEST
 
 - [x] No `--primary-<n>`, `--text-h4`..`-h6` or `data-theme-light`/`-dark` left in the repo's own layer (`git grep`)
-- [ ] An owner has looked at the app in Roest (and one other theme) and approved it
+- [x] An owner has looked at the app in Roest (and one other theme) and approved it (Dave, October 27, 2026)
 ### DEPLOY: feat/house-style-v0-2-0
 
 The app now renders from the house style the `house-style` skill pins at `v5.35.0` instead of `house-style-v3`, and opens in its own default theme, Roest (`rust`), until the user picks another (#28). The repo's own layer reads the current token names (#31): pages, cards and lines take `--paper-*`, text `--fg-*`, the highlight `--primary` and greys `--muted`, so the `house-style` check is green again. Visible: every colour follows the new palette, headings follow the house's smaller scale (`h1` 32px), and the portions stepper and the chip's remove glyph sit at 18px.
