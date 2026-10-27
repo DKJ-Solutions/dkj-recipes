@@ -177,20 +177,20 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     gap: var(--spacing-2);
   }
   .chips :global(small) {
-    color: var(--primary-6);
+    color: var(--muted);
     font-weight: 400;
     font-size: var(--text-sm);
   }
   .chips :global(li) {
     display: inline-flex;
     align-items: center;
-    background: var(--primary-2);
-    border: 1px solid var(--primary-3);
+    background: var(--paper-2);
+    border: 1px solid var(--paper-3);
     border-radius: 999px;
     padding-left: var(--spacing-3-5);
   }
   .chips :global(a) {
-    color: var(--primary-9);
+    color: var(--fg-1);
     text-decoration: none;
     font-weight: 600;
   }
@@ -198,21 +198,21 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     min-width: var(--tap);
     min-height: var(--tap);
     font: inherit;
-    font-size: var(--text-h4);
+    font-size: var(--text-lg);
     line-height: 1;
-    color: var(--primary-6);
+    color: var(--muted);
     background: transparent;
     border: 0;
     border-radius: 999px;
     cursor: pointer;
   }
   .chips :global(.remove:focus-visible) {
-    outline: 2px solid var(--primary-5);
+    outline: 2px solid var(--muted);
     outline-offset: 2px;
   }
   #ingredienten :global(small) {
     display: block;
-    color: var(--primary-6);
+    color: var(--muted);
     font-size: var(--text-sm);
   }
   .clear {
@@ -220,7 +220,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     text-align: center;
   }
   .empty {
-    color: var(--primary-6);
+    color: var(--muted);
     text-align: center;
     padding: var(--spacing-6) 0;
   }

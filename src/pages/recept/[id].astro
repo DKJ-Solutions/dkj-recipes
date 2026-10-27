@@ -187,7 +187,7 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     margin: var(--spacing-1) 0;
   }
   .recept-meta {
-    color: var(--primary-6);
+    color: var(--muted);
     margin: 0 0 var(--spacing-3);
   }
   .actions {
@@ -200,24 +200,24 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     display: inline-flex;
     align-items: center;
     margin: 0 0 var(--spacing-4);
-    background: var(--primary-2);
-    border: 1px solid var(--primary-3);
+    background: var(--paper-2);
+    border: 1px solid var(--paper-3);
     border-radius: 999px;
   }
   .porties button {
     width: var(--recept-tap);
     height: var(--recept-tap);
     font: inherit;
-    font-size: var(--text-h3);
+    font-size: var(--text-lg);
     line-height: 1;
-    color: var(--primary-7);
+    color: var(--primary);
     background: transparent;
     border: 0;
     border-radius: 999px;
     cursor: pointer;
   }
   .porties button:focus-visible {
-    outline: 2px solid var(--primary-5);
+    outline: 2px solid var(--muted);
     outline-offset: 2px;
   }
   .porties button:disabled {
@@ -240,7 +240,7 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     margin-bottom: 0.6em;
   }
   .bron {
-    color: var(--primary-6);
+    color: var(--muted);
     font-size: var(--text-sm);
     overflow-wrap: anywhere;
   }

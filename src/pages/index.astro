@@ -123,7 +123,7 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     position: sticky;
     top: 0;
     z-index: 1;
-    background: var(--primary-1);
+    background: var(--paper-1);
     padding: calc(var(--spacing-3) + env(safe-area-inset-top)) var(--spacing-4) var(--spacing-3);
     max-width: var(--column-narrow);
     margin: 0 auto;
@@ -146,13 +146,13 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     font: inherit;
     font-size: 16px; /* letterlijk: iOS zoomt bij focus in onder 16px */
     padding: 0 var(--spacing-4);
-    border: 1px solid var(--primary-3);
+    border: 1px solid var(--paper-3);
     border-radius: var(--recept-radius);
-    background: var(--primary-2);
-    color: var(--primary-9);
+    background: var(--paper-2);
+    color: var(--fg-1);
   }
   .search input:focus {
-    outline: 2px solid var(--primary-5);
+    outline: 2px solid var(--muted);
     outline-offset: 1px;
   }
   /* Eén rij die horizontaal scrolt, zodat de lijst bij veel tags niet naar beneden schuift. */
@@ -172,20 +172,20 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     min-height: var(--tap);
     padding: 0 var(--spacing-4);
     font: inherit;
-    color: var(--primary-9);
-    background: var(--primary-2);
-    border: 1px solid var(--primary-3);
+    color: var(--fg-1);
+    background: var(--paper-2);
+    border: 1px solid var(--paper-3);
     border-radius: 999px;
     cursor: pointer;
   }
   .tag:focus-visible {
-    outline: 2px solid var(--primary-5);
+    outline: 2px solid var(--muted);
     outline-offset: 2px;
   }
   .tag[aria-pressed='true'] {
-    color: var(--primary-1);
-    background: var(--primary-7);
-    border-color: var(--primary-7);
+    color: var(--paper-1);
+    background: var(--primary);
+    border-color: var(--primary);
   }
   .list {
     list-style: none;
@@ -198,14 +198,14 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     display: block;
     min-height: var(--recept-tap);
     padding: var(--spacing-3-5) var(--spacing-4);
-    background: var(--primary-2);
-    border: 1px solid var(--primary-3);
+    background: var(--paper-2);
+    border: 1px solid var(--paper-3);
     border-radius: var(--recept-radius);
-    color: var(--primary-9);
+    color: var(--fg-1);
     text-decoration: none;
   }
   .list a:active {
-    background: var(--primary-3);
+    background: var(--paper-3);
   }
   .title {
     display: block;
@@ -214,11 +214,11 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
   }
   .recept-meta {
     display: block;
-    color: var(--primary-6);
+    color: var(--muted);
     font-size: var(--text-sm);
   }
   .empty {
-    color: var(--primary-6);
+    color: var(--muted);
     text-align: center;
     padding: var(--spacing-6) 0;
   }
