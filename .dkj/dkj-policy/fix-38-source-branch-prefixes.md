@@ -39,19 +39,40 @@
 
 ### PLAN
 
+Adopt the source's branch-prefix table (DKJ-Solutions/dkj-marketplace#3886): `feat/` -> `feature`,
+`fix/` -> `bug`, `docs/` -> no label, `chore/` refused. Resolves #38.
+
+#### Entry retype mapping
+
+None needed. Every pending entry under `## [Unreleased]` is typed by its branch prefix, and all of them
+are `feat/`, `fix/` or `chore/` -- Feat, Fix and Chore are all still valid types (Chore stays a type for
+existing entries; only the `chore/` branch prefix is refused). No entry carries a retired type, so none
+is stranded.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Replace the prefix table, `Get-BranchTypes`, `Get-BranchPrefix`, `Get-BranchInfo` and `Test-BranchName` in `scripts/lib/branch-info.ps1` with the source's, header noting it follows the source table (#3886)
+- [x] Check pending changelog entries for types outside Feat/Fix/Docs/Chore (none found)
+- [x] Search docs and rules for the old prefixes and `enhancement` (no live mention found)
+- [x] Confirm the `feature` label exists on the tracker (it does)
 
 ### TEST
 
+- [x] `scripts/lint/lint.ps1` -- all scripts parse and are pure ASCII
+- [x] Dot-sourced the lib: `Get-BranchTypes` returns Feat, Fix, Docs, Chore; `docs/x` has no label; `feat/x` labels `feature`; `chore/x` is refused by `Test-BranchName`
+- [~] Repo test suites touching branch-info -- the repo has no `scripts/tests`, so there is nothing to run
+
 ### DEPLOY: fix/38-source-branch-prefixes
 
-**Score:**
+`scripts/lib/branch-info.ps1` now carries the source's branch-prefix table and functions (DKJ-Solutions/dkj-marketplace#3886): a `docs/` branch gets no label instead of the retired `documentation`, and `new-branch` refuses a `chore/` branch, so this repo reads its branches the same way every DKJ repo does.
+
+**Score:** 2
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A -- the recipes app itself is unchanged; this only touches the branch workflow.
+
+**Score:** N/A
 
 #### Pull Request
 
