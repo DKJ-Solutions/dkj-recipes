@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 20 minor entries** <!-- pending-tally -->
+**10 / 21 minor entries** <!-- pending-tally -->
+
+### DEPLOY: fix/38-source-branch-prefixes · 20261107-193625Z
+
+`scripts/lib/branch-info.ps1` now carries the source's branch-prefix table and functions (DKJ-Solutions/dkj-marketplace#3886): a `docs/` branch gets no label instead of the retired `documentation`, and `new-branch` refuses a `chore/` branch, so this repo reads its branches the same way every DKJ repo does.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+N/A -- the recipes app itself is unchanged; this only touches the branch workflow.
+
+**Score:** N/A
+
+#### Pull Request
+
+Use the source's branch prefixes
+
+[PR #39](https://github.com/DKJ-Solutions/dkj-recipes/pull/39)
+
+---
 
 ### DEPLOY: feat/35-dkj-folder-move · 20261107-181445Z
 
