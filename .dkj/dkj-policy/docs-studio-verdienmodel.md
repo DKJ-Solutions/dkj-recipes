@@ -41,17 +41,21 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Het verdienmodel (goedkoop premium) vastgelegd in de intake, het logboek en het plan van aanpak; het logboek verwijst naar doel #43
 
 ### TEST
 
 ### DEPLOY: docs/studio-verdienmodel
 
-**Score:**
+Het rollenspel legt het verdienmodel van Thuiskok vast (de basis gratis, premium voor €2 à €3 per maand), verwerkt het gevolg in sprint 6 en de risico's van het plan van aanpak, en koppelt het logboek aan doel #43 op de Goals-pagina.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

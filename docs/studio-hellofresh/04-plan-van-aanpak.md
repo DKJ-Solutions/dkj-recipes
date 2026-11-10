@@ -57,7 +57,7 @@ wordt.
 | 3 | 11–12 | Onboarding en het weekmenu kiezen |
 | 4 | 13–14 | De boodschappenlijst: samenvoegen, per afdeling, afvinken |
 | 5 | 15–16 | Kookmodus, porties aanpassen, favorieten |
-| 6 | 17–18 | Prijs per portie en weekbudget |
+| 6 | 17–18 | Prijs per portie en weekbudget; premium afrekenen via de app stores |
 | 7 | 19–20 | Gedeelde lijst, pushmeldingen, beoordelingen |
 | 8 | 21–22 | Restjesslim plannen, afronden, prestaties |
 
@@ -98,4 +98,4 @@ wordt.
 | Geen recepten op de lanceringsdag | Een lege app | De klant levert in week 10 de eerste 50 recepten aan via het beheerportaal |
 | Scope groeit ("kan dit er ook nog bij?") | De deadline schuift | Elke nieuwe wens gaat via de Product Owner en de MoSCoW-lijst; iets erbij betekent iets eruit |
 | Afwijzing door Apple of Google | Lancering schuift | Richtlijnen vanaf het begin volgen; buffer in week 25–26 |
-| Het verdienmodel is nog onbekend | Er moet misschien betalen of adverteren bij | Vóór het einde van de discovery beslissen |
+| Te weinig mensen nemen premium | Thuiskok verdient niets | In de bèta meten hoeveel testgebruikers premium willen; de prijs kan nog worden bijgesteld |
