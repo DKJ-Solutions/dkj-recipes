@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 22 minor entries** <!-- pending-tally -->
+**10 / 23 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/studio-hellofresh-kickoff · 20261110-210750Z
+
+Legt de aftrap van het rollenspel vast in `docs/studio-hellofresh/`: een verzonnen bureau van 20 mensen dat voor de verzonnen klant Thuiskok B.V. een betaalbaar HelloFresh-alternatief plant, met de intake, een teardown van HelloFresh met MoSCoW-keuzes, een plan van aanpak van 26 weken en een logboek per sessie.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel studio: kick-off HelloFresh-alternatief vastgelegd
+
+[PR #42](https://github.com/DKJ-Solutions/dkj-recipes/pull/42)
+
+---
 
 ### DEPLOY: fix/40-marketplace-paths · 20261110-205204Z
 
