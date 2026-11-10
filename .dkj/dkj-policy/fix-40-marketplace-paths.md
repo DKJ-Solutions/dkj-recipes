@@ -39,19 +39,32 @@
 
 ### PLAN
 
+The marketplace `dkj-claude-plugins` is now `dkj-marketplace`; only the new one is cloned locally, so
+every reference to the old name points at nothing. Rewrite them all to `dkj-marketplace`. Resolves #40.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `.claude/settings.json`: enable the three plugins as `@dkj-marketplace` instead of `@dkj-claude-plugins`
+- [x] `CLAUDE.md`: import the dkj-policy constitution from the `dkj-marketplace` path
+- [x] `.claude/specialists/SPECIALISTS.md`, the four lenses and `always-on-baseline.json`: persona paths to `dkj-marketplace`
 
 ### TEST
 
+- [x] Every rewritten path exists under `~/.claude/plugins/marketplaces/dkj-marketplace/`
+- [x] `grep dkj-claude-plugins` over `CLAUDE.md` and `.claude/` finds nothing
+- [x] `claude plugin install` reports the three plugins installed and enabled at project scope from `dkj-marketplace`
+
 ### DEPLOY: fix/40-marketplace-paths
 
-**Score:**
+The repo now points at `dkj-marketplace` instead of the renamed `dkj-claude-plugins`: the three DKJ plugins are enabled from the marketplace that actually exists, and `CLAUDE.md` loads the dkj-policy constitution and Chris's persona again.
+
+**Score:** 2
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A -- the recipes app itself is unchanged; this only touches the Claude setup.
+
+**Score:** N/A
 
 #### Pull Request
 

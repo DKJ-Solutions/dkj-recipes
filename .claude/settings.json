@@ -1,8 +1,8 @@
 {
   "enabledPlugins": {
-    "dkj-solutions@dkj-claude-plugins": true,
-    "dkj-policy@dkj-claude-plugins": true,
-    "dkj-subagents-alpha@dkj-claude-plugins": true
+    "dkj-solutions@dkj-marketplace": true,
+    "dkj-policy@dkj-marketplace": true,
+    "dkj-subagents-alpha@dkj-marketplace": true
   },
   "permissions": {
     "allow": [
