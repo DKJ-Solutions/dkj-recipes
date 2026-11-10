@@ -1,4 +1,4 @@
-## docs/46-offerte
+﻿## docs/46-offerte
 
 > **How this file is read.** A step is `- [ ]` until it is resolved -- `- [x]` done, or
 > `- [~]` dropped with the reason, which exists so nobody ticks a box for work they did not do.
@@ -47,7 +47,7 @@
 
 ### DEPLOY: docs/46-offerte
 
-Het rollenspel krijgt de offerte aan Thuiskok: een vaste prijs voor de discovery, een begroting met een plafond voor design tot en met lancering, de betaling, wat erin zit en wat niet, en de afspraken die volgen uit de antwoorden van de klant. De handtekening van de klant staat nog open.
+Het rollenspel krijgt de offerte aan Thuiskok: een vaste prijs voor de discovery, een begroting met een plafond voor design tot en met lancering, de betaling, wat erin zit en wat niet, en de afspraken die volgen uit de antwoorden van de klant. Beide handtekeningen staan nog open.
 
 **Score:** 1
 
