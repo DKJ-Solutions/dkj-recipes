@@ -41,19 +41,23 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] De offerte opgesteld als `docs/studio-hellofresh/05-offerte.md` (een vaste prijs voor de discovery en een begroting met een plafond voor de rest), opgenomen in de leesvolgorde, het logboek en de volgende stap van de intake
 
 ### TEST
 
 ### DEPLOY: docs/46-offerte
 
-**Score:**
+Het rollenspel krijgt de offerte aan Thuiskok: een vaste prijs voor de discovery, een begroting met een plafond voor design tot en met lancering, de betaling, wat erin zit en wat niet, en de afspraken die volgen uit de antwoorden van de klant. De handtekening van de klant staat nog open.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
-Draft the role-play quote for Thuiskok
+Rollenspel studio: de offerte aan Thuiskok opgesteld
 
