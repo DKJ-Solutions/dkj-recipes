@@ -2,6 +2,6 @@
 
 <!-- Repo facts belong in an unscoped `.claude/rules/<name>.md`, not here -- and a specialist's own repo-specific rules belong in its lens. -->
 
-@~/.claude/plugins/marketplaces/dkj-claude-plugins/plugins/dkj-policy/CLAUDE.md
+@~/.claude/plugins/marketplaces/dkj-marketplace/plugins/dkj-policy/CLAUDE.md
 @~/.claude/plugins/marketplaces/dkj-marketplace/plugins/dkj-policy/extensions/dkj-solutions/CLAUDE.md
 @.claude/specialists/SPECIALISTS.md
