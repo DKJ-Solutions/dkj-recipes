@@ -20,6 +20,7 @@
 | 2 | [Intake met de klant](02-intake-klant.md) | Wat de klant wil, voor wie, en welke keuzes al gemaakt zijn |
 | 3 | [HelloFresh ontleed](03-hellofresh-teardown.md) | Alles wat HelloFresh doet, wat wij overnemen en wat wij beter doen |
 | 4 | [Plan van aanpak](04-plan-van-aanpak.md) | De zes maanden in fases, met opleveringen, beslismomenten en risico's |
+| 5 | [Offerte](05-offerte.md) | Wat erin zit en wat niet, de prijs in twee delen, de betaling en de afspraken |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat

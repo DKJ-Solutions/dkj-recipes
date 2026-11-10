@@ -20,4 +20,7 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   eigen keuken, dus wij bouwen alleen het beheerportaal. De **prijzen zijn geschat** en staan
   in de app als indicatief vermeld, zonder partnerschap met een supermarkt. **Zes maanden is een
   streefdatum**, geen harde: de scope gaat voor de datum. Zie de [intake](02-intake-klant.md).
-- **Volgende stap:** de offerte (taak #46).
+- **De offerte is opgesteld** (taak #46): een vaste prijs van €72.250 voor de discovery, en voor
+  de rest een begroting met een plafond van €1.198.000, die na go/no-go 1 definitief wordt. Zie de
+  [offerte](05-offerte.md).
+- **Volgende stap:** Dave tekent namens het bureau, en de klant tekent of niet (taak #46).

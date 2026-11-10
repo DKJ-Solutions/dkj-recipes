@@ -74,5 +74,5 @@ Alle vier zijn door de klant beantwoord op 10 november 2026.
 
 ## Volgende stap
 
-Alle open vragen zijn beantwoord. Dave maakt nu de **offerte** en daarna starten we de
-**discovery**. Zie het [plan van aanpak](04-plan-van-aanpak.md).
+Alle open vragen zijn beantwoord. Dave heeft de [offerte](05-offerte.md) opgesteld. Zodra de
+klant tekent, starten we de **discovery**. Zie het [plan van aanpak](04-plan-van-aanpak.md).
