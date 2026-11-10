@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 26 minor entries** <!-- pending-tally -->
+**10 / 27 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/46-offerte · 20261110-221138Z
+
+Het rollenspel krijgt de offerte aan Thuiskok: een vaste prijs voor de discovery, een begroting met een plafond voor design tot en met lancering, de betaling, wat erin zit en wat niet, en de afspraken die volgen uit de antwoorden van de klant. Beide handtekeningen staan nog open.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel studio: de offerte aan Thuiskok opgesteld
+
+[PR #77](https://github.com/DKJ-Solutions/dkj-recipes/pull/77)
+
+---
 
 ### DEPLOY: docs/45-intake-antwoorden · 20261110-220716Z
 
