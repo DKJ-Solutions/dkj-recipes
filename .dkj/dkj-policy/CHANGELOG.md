@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 23 minor entries** <!-- pending-tally -->
+**10 / 24 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/studio-verdienmodel · 20261110-211334Z
+
+Het rollenspel legt het verdienmodel van Thuiskok vast (de basis gratis, premium voor €2 à €3 per maand), verwerkt het gevolg in sprint 6 en de risico's van het plan van aanpak, en koppelt het logboek aan doel #43 op de Goals-pagina.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel studio: verdienmodel en de Goals-boom vastgelegd
+
+[PR #74](https://github.com/DKJ-Solutions/dkj-recipes/pull/74)
+
+---
 
 ### DEPLOY: docs/studio-hellofresh-kickoff · 20261110-210750Z
 
