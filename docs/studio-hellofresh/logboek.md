@@ -12,6 +12,9 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   een slimme boodschappenlijst en restjesslim plannen. Zie de [teardown](03-hellofresh-teardown.md).
 - **Het plan van aanpak** (versie 0.1): 26 weken in vijf fases. Zie het
   [plan van aanpak](04-plan-van-aanpak.md).
-- **De vastlegging:** deze map, plus een doel met mijlpalen op de Goals-pagina van Admin.
-- **Volgende stap:** de open vragen uit de intake beantwoorden (verdienmodel, recepten,
-  supermarktprijzen, budget), daarna de offerte.
+- **De vastlegging:** deze map, plus doel **#43** met 6 mijlpalen en 24 taken op de Goals-pagina
+  van Admin.
+- **Verdienmodel besloten: goedkoop premium** (de basis gratis, premium voor €2 à €3 per maand).
+  Zie de [intake](02-intake-klant.md). Gevolg: betalen via de app stores komt in de bouw.
+- **Volgende stap:** de overige open vragen uit de intake (recepten, supermarktprijzen, budget),
+  daarna de offerte. Dat is taak #45.

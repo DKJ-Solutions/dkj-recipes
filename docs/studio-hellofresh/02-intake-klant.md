@@ -54,8 +54,12 @@ gegarandeerd lukken, precies weten wat je nodig hebt), **zonder de box en zonder
 
 ## Open vragen aan de klant (voor de volgende sessie)
 
-- **Verdienmodel:** gratis met advertenties, een goedkoop premium-abonnement (bijvoorbeeld €2 à €3
-  per maand), affiliate-inkomsten van supermarkten, of een combinatie?
+- ~~**Verdienmodel**~~ **Besloten (10 november 2026): goedkoop premium.** De basis is gratis
+  (weekmenu, recepten, boodschappenlijst). **Premium** kost €2 à €3 per maand en geeft het
+  weekbudget, restjesslim plannen en de gedeelde lijst. Gevolg voor de planning: betalen via de
+  app stores (Apple en Google nemen 15 procent bij kleine ontwikkelaars) moet in de bouw, en de
+  premiumfuncties zijn dus Must voor het verdienmodel, ook al stonden er twee als Should in de
+  teardown.
 - **Recepten:** heeft Thuiskok eigen recepten en een eigen keuken, of moeten wij die inkoop ook
   regelen? (Dat bepaalt of er een beheerportaal en een fotostudio bij moeten.)
 - **Supermarktprijzen:** de grote supermarkten hebben geen openbare prijs-API. Accepteert de klant
