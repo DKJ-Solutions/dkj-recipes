@@ -30,7 +30,7 @@ gegarandeerd lukken, precies weten wat je nodig hebt), **zonder de box en zonder
 | Stuurt een box met afgepaste ingrediënten | Maakt een **boodschappenlijst** voor de supermarkt |
 | Rekent ongeveer €6 à €9 per portie | Laat de **geschatte supermarktprijs per portie** zien, met een doel onder €3 |
 | Abonnement met bezorgdag en deadline | **Geen bezorging**, dus ook geen deadline en geen verplichte afname |
-| Verdient aan de ingrediënten | Moet een **ander verdienmodel** hebben (open vraag, zie hieronder) |
+| Verdient aan de ingrediënten | Verdient met **goedkoop premium** (zie hieronder) |
 
 ## De positionering (één zin)
 
@@ -52,22 +52,27 @@ gegarandeerd lukken, precies weten wat je nodig hebt), **zonder de box en zonder
 4. **Restjes hergebruiken** (recepten in één week die dezelfde ingrediënten delen) bespaart echt
    geld, omdat je geen half bosje koriander meer weggooit.
 
-## Open vragen aan de klant (voor de volgende sessie)
+## De open vragen aan de klant (alle vier beantwoord)
 
-- ~~**Verdienmodel**~~ **Besloten (10 november 2026): goedkoop premium.** De basis is gratis
+Alle vier zijn door de klant beantwoord op 10 november 2026.
+
+- ~~**Verdienmodel**~~ **Besloten: goedkoop premium.** De basis is gratis
   (weekmenu, recepten, boodschappenlijst). **Premium** kost €2 à €3 per maand en geeft het
   weekbudget, restjesslim plannen en de gedeelde lijst. Gevolg voor de planning: betalen via de
   app stores (Apple en Google nemen 15 procent bij kleine ontwikkelaars) moet in de bouw, en de
   premiumfuncties zijn dus Must voor het verdienmodel, ook al stonden er twee als Should in de
   teardown.
-- **Recepten:** heeft Thuiskok eigen recepten en een eigen keuken, of moeten wij die inkoop ook
-  regelen? (Dat bepaalt of er een beheerportaal en een fotostudio bij moeten.)
-- **Supermarktprijzen:** de grote supermarkten hebben geen openbare prijs-API. Accepteert de klant
-  **geschatte** prijzen, of wil die een partnerschap met één keten?
-- **Budget en deadline:** zes maanden tot de lancering in de app stores. Is die datum hard, en
-  waarom (een investeringsronde, een campagne)?
+- ~~**Recepten**~~ **Besloten: Thuiskok heeft eigen recepten en een eigen keuken.** Wij bouwen
+  alleen het **beheerportaal** waarin de klant de recepten invoert. Geen inkoop van recepten en
+  geen fotostudio bij ons.
+- ~~**Supermarktprijzen**~~ **Besloten: geschatte prijzen.** De prijs per portie is een
+  **schatting** en staat in de app ook zo vermeld (*indicatief*). Geen partnerschap met een keten.
+  Gevolg: de technische verkenning in de discovery zoekt een bron voor betrouwbare schattingen,
+  niet een koppeling met een supermarkt.
+- ~~**Budget en deadline**~~ **Besloten: zes maanden is een streefdatum, geen harde.** De scope
+  gaat voor de datum: een paar weken uitloop is acceptabel waar de kwaliteit dat vraagt.
 
 ## Volgende stap
 
-De klant beantwoordt de open vragen. Daarna maakt Dave de **offerte** en starten we de
+Alle open vragen zijn beantwoord. Dave maakt nu de **offerte** en daarna starten we de
 **discovery**. Zie het [plan van aanpak](04-plan-van-aanpak.md).
