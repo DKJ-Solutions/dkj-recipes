@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 21 minor entries** <!-- pending-tally -->
+**10 / 22 minor entries** <!-- pending-tally -->
+
+### DEPLOY: fix/40-marketplace-paths · 20261110-205204Z
+
+The repo now points at `dkj-marketplace` instead of the renamed `dkj-claude-plugins`: the three DKJ plugins are enabled from the marketplace that actually exists, and `CLAUDE.md` loads the dkj-policy constitution and Chris's persona again.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+N/A -- the recipes app itself is unchanged; this only touches the Claude setup.
+
+**Score:** N/A
+
+#### Pull Request
+
+Point at dkj-marketplace instead of dkj-claude-plugins
+
+[PR #41](https://github.com/DKJ-Solutions/dkj-recipes/pull/41)
+
+---
 
 ### DEPLOY: fix/38-source-branch-prefixes · 20261107-193625Z
 
