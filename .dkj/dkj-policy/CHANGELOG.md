@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 25 minor entries** <!-- pending-tally -->
+**10 / 26 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/45-intake-antwoorden · 20261110-220716Z
+
+Het rollenspel legt de antwoorden van de klant Thuiskok op de laatste open intakevragen vast: eigen recepten (wij bouwen alleen het beheerportaal), geschatte prijzen die als indicatief worden vermeld, en zes maanden als streefdatum in plaats van een harde deadline.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel studio: de open intakevragen van de klant beantwoord
+
+[PR #76](https://github.com/DKJ-Solutions/dkj-recipes/pull/76)
+
+---
 
 ### DEPLOY: fix/triage-labels-roleplay · 20261110-212459Z
 
