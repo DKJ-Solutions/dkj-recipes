@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 24 minor entries** <!-- pending-tally -->
+**10 / 25 minor entries** <!-- pending-tally -->
+
+### DEPLOY: fix/triage-labels-roleplay · 20261110-212459Z
+
+De tracker heeft nu de huidige parkeerlabels van de plugin. De repo noemde zelf nog een kopie van de labels met de namen van vóór de hernoemingen (`needs-decision`, `dossier`, `awaiting-recurrence`), zodat een sweep vastliep op `awaiting-decision-dev`. Die kopie is weg, en de plugin levert de lijst nu zelf. Daarnaast legt `this-repo.md` vast dat Dave in het rollenspel ook de klant is, zodat een klantkeuze bij `issues-sweep-decisions` terechtkomt en het doel en de mijlpalen niet als werk worden opgepakt.
+
+**Score:** 3
+
+#### What makes this deploy extra special
+
+N/A: alleen de tracker en de werkafspraken; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Huidige parkeerlabels en de klantrol in het rollenspel
+
+[PR #75](https://github.com/DKJ-Solutions/dkj-recipes/pull/75)
+
+---
 
 ### DEPLOY: docs/studio-verdienmodel · 20261110-211334Z
 
