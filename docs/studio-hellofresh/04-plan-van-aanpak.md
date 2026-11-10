@@ -94,8 +94,8 @@ wordt.
 
 | Risico | Gevolg | Wat we doen |
 |---|---|---|
-| Geen openbare prijsdata van supermarkten | De belangrijkste belofte (prijs per portie) wordt onnauwkeurig | Vroeg in de discovery uitzoeken; desnoods geschatte prijzen met een duidelijke vermelding |
-| Geen recepten op de lanceringsdag | Een lege app | De klant levert in week 10 de eerste 50 recepten aan via het beheerportaal |
-| Scope groeit ("kan dit er ook nog bij?") | De deadline schuift | Elke nieuwe wens gaat via de Product Owner en de MoSCoW-lijst; iets erbij betekent iets eruit |
+| Geen openbare prijsdata van supermarkten | De belangrijkste belofte (prijs per portie) wordt onnauwkeurig | Besloten met de klant: geschatte prijzen, in de app vermeld als indicatief. In de discovery zoeken we een bron die de schattingen goed genoeg maakt |
+| Geen recepten op de lanceringsdag | Een lege app | De klant heeft eigen recepten en een eigen keuken, en levert in week 10 de eerste 50 recepten aan via het beheerportaal |
+| Scope groeit ("kan dit er ook nog bij?") | De deadline schuift | Elke nieuwe wens gaat via de Product Owner en de MoSCoW-lijst; iets erbij betekent iets eruit. De lanceringsdatum is een streefdatum: een paar weken uitloop mag, voor kwaliteit en niet voor extra scope |
 | Afwijzing door Apple of Google | Lancering schuift | Richtlijnen vanaf het begin volgen; buffer in week 25–26 |
 | Te weinig mensen nemen premium | Thuiskok verdient niets | In de bèta meten hoeveel testgebruikers premium willen; de prijs kan nog worden bijgesteld |

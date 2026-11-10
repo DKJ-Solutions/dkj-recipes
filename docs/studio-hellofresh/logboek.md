@@ -16,5 +16,8 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   van Admin.
 - **Verdienmodel besloten: goedkoop premium** (de basis gratis, premium voor €2 à €3 per maand).
   Zie de [intake](02-intake-klant.md). Gevolg: betalen via de app stores komt in de bouw.
-- **Volgende stap:** de overige open vragen uit de intake (recepten, supermarktprijzen, budget),
-  daarna de offerte. Dat is taak #45.
+- **De overige open vragen zijn beantwoord** (taak #45). Thuiskok heeft **eigen recepten** en een
+  eigen keuken, dus wij bouwen alleen het beheerportaal. De **prijzen zijn geschat** en staan
+  in de app als indicatief vermeld, zonder partnerschap met een supermarkt. **Zes maanden is een
+  streefdatum**, geen harde: de scope gaat voor de datum. Zie de [intake](02-intake-klant.md).
+- **Volgende stap:** de offerte (taak #46).

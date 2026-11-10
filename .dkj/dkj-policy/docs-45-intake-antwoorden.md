@@ -41,19 +41,23 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] De antwoorden van de klant (eigen recepten, geschatte prijzen, zes maanden als streefdatum) vastgelegd in de intake, het logboek en de risico's van het plan van aanpak
 
 ### TEST
 
 ### DEPLOY: docs/45-intake-antwoorden
 
-**Score:**
+Het rollenspel legt de antwoorden van de klant Thuiskok op de laatste open intakevragen vast: eigen recepten (wij bouwen alleen het beheerportaal), geschatte prijzen die als indicatief worden vermeld, en zes maanden als streefdatum in plaats van een harde deadline.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
-Record the client's answers to the open intake questions
+Rollenspel studio: de open intakevragen van de klant beantwoord
 
