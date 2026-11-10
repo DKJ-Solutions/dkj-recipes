@@ -41,17 +41,23 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/`: README, het bureau, de intake, de HelloFresh-teardown, het plan van aanpak en het logboek
 
 ### TEST
 
+- [x] Plan voor de Goals-pagina gecontroleerd met `plan-goal.ps1` zonder `-Apply` (de boom klopt)
+
 ### DEPLOY: docs/studio-hellofresh-kickoff
 
-**Score:**
+Legt de aftrap van het rollenspel vast in `docs/studio-hellofresh/`: een verzonnen bureau van 20 mensen dat voor de verzonnen klant Thuiskok B.V. een betaalbaar HelloFresh-alternatief plant, met de intake, een teardown van HelloFresh met MoSCoW-keuzes, een plan van aanpak van 26 weken en een logboek per sessie.
+
+**Score:** 2
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
