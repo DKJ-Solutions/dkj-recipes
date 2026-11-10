@@ -41,17 +41,25 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] De verouderde eigen `Get-TriageLabels` uit `scripts/repo-config.ps1` verwijderd, zodat de huidige set van de plugin geldt
+- [x] De 15 ontbrekende labels aangemaakt op de tracker (waaronder `awaiting-decision-dev`)
+- [x] De regel over de klantrol in het rollenspel toegevoegd aan `.claude/rules/this-repo.md`
 
 ### TEST
 
+- [x] `adopt-triage-labels.ps1` meldt dat alle 16 standaardlabels bestaan
+
 ### DEPLOY: fix/triage-labels-roleplay
 
-**Score:**
+De tracker heeft nu de huidige parkeerlabels van de plugin. De repo noemde zelf nog een kopie van de labels met de namen van vóór de hernoemingen (`needs-decision`, `dossier`, `awaiting-recurrence`), zodat een sweep vastliep op `awaiting-decision-dev`. Die kopie is weg, en de plugin levert de lijst nu zelf. Daarnaast legt `this-repo.md` vast dat Dave in het rollenspel ook de klant is, zodat een klantkeuze bij `issues-sweep-decisions` terechtkomt en het doel en de mijlpalen niet als werk worden opgepakt.
+
+**Score:** 3
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen de tracker en de werkafspraken; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
