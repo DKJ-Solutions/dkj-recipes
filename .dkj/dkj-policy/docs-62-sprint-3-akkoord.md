@@ -39,19 +39,33 @@
 
 ### PLAN
 
+- [x] Record the client's answers on sprint 3 (decision comment on #62, 2026-11-11) in the sprint
+  document and the logbook, the way sprint 2's sign-off was recorded for #61.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/17-sprint-3-onboarding-en-weekmenu.md`: status line, chapter "Het
+  antwoord van de klant", next step.
+- [x] `docs/studio-hellofresh/logboek.md`: one line under session 2.
 
 ### TEST
 
+- [x] Docs only; the gates in `ship-pr` cover it.
+
 ### DEPLOY: docs/62-sprint-3-akkoord
 
-**Score:**
+Sprint 3 van het rollenspel is akkoord: Thuiskok kijkt de allergenen per ingrediënt zelf na vóór de
+bèta (#69), en de onboarding en het weekmenu zijn akkoord zoals gedemonstreerd, ook zonder weekprijs
+tot sprint 6. Vastgelegd in `docs/studio-hellofresh/17-sprint-3-onboarding-en-weekmenu.md` en het
+logboek; sprint 4 (#63) kan beginnen.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

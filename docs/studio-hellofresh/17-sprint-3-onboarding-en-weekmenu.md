@@ -1,7 +1,7 @@
 # 17. Sprint 3: de onboarding en het weekmenu kiezen
 
 **Eigenaar:** Wouter (Tech Lead), met Fatima (Delivery Manager) · **Week 11–12:** 25 januari – 5
-februari 2027 · **Status:** **gebouwd** op 11 november 2026 (taak #62); **de demo ligt bij de klant**
+februari 2027 · **Status:** **gebouwd** op 11 november 2026 (taak #62); **de demo is akkoord** (11 november 2026)
 
 > **Wat deze sprint oplevert.** De eerste keer en elke week, de [user flows](11-user-flows.md) 1 en 2.
 > Wie de app voor het eerst opent, beantwoordt drie vragen en krijgt een weekmenu. Wie hem een week
@@ -203,7 +203,17 @@ Iris laat de schermen zien, Wouter beantwoordt de technische vragen.
    weekprijs tot sprint 6, of mist Thuiskok iets voordat sprint 4 (de boodschappenlijst, taak #63)
    begint?
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op beide vragen:
+
+1. **Thuiskok kijkt de allergenen zelf na**, per ingrediënt in het portaal, vóór de bèta (taak #69).
+   Sprint 4 wacht daar niet op.
+2. **De onboarding en het weekmenu zijn akkoord** zoals ze in de demo te zien waren, ook het weekmenu
+   zonder weekprijs tot sprint 6. Thuiskok mist niets, en sprint 4 begint.
+
+Daarmee is sprint 3 rond.
+
 ## Volgende stap
 
-Sprint 4: de boodschappenlijst, samengevoegd, per afdeling en af te vinken (taak #63), zodra de klant
-de demo heeft gezien.
+Sprint 4: de boodschappenlijst, samengevoegd, per afdeling en af te vinken (taak #63).
