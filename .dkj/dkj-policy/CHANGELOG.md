@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 45 minor entries** <!-- pending-tally -->
+**10 / 46 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/62-sprint-3-onboarding-weekmenu · 20261111-110954Z
+
+Sprint 3 van het rollenspel is gespeeld tot de demo: de onboarding in drie schermen, het voorstel van
+de week met vijf vaste regels, wisselen, het aantal eters per week en de eerste testversie via
+TestFlight. De catalogus kreeg de allergenen die er nog niet in zaten. Twee vragen liggen bij de klant,
+in `docs/studio-hellofresh/17-sprint-3-onboarding-en-weekmenu.md`.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: sprint 3, onboarding en het weekmenu kiezen
+
+[PR #96](https://github.com/DKJ-Solutions/dkj-recipes/pull/96)
+
+---
 
 ### DEPLOY: docs/61-sprint-2-akkoord · 20261111-110455Z
 
