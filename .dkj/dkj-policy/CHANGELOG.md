@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 29 minor entries** <!-- pending-tally -->
+**10 / 30 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/49-teardown-controleren · 20261111-083041Z
+
+De teardown van het rollenspel is gecontroleerd tegen openbare bronnen. Per functie staat erbij wat klopt. De keuzes volgen nu de besluiten uit de intake: de premiumfuncties zijn Must en de supermarktkoppelingen Won't. Erbij gekomen zijn de prijs van HelloFresh en de vijf meest gehoorde klachten, met bronnen. Een kanttekening voor de interviews: dat mensen vanwege de prijs opzeggen, is niet bewezen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel studio: de HelloFresh-teardown gecontroleerd
+
+[PR #80](https://github.com/DKJ-Solutions/dkj-recipes/pull/80)
+
+---
 
 ### DEPLOY: docs/47-kick-off · 20261111-082508Z
 
