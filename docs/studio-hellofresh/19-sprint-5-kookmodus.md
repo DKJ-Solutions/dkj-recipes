@@ -1,7 +1,7 @@
 # 19. Sprint 5: de kookmodus, het aantal eters per recept en de favorieten
 
 **Eigenaar:** Wouter (Tech Lead), met Fatima (Delivery Manager) · **Week 15–16:** 22 februari – 5 maart
-2027 · **Status:** **gebouwd** op 11 november 2026 (taak #64); **de demo ligt bij de klant**
+2027 · **Status:** **gebouwd** op 11 november 2026 (taak #64); **de demo is akkoord** (11 november 2026)
 
 > **Wat deze sprint oplevert.** De keuken, [user flow](11-user-flows.md) 4. Wie een recept uit zijn
 > weekmenu opent, kan het aantal eters voor die ene avond aanpassen en kookt het daarna stap voor stap:
@@ -219,7 +219,22 @@ pushmeldingen.
    ook zonder *Hoe was het?* tot sprint 7, of mist Thuiskok iets voordat sprint 6 (de prijs per portie en
    het weekbudget, taak #65) begint?
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle drie de vragen:
+
+1. **Het bureau herschrijft de 41 stappen** in 23 recepten met de verwijzing naar het ingrediënt, als
+   taak vóór de bèta (taak #69). Tot dan staat bij zo'n stap *"De hoeveelheid in deze stap is voor 2
+   eters"*.
+2. **De favorieten tellen mee in het voorstel, licht**, zoals het bureau adviseerde: hooguit één
+   favoriet per week, als zesde regel, en regel 2 (wat je de laatste twee weken kreeg, schuift achteraan)
+   blijft voorgaan.
+3. **De kookmodus, het aantal eters per recept en de favorieten zijn akkoord** zoals ze in de demo te
+   zien waren, ook zonder *Hoe was het?* tot sprint 7. Sprint 6 begint.
+
+Daarmee is sprint 5 rond.
+
 ## Volgende stap
 
 Sprint 6: de prijs per portie, de weekprijs en het weekbudget, en premium afrekenen via de app stores
-(taak #65), zodra de klant de demo heeft gezien.
+(taak #65).

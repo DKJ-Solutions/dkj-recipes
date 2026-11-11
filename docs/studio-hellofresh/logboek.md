@@ -127,6 +127,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   getal in de tekst niet meerekent met het aantal eters. **Drie vragen liggen bij de klant**: wie de 41
   stappen met een vast getal herschrijft en wanneer, of de favorieten het voorstel van de week mogen
   beïnvloeden, en of de demo akkoord is. Zie [sprint 5](19-sprint-5-kookmodus.md).
+- **Sprint 5 is akkoord** (taak #64). Dave antwoordde als Thuiskok: het bureau herschrijft de 41
+  stappen met een vast getal, vóór de bèta (taak #69). De favorieten tellen licht mee in het voorstel
+  van de week: hooguit één per week, als zesde regel, en regel 2 blijft voorgaan. De kookmodus, het
+  aantal eters per recept en de favorieten zijn akkoord zoals gedemonstreerd, ook zonder *Hoe was het?*
+  tot sprint 7, dus sprint 6 begint (taak #65). Zie [sprint 5](19-sprint-5-kookmodus.md), hoofdstuk
+  "Het antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

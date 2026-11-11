@@ -41,17 +41,28 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Record the client's three answers (decision comment on #64) in
+  `docs/studio-hellofresh/19-sprint-5-kookmodus.md`, chapter "Het antwoord van de klant", and set the
+  status to accepted
+- [x] Add the sign-off line to `docs/studio-hellofresh/logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/64-sprint-5-akkoord
 
-**Score:**
+Sprint 5 van het rollenspel is akkoord: het bureau herschrijft de 41 stappen met een vast getal vóór de
+bèta (#69), de favorieten tellen licht mee in het voorstel van de week (hooguit één per week, als zesde
+regel, regel 2 blijft voorgaan), en de kookmodus, het aantal eters per recept en de favorieten zijn
+akkoord zoals gedemonstreerd. Vastgelegd in `docs/studio-hellofresh/19-sprint-5-kookmodus.md` en het
+logboek; sprint 6 (#65) kan beginnen.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
