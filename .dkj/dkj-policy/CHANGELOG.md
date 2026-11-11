@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 37 minor entries** <!-- pending-tally -->
+**10 / 38 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/56-wireframes · 20261111-094321Z
+
+De wireframes van het rollenspel staan in `docs/studio-hellofresh/12-wireframes.md`: negen kernschermen
+voor de eerste keer, het weekmenu, de boodschappenlijst en de keuken, met het weekmenu als het
+belangrijkste scherm.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: de wireframes van de kernschermen
+
+[PR #88](https://github.com/DKJ-Solutions/dkj-recipes/pull/88)
+
+---
 
 ### DEPLOY: docs/55-user-flows · 20261111-093758Z
 
