@@ -41,17 +41,29 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Write `docs/studio-hellofresh/23-beta.md`: what is ready, the 150 testers, the test plan (scope,
+  what a blocker is, the twelve measurements the sprints left for the beta), the bar set in advance,
+  and the client's three open questions
+- [x] Add the chapter to the reading order in `docs/studio-hellofresh/README.md`
+- [x] Add the line to `docs/studio-hellofresh/logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/69-beta-voorbereid
 
-**Score:**
+De bèta van het rollenspel is voorbereid tot aan de start, in
+`docs/studio-hellofresh/23-beta.md`: 150 fictieve testers verdeeld over de persona's, het testplan met
+wat een blokkade is en de twaalf metingen die de sprints aan de bèta meegaven, en de lat waaraan de bèta
+vooraf gemeten wordt. Drie vragen liggen bij de klant: de allergenen en de open ingrediënten, meten met
+PostHog in de EU, en een bedankje voor de testers. Taak #69 blijft open voor de bèta zelf.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
