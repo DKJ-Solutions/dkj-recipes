@@ -1,7 +1,7 @@
 # 5. De offerte aan Thuiskok B.V.
 
 **Opgesteld door:** Dave (CEO), met Fatima (Delivery Manager) voor de begroting · **Datum:** 10
-november 2026 · **Geldig tot:** 10 december 2026 · **Status:** concept, klaar om te tekenen
+november 2026 · **Geldig tot:** 10 december 2026 · **Status:** getekend door beide partijen op 11 november 2026
 
 > **Waarom een offerte er zo uitziet.** Een bureau kan de prijs van zes maanden bouwen pas echt
 > weten als de scope vastligt, en die ligt pas vast na de discovery. Daarom bestaat deze offerte
@@ -97,4 +97,4 @@ Betaaltermijn: 30 dagen na factuurdatum.
 
 | Namens het bureau | Namens Thuiskok B.V. |
 |---|---|
-| Dave, CEO — *nog niet getekend* | *nog niet getekend* |
+| Dave, CEO — *getekend op 11 november 2026* | Thuiskok B.V. — *getekend op 11 november 2026* |

@@ -41,19 +41,23 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Beide handtekeningen vastgelegd in `docs/studio-hellofresh/05-offerte.md` (Dave, 11 november 2026, als CEO en als klant Thuiskok; het besluit staat op #46), met de status, de volgende stap van de intake en een nieuwe sessie in het logboek
 
 ### TEST
 
 ### DEPLOY: docs/46-offerte-getekend
 
-**Score:**
+De offerte van het rollenspel is door beide partijen getekend zoals hij stond: het bureau en Thuiskok B.V. gaan akkoord met de vaste prijs voor de discovery en het plafond voor de rest. Fase 0 is daarmee rond en de kick-off (#47) is de volgende stap.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
-Record the signed quote
+Rollenspel studio: de offerte aan Thuiskok getekend
 
