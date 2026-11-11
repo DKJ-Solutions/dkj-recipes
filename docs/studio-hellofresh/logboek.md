@@ -36,8 +36,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   **weekprijs**, en die laatste draagt de belofte. De prijzen komen uit een **eigen tabel van ± 300
   ingrediënten**, die elk kwartaal wordt bijgewerkt, met Checkjebon als hulpmiddel. Er wordt niet
   gescrapet. Zie de [technische verkenning](09-technische-verkenning.md).
-- **Volgende stap:** de MoSCoW en het discovery-rapport (taak #53, go/no-go 1). De usertest (taak #58)
-  toetst daarna met echte gebruikers wat nu alleen voorlopig is.
+- **Het discovery-rapport ligt bij de klant** (taak #53). De belofte wordt "het gemak van een box, voor
+  het geld van gewone boodschappen", met de weekprijs voorop. Restjesslim plannen gaat van Must naar
+  Should, en de prijstabel in het beheerportaal komt erbij. Het plafond van deel B daalt naar
+  **€ 1.159.000**, en de lancering blijft in week 26. Zie het [discovery-rapport](10-discovery-rapport.md).
+- **Volgende stap: go/no-go 1.** Thuiskok kiest uit drie opties (zie het rapport, hoofdstuk 5). Dat
+  besluit wordt niet verzonnen: het wacht op Dave als de klant.
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

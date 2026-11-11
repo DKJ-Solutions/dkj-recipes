@@ -25,6 +25,7 @@
 | 7 | [Interviews](07-interviews.md) | De gespreksleidraad, de verslagen en de uitkomsten per hypothese |
 | 8 | [Persona's](08-personas.md) | Noor, Marieke en Daan: voor wie we ontwerpen, en op welk bewijs |
 | 9 | [Technische verkenning](09-technische-verkenning.md) | Hoe een recept in de database staat, en waar de geschatte prijzen vandaan komen |
+| 10 | [Discovery-rapport](10-discovery-rapport.md) | De MoSCoW na de discovery, de definitieve begroting voor deel B, en go/no-go 1 |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat

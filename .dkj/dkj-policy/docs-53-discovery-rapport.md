@@ -39,19 +39,28 @@
 
 ### PLAN
 
+The agency half of #53: the MoSCoW changes after discovery and the discovery report with the definitive part-B budget. The go/no-go itself is the client's choice (Dave plays the client) and is never invented, so this branch ships the report with `-NoResolves` and #53 is parked as `awaiting-decision-dev` with the three options from chapter 5.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Write `docs/studio-hellofresh/10-discovery-rapport.md`: findings, MoSCoW changes, definitive budget, planning, the three go/no-go options
+- [x] README reading order and a logbook line
 
 ### TEST
 
+- [x] Budget arithmetic checked: 1,215 − 60 + 15 = 1,170 days × €850 = €994,500; + €15,000 + 15% (€149,175) = €1,158,675
+
 ### DEPLOY: docs/53-discovery-rapport
 
-**Score:**
+Het discovery-rapport voor het rollenspel staat in `docs/studio-hellofresh/10-discovery-rapport.md`: de MoSCoW na de discovery (restjesslim plannen naar Should, een prijstabel erbij), een definitief plafond voor deel B van € 1.159.000, en drie opties voor go/no-go 1, waarover de klant nog beslist.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
