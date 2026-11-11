@@ -179,6 +179,16 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   9 open ingrediënten af zijn, of het bureau mag meten met PostHog in de EU met een privacyverklaring
   die de jurist van Thuiskok toetst, en of de testers drie maanden premium krijgen. Zie
   [de bèta](23-beta.md).
+- **De bèta mag beginnen** (taak #69). Dave antwoordde als Thuiskok: de allergenen zijn nagekeken en de 9
+  open ingrediënten aangevuld, dus de bèta begint op 19 april 2027. Het bureau meet met PostHog in de EU,
+  alleen de twaalf metingen, met een privacyverklaring die de jurist van Thuiskok vóór de start toetst. Wie
+  in beide weken de app gebruikte, krijgt bij de lancering drie maanden premium. Zie [de bèta](23-beta.md),
+  hoofdstuk "Het antwoord van de klant".
+- **De bèta is gespeeld** (taak #69): 143 van de 150 testers installeerden de app en 109 gebruikten hem in
+  beide weken. Vier blokkades zijn gevonden en in de bèta zelf opgelost. De weekprijs zat gemiddeld 14
+  procent naast de kassabon. **Vijf van de zes latten zijn gehaald**; het aantal eters voor deze week
+  aanpassen lukte bij 54 procent, en de knop gaat naar boven in taak #70. Restjesslim plannen scheelt op
+  de echte catalogus 7 procent. De testers en de getallen zijn fictie. Zie [de bèta](23-beta.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

@@ -41,17 +41,31 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Record the client's answer to the three questions (DaveKJohn, issue #69 comment, 2026-11-11) in
+  `docs/studio-hellofresh/23-beta.md`, chapter "Het antwoord van de klant"
+- [x] Play the two weeks of the beta in the same file: who took part, the timeline with the four blockers,
+  the reports sorted, the twelve measurements with their outcome, and the outcome against the bar set in
+  advance, marked as fiction
+- [x] Update the beta row in `docs/studio-hellofresh/README.md` and add two lines to
+  `docs/studio-hellofresh/logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/69-beta-gespeeld
 
-**Score:**
+De bèta van het rollenspel is gespeeld, in `docs/studio-hellofresh/23-beta.md`. De klant zei ja op de
+drie vragen: de allergenen en de open ingrediënten zijn af, het bureau meet met PostHog in de EU, en wie
+in beide weken meedeed krijgt drie maanden premium. Daarna de twee weken zelf, met fictieve testers: 143
+deden mee, vier blokkades zijn in de bèta opgelost, en vijf van de zes latten zijn gehaald. Wat overblijft
+gaat naar taak #70 en go/no-go 3.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

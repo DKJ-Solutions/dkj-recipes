@@ -1,8 +1,8 @@
 # 23. De bèta: 150 testers, het testplan en de lat vooraf
 
 **Eigenaar:** Nadia (QA Lead), met Tim (Test automation) en Fatima (Delivery Manager) · **Week 23–24:**
-19 – 30 april 2027 · **Status:** **voorbereid** op 11 november 2026 (taak #69); **de start wacht op de
-klant**
+19 – 30 april 2027 · **Status:** **voorbereid** op 11 november 2026 (taak #69); **gespeeld**, met de
+klant akkoord over de start (11 november 2026)
 
 > **Wat deze stap oplevert.** De eerste keer dat mensen buiten het team Thuiskok gebruiken: 150 testers,
 > twee weken, op hun eigen telefoon en in hun eigen supermarkt. Wat zij vinden, wordt opgelost of gaat
@@ -12,10 +12,10 @@ klant**
 > de testversie van sprint 8, met *Over na deze week* voor iedereen, en tot de lancering komt er geen
 > nieuwe functie bij ([sprint 8](22-sprint-8-restjes-en-afronden.md), "Het antwoord van de klant").
 >
-> **Wat hier nog niet staat: de uitkomsten.** Nadia schrijft het testplan en de lat **vóór** het testen,
+> **Eerst de lat, dan de uitkomsten.** Nadia schreef het testplan en de lat **vóór** het testen,
 > zodat de bèta beoordeeld wordt op wat vooraf is afgesproken, en niet op een lat die achteraf om de
-> uitkomsten heen is getrokken. De start hangt aan drie dingen die alleen de klant kan zeggen
-> (hieronder). Daarna volgen de twee weken zelf.
+> uitkomsten heen is getrokken. De klant beantwoordde de drie vragen voor de start (hieronder), en
+> daarna volgen de twee weken zelf en wat ze tegen die lat opleverden.
 
 ## De bèta in het kort
 
@@ -175,8 +175,99 @@ open blokkade is niet aan het bureau. Dat besluit is van de klant.
    het werkt. Het alternatief is niets geven; dan haken er naar verwachting meer testers af in week 24
    (afgeleid, niet gemeten).
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle drie de vragen:
+
+1. **Beide toezeggingen zijn af.** De allergenen van alle ingrediënten zijn nagekeken en de 9 open
+   ingrediënten in *Wat mist er nog?* zijn aangevuld. De bèta begint zoals gepland op maandag 19 april
+   2027.
+2. **Meten mag**: PostHog op een server in de EU, alleen de twaalf metingen in het testplan, met de
+   privacyverklaring voor de bèta die de jurist van Thuiskok vóór de start toetst.
+3. **Het bedankje komt er**: drie maanden premium gratis bij de lancering, voor elke tester die in beide
+   weken de app gebruikte.
+
+Daarmee kan de bèta beginnen zoals voorbereid, met alle twaalf metingen.
+
+## De twee weken
+
+**Wat hieronder staat, is gespeeld.** De testers, hun meldingen en de getallen zijn fictie, bedacht door
+Chris zoals in de [usertest](14-prototype-en-usertest.md). Ze laten zien hoe het bureau met een bèta omgaat,
+maar bewijzen niet wat echte mensen zouden doen.
+
+**Wie meedeed.** Van de 150 uitgenodigde testers installeerden **143** de app; zeven reageerden niet. **109**
+gebruikten de app in beide weken, en die krijgen bij de lancering drie maanden premium. De 34 anderen
+haakten vooral af na het eerste weekend, het meest bij de groep zoals Daan (16 van de 40).
+
+**Hoe het verliep:**
+
+| Wanneer | Wat |
+|---|---|
+| Ma 19 april | De uitnodigingen gaan om 9.00 uur uit; om 18.00 uur hebben 97 testers een weekmenu |
+| Di 20 april | **Blokkade 1**: een tester met een notenallergie krijgt bij *wisselen* een recept met pesto. Het filter gold voor het voorstel, maar niet voor de drie alternatieven. Ruben en Mila repareren het dezelfde middag op de server; een nieuwe testversie is niet nodig |
+| Do 22 april | **Blokkade 2**: op vier oudere Android-toestellen is de gedeelde lijst leeg na de update naar testversie 1.0.1. Daan vindt de oorzaak (de lijst zonder bereik werd bij de update niet overgezet); testversie 1.0.2 lost het op, en de lijsten komen terug van de server |
+| Vr 23 april | De eerste kassabonnen komen binnen; Bram belt de eerste testers met een gedeelde lijst |
+| Ma 26 april | **Blokkade 3**: drie testers op een iPhone verliezen hun weekmenu bij *Bewaar je menu* met Apple. **Blokkade 4**: wie de app opnieuw installeert, krijgt premium niet terug. Ayla en Koen lossen beide op in testversie 1.0.3, op woensdag in de stores |
+| Di 27 april | Koningsdag: geen werkdag, wel 61 testers die die dag de app openen |
+| Vr 30 april | De bèta sluit om 17.00 uur; alle vier de blokkades zijn dicht |
+
+**De meldingen.** Er kwamen er **312** binnen via *Iets melden*. Nadia sorteerde ze elke ochtend:
+
+| Soort | Aantal | Wat ermee gebeurde |
+|---|---|---|
+| Blokkerend | 4 | Alle vier opgelost in de bèta zelf (hierboven) |
+| Hinderlijk | 19 | 12 opgelost in de testversies 1.0.2 en 1.0.3; 7 gaan naar taak #70 |
+| Klein | 61 | 23 opgelost omdat het minder dan een uur kostte; 38 naar na de lancering |
+| Een wens | 88 | Naar de lijst van Joris voor na de lancering; er komt nu niets bij |
+| Ruis | 140 | Blijft liggen |
+
+De drie meest gevraagde wensen: de volgorde van de afdelingen per supermarkt (14 testers), zelf een recept
+toevoegen (11) en boodschappen bestellen bij de supermarkt (9). Dat laatste is sinds de
+[teardown](03-hellofresh-teardown.md) een Won't.
+
+## Wat de bèta mat
+
+Alle twaalf metingen uit het testplan, nu met de uitkomst:
+
+| # | Wat | De uitkomst |
+|---|---|---|
+| 1 | De zeven opdrachten | 118 testers deden ze. Zes van de zeven lukten bij 71 tot 94 procent. **Opdracht 4, het aantal eters voor deze week aanpassen, lukte bij 54 procent** |
+| 2 | Weekprijs en prijs per portie begrepen | 81 procent zei goed wat de weekprijs is: alles voor de week, voor het aantal eters, zonder de basisvoorraad |
+| 3 | *Voor 2 · deze week anders?* gevonden | 23 procent tikte erop; 31 testers zochten het aantal eters eerst onder *Ik*. Dezelfde oorzaak als opdracht 4 |
+| 4 | De volgorde van de afdelingen | 14 meldingen, bijna allemaal over een winkel waar het brood bij de ingang ligt. Eén volgorde blijft staan tot na de lancering, zoals besloten in [sprint 4](18-sprint-4-boodschappenlijst.md) |
+| 5 | De timer op Android | 2,1 procent van de timers ging meer dan tien seconden te laat af, allemaal op toestellen met een strenge batterijbesparing. Hinderlijk, naar taak #70 |
+| 6 | De weekprijs naast de kassabon | **37 bonnen** (het doel was 30). De weekprijs zat er gemiddeld **14 procent** naast, en in 29 van de 37 lager dan de kassa |
+| 7 | Hoeveel testers premium willen | 31 procent tikte minstens één keer op *premium nemen*. Op de vraag of ze er € 2,49 per maand voor over hebben: 27 procent ja, 36 procent misschien |
+| 8 | Weken zonder menu | In week 2 had 22 procent geen menu. Bij wie de herinnering aanzette (41 testers) was dat 12 procent, bij de anderen 26 procent |
+| 9 | Gedeelde lijsten | 47 lijsten gedeeld. Negen keer werd binnen een uur op twee plekken afgevinkt, en daarbij ging niets verloren |
+| 10 | De uitnodiging op een iPhone | Van de uitnodigingen vanaf een iPhone deed 62 procent van de huisgenoten mee, vanaf Android 83 procent. De omweg werkt, maar kost huisgenoten. Naar na de lancering |
+| 11 | *Niet weer* van de huisgenoot | Bram belde tien testers. Zeven vonden het goed, drie vonden het vreemd dat de huisgenoot hun favoriet uit het voorstel haalde. Naar Joris, voor na de lancering |
+| 12 | Wat restjesslim plannen scheelt | Op de echte catalogus gemiddeld **7 procent** van de weekprijs, ongeveer € 2,80 per week bij twee eters. Dat is minder dan de 12 procent op de testgerechten in [sprint 8](22-sprint-8-restjes-en-afronden.md) |
+
+**Wat opvalt.** De weekprijs houdt stand aan de kassa, en dat is de belofte. Restjesslim plannen scheelt
+minder dan de testgerechten lieten zien. Joris past de tekst bij premium daarop aan, zodat de app niet meer
+belooft dan hij waarmaakt.
+
+## De uitkomst tegen de lat
+
+| | De lat | De uitkomst | |
+|---|---|---|---|
+| Blokkerende meldingen aan het eind | 0 open | 0 open (4 gevonden, 4 opgelost) | **gehaald** |
+| Testers die de app vaker dan op dag één openen | minstens 60 procent | 74 procent | **gehaald** |
+| Een menu gekozen én een lijst afgevinkt in week 1 | minstens de helft | 58 procent | **gehaald** |
+| De zeven opdrachten | elk minstens 60 procent | zes gehaald, opdracht 4 op 54 procent | **niet gehaald** |
+| De app vastgelopen | minder dan 1 op de 200 keer openen | 1 op de 640 | **gehaald** |
+| De weekprijs naast de kassabon | gemiddeld binnen 25 procent | 14 procent | **gehaald** |
+
+**Vijf van de zes gehaald.** Opdracht 4 haalde de lat niet, en meting 3 laat zien waarom: *Voor 2 · deze
+week anders?* staat onder het menu, en wie het aantal eters zoekt, kijkt bovenaan of onder *Ik*. Het voorstel
+van Ayla en Nadia is geen nieuwe functie: dezelfde knop gaat naar boven, naast de weekprijs, en *Ik* krijgt
+een verwijzing ernaar. Dat valt onder Fatima's regel voor hinderlijke meldingen: opgelost vóór go/no-go 3.
+Of het daarmee werkt, kan de bèta niet meer meten. Nadia laat het bij go/no-go 3 zien in een korte test met
+vijf mensen.
+
 ## Volgende stap
 
-De bèta zelf, maandag 19 april 2027, zodra de klant op de drie vragen heeft geantwoord. Daarna verwerkt het
-team wat de testers vinden, samen met de AVG-check en de toegankelijkheid (taak #70), en eindigt fase 4
-met go/no-go 3.
+Taak #70: de 7 hinderlijke meldingen en opdracht 4 oplossen, de AVG-check en de toegankelijkheid. Daar zegt
+Nadia bij go/no-go 3 wat de bèta liet zien en wat het team eraan deed, en daar valt het besluit. Daarmee
+sluit fase 4.
