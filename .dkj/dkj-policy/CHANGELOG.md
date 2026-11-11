@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 56 minor entries** <!-- pending-tally -->
+**10 / 57 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/67-sprint-8-akkoord · 20261111-143014Z
+
+Sprint 8 van het rollenspel is akkoord, en daarmee de bouw: *Over na deze week* wordt zichtbaar voor
+iedereen terwijl het restjesslim plannen premium blijft; tot de lancering komt er geen nieuwe functie
+meer bij; en de demo is akkoord, zodat de bèta (#69) met deze testversie mag beginnen. Vastgelegd in
+`docs/studio-hellofresh/22-sprint-8-restjes-en-afronden.md` en het logboek.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Record the client's sign-off on sprint 8 of the role-play
+
+[PR #108](https://github.com/DKJ-Solutions/dkj-recipes/pull/108)
+
+---
 
 ### DEPLOY: docs/67-sprint-8-restjes · 20261111-141722Z
 
