@@ -21,6 +21,7 @@
 | 3 | [HelloFresh ontleed](03-hellofresh-teardown.md) | Alles wat HelloFresh doet, wat wij overnemen en wat wij beter doen |
 | 4 | [Plan van aanpak](04-plan-van-aanpak.md) | De zes maanden in fases, met opleveringen, beslismomenten en risico's |
 | 5 | [Offerte](05-offerte.md) | Wat erin zit en wat niet, de prijs in twee delen, de betaling en de afspraken |
+| 6 | [Kick-off](06-kick-off.md) | Het kernteam aan tafel: de agenda, wie wat doet in de discovery, de afspraken en de vragen aan de klant |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat

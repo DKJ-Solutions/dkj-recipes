@@ -7,7 +7,11 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
 - **De offerte is getekend** (taak #46), door Dave namens het bureau en door Thuiskok B.V., zoals
   hij stond: €72.250 vast voor de discovery en een plafond van €1.198.000 voor de rest. Zie de
   [offerte](05-offerte.md). Daarmee is fase 0 rond.
-- **Volgende stap:** de kick-off met het kernteam (taak #47), en daarna de discovery.
+- **De kick-off is voorbereid** (taak #47): maandag 16 november met het hele kernteam, met de
+  agenda, wie wat doet in de vier weken discovery, en de afspraken en tools. Er staan drie vragen
+  open voor de klant: de vaste contactpersoon, hulp bij het werven voor de interviews, en de datum
+  van de eerste stuurgroep. Zie de [kick-off](06-kick-off.md).
+- **Volgende stap:** de discovery begint met het controleren van de teardown (taak #49).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
