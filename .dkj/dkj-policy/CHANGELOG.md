@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 30 minor entries** <!-- pending-tally -->
+**10 / 31 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/50-interviews-leidraad · 20261111-084419Z
+
+Het rollenspel krijgt de gespreksleidraad voor de interviews: zes hypotheses met de prijs als reden om op te zeggen voorop, wie we spreken, de regels voor de interviewer, 21 vragen in 45 minuten en een verslagsjabloon. De uitkomsten volgen zodra Dave de deelnemers heeft gespeeld.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel studio: de gespreksleidraad voor de interviews
+
+[PR #81](https://github.com/DKJ-Solutions/dkj-recipes/pull/81)
+
+---
 
 ### DEPLOY: docs/49-teardown-controleren · 20261111-083041Z
 
