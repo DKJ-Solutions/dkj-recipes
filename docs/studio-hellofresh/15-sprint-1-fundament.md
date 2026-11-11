@@ -1,7 +1,8 @@
 # 15. Sprint 1: het fundament
 
 **Eigenaar:** Wouter (Tech Lead), met Fatima (Delivery Manager) · **Week 7–8:** 28 december 2026 – 8
-januari 2027 · **Status:** **gebouwd** op 11 november 2026 (taak #60); **de demo ligt bij de klant**
+januari 2027 · **Status:** **gebouwd** op 11 november 2026 (taak #60); **de demo is akkoord**
+(11 november 2026)
 
 > **Wat een fundament is.** Alles wat de gebruiker niet ziet, maar waar elke volgende sprint op
 > staat: een lege app die opent en drie tabs heeft, een database met de juiste tabellen, inloggen, en
@@ -121,6 +122,19 @@ fundament is goed als niemand het merkt.
 2. **De demo.** Is het fundament zoals het hierboven staat akkoord, of mist Thuiskok iets voordat
    sprint 2 (de recepten en het beheerportaal, taak #61) begint?
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op beide vragen:
+
+1. **De accounts maakt Thuiskok zelf, deze week.** Het Apple Developer-account en het Google
+   Play-account komen op naam van Thuiskok, zoals de [offerte](05-offerte.md) vraagt. Het bureau helpt
+   bij het D-U-N-S-nummer. **De bèta (taak #69) blijft op schema.** Tot de accounts er zijn, blijft de
+   testversie via Expo lopen.
+2. **Het fundament is akkoord** zoals het in de demo te zien was. Thuiskok mist niets, en sprint 2
+   begint.
+
+Daarmee is sprint 1 rond.
+
 ## Volgende stap
 
-Sprint 2: recepten tonen en het beheerportaal (taak #61), zodra de klant de demo heeft gezien.
+Sprint 2: recepten tonen en het beheerportaal (taak #61).
