@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 42 minor entries** <!-- pending-tally -->
+**10 / 43 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/60-sprint-1-akkoord · 20261111-104840Z
+
+Sprint 1 van het rollenspel is akkoord: Thuiskok maakt de twee store-accounts deze week zelf aan en de
+bèta blijft op schema. Vastgelegd in `docs/studio-hellofresh/15-sprint-1-fundament.md` en het logboek;
+sprint 2 (#61) kan beginnen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: sprint 1 akkoord van de klant
+
+[PR #93](https://github.com/DKJ-Solutions/dkj-recipes/pull/93)
+
+---
 
 ### DEPLOY: docs/60-sprint-1-fundament · 20261111-103634Z
 
