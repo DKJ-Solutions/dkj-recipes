@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 39 minor entries** <!-- pending-tally -->
+**10 / 40 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/58-prototype-usertest · 20261111-102131Z
+
+Het rollenspel heeft een getest prototype: `docs/studio-hellofresh/14-prototype-en-usertest.md`
+beschrijft twaalf klikbare schermen, de usertest met vijf fictieve deelnemers en de drie opties voor
+go/no-go 2. Het designsysteem in `13-designsysteem.md` volgt nu het DKJ brand book.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: klikbaar prototype en usertest met 5 mensen (go/no-go 2)
+
+[PR #90](https://github.com/DKJ-Solutions/dkj-recipes/pull/90)
+
+---
 
 ### DEPLOY: docs/57-designsysteem · 20261111-095955Z
 
