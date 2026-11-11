@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 47 minor entries** <!-- pending-tally -->
+**10 / 48 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/63-sprint-4-boodschappenlijst · 20261111-112058Z
+
+Sprint 4 van het rollenspel is gespeeld tot de demo: de boodschappenlijst, samengevoegd in hele
+verpakkingen, per afdeling, af te vinken en werkend zonder bereik. Vastgelegd in
+`docs/studio-hellofresh/18-sprint-4-boodschappenlijst.md` en het logboek; drie vragen liggen bij de
+klant (#63).
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Play sprint 4 of the role-play up to the demo
+
+[PR #98](https://github.com/DKJ-Solutions/dkj-recipes/pull/98)
+
+---
 
 ### DEPLOY: docs/62-sprint-3-akkoord · 20261111-111556Z
 
