@@ -41,17 +41,34 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Write `docs/studio-hellofresh/25-store-paginas-en-inzending.md`: version 1.0.5 (the two go/no-go 3
+  changes), the store pages, the privacy questionnaires, what the reviewers need, the client's
+  preconditions, and the three questions for the client
+- [x] Add the chapter to the reading order in `docs/studio-hellofresh/README.md`
+- [x] Add the line to `docs/studio-hellofresh/logboek.md`
+
+#### Why the issue stays open
+
+#72 continues once the client has answered (the submission itself), so this branch ships with
+`-NoResolves` and the issue is parked `awaiting-decision-dev`, as the role-play's own rule says.
 
 ### TEST
 
 ### DEPLOY: docs/72-inzending-voorbereid
 
-**Score:**
+De inzending van het rollenspel is voorbereid tot het woord van de klant: versie 1.0.5 met de
+toestemmingsvraag voor de allergieën en zonder PostHog, de Nederlandse store-pagina's, de vragenlijsten
+over privacy, wat de reviewers nodig hebben, en wat Thuiskok vóór de inzending regelt. Drie vragen liggen
+bij de klant. Vastgelegd in `docs/studio-hellofresh/25-store-paginas-en-inzending.md`, de leesvolgorde en
+het logboek.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
