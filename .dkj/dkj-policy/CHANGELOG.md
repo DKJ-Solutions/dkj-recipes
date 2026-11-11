@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 52 minor entries** <!-- pending-tally -->
+**10 / 53 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/65-sprint-6-akkoord · 20261111-125940Z
+
+Sprint 6 van het rollenspel is akkoord: Thuiskok maakt de catalogus in productie compleet vóór de bèta
+(#69), het recept toont de prijs per portie aan wat je opeet, premium kost € 2,49 per maand zonder
+proefperiode of jaarabonnement en Dave regelt de afspraken met de stores vóór de inzending (#72), en de
+prijzen, premium en het weekbudget zijn akkoord zoals gedemonstreerd. Vastgelegd in
+`docs/studio-hellofresh/20-sprint-6-prijzen-en-premium.md` en het logboek; sprint 7 (#66) kan beginnen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Record the client's sign-off on sprint 6 of the role-play
+
+[PR #103](https://github.com/DKJ-Solutions/dkj-recipes/pull/103)
+
+---
 
 ### DEPLOY: docs/65-sprint-6-prijzen · 20261111-125007Z
 
