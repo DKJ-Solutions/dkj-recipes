@@ -30,7 +30,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   met een echte stem eronder. Marieke (het krappe gezin) en Daan (de starter) zijn secundair en rusten
   alleen op fictie. Daarbij een voorstel voor de MoSCoW (taak #53): een weekmenu en de weekprijs op
   echt bewijs, de prijs per portie niet als uithangbord. Zie de [persona's](08-personas.md).
-- **Volgende stap:** de technische verkenning (taak #52) en de MoSCoW (taak #53). De usertest (taak #58)
+- **De technische verkenning is klaar** (taak #52). Een recept staat in de database met
+  hoeveelheden **per portie**, en elk ingrediënt komt uit **één catalogus** met een afdeling, een
+  verpakkingsgrootte en een geschatte prijs. Daaruit volgen twee getallen: de prijs per portie en de
+  **weekprijs**, en die laatste draagt de belofte. De prijzen komen uit een **eigen tabel van ± 300
+  ingrediënten**, die elk kwartaal wordt bijgewerkt, met Checkjebon als hulpmiddel. Er wordt niet
+  gescrapet. Zie de [technische verkenning](09-technische-verkenning.md).
+- **Volgende stap:** de MoSCoW en het discovery-rapport (taak #53, go/no-go 1). De usertest (taak #58)
   toetst daarna met echte gebruikers wat nu alleen voorlopig is.
 
 ## Sessie 1 — 10 november 2026: de aftrap

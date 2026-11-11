@@ -24,6 +24,7 @@
 | 6 | [Kick-off](06-kick-off.md) | Het kernteam aan tafel: de agenda, wie wat doet in de discovery, de afspraken en de vragen aan de klant |
 | 7 | [Interviews](07-interviews.md) | De gespreksleidraad, de verslagen en de uitkomsten per hypothese |
 | 8 | [Persona's](08-personas.md) | Noor, Marieke en Daan: voor wie we ontwerpen, en op welk bewijs |
+| 9 | [Technische verkenning](09-technische-verkenning.md) | Hoe een recept in de database staat, en waar de geschatte prijzen vandaan komen |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
