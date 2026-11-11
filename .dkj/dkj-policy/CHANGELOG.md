@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 50 minor entries** <!-- pending-tally -->
+**10 / 51 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/64-sprint-5-akkoord · 20261111-124317Z
+
+Sprint 5 van het rollenspel is akkoord: het bureau herschrijft de 41 stappen met een vast getal vóór de
+bèta (#69), de favorieten tellen licht mee in het voorstel van de week (hooguit één per week, als zesde
+regel, regel 2 blijft voorgaan), en de kookmodus, het aantal eters per recept en de favorieten zijn
+akkoord zoals gedemonstreerd. Vastgelegd in `docs/studio-hellofresh/19-sprint-5-kookmodus.md` en het
+logboek; sprint 6 (#65) kan beginnen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Record the client's sign-off on sprint 5 of the role-play
+
+[PR #101](https://github.com/DKJ-Solutions/dkj-recipes/pull/101)
+
+---
 
 ### DEPLOY: docs/64-sprint-5-kookmodus · 20261111-113701Z
 
