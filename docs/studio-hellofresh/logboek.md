@@ -16,7 +16,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   €4,30 per portie. De kookmodus blijkt geen verbetering: HelloFresh heeft er een. De premiumfuncties
   zijn nu Must, en de supermarktkoppelingen Won't. **Prijs als reden om op te zeggen is niet
   bewezen**, dus dat toetsen de interviews als eerste. Zie de [teardown](03-hellofresh-teardown.md).
-- **Volgende stap:** de interviews met de doelgroep (taak #50).
+- **Wie de deelnemers speelt, is besloten** (taak #50): Dave speelt alle 8 tot 10 deelnemers zelf.
+- **De gespreksleidraad is klaar** (taak #50): zes hypotheses, met H2 (prijs als reden om op te
+  zeggen) als eerste, vier afhakers, drie gezinnen en twee à drie starters, en 21 vragen in 45
+  minuten. Over geld begint Bram pas in blok 5, zodat telt wat iemand uit zichzelf noemt. Zie de
+  [interviews](07-interviews.md).
+- **Volgende stap:** Dave speelt de interviews; daarna komen de uitkomsten in hetzelfde document
+  (taak #50).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

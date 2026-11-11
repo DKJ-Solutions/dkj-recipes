@@ -39,19 +39,32 @@
 
 ### PLAN
 
+#### Scope
+
+Issue #50, the first half: Bram's interview guide. Per Dave's decision on the issue (2026-11-11,
+option a) Dave plays all 8 to 10 interviewees himself, so the answers and the outcomes are NOT
+written here -- they are never invented. The issue stays open for that second half (`-NoResolves`).
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/07-interviews.md`: hypotheses H1-H6 with H2 first and a confirm bar, the participant mix, Bram's rules, the 45-minute guide, the report template, and an empty outcomes section
+- [x] README reading order and logboek entry
 
 ### TEST
 
+- [x] Docs only; the gates in ship-pr cover the tree
+
 ### DEPLOY: docs/50-interviews-leidraad
 
-**Score:**
+Het rollenspel krijgt de gespreksleidraad voor de interviews: zes hypotheses met de prijs als reden om op te zeggen voorop, wie we spreken, de regels voor de interviewer, 21 vragen in 45 minuten en een verslagsjabloon. De uitkomsten volgen zodra Dave de deelnemers heeft gespeeld.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
