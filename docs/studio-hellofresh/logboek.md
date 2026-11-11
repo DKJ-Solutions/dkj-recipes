@@ -74,6 +74,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   (taak #69) toetst de weekprijs opnieuw met echte mensen. Daarmee is fase 2 rond en begint de bouw met
   sprint 1 (taak #60). Zie het [prototype en de usertest](14-prototype-en-usertest.md), hoofdstuk
   "Go/no-go 2".
+- **Sprint 1 is gebouwd** (taak #60): PostgreSQL in een Europese cloud in Amsterdam, drie omgevingen,
+  Sentry, en een lopende band die bij elke wijziging test en een testversie bouwt. Wie de app opent, is
+  meteen een gast; "Bewaar je menu" maakt van die gast een account, met Apple, Google of e-mail zonder
+  wachtwoord. De testversie in TestFlight wacht op de accounts op naam van Thuiskok. **Twee vragen
+  liggen bij de klant**: wie die accounts aanmaakt, en of de demo akkoord is. Zie
+  [sprint 1](15-sprint-1-fundament.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
