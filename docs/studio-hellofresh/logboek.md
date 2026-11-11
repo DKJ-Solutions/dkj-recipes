@@ -47,7 +47,11 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   boodschappen doen, koken). Het account komt ná het eerste weekmenu, de app stelt een menu voor in
   plaats van te laten kiezen, en premium wordt aangeboden waar het iets oplost. Vier keuzes gaan als
   eerste naar de usertest (taak #58). Zie de [user flows](11-user-flows.md).
-- **Volgende stap: de wireframes** (taak #56).
+- **De wireframes staan** (taak #56): negen kernschermen voor de flows 1 tot en met 4, met het
+  weekmenu als het belangrijkste scherm (de weekprijs bovenaan, één knop om ja te zeggen) en drie tabs
+  onderin: Week, Lijst en Ik. De premiumschermen en het portaal volgen later. Zie de
+  [wireframes](12-wireframes.md).
+- **Volgende stap: het designsysteem** (taak #57).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

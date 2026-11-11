@@ -41,17 +41,27 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/12-wireframes.md`: negen kernschermen als tekstwireframes, elk bij een
+  stap uit de user flows, met wat er bewust nog niet in staat
+- [x] Een rij in de leesvolgorde van `README.md` en een regel in `logboek.md`
 
 ### TEST
 
+- [x] Alleen documentatie; elke schermkader is even breed nagemeten (36 tekens per regel)
+
 ### DEPLOY: docs/56-wireframes
 
-**Score:**
+De wireframes van het rollenspel staan in `docs/studio-hellofresh/12-wireframes.md`: negen kernschermen
+voor de eerste keer, het weekmenu, de boodschappenlijst en de keuken, met het weekmenu als het
+belangrijkste scherm.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
