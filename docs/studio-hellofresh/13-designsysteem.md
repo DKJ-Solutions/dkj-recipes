@@ -111,7 +111,7 @@ het brand book niet.
 - **De app volgt de lettergrootte van de telefoon.** Wie de letters groter zet, krijgt ze groter; de
   schermen zijn getekend met ruimte voor 200 %.
 - **Nooit tekst kleiner dan 12 punten** (`--text-sm`, de kleinste maat die Thuiskok gebruikt), en die
-  alleen voor *indicatief* en een label.
+  alleen voor *indicatief*, de prijs per portie onder de weekprijs en een label.
 
 ## 3. Maten en ruimte
 
@@ -139,7 +139,7 @@ eigen, omdat het brand book ze niet kent.
 | **Tekstknop** | een link | Alleen tekst, in `--primary` | Overslaan, Later, Meer recepten |
 | **Keuze** | `.seg` | Een rij rondjes met het getal; gekozen in de themakleur | 2 |
 | **Vinkvakje** | `.check` | Het vakje van de telefoon, in de themakleur | 3, 7 |
-| **Weekprijs-kaart** | `.hero` op `--bg-3` | Het bedrag groot, *indicatief* eronder | 4 |
+| **Weekprijs-kaart** | `.hero` op `--bg-3` | Het bedrag groot; eronder klein (`--text-sm`) de prijs per portie en *indicatief*: "€ 5,23 per portie · indicatief" (go/no-go 2, [prototype](14-prototype-en-usertest.md)) | 4 |
 | **Receptkaart** | `.card` | Foto links, naam, kooktijd, label, ⇄ rechts | 4, 5 |
 | **Label** | `.tag` | *veggie*, *30 min* | 4, 5 |
 | **Paneel** | `<dialog>` | Schuift van onderen in, het scherm erachter gedimd | 6 |

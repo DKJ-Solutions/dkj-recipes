@@ -2,7 +2,7 @@
 
 **Eigenaar:** Iris en Mehmet (het prototype), Bram (de usertest) · **Bewaakt door:** Lotte (Design
 Lead) · **Week 8:** 4–8 januari 2027 · **Status:** **getest** op 11 november 2026 (taak #58);
-**go/no-go 2 ligt bij de klant**
+**go/no-go 2: go, met de prijs per portie** (11 november 2026)
 
 > **Wat een klikbaar prototype is.** De wireframes in de echte kleuren, letters en onderdelen, met
 > knoppen die echt naar het volgende scherm gaan. Er zit nog geen code achter: de recepten, de prijzen
@@ -140,7 +140,22 @@ begint de bouw (sprint 1, taak #60). **Het team stelt drie mogelijkheden voor:**
 in het prototype is per portie juist duurder dan dat vanaf-bedrag. Een vergelijking die niet altijd
 klopt, breekt de regel "eerlijk over wat we niet weten" uit de [toon](13-designsysteem.md).
 
+### Het besluit
+
+**Go, met de prijs per portie onder de weekprijs (optie 1).** Dave koos dat op 11 november 2026 als
+Thuiskok, op advies van het bureau. Wat dat vastlegt:
+
+- **Onder de weekprijs staat klein de prijs per portie**: "€ 31,40 · € 5,23 per portie · indicatief".
+  De weekprijs blijft voorop en blijft het grootste getal op het weekmenu. De prijs per portie is een
+  hulp om te vergelijken en wordt nergens anders een uithangbord ([persona's](08-personas.md)).
+- **De weekprijs-kaart in het [designsysteem](13-designsysteem.md) heeft die regel al.** Het prototype
+  neemt hem over, samen met de vier aanpassingen hierboven. Iris en een developer doen dat in ongeveer
+  twee dagen, binnen het plafond van € 1.159.000.
+- **De bèta (taak #69) toetst keuze 3 opnieuw**, nu met echte mensen. Hun uitkomsten tellen apart van
+  de fictieve uitkomsten hier.
+
+Daarmee is fase 2 rond.
+
 ## Volgende stap
 
-Go/no-go 2: de klant kiest uit de drie mogelijkheden hierboven. Bij een go begint sprint 1, het
-fundament (taak #60).
+De bouw begint met sprint 1, het fundament (taak #60).
