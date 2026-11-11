@@ -26,8 +26,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   De echte stem noemt de prijs uit zichzelf als reden om op te zeggen (H2a voorlopig bevestigd), maar
   kijkt niet naar de prijs van een recept (H2b niet bevestigd). De belofte wordt daarom "het gemak van een box,
   voor het geld van gewone boodschappen". H3 en H4 blijven open. Zie de [interviews](07-interviews.md).
-- **Volgende stap:** de persona's (taak #51). De usertest (taak #58) toetst daarna met echte gebruikers
-  wat nu alleen voorlopig is.
+- **De persona's zijn uitgewerkt** (taak #51): **Noor, de boxmoeë** is primair, want zij is de enige
+  met een echte stem eronder. Marieke (het krappe gezin) en Daan (de starter) zijn secundair en rusten
+  alleen op fictie. Daarbij een voorstel voor de MoSCoW (taak #53): een weekmenu en de weekprijs op
+  echt bewijs, de prijs per portie niet als uithangbord. Zie de [persona's](08-personas.md).
+- **Volgende stap:** de technische verkenning (taak #52) en de MoSCoW (taak #53). De usertest (taak #58)
+  toetst daarna met echte gebruikers wat nu alleen voorlopig is.
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

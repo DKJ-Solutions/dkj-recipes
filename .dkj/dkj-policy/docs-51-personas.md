@@ -39,19 +39,29 @@
 
 ### PLAN
 
+Bram and Lotte turn the interview outcomes of #50 (`docs/studio-hellofresh/07-interviews.md`) into personas. No client answer is needed: personas are agency work built on the recorded interviews. Every trait cites its participant, the one real voice set apart, so fiction never reads as evidence.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Write `docs/studio-hellofresh/08-personas.md`: three personas (one primary, two secondary), each trait cited, a certainty line per persona
+- [x] Add a MoSCoW proposal for #53, marked as a proposal, not a decision
+- [x] Add the document to the README reading order and a line to the logbook
 
 ### TEST
 
+- [x] Every trait cites a participant; the real voice (participant 1) is marked bold and the personas resting only on fiction say so
+
 ### DEPLOY: docs/51-personas
 
-**Score:**
+De persona's voor het rollenspel zijn uitgewerkt in `docs/studio-hellofresh/08-personas.md`: Noor (de boxmoeë, primair, op de echte stem), Marieke (het krappe gezin) en Daan (de starter), de laatste twee alleen op fictie. Met een voorstel voor de MoSCoW van taak #53.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

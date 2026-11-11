@@ -22,7 +22,8 @@
 | 4 | [Plan van aanpak](04-plan-van-aanpak.md) | De zes maanden in fases, met opleveringen, beslismomenten en risico's |
 | 5 | [Offerte](05-offerte.md) | Wat erin zit en wat niet, de prijs in twee delen, de betaling en de afspraken |
 | 6 | [Kick-off](06-kick-off.md) | Het kernteam aan tafel: de agenda, wie wat doet in de discovery, de afspraken en de vragen aan de klant |
-| 7 | [Interviews](07-interviews.md) | De gespreksleidraad: wat we toetsen, wie we spreken, de vragen, en straks de uitkomsten |
+| 7 | [Interviews](07-interviews.md) | De gespreksleidraad, de verslagen en de uitkomsten per hypothese |
+| 8 | [Persona's](08-personas.md) | Noor, Marieke en Daan: voor wie we ontwerpen, en op welk bewijs |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
