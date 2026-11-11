@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 51 minor entries** <!-- pending-tally -->
+**10 / 52 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/65-sprint-6-prijzen · 20261111-125007Z
+
+Sprint 6 van het rollenspel is gespeeld tot de demo: de weekprijs en de prijs per portie, wat een wissel
+scheelt, premium via de app stores met opzeggen in drie tikken, het weekbudget, en de favoriet als zesde
+regel in het voorstel. Vastgelegd in `docs/studio-hellofresh/20-sprint-6-prijzen-en-premium.md` en het
+logboek; vier vragen liggen bij de klant (#65).
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Play sprint 6 of the role-play up to the demo
+
+[PR #102](https://github.com/DKJ-Solutions/dkj-recipes/pull/102)
+
+---
 
 ### DEPLOY: docs/64-sprint-5-akkoord · 20261111-124317Z
 
