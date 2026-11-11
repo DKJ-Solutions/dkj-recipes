@@ -167,6 +167,11 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   9 van de 31 ingrediënten staan nog open bij Thuiskok. **Drie vragen liggen bij de klant**: of *Over na
   deze week* voor iedereen is, of er tot de lancering niets meer bij komt, en of de demo akkoord is en
   de bèta mag beginnen. Zie [sprint 8](22-sprint-8-restjes-en-afronden.md).
+- **Sprint 8 is akkoord, en daarmee de bouw** (taak #67). Dave antwoordde als Thuiskok: *Over na deze
+  week* is voor iedereen en het plannen blijft premium (een halve dag om te zetten). Tot de lancering
+  komt er geen nieuwe functie meer bij; wat de bèta oplevert, wordt opgelost of gaat naar na de
+  lancering. De demo is akkoord en de bèta (taak #69) mag beginnen met deze testversie. Zie
+  [sprint 8](22-sprint-8-restjes-en-afronden.md), hoofdstuk "Het antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
