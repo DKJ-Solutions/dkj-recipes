@@ -121,6 +121,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   lancering, en klachten erover worden gemeten in de bèta (taak #69). De lijst is akkoord zoals
   gedemonstreerd, ook zonder prijzen tot sprint 6, dus sprint 5 begint (taak #64). Zie
   [sprint 4](18-sprint-4-boodschappenlijst.md), hoofdstuk "Het antwoord van de klant".
+- **Sprint 5 is gebouwd** (taak #64): het aantal eters per recept voor één avond, de kookmodus met één
+  stap per scherm, een scherm dat aan blijft en de timer als volle knop, zoals de usertest vroeg, en de
+  favorieten met ♡. Het portaal kreeg een verwijzing naar een ingrediënt in een stap, omdat een vast
+  getal in de tekst niet meerekent met het aantal eters. **Drie vragen liggen bij de klant**: wie de 41
+  stappen met een vast getal herschrijft en wanneer, of de favorieten het voorstel van de week mogen
+  beïnvloeden, en of de demo akkoord is. Zie [sprint 5](19-sprint-5-kookmodus.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

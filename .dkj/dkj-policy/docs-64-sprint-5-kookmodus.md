@@ -39,19 +39,38 @@
 
 ### PLAN
 
+- [x] Play sprint 5 (the cooking mode, servings per recipe and favourites; flow 4, wireframes 8 and 9)
+  up to the demo, the way sprint 4 was played for #63: what was built, the gap found, the demo, and the
+  client's open questions. The client's answers are not invented; #64 stays open and is parked for them.
+
+#### Notes
+
+- Sprint 5 = week 15–16 (22 February – 5 March 2027), from the plan van aanpak.
+- Rating ("Hoe was het?") is sprint 7 (#66) in the plan, so it is named as not yet built.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/19-sprint-5-kookmodus.md`: the sprint document.
+- [x] `docs/studio-hellofresh/README.md`: row 19 in the reading order.
+- [x] `docs/studio-hellofresh/logboek.md`: one line under session 2.
 
 ### TEST
 
+- [x] Docs only; the gates in `ship-pr` cover it.
+
 ### DEPLOY: docs/64-sprint-5-kookmodus
 
-**Score:**
+Sprint 5 van het rollenspel is gespeeld tot de demo: het aantal eters per recept, de kookmodus met de
+timer als volle knop en een scherm dat aan blijft, en de favorieten. Vastgelegd in
+`docs/studio-hellofresh/19-sprint-5-kookmodus.md` en het logboek; drie vragen liggen bij de klant (#64).
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
