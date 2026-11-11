@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 36 minor entries** <!-- pending-tally -->
+**10 / 37 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/55-user-flows · 20261111-093758Z
+
+De user flows van het rollenspel staan in `docs/studio-hellofresh/11-user-flows.md`: zeven routes door
+de app, met de week (menu kiezen, boodschappen doen, koken) als hoofdroute, en vier keuzes die de
+usertest als eerste moet toetsen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: de user flows
+
+[PR #87](https://github.com/DKJ-Solutions/dkj-recipes/pull/87)
+
+---
 
 ### DEPLOY: docs/53-go-no-go-1 · 20261111-093120Z
 
