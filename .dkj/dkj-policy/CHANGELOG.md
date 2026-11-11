@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 34 minor entries** <!-- pending-tally -->
+**10 / 35 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/53-discovery-rapport · 20261111-091917Z
+
+Het discovery-rapport voor het rollenspel staat in `docs/studio-hellofresh/10-discovery-rapport.md`: de MoSCoW na de discovery (restjesslim plannen naar Should, een prijstabel erbij), een definitief plafond voor deel B van € 1.159.000, en drie opties voor go/no-go 1, waarover de klant nog beslist.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: de MoSCoW en het discovery-rapport
+
+[PR #85](https://github.com/DKJ-Solutions/dkj-recipes/pull/85)
+
+---
 
 ### DEPLOY: docs/52-technische-verkenning · 20261111-091522Z
 
