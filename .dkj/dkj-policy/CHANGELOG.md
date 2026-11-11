@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 63 minor entries** <!-- pending-tally -->
+**10 / 64 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/73-lancering-voorbereid · 20261111-152839Z
+
+De lanceringsdag van het rollenspel is gespeeld tot het woord van de klant: de review zonder afwijzing,
+Thuiskok op 11 mei 2027 in beide stores, de eerste twee weken, het project tegen het plan en wat het team
+leerde. Drie vragen liggen bij de klant. Vastgelegd in `docs/studio-hellofresh/26-lancering-en-evaluatie.md`,
+de leesvolgorde en het logboek.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Play the role-play's launch day and evaluation up to the client's word
+
+[PR #115](https://github.com/DKJ-Solutions/dkj-recipes/pull/115)
+
+---
 
 ### DEPLOY: docs/72-inzending-akkoord · 20261111-152300Z
 
