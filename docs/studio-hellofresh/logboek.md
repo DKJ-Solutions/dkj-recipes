@@ -160,6 +160,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   de herinnering en *Hoe was het?* zijn akkoord zoals gedemonstreerd, ook de omweg voor de uitnodiging op
   een iPhone, dus sprint 8 begint. Zie [sprint 7](21-sprint-7-gedeelde-lijst.md), hoofdstuk "Het
   antwoord van de klant".
+- **Sprint 8 is gebouwd** (taak #67), de laatste sprint van de bouw: *Niet weer* als zevende regel van
+  het voorstel, en restjesslim plannen als stap na de regels, met hooguit twee wissels per week en *Over
+  na deze week* op de lijst. Bij twee eters daalt wat je per portie betaalt van € 4,10 naar € 3,60
+  (gemeten op de testgerechten). Geen blokkerende fouten meer, de app opent in onder de 2 seconden, en
+  9 van de 31 ingrediënten staan nog open bij Thuiskok. **Drie vragen liggen bij de klant**: of *Over na
+  deze week* voor iedereen is, of er tot de lancering niets meer bij komt, en of de demo akkoord is en
+  de bèta mag beginnen. Zie [sprint 8](22-sprint-8-restjes-en-afronden.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

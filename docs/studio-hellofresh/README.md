@@ -37,6 +37,7 @@
 | 19 | [Sprint 5: de kookmodus](19-sprint-5-kookmodus.md) | Het aantal eters per recept, de kookmodus met de timer als knop en een scherm dat aan blijft, de favorieten, en de getallen in de stappen |
 | 20 | [Sprint 6: de prijzen en premium](20-sprint-6-prijzen-en-premium.md) | De weekprijs en de prijs per portie, wat een wissel scheelt, premium via de app stores, opzeggen in drie tikken, het weekbudget en de favoriet in het voorstel |
 | 21 | [Sprint 7: de gedeelde lijst](21-sprint-7-gedeelde-lijst.md) | De lijst delen met een huisgenoot en samen afvinken, ook zonder bereik, hooguit één herinnering per week, en *Hoe was het?* na het koken |
+| 22 | [Sprint 8: restjes en afronden](22-sprint-8-restjes-en-afronden.md) | *Niet weer* als zevende regel, restjesslim plannen als stap in het voorstel, *Over na deze week*, de laatste fouten eruit en de app sneller, klaar voor de bèta |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
