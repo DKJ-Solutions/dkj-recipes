@@ -39,19 +39,32 @@
 
 ### PLAN
 
+- [x] Issue #123 (task of milestone #118): the steps to repeat the offline test, in the README, so it
+  can be rerun after a change to `scripts/build-sw.mjs` and Dave can follow them on his Android phone
+  (#124). The steps follow what the desktop pre-check (#122, results on #118) actually ran.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `README.md`: a new section "Offline testen" with five phone steps, the desktop variant against
+  the preview with the server stopped, and where results and failures go.
 
 ### TEST
 
+- [x] Docs only. Each step matches a check that passed in the #122 run, including the update
+  behaviour (banner, one reload).
+
 ### DEPLOY: docs/123-offline-teststappen
 
-**Score:**
+The README now carries a five-step offline test for the phone, and a desktop variant, to rerun after
+any change to the service worker, the layout that registers it or the manifest.
+
+**Score:** 2
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A
+
+**Score:** N/A
 
 #### Pull Request
 
