@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 60 minor entries** <!-- pending-tally -->
+**10 / 61 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/70-go-no-go-3-akkoord · 20261111-150826Z
+
+Go/no-go 3 van het rollenspel is genomen: go. Release candidate 1.0.4 mag naar Apple en Google, op
+voorwaarde dat de jurist van Thuiskok de privacyverklaring goedkeurt en de verwerkersovereenkomsten
+getekend zijn; de allergieën krijgen een uitdrukkelijke toestemmingsvraag in de onboarding; en PostHog
+stopt bij de lancering. Vastgelegd in `docs/studio-hellofresh/24-afronding-en-go-no-go-3.md` en het
+logboek; de inzending (#72) is de volgende stap.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Record the client's go on go/no-go 3 of the role-play
+
+[PR #112](https://github.com/DKJ-Solutions/dkj-recipes/pull/112)
+
+---
 
 ### DEPLOY: docs/70-go-no-go-3-voorbereid · 20261111-150215Z
 
