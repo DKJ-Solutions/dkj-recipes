@@ -41,19 +41,23 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] De teardown in `docs/studio-hellofresh/03-hellofresh-teardown.md` gecontroleerd tegen openbare bronnen (de site en App Store-pagina van HelloFresh NL, Trustpilot, recente reviews): een kolom met wat klopt, de keuzes gelijkgetrokken met de besluiten uit de intake, de prijs en de vijf meest gehoorde klachten met bronnen erbij. De HelloFresh-prijs in de intake is gecorrigeerd en het logboek bijgewerkt
 
 ### TEST
 
 ### DEPLOY: docs/49-teardown-controleren
 
-**Score:**
+De teardown van het rollenspel is gecontroleerd tegen openbare bronnen. Per functie staat erbij wat klopt. De keuzes volgen nu de besluiten uit de intake: de premiumfuncties zijn Must en de supermarktkoppelingen Won't. Erbij gekomen zijn de prijs van HelloFresh en de vijf meest gehoorde klachten, met bronnen. Een kanttekening voor de interviews: dat mensen vanwege de prijs opzeggen, is niet bewezen.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
-Check the HelloFresh teardown
+Rollenspel studio: de HelloFresh-teardown gecontroleerd
 

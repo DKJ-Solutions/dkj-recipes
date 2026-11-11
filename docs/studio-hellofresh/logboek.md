@@ -11,7 +11,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   agenda, wie wat doet in de vier weken discovery, en de afspraken en tools. Er staan drie vragen
   open voor de klant: de vaste contactpersoon, hulp bij het werven voor de interviews, en de datum
   van de eerste stuurgroep. Zie de [kick-off](06-kick-off.md).
-- **Volgende stap:** de discovery begint met het controleren van de teardown (taak #49).
+- **De teardown is gecontroleerd** (taak #49), tegen openbare bronnen; de app zelf nog niet. HelloFresh
+  heeft 45 tot ruim 80 recepten per week, in NL alleen boxen voor 1 en 2 personen, en kost vanaf
+  €4,30 per portie. De kookmodus blijkt geen verbetering: HelloFresh heeft er een. De premiumfuncties
+  zijn nu Must, en de supermarktkoppelingen Won't. **Prijs als reden om op te zeggen is niet
+  bewezen**, dus dat toetsen de interviews als eerste. Zie de [teardown](03-hellofresh-teardown.md).
+- **Volgende stap:** de interviews met de doelgroep (taak #50).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
