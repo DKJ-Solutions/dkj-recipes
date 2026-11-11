@@ -41,6 +41,7 @@
 | 23 | [De bèta](23-beta.md) | 150 testers verdeeld over de persona's, het testplan en de lat vooraf, de twee weken zelf, de twaalf metingen en de uitkomst tegen de lat |
 | 24 | [De afronding en go/no-go 3](24-afronding-en-go-no-go-3.md) | Wat de bèta achterliet opgelost, de AVG-check, de toegankelijkheid tegen WCAG 2.1 AA, de release candidate en het advies voor go/no-go 3 |
 | 25 | [De store-pagina's en de inzending](25-store-paginas-en-inzending.md) | Versie 1.0.5 met de toestemmingsvraag en zonder PostHog, de store-pagina's, de vragenlijsten over privacy, wat de reviewers nodig hebben, en wat Thuiskok vóór de inzending regelt |
+| 26 | [De lanceringsdag en de evaluatie](26-lancering-en-evaluatie.md) | De review, de lanceringsdag uur voor uur, de eerste twee weken, het project tegen het plan, wat het team leerde, en wat er na de garantie komt |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
