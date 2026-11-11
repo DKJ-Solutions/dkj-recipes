@@ -133,6 +133,14 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   aantal eters per recept en de favorieten zijn akkoord zoals gedemonstreerd, ook zonder *Hoe was het?*
   tot sprint 7, dus sprint 6 begint (taak #65). Zie [sprint 5](19-sprint-5-kookmodus.md), hoofdstuk
   "Het antwoord van de klant".
+- **Sprint 6 is gebouwd** (taak #65): de weekprijs op de kaart, met de prijs per portie en
+  *indicatief*, wat een wissel scheelt, en de prijs per portie in het recept. Een weekprijs zonder prijs
+  of verpakking zegt dat, en het portaal kreeg *Wat mist er nog?*. Premium gaat via de app stores en
+  hoort bij het account, opzeggen kost drie tikken, en het weekbudget houdt het voorstel eronder. De
+  favoriet is de zesde regel, zoals besloten in sprint 5. **Vier vragen liggen bij de klant**: of de
+  catalogus in productie compleet is, wat de prijs per portie in het recept moet tonen (die verschilt van
+  de kaart), de prijs van premium en wie de afspraken met de stores tekent, en of de demo akkoord is.
+  Zie [sprint 6](20-sprint-6-prijzen-en-premium.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

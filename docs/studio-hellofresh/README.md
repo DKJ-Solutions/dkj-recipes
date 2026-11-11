@@ -35,6 +35,7 @@
 | 17 | [Sprint 3: onboarding en het weekmenu](17-sprint-3-onboarding-en-weekmenu.md) | De eerste keer in drie schermen, het voorstel van de week, wisselen, de allergenen en de eerste testversie in TestFlight |
 | 18 | [Sprint 4: de boodschappenlijst](18-sprint-4-boodschappenlijst.md) | Samenvoegen in hele verpakkingen, per afdeling afvinken, de basisvoorraad bovenaan, en werken zonder bereik |
 | 19 | [Sprint 5: de kookmodus](19-sprint-5-kookmodus.md) | Het aantal eters per recept, de kookmodus met de timer als knop en een scherm dat aan blijft, de favorieten, en de getallen in de stappen |
+| 20 | [Sprint 6: de prijzen en premium](20-sprint-6-prijzen-en-premium.md) | De weekprijs en de prijs per portie, wat een wissel scheelt, premium via de app stores, opzeggen in drie tikken, het weekbudget en de favoriet in het voorstel |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
