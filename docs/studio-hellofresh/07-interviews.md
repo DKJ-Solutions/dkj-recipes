@@ -123,6 +123,32 @@ hieronder.
 | Betaalbereidheid | Vraag 21 |
 | Opvallend citaat | Eén zin die we bij de persona's willen gebruiken |
 
+## De verslagen
+
+Gespeeld door Dave op 11 november 2026. De antwoorden zijn letterlijk overgenomen of kort
+samengevat. Wat niet gevraagd of niet beantwoord is, staat als *niet beantwoord*.
+
+### Deelnemer 1 — afhaker in spe
+
+| Veld | Wat erin komt |
+|---|---|
+| Deelnemer | 1, afhaker. **Valt net buiten de screening:** zit nog bij HelloFresh, maar is "wanhopig op zoek naar een goedkoper alternatief". Woont samen met een vriendin, ze koken altijd samen |
+| Reden gestopt, uit zichzelf | "Omdat het gewoon echt heel duur is" (vraag 6); het moment om op te zeggen: "ook omdat het te duur is" (vraag 7) |
+| Reden gestopt, geholpen | "Heel belangrijk. Maar ik kan het nog wel even volhouden op deze manier" |
+| Mist het meest | Nog niet gestopt. Fijnst aan de box: "dat ik nooit meer hoef na te denken wat ik die week moest maken. Het lag klaar in de koelkast" |
+| Plant zo | Het menu komt van HelloFresh. Doet elke week boodschappen, maakt altijd vooraf een lijstje en vergeet "soms wel iets" |
+| Gooit weg | "Niet veel": de porties van HelloFresh zijn goed en er blijft nooit wat over |
+| Reactie op het idee | "Jaaa geef, ik wil het hebben." Wat de deelnemer zou weerhouden: "Niks, dit is precies wat ik zoek" |
+| Betaalbereidheid | € 5 per maand |
+| Opvallend citaat | "Ik zit momenteel nog steeds bij HelloFresh, maar ik ben wanhopig op zoek naar een goedkoper alternatief." |
+
+**Verder genoteerd:** betaalt € 50 per week voor 3 maaltijden voor twee personen, plus ongeveer € 70 aan
+overige boodschappen (vraag 14). Begon met de box "omdat ik nooit kan verzinnen wat ik moet eten en hoe
+ik het moet maken" (vraag 4). Vraagt zich minstens 3 keer per week af wat er gegeten wordt. Kookt voor twee.
+**Kijkt niet naar de prijs van een recept:** "Belangrijkste is dat ik iets lekkers eet" (vraag 15). Dat
+is de eerste aanwijzing tegen het tweede deel van H2, de zichtbare prijs per portie. De afsluitende
+vragen zijn niet beantwoord.
+
 ## De uitkomsten
 
 **Nog niet afgenomen.** Zodra Dave de interviews heeft gespeeld, komen hier per hypothese het
