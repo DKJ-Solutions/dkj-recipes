@@ -34,6 +34,7 @@
 | 16 | [Sprint 2: recepten en het portaal](16-sprint-2-recepten-en-portaal.md) | Het beheerportaal met de catalogus en de prijstabel, en het eerste recept in de app |
 | 17 | [Sprint 3: onboarding en het weekmenu](17-sprint-3-onboarding-en-weekmenu.md) | De eerste keer in drie schermen, het voorstel van de week, wisselen, de allergenen en de eerste testversie in TestFlight |
 | 18 | [Sprint 4: de boodschappenlijst](18-sprint-4-boodschappenlijst.md) | Samenvoegen in hele verpakkingen, per afdeling afvinken, de basisvoorraad bovenaan, en werken zonder bereik |
+| 19 | [Sprint 5: de kookmodus](19-sprint-5-kookmodus.md) | Het aantal eters per recept, de kookmodus met de timer als knop en een scherm dat aan blijft, de favorieten, en de getallen in de stappen |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
