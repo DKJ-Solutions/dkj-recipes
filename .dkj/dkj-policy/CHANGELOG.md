@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 43 minor entries** <!-- pending-tally -->
+**10 / 44 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/61-sprint-2-recepten-portaal · 20261111-105326Z
+
+Sprint 2 van het rollenspel staat in `docs/studio-hellofresh/16-sprint-2-recepten-en-portaal.md`: het
+beheerportaal met de catalogus en de prijstabel, en het eerste recept in de app. Drie vragen liggen bij
+de klant op #61.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: sprint 2, recepten tonen en het beheerportaal
+
+[PR #94](https://github.com/DKJ-Solutions/dkj-recipes/pull/94)
+
+---
 
 ### DEPLOY: docs/60-sprint-1-akkoord · 20261111-104840Z
 
