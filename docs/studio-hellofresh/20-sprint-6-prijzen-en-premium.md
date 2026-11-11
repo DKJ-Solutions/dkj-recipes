@@ -1,7 +1,7 @@
 # 20. Sprint 6: de prijzen, het weekbudget en premium
 
 **Eigenaar:** Wouter (Tech Lead), met Fatima (Delivery Manager) · **Week 17–18:** 8 – 19 maart 2027 ·
-**Status:** **gebouwd** op 11 november 2026 (taak #65); **de demo ligt bij de klant**
+**Status:** **gebouwd** op 11 november 2026 (taak #65); **de demo is akkoord** (11 november 2026)
 
 > **Wat deze sprint oplevert.** De belofte. Bovenaan het weekmenu staat nu wat de week kost, en in het
 > recept wat een portie kost. Wie wisselt, ziet wat dat scheelt. En wie wil dat de week onder een bedrag
@@ -256,7 +256,23 @@ plannen.
 4. **De demo.** Zijn de prijzen, premium en het weekbudget zoals hierboven akkoord, of mist Thuiskok iets
    voordat sprint 7 (de gedeelde lijst, de pushmeldingen en de beoordelingen, taak #66) begint?
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle vier de vragen:
+
+1. **De catalogus in productie is nog niet compleet.** Thuiskok vult de ontbrekende prijzen en de
+   verpakkingen van de 31 ingrediënten uit sprint 4 aan vóór de bèta (taak #69). Tot dan zegt de weekprijs
+   *zonder N producten*, en *Wat mist er nog?* laat zien wat er openstaat.
+2. **Het recept toont wat je opeet, met dat erbij**, zoals het bureau adviseerde: *"€ 2,90 per portie aan
+   wat je opeet"*. Het verschil met de kaart wordt in sprint 8 kleiner.
+3. **Premium kost € 2,49 per maand**, zonder proefperiode en zonder jaarabonnement bij de lancering. Dave
+   tekent namens Thuiskok de voorwaarden voor betaalde apps, vult de bank- en belastinggegevens in en meldt
+   Thuiskok bij Apple aan voor het tarief van 15 procent, vóór de inzending bij de stores (taak #72).
+4. **De prijzen, premium en het weekbudget zijn akkoord** zoals ze in de demo te zien waren. Sprint 7
+   begint.
+
+Daarmee is sprint 6 rond.
+
 ## Volgende stap
 
-Sprint 7: de gedeelde lijst, de pushmeldingen en de beoordelingen (taak #66), zodra de klant de demo
-heeft gezien.
+Sprint 7: de gedeelde lijst, de pushmeldingen en de beoordelingen (taak #66).

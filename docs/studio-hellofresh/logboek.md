@@ -141,6 +141,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   catalogus in productie compleet is, wat de prijs per portie in het recept moet tonen (die verschilt van
   de kaart), de prijs van premium en wie de afspraken met de stores tekent, en of de demo akkoord is.
   Zie [sprint 6](20-sprint-6-prijzen-en-premium.md).
+- **Sprint 6 is akkoord** (taak #65). Dave antwoordde als Thuiskok: de catalogus in productie is nog niet
+  compleet, en Thuiskok vult de prijzen en verpakkingen aan vóór de bèta (taak #69). Het recept toont wat
+  je opeet, met dat erbij. Premium kost € 2,49 per maand, zonder proefperiode en zonder jaarabonnement, en
+  Dave regelt namens Thuiskok de afspraken met de stores vóór de inzending (taak #72). De prijzen, premium
+  en het weekbudget zijn akkoord zoals gedemonstreerd, dus sprint 7 begint (taak #66). Zie
+  [sprint 6](20-sprint-6-prijzen-en-premium.md), hoofdstuk "Het antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
