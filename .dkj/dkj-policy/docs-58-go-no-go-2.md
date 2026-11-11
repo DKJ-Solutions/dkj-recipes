@@ -39,19 +39,31 @@
 
 ### PLAN
 
+- [x] Record Dave's go/no-go 2 decision on #58 (option 1, 2026-11-11) in the role-play docs, then close #58.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `14-prototype-en-usertest.md`: status line, a "Het besluit" section under Go/no-go 2, and the next step (sprint 1, #60).
+- [x] `13-designsysteem.md`: the week-price card carries the price per portion in `--text-sm`.
+- [x] `logboek.md`: the decision replaces the "Volgende stap: go/no-go 2" line.
 
 ### TEST
 
+- [x] Docs only; links checked by hand against the files in `docs/studio-hellofresh/`.
+
 ### DEPLOY: docs/58-go-no-go-2
 
-**Score:**
+Go/no-go 2 van het rollenspel is vastgelegd: go, met klein de prijs per portie onder de weekprijs.
+Het besluit staat in `14-prototype-en-usertest.md`, de weekprijs-kaart in `13-designsysteem.md` en het
+logboek; fase 2 is rond en de bouw begint met sprint 1 (#60).
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

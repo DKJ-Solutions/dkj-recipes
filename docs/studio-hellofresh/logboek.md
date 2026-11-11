@@ -69,7 +69,11 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   aantal eters per week met een aanpassing. **De weekprijs zonder vergelijking is niet bevestigd**: drie
   van de vijf vroegen "is dat veel?". Het advies is de prijs per portie klein onder de weekprijs. Zie het
   [prototype en de usertest](14-prototype-en-usertest.md).
-- **Volgende stap: go/no-go 2**, de keuze van de klant uit drie mogelijkheden (taak #58).
+- **Go/no-go 2: go, met de prijs per portie** (taak #58). Dave koos als Thuiskok voor optie 1: onder
+  de weekprijs komt klein "€ 5,23 per portie · indicatief", en de weekprijs blijft voorop. De bèta
+  (taak #69) toetst de weekprijs opnieuw met echte mensen. Daarmee is fase 2 rond en begint de bouw met
+  sprint 1 (taak #60). Zie het [prototype en de usertest](14-prototype-en-usertest.md), hoofdstuk
+  "Go/no-go 2".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
