@@ -41,17 +41,26 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Write `docs/studio-hellofresh/20-sprint-6-prijzen-en-premium.md`: sprint 6 played up to the
+  demo, with the client's open questions; the favourite rule decided in sprint 5 is built here
+- [x] Add the row to `docs/studio-hellofresh/README.md` and the line to `logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/65-sprint-6-prijzen
 
-**Score:**
+Sprint 6 van het rollenspel is gespeeld tot de demo: de weekprijs en de prijs per portie, wat een wissel
+scheelt, premium via de app stores met opzeggen in drie tikken, het weekbudget, en de favoriet als zesde
+regel in het voorstel. Vastgelegd in `docs/studio-hellofresh/20-sprint-6-prijzen-en-premium.md` en het
+logboek; vier vragen liggen bij de klant (#65).
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
