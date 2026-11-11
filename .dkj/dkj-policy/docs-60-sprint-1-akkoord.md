@@ -39,19 +39,32 @@
 
 ### PLAN
 
+- [x] Record the client's answer on sprint 1 (comment on #60, 2026-11-11) in the sprint document
+  and the logbook, the way go/no-go 2 was recorded for #58.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/15-sprint-1-fundament.md`: status line, chapter "Het antwoord van de
+  klant", next step.
+- [x] `docs/studio-hellofresh/logboek.md`: one line under session 2.
 
 ### TEST
 
+- [x] Docs only; the gates in `ship-pr` cover it.
+
 ### DEPLOY: docs/60-sprint-1-akkoord
 
-**Score:**
+Sprint 1 van het rollenspel is akkoord: Thuiskok maakt de twee store-accounts deze week zelf aan en de
+bèta blijft op schema. Vastgelegd in `docs/studio-hellofresh/15-sprint-1-fundament.md` en het logboek;
+sprint 2 (#61) kan beginnen.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

@@ -80,6 +80,11 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   wachtwoord. De testversie in TestFlight wacht op de accounts op naam van Thuiskok. **Twee vragen
   liggen bij de klant**: wie die accounts aanmaakt, en of de demo akkoord is. Zie
   [sprint 1](15-sprint-1-fundament.md).
+- **Sprint 1 is akkoord** (taak #60). Dave antwoordde als Thuiskok: Thuiskok maakt het Apple
+  Developer-account en het Google Play-account deze week op eigen naam aan, met hulp van het bureau
+  bij het D-U-N-S-nummer, en de bèta (taak #69) blijft op schema. Het fundament is akkoord zoals
+  gedemonstreerd, dus sprint 2 begint (taak #61). Zie [sprint 1](15-sprint-1-fundament.md), hoofdstuk
+  "Het antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
