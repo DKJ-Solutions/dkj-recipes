@@ -1,7 +1,8 @@
 # 13. Het designsysteem
 
 **Eigenaar:** Iris en Mehmet (UX/UI-designers) · **Bewaakt door:** Lotte (Design Lead) · **Week 7:**
-28–31 december 2026 · **Status:** **voorstel** op 11 november 2026 (taak #57), voor de klant
+28–31 december 2026 · **Status:** **voorstel** op 11 november 2026 (taak #57), op dezelfde dag
+**afgestemd op het DKJ brand book** na het besluit van de klant (taak #58)
 
 > **Wat een designsysteem is.** De bouwstenen waarmee elk scherm wordt gemaakt: de kleuren, de
 > letters, de maten en de onderdelen (knoppen, kaarten, de tabbalk). Wie een nieuw scherm tekent of
@@ -15,140 +16,147 @@
 
 **Thuiskok heeft nog geen eigen merk** (besluit van de klant, 11 november 2026, op taak #57). Het
 bureau stelt daarom het merk voor, **als onderdeel van het designsysteem en binnen het plafond van deel
-B** (€ 1.159.000, zie het [discovery-rapport](10-discovery-rapport.md)). Dat merk is: de kleuren, de
-typografie en de toon. **Een logo hoort er niet bij.** Tot er een is, staat de naam als woordmerk in de
-koptekstletter (hieronder). Een logo kan later apart worden besteld; het designsysteem hoeft daarvoor
-niet te veranderen.
+B** (€ 1.159.000, zie het [discovery-rapport](10-discovery-rapport.md)). **Een logo hoort er niet bij.**
+Tot er een is, staat de naam als woordmerk in de koptekstletter (hieronder).
+
+**Het merk volgt zoveel mogelijk het DKJ brand book** (besluit van de klant, 11 november 2026, op taak
+#58: *"ik wil wel zoveel mogelijk van het design gebruiken dat al vastgelegd is in de dkj-brandbook"*).
+Het eerste voorstel had een eigen palet (Paprika, Saffraan, Basilicum) en twee eigen letters (Fraunces en
+Inter). Die zijn vervallen. Wat het brand book al vastlegt, nemen we over; Thuiskok voegt alleen toe wat
+het brand book niet heeft, als **eigen laag** erbovenop, zonder iets van het brand book te overschrijven.
+Dat scheelt de developers werk: de stylesheet, de thema's en de meeste onderdelen bestaan al.
 
 ## Het merk in één zin
 
 **Een keukentafel, geen restaurant.** Thuiskok belooft "het gemak van een box, voor het geld van gewone
 boodschappen". Het merk moet dus warm en gewoon voelen, niet luxe. Drie keuzes volgen daaruit:
 
-- **Warme kleuren uit de keuken** (paprika, saffraan, basilicum) op een lichte, crèmekleurige
-  ondergrond, als bloem op het aanrecht.
+- **Een warme kleur uit de keuken.** Het standaardthema is **Roest**, het warme oranjebruin dat het
+  brand book al aan deze app toewijst. Het komt dicht bij de paprika van het eerste voorstel.
 - **Geen limoengroen.** Dat is de kleur van HelloFresh, en Noor wil juist weg bij de box
-  ([persona's](08-personas.md)). Thuiskok mag niet lijken op wat ze opzegt.
+  ([persona's](08-personas.md)). Het brand book heeft bovendien geen groen thema: groen betekent daar
+  "goed".
 - **Rustig en ruim.** De lijst wordt gelezen in de winkel, met een mandje in de andere hand, en het
   recept in de keuken op een armlengte ([user flows](11-user-flows.md), flows 3 en 4). Weinig tegelijk
   op een scherm, en grote vlakken om op te tikken.
 
 ## 1. Kleuren
 
-Elke kleur heeft een naam uit de keuken en een vaste rol. Een scherm gebruikt **de rol**, niet de
-kleur: "primaire knop", niet "paprika". Zo kan een kleur later wijzigen zonder dat elk scherm opnieuw
-moet.
+**Elke kleur is een token uit het brand book**, met een vaste rol. Een scherm gebruikt **de rol**, niet
+de kleur: "primaire knop", niet "roest". Het brand book deelt de kleuren van een thema in drie groepen,
+volgens de **60-30-10-regel**: 60 % papier (de ondergrond), 30 % de themakleur, 10 % tekst. **Een vierde
+groep bestaat niet**, dus het saffraangele accent van het eerste voorstel is vervallen.
 
-| Naam | Hex | Rol |
-|---|---|---|
-| **Paprika** | `#B8461B` | De hoofdkleur: de primaire knop, de actieve tab, links |
-| **Inkt** | `#1F2A2E` | Alle tekst en iconen |
-| **Peper** | `#5B6770` | Tekst die minder belangrijk is: kooktijd, *indicatief*, uitleg |
-| **Bloem** | `#FBF7F0` | De achtergrond van elk scherm |
-| **Wit** | `#FFFFFF` | Kaarten en panelen, boven op Bloem |
-| **Saffraan** | `#F6C453` | Het accent: de teller op de lijst, een nieuw voorstel |
-| **Saffraan licht** | `#FCE7C8` | De weekprijs-kaart (scherm 4) |
-| **Basilicum** | `#2F6B4F` | Veggie, en "gelukt" (afgevinkt, opgeslagen) |
-| **Basilicum licht** | `#E8F1EC` | Het label *veggie* |
-| **Tomaat** | `#B42318` | Fouten en allergenen |
-| **Lijn** | `#D9D2C5` | Scheidingslijnen tussen rijen |
-| **Rand** | `#8C8579` | De rand van een vakje, een keuze of een invoerveld |
-
-### Contrast: gemeten, niet geschat
-
-De app moet voldoen aan **WCAG 2.1 niveau AA** (de toegankelijkheidscheck in fase 4, taak #70). Dat
-eist een contrast van **4,5 : 1** voor gewone tekst en **3 : 1** voor grote tekst en voor de rand van
-een bedieningselement. Elke combinatie die de app gebruikt, is nagerekend:
-
-| Voorgrond | Achtergrond | Contrast | Genoeg voor |
+| Rol in Thuiskok | Token | Roest (licht) | Was in het eerste voorstel |
 |---|---|---|---|
-| Inkt | Bloem | 13,8 : 1 | Alle tekst |
-| Inkt | Wit | 14,7 : 1 | Alle tekst |
-| Inkt | Saffraan licht | 12,2 : 1 | De weekprijs |
-| Inkt | Saffraan | 9,1 : 1 | De teller |
-| Inkt | Basilicum licht | 12,8 : 1 | Het label *veggie* |
-| Peper | Bloem | 5,4 : 1 | Gewone tekst |
-| Peper | Wit | 5,8 : 1 | Gewone tekst |
-| Paprika | Bloem | 5,0 : 1 | Gewone tekst (links) |
-| Wit | Paprika | 5,3 : 1 | De tekst op de primaire knop |
-| Wit | Basilicum | 6,3 : 1 | Tekst op een groen vlak |
-| Basilicum | Bloem | 5,9 : 1 | Gewone tekst |
-| Tomaat | Bloem | 6,2 : 1 | Foutmeldingen |
-| Rand | Bloem | 3,4 : 1 | De rand van een vakje (eis 3 : 1) |
-| Lijn | Bloem | 1,4 : 1 | **Alleen versiering**: een scheidingslijn, nooit de enige grens van iets aanklikbaars |
+| De achtergrond van elk scherm | `--bg-1` | `#FFFDFC` | Bloem |
+| Kaarten en panelen | `--bg-2` | `#FCF1EB` | Wit |
+| Scheidingslijnen, de weekprijs-kaart | `--bg-3` | `#FCE6DB` | Lijn, Saffraan licht |
+| Een sterkere rand, een gekozen kaart | `--bg-4` | `#F9D8C5` | Rand |
+| De primaire knop, de actieve tab, links, de weekprijs | `--primary` | `#9C4B00` | Paprika |
+| Minder belangrijke tekst: kooktijd, *indicatief*, uitleg | `--primary-muted` | `#665449` | Peper |
+| Alle tekst en iconen | `--fg-1` | `#0E0300` | Inkt |
+| "Gelukt": afgevinkt, opgeslagen | `--positive-3`, `--positive-1` | | Basilicum |
+| Allergenen | `--warning-3`, `--warning-1` | | Tomaat |
+| Fouten | `--negative-5`, `--negative-1` | | Tomaat |
 
-**Kleur draagt nooit alleen de betekenis.** Paprika en Tomaat liggen dicht bij elkaar, en wie
-kleurenblind is, ziet het verschil tussen rood en groen niet. Een fout heeft daarom altijd een icoon en
-een zin, een allergeen altijd het woord, en *veggie* altijd het label.
+- **Veggie is geen statuskleur.** In het brand book betekent groen "goed" of "omhoog", nooit een
+  soort. Het label *veggie* is daarom een gewoon label in de themakleur, met het woord erop.
+- **Kleur draagt nooit alleen de betekenis.** Een fout heeft altijd een icoon en een zin, een allergeen
+  altijd het woord, en *veggie* altijd het label.
 
-**Een donkere modus** staat niet in deze versie. Hij is een Could: de kookmodus is al groot en rustig,
-en een tweede set kleuren kost een eigen contrastcheck.
+### Contrast: geregeld door het brand book
+
+De app moet voldoen aan **WCAG 2.1 niveau AA** (de toegankelijkheidscheck in fase 4, taak #70). Het
+brand book **rekent de kleuren van elk thema uit** in plaats van ze te typen, en weigert een thema dat
+een drempel mist: de themakleur haalt **4,5 : 1** op alle vier de papierstappen, en de tekst
+(`--fg-1`) haalt dat ruim. Het eerste voorstel rekende elke combinatie met de hand na; dat werk valt nu
+weg. **Wat Bram wel zelf meet**, in taak #70, zijn de randen van een vakje en een invoerveld (de eis is
+3 : 1). De lichte papierstappen zijn als enige rand te zwak, dus een vakje is het vinkvakje van het
+brand book: het vakje van de telefoon zelf, in de themakleur. Of die rand de eis haalt, meet Bram.
+
+### Twaalf thema's, en daarmee een donkere modus
+
+**Het brand book laat de gebruiker de kleur kiezen**: twaalf thema's, zes licht en zes donker, onder de
+knop met het tandwiel. In Thuiskok staat die knop onder de tab **Ik**. **Roest is de standaard**; wie
+iets anders kiest, houdt dat op die telefoon. Daarmee is **de donkere modus er gratis bij**: in het
+eerste voorstel was dat een Could met een eigen contrastcheck, nu zijn het zes kant-en-klare thema's.
 
 ## 2. Typografie
 
-Twee lettertypes, allebei gratis en met een open licentie (SIL Open Font License), zodat ze in de app
-mogen worden meegeleverd zonder licentiekosten:
+**De letter van het brand book: de systeemletter van de telefoon** (San Francisco op een iPhone,
+Roboto op Android). Geen letter om te laden of te licenseren, en hij leest op elk scherm zoals de
+gebruiker gewend is. Fraunces en Inter uit het eerste voorstel zijn vervallen; het brand book heeft
+geen schreefletter meer sinds oktober 2026. Bedragen en hoeveelheden staan in **cijfers van gelijke
+breedte**, zodat ze netjes onder elkaar staan (scherm 7 en 8).
 
-- **Fraunces** voor de koppen en het woordmerk. Een warme letter met een zachte schreef: een
-  kookboek, geen spreadsheet.
-- **Inter** voor alle andere tekst. Goed leesbaar op kleine schermen, en met **cijfers van gelijke
-  breedte**, zodat bedragen en hoeveelheden netjes onder elkaar staan (scherm 7 en 8).
+**Twee gewichten**: normaal (`--font-weight-regular`) en vet (`--font-weight-bold`). Een halfvet kent
+het brand book niet.
 
-| Stijl | Letter | Maat / regelhoogte | Waar |
+| Stijl | Token | Maat | Waar |
 |---|---|---|---|
-| Woordmerk | Fraunces, vet | 32 / 40 | Welkom (scherm 1) |
-| Kop 1 | Fraunces, halfvet | 28 / 34 | De titel van een scherm, de naam van een recept |
-| Weekprijs | Inter, vet, gelijke cijfers | 32 / 38 | Het bedrag op de weekprijs-kaart |
-| Kop 2 | Inter, halfvet | 20 / 26 | Een vraag in de onboarding |
-| Afdeling | Inter, halfvet, hoofdletters | 13 / 18 | GROENTE EN FRUIT op de lijst |
-| Tekst | Inter, normaal | 17 / 24 | Alles wat gelezen wordt |
-| Klein | Inter, normaal | 15 / 20 | Kooktijd, *indicatief*, uitleg (in Peper) |
-| Kookstap | Inter, normaal | 28 / 36 | De stap in de kookmodus (scherm 9) |
+| Woordmerk | `--text-h1`, vet, in `--primary` | 36 | Welkom (scherm 1) |
+| Kop 1 | `--text-h1` | 36 | De titel van een scherm, de naam van een recept |
+| Weekprijs | `--text-h1`, vet, gelijke cijfers | 36 | Het bedrag op de weekprijs-kaart |
+| Kop 2 | `--text-h2` | 20 | Een vraag in de onboarding |
+| Kop 3 | `--text-h3` | 16 | De afdeling op de lijst (GROENTE EN FRUIT) |
+| Tekst | `--text-base` | 14 | Uitleg, knoppen, de tabbalk |
+| **Leestekst** | `--text-read` (**eigen**) | 17 | Wat gelezen wordt in de winkel en de keuken: de lijst, de ingrediënten |
+| **Kookstap** | `--text-cook` (**eigen**) | 28 | De stap in de kookmodus (scherm 9) |
 
-- **De tekst is 17 punten, niet 14.** De lijst wordt gelezen terwijl je door de winkel loopt.
+- **Twee eigen maten, en alleen die twee.** Het brand book is gemaakt voor een scherm op een bureau, met
+  14 punten als tekst. Thuiskok wordt gelezen terwijl je door de winkel loopt en op een armlengte van het
+  aanrecht. Daarom krijgen de lijst en het recept 17 punten en de kookstap 28. Het brand book staat dat
+  toe als eigen token van de app; een maat van het brand book zelf passen we niet aan.
 - **De app volgt de lettergrootte van de telefoon.** Wie de letters groter zet, krijgt ze groter; de
   schermen zijn getekend met ruimte voor 200 %.
-- **Nooit tekst kleiner dan 13 punten**, ook niet in een label.
+- **Nooit tekst kleiner dan 12 punten** (`--text-sm`, de kleinste maat die Thuiskok gebruikt), en die
+  alleen voor *indicatief* en een label.
 
 ## 3. Maten en ruimte
 
-- **Een raster van 4 punten.** Elke afstand is een veelvoud van 4: 4, 8, 12, 16, 24, 32, 48.
-- **De zijmarge van elk scherm is 16 punten.**
-- **Alles wat je aantikt is minstens 48 × 48 punten**, ook als het eruitziet als een klein icoon (⇄,
-  ♡). In de kookmodus is dat **64 punten**, voor natte handen.
-- **Hoeken:** 12 punten voor kaarten en panelen, 999 (helemaal rond) voor knoppen en keuzes.
-- **Schaduw** alleen voor een paneel dat over iets heen ligt (scherm 6). Kaarten liggen plat op Bloem,
-  met Wit als verschil.
+Alles uit het brand book:
+
+- **Een raster van 4 punten**: `--spacing-1` is 4, `--spacing-2` is 8, enzovoort.
+- **De zijmarge van elk scherm is 16 punten** (`--spacing-4`).
+- **Alles wat je aantikt is minstens 44 × 44 punten** (`--tap`), ook als het eruitziet als een klein
+  icoon (⇄, ♡). Het eerste voorstel zei 48; het brand book en de richtlijnen van Apple houden 44 aan.
+  **In de kookmodus is het 64 punten** (`--tap-cook`, **eigen**), voor natte handen.
+- **Hoeken:** `--radius-3` (12) voor kaarten en panelen, `--radius-pill` (helemaal rond) voor knoppen
+  en keuzes.
+- **Schaduw** alleen voor wat over iets heen ligt (scherm 6). Kaarten liggen plat op de achtergrond, met
+  `--bg-2` als verschil.
 
 ## 4. De onderdelen
 
-Dit zijn de onderdelen waaruit de negen [wireframes](12-wireframes.md) bestaan. Elk onderdeel heeft
-een vaste vorm en een vast aantal toestanden.
+**Waar het brand book een onderdeel heeft, gebruikt Thuiskok dat.** Alleen vier onderdelen zijn
+eigen, omdat het brand book ze niet kent.
 
-| Onderdeel | Hoe het eruitziet | Toestanden | Op scherm |
+| Onderdeel | Uit het brand book | Hoe het eruitziet in Thuiskok | Op scherm |
 |---|---|---|---|
-| **Primaire knop** | Paprika, witte tekst, helemaal rond, over de hele breedte, 56 hoog | gewoon, ingedrukt (iets donkerder), uit (Lijn, tekst in Peper) | 1, 2, 3, 4, 8 |
-| **Secundaire knop** | Wit, rand in Inkt, tekst in Inkt | gewoon, ingedrukt | 6 (Apple, Google, e-mail) |
-| **Tekstknop** | Alleen tekst, in Paprika | gewoon, ingedrukt | Overslaan, Later, Meer recepten |
-| **Keuze** | Een rondje met het getal, rand in Rand; gekozen: Paprika, wit getal | leeg, gekozen | 2 |
-| **Vinkvakje** | Vierkant met rand in Rand; aangevinkt: Basilicum met wit vinkje | leeg, aangevinkt | 3, 7 |
-| **Weekprijs-kaart** | Saffraan licht, het bedrag in de stijl Weekprijs, *indicatief* in Klein | — | 4 |
-| **Receptkaart** | Wit, foto links (vierkant, hoeken 8), naam, kooktijd, label, ⇄ rechts | gewoon, ingedrukt | 4, 5 |
-| **Label** | Klein, in een rond vlakje: *veggie* op Basilicum licht | — | 4, 5 |
-| **Lijstrij** | Vinkvakje, product, hoeveelheid rechts in gelijke cijfers, Lijn eronder | open, afgevinkt (tekst in Peper, doorgestreept, zakt naar onderen) | 7 |
-| **Afdelingskop** | De stijl Afdeling, in Peper | — | 7 |
-| **Tabbalk** | Wit, drie tabs met icoon en woord; actief in Paprika, de rest in Peper | — | 4, 7 |
-| **Paneel** | Wit, hoeken 12 boven, schaduw, het scherm erachter gedimd | open, dicht | 6 |
-| **Timer** | Een grote knop in Paprika met de tijd in Inter vet; loopt: de tijd telt af | klaar, loopt, afgelopen (trilt en piept) | 9 |
-| **Melding** | Een balk onderin, Inkt met witte tekst, verdwijnt na 4 seconden | — | "Opgeslagen", "Geen bereik: de lijst werkt gewoon" |
+| **Primaire knop** | `.btn--primary`, `.btn--touch`, `.btn--block` | Roest, over de hele breedte | 1, 2, 3, 4, 8 |
+| **Secundaire knop** | `.btn` | Rand, tekst in `--fg-1` | 6 (Apple, Google, e-mail) |
+| **Tekstknop** | een link | Alleen tekst, in `--primary` | Overslaan, Later, Meer recepten |
+| **Keuze** | `.seg` | Een rij rondjes met het getal; gekozen in de themakleur | 2 |
+| **Vinkvakje** | `.check` | Het vakje van de telefoon, in de themakleur | 3, 7 |
+| **Weekprijs-kaart** | `.hero` op `--bg-3` | Het bedrag groot, *indicatief* eronder | 4 |
+| **Receptkaart** | `.card` | Foto links, naam, kooktijd, label, ⇄ rechts | 4, 5 |
+| **Label** | `.tag` | *veggie*, *30 min* | 4, 5 |
+| **Paneel** | `<dialog>` | Schuift van onderen in, het scherm erachter gedimd | 6 |
+| **Melding** | `.flash` | Verdwijnt vanzelf | "Opgeslagen", "Geen bereik: de lijst werkt gewoon" |
+| **Instellingen** | de knop met het tandwiel | Het thema en de breedte | Ik |
+| **Lijstrij** | **eigen** | Vinkvakje, product, hoeveelheid rechts; afgevinkt zakt hij naar onderen | 7 |
+| **Tabbalk** | **eigen** | Onderin, drie tabs met icoon en woord; actief in `--primary` | 4, 7 |
+| **Timer** | **eigen** | Een grote knop in `--primary` met de tijd; loopt af, trilt en piept | 9 |
+| **Kookstap** | **eigen** | Eén stap per scherm in `--text-cook`, Vorige en Volgende onderin | 9 |
 
-**Elke toestand staat in Figma**, zodat een developer nooit hoeft te raden hoe iets eruitziet als het
-is ingedrukt of uit staat.
+**Elke toestand staat in Figma** (gewoon, ingedrukt, uit, gekozen), zodat een developer nooit hoeft te
+raden. Voor de onderdelen uit het brand book bestaan die toestanden al.
 
 ## 5. Iconen
 
-**Eén set: Phosphor Icons**, gratis en met een open licentie (MIT), in de stijl *regular* (lijnen van
-1,5). Een set kopen of tekenen is niet nodig, en één set houdt alle iconen gelijk. De vaste iconen:
+**Eén set: Phosphor Icons**, gratis en met een open licentie (MIT), in de stijl *regular*. Het brand
+book schrijft geen set voor, dus dit is een eigen keuze. De vaste iconen:
 
 | Betekenis | Icoon | Waar |
 |---|---|---|
@@ -163,46 +171,39 @@ is ingedrukt of uit staat.
 Een icoon staat **altijd naast een woord**, behalve terug, sluiten, wisselen en favoriet. Die vier
 krijgen een naam voor de schermlezer ("Wissel dit recept").
 
-## 6. Foto's
+## 6. Foto's en gerechten
 
-De foto's van de recepten maken het meeste verschil in hoe de app voelt. De richtlijn:
+**Thuiskok levert de gerechten** (besluit van de klant, 11 november 2026, op taak #58: *"ik ga zoveel
+mogelijk kopieren van bestaande hellofresh gerechten die ik bewaard heb"*). Een fotograaf is daarmee
+niet nodig, en de foto's kosten niets tegen het plafond. Het advies van het bureau daarbij:
 
+- **Het gerecht nakoken mag, de foto overnemen niet.** Een recept als idee is vrij, maar de foto's en
+  de teksten van HelloFresh zijn van HelloFresh. Thuiskok kookt het gerecht in de eigen keuken, schrijft
+  de stappen in eigen woorden en maakt een eigen foto.
 - **Daglicht, van bovenaf of schuin, op een gewone tafel.** Een bord zoals het thuis wordt opgeschept,
   niet zoals in een restaurant.
 - **Het gerecht vult het vierkant**, zodat het op de kleine foto van de receptkaart (scherm 4) nog te
   herkennen is.
-- **Geen tekst in de foto.** De naam en de kooktijd staan ernaast, zodat ze leesbaar en vertaalbaar
-  blijven.
-
-**Wie de foto's maakt, is nog niet besloten.** Thuiskok heeft een eigen keuken en eigen recepten
-([intake](02-intake-klant.md)), maar de foto's staan niet in de offerte. Dat is een vraag voor de
-klant (hieronder).
+- **Geen tekst in de foto.** De naam en de kooktijd staan ernaast.
 
 ## 7. De toon
 
-De woorden horen bij het merk. Vier regels, uit de wireframes en de interviews:
+De woorden horen bij het merk. Vijf regels, uit de wireframes, de interviews en het brand book:
 
 - **Je, niet u.** Thuiskok praat als iemand aan de keukentafel.
 - **Kort en concreet.** "Maak mijn weekmenu", niet "Start met het samenstellen van je menu".
 - **Geld zonder schreeuwen.** "€ 2,10 goedkoper", nooit "bespaar nu!". De weekprijs is het bewijs dat
   je bespaart, geen reclame ([persona's](08-personas.md)).
 - **Eerlijk over wat we niet weten.** Een prijs is *indicatief*, en dat staat er altijd bij.
+- **Geen gedachtestreepje** in de app. Het brand book verbiedt het; een dubbele punt of een nieuwe zin
+  doet hetzelfde.
 
 ## Wat hier bewust nog niet staat
 
 - **Een logo.** Buiten de scope, zoals de klant besloot. Het woordmerk houdt de plek vrij.
-- **De premiumschermen en het beheerportaal.** Die gebruiken dezelfde onderdelen; Iris tekent de
-  premiumschermen in het prototype (taak #58), het portaal volgt met sprint 2.
-- **Een donkere modus en animaties.** Een Could; eerst moet het prototype bewijzen dat de basis werkt.
-
-## Vragen aan de klant
-
-1. **Wie maakt de foto's van de recepten?** Thuiskok in de eigen keuken, met deze richtlijn, of een
-   fotograaf die het bureau regelt (dat is extra scope tegen het plafond)?
-2. **Akkoord met het merkvoorstel?** De kleuren, de twee lettertypes en de toon hierboven. Een
-   wijziging nu kost een middag; na het prototype kost hij een week.
+- **Het beheerportaal.** Dat gebruikt het brand book zoals het is; het volgt met sprint 2.
+- **Animaties.** Een Could; eerst moet de basis werken.
 
 ## Volgende stap
 
-Het klikbare prototype en de usertest met 5 mensen (taak #58): de wireframes in deze kleuren, letters
-en onderdelen, en de vier keuzes uit de [user flows](11-user-flows.md) getoetst. Daarna volgt go/no-go 2.
+Het klikbare prototype en de usertest (taak #58): zie [het prototype en de usertest](14-prototype-en-usertest.md).

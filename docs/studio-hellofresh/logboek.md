@@ -58,7 +58,18 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   zijn Fraunces voor de koppen en Inter voor de tekst, allebei gratis. Elke kleurcombinatie is
   nagerekend op WCAG AA. Er staan twee vragen open voor de klant: wie de foto's maakt, en of het
   merkvoorstel akkoord is. Zie het [designsysteem](13-designsysteem.md).
-- **Volgende stap: het klikbare prototype en de usertest** (taak #58).
+- **De drie vragen voor het prototype zijn beantwoord** (taak #58). Het merk volgt zoveel mogelijk het
+  DKJ brand book: het thema Roest, de systeemletter en de onderdelen van het brand book, met vier eigen
+  onderdelen en twee eigen lettermaten erbovenop. Fraunces, Inter en het eigen palet zijn vervallen, en
+  de donkere modus komt er gratis bij. Thuiskok levert de gerechten zelf, nagekookt van bewaarde
+  HelloFresh-gerechten, met eigen foto's. Chris speelt de vijf testers, als fictie. Zie het
+  [designsysteem](13-designsysteem.md).
+- **Het prototype is getest** (taak #58): twaalf schermen, zeven opdrachten, vijf **fictieve**
+  deelnemers. Het account ná het menu en het voorstel in plaats van zelf kiezen zijn bevestigd, het
+  aantal eters per week met een aanpassing. **De weekprijs zonder vergelijking is niet bevestigd**: drie
+  van de vijf vroegen "is dat veel?". Het advies is de prijs per portie klein onder de weekprijs. Zie het
+  [prototype en de usertest](14-prototype-en-usertest.md).
+- **Volgende stap: go/no-go 2**, de keuze van de klant uit drie mogelijkheden (taak #58).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

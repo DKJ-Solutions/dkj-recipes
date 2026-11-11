@@ -28,7 +28,8 @@
 | 10 | [Discovery-rapport](10-discovery-rapport.md) | De MoSCoW na de discovery, de definitieve begroting voor deel B, en go/no-go 1 |
 | 11 | [User flows](11-user-flows.md) | De routes door de app: de eerste keer, de week, de winkel, de keuken, premium en het portaal |
 | 12 | [Wireframes](12-wireframes.md) | De negen kernschermen in grijs en blokjes: de onboarding, het weekmenu, de lijst en de keuken |
-| 13 | [Designsysteem](13-designsysteem.md) | Het merkvoorstel zonder logo: de kleuren met hun contrast, de letters, de maten, de onderdelen en de toon |
+| 13 | [Designsysteem](13-designsysteem.md) | Het merk zonder logo, op het DKJ brand book: de kleuren, de letters, de maten, de onderdelen en de toon |
+| 14 | [Prototype en usertest](14-prototype-en-usertest.md) | Twaalf klikbare schermen, vijf fictieve deelnemers, de uitkomsten per keuze en go/no-go 2 |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
