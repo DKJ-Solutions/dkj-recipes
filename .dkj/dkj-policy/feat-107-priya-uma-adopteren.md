@@ -39,21 +39,37 @@
 
 ### PLAN
 
+- [x] Read #107 and its parking comment: the plugins are on v6.14.0; the lenses for 02-31 and 04-32 are missing
+- [x] Verify the parking reason: `disable-model-invocation` on `sync-roster` decides who types the skill, not whether its script may run (the orchestrator body names this case), and the owner asked for #107 directly
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Run `sync-roster.ps1`: lens scaffolds for Priya (02-31) and Uma (04-32)
+- [x] Fill the Priya and Uma lenses, each pointing at its role-play counterpart in `01-het-bureau.md`
+- [x] Add the tech-lead (Cody 04-13), QA-lead (Tycho 04-18) and privacy (Sebastian 06-23) halves to their lenses
+- [x] Write the full roster in `.claude/specialists/SPECIALISTS.md` (21 specialists) with the role-play routing
+- [x] Remove the three orphan lens scaffolds 04-20, 05-21 and 05-22 (unfilled, no backing specialist in v6.14.0)
 
 ### TEST
 
+- [x] `check-roster-sync.ps1`: 0 errors, all 21 specialists present in roster and lens, no orphans
+- [x] Every claim in the lenses checked against the tree (CI runs `lint.ps1` and `npm run build`; `recipes/_SJABLOON.md`, the role-play chapters linked)
+
 ### DEPLOY: feat/107-priya-uma-adopteren
 
-**Score:**
+De specialisten van plugin v6.14.0 zijn geadopteerd: Priya (Product Owner) en Uma (UX) hebben een
+lens, Cody, Tycho en Sebastian kregen hun tech-lead-, QA-lead- en privacyhelft, en
+`.claude/specialists/SPECIALISTS.md` heeft nu een volledige roster met de routering voor het
+rollenspel. De drie lege lenzen van verdwenen specialisten zijn weg; de roster-check is groen.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen de werkwijze van de specialisten in deze repo; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
 Adopt Priya and Uma from plugin v6.14.0
-
