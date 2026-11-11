@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 65 minor entries** <!-- pending-tally -->
+**10 / 66 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/107-priya-uma-adopteren · 20261111-154505Z
+
+De specialisten van plugin v6.14.0 zijn geadopteerd: Priya (Product Owner) en Uma (UX) hebben een
+lens, Cody, Tycho en Sebastian kregen hun tech-lead-, QA-lead- en privacyhelft, en
+`.claude/specialists/SPECIALISTS.md` heeft nu een volledige roster met de routering voor het
+rollenspel. De drie lege lenzen van verdwenen specialisten zijn weg; de roster-check is groen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen de werkwijze van de specialisten in deze repo; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Adopt Priya and Uma from plugin v6.14.0
+
+[PR #117](https://github.com/DKJ-Solutions/dkj-recipes/pull/117)
+
+---
 
 ### DEPLOY: docs/73-evaluatie-akkoord · 20261111-153858Z
 
