@@ -41,19 +41,23 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Het kick-off-verslag geschreven als `docs/studio-hellofresh/06-kick-off.md` (de agenda, de kernpunten, wie wat doet in de discovery van week 1 tot 4, de afspraken en tools, en drie vragen aan de klant die nog openstaan), opgenomen in de leesvolgorde en het logboek
 
 ### TEST
 
 ### DEPLOY: docs/47-kick-off
 
-**Score:**
+Het rollenspel krijgt de kick-off met het kernteam: de agenda, wat het team moet onthouden, wie wat doet in de vier weken discovery tot go/no-go 1, de afspraken en tools, en drie vragen aan de klant die nog openstaan.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
-Record the core team kick-off
+Rollenspel studio: de kick-off met het kernteam
 
