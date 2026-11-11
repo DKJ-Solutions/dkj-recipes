@@ -26,6 +26,7 @@
 | 8 | [Persona's](08-personas.md) | Noor, Marieke en Daan: voor wie we ontwerpen, en op welk bewijs |
 | 9 | [Technische verkenning](09-technische-verkenning.md) | Hoe een recept in de database staat, en waar de geschatte prijzen vandaan komen |
 | 10 | [Discovery-rapport](10-discovery-rapport.md) | De MoSCoW na de discovery, de definitieve begroting voor deel B, en go/no-go 1 |
+| 11 | [User flows](11-user-flows.md) | De routes door de app: de eerste keer, de week, de winkel, de keuken, premium en het portaal |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
