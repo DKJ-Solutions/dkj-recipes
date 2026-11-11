@@ -41,17 +41,27 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Record the client's three answers (decision comment on #67) in
+  `docs/studio-hellofresh/22-sprint-8-restjes-en-afronden.md`, chapter "Het antwoord van de klant", and
+  set the status to accepted
+- [x] Add the sign-off line to `docs/studio-hellofresh/logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/67-sprint-8-akkoord
 
-**Score:**
+Sprint 8 van het rollenspel is akkoord, en daarmee de bouw: *Over na deze week* wordt zichtbaar voor
+iedereen terwijl het restjesslim plannen premium blijft; tot de lancering komt er geen nieuwe functie
+meer bij; en de demo is akkoord, zodat de bèta (#69) met deze testversie mag beginnen. Vastgelegd in
+`docs/studio-hellofresh/22-sprint-8-restjes-en-afronden.md` en het logboek.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

@@ -1,7 +1,7 @@
 # 22. Sprint 8: restjesslim plannen, *Niet weer*, afronden en de prestaties
 
 **Eigenaar:** Wouter (Tech Lead), met Fatima (Delivery Manager) · **Week 21–22:** 5 – 16 april 2027 ·
-**Status:** **gebouwd** op 11 november 2026 (taak #67); **de demo ligt bij de klant**
+**Status:** **gebouwd** op 11 november 2026 (taak #67); **de demo is akkoord** (11 november 2026)
 
 > **Wat deze sprint oplevert.** De laatste sprint van de bouw. Het weekmenu plant nu zo dat er minder
 > overblijft van wat je koopt, en de lijst zegt eerlijk wat er na de week nog over is. Wie *Niet weer*
@@ -225,7 +225,21 @@ Wouter beantwoordt de technische vragen, en Nadia vertelt hoe de bèta begint.
 3. **De demo.** Zijn *Niet weer*, restjesslim plannen en de afronding zoals hierboven akkoord, en mag de
    bèta (taak #69) beginnen met deze testversie?
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle drie de vragen:
+
+1. ***Over na deze week* is voor iedereen, het plannen blijft premium**, zoals het bureau adviseerde.
+   Wie geen premium heeft, ziet dus wel wat er na de week overblijft, maar het weekmenu plant daar niet
+   omheen. Omzetten kost ongeveer een halve dag.
+2. **Er komt niets meer bij tot de lancering.** Wat de bèta oplevert, wordt opgelost of komt op de lijst
+   voor na de lancering; in week 23 tot en met 26 komt er geen nieuwe functie bij.
+3. **De demo is akkoord**: *Niet weer*, restjesslim plannen en de afronding zoals hierboven. De bèta
+   (taak #69) mag beginnen met deze testversie.
+
+Daarmee is sprint 8 rond, en de bouw (fase 3) ook.
+
 ## Volgende stap
 
-De bèta met 100 tot 200 testgebruikers (taak #69), zodra de klant de demo heeft gezien. Daarmee is de bouw
-(fase 3) rond.
+De bèta met 100 tot 200 testgebruikers (taak #69), met deze testversie en *Over na deze week* voor
+iedereen. Vanaf nu komt er geen nieuwe functie meer bij tot de lancering.
