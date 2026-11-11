@@ -203,6 +203,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   in de onboarding (een halve dag; het oordeel van de jurist blijft beslissend), en PostHog stopt bij de
   lancering. Volgende stap: de inzending (taak #72). Zie
   [de afronding en go/no-go 3](24-afronding-en-go-no-go-3.md), hoofdstuk "Het antwoord van de klant".
+- **De inzending is voorbereid** (taak #72). Versie 1.0.5 heeft de toestemmingsvraag voor de allergieën
+  en geen PostHog meer, en Nadia vond er geen blokkade in. De store-pagina's zijn Nederlands en beloven
+  geen besparing in euro's; de vragenlijsten over privacy zeggen *geen analyse en geen reclame*. Het
+  bureau wil op 4 mei 2027 indienen en adviseert met de hand vrij te geven, in beide stores op de
+  lanceringsdag. **Drie vragen liggen bij de klant**: of de jurist, de verwerkersovereenkomsten en de
+  afspraken met de stores rond zijn, of de store-pagina's akkoord zijn, en hoe de app wordt vrijgegeven.
+  Zie [de store-pagina's en de inzending](25-store-paginas-en-inzending.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

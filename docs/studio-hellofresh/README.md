@@ -40,6 +40,7 @@
 | 22 | [Sprint 8: restjes en afronden](22-sprint-8-restjes-en-afronden.md) | *Niet weer* als zevende regel, restjesslim plannen als stap in het voorstel, *Over na deze week*, de laatste fouten eruit en de app sneller, klaar voor de bèta |
 | 23 | [De bèta](23-beta.md) | 150 testers verdeeld over de persona's, het testplan en de lat vooraf, de twee weken zelf, de twaalf metingen en de uitkomst tegen de lat |
 | 24 | [De afronding en go/no-go 3](24-afronding-en-go-no-go-3.md) | Wat de bèta achterliet opgelost, de AVG-check, de toegankelijkheid tegen WCAG 2.1 AA, de release candidate en het advies voor go/no-go 3 |
+| 25 | [De store-pagina's en de inzending](25-store-paginas-en-inzending.md) | Versie 1.0.5 met de toestemmingsvraag en zonder PostHog, de store-pagina's, de vragenlijsten over privacy, wat de reviewers nodig hebben, en wat Thuiskok vóór de inzending regelt |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
