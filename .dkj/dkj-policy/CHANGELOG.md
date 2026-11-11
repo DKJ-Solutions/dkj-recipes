@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 27 minor entries** <!-- pending-tally -->
+**10 / 28 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/46-offerte-getekend · 20261111-082115Z
+
+De offerte van het rollenspel is door beide partijen getekend zoals hij stond: het bureau en Thuiskok B.V. gaan akkoord met de vaste prijs voor de discovery en het plafond voor de rest. Fase 0 is daarmee rond en de kick-off (#47) is de volgende stap.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel studio: de offerte aan Thuiskok getekend
+
+[PR #78](https://github.com/DKJ-Solutions/dkj-recipes/pull/78)
+
+---
 
 ### DEPLOY: docs/46-offerte · 20261110-221138Z
 
