@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 31 minor entries** <!-- pending-tally -->
+**10 / 32 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/50-interviews-uitkomsten · 20261111-090125Z
+
+De interviews voor het rollenspel zijn afgenomen: Dave speelde één deelnemer, Chris schreef er acht als gemarkeerde fictie. De uitkomsten per hypothese staan in `docs/studio-hellofresh/07-interviews.md`, met de echte stem apart geteld. Prijs is de reden om op te zeggen (voorlopig), maar de prijs per recept is geen reden om te kiezen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: de interviews afnemen en de uitkomsten
+
+[PR #82](https://github.com/DKJ-Solutions/dkj-recipes/pull/82)
+
+---
 
 ### DEPLOY: docs/50-interviews-leidraad · 20261111-084419Z
 
