@@ -2,7 +2,28 @@
 
 ## [Unreleased]
 
-**10 / 66 minor entries** <!-- pending-tally -->
+**10 / 67 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/123-offline-teststappen · 20261111-200232Z
+
+The README now carries a five-step offline test for the phone, and a desktop variant, to rerun after
+any change to the service worker, the layout that registers it or the manifest.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+N/A
+
+**Score:** N/A
+
+#### Pull Request
+
+Write the repeatable offline test steps in the README
+
+[PR #125](https://github.com/DKJ-Solutions/dkj-recipes/pull/125)
+
+---
 
 ### DEPLOY: feat/107-priya-uma-adopteren · 20261111-154505Z
 
