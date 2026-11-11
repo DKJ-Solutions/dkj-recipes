@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 58 minor entries** <!-- pending-tally -->
+**10 / 59 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/69-beta-gespeeld · 20261111-145733Z
+
+De bèta van het rollenspel is gespeeld, in `docs/studio-hellofresh/23-beta.md`. De klant zei ja op de
+drie vragen: de allergenen en de open ingrediënten zijn af, het bureau meet met PostHog in de EU, en wie
+in beide weken meedeed krijgt drie maanden premium. Daarna de twee weken zelf, met fictieve testers: 143
+deden mee, vier blokkades zijn in de bèta opgelost, en vijf van de zes latten zijn gehaald. Wat overblijft
+gaat naar taak #70 en go/no-go 3.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Play the beta of the role-play through its two weeks
+
+[PR #110](https://github.com/DKJ-Solutions/dkj-recipes/pull/110)
+
+---
 
 ### DEPLOY: docs/69-beta-voorbereid · 20261111-143546Z
 
