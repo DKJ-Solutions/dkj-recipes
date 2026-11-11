@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 64 minor entries** <!-- pending-tally -->
+**10 / 65 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/73-evaluatie-akkoord · 20261111-153858Z
+
+Het antwoord van de klant op de lanceringsdag van het rollenspel is vastgelegd: het bureau factureert de
+ingehouden 5 procent, er komt een onderhoudscontract na de garantie, en versie 1.1 begint met meten met
+toestemming. Daarmee is fase 5 rond, en het hele project. Vastgelegd in
+`docs/studio-hellofresh/26-lancering-en-evaluatie.md` en het logboek.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Record the client's answers on the role-play's launch and evaluation
+
+[PR #116](https://github.com/DKJ-Solutions/dkj-recipes/pull/116)
+
+---
 
 ### DEPLOY: docs/73-lancering-voorbereid · 20261111-152839Z
 
