@@ -39,19 +39,40 @@
 
 ### PLAN
 
+- [x] Taak #58 van het rollenspel (doel #43): het klikbare prototype en de usertest, met de drie
+  besluiten van Dave van 11 november 2026 (merk op het DKJ brand book, Thuiskok levert de gerechten,
+  Chris speelt de vijf deelnemers als fictie). Go/no-go 2 blijft de keuze van de klant, dus het issue
+  blijft open en wordt daarna geparkeerd als `awaiting-decision-dev`.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/13-designsysteem.md` afgestemd op het brand book: het thema Roest, de
+  tokens per rol, de systeemletter, de type- en ruimteschaal, de onderdelen van het brand book plus vier
+  eigen, de foto's en de gerechten.
+- [x] `docs/studio-hellofresh/14-prototype-en-usertest.md`: het prototype, de opzet, de vijf fictieve
+  deelnemers, de uitkomsten per keuze, de aanpassingen en de drie opties voor go/no-go 2.
+- [x] De leesvolgorde in `README.md` en de regels in het `logboek.md`.
 
 ### TEST
 
+- [x] De tokens en hun waarden in hoofdstuk 1 tot 4 nagelezen tegen `house-style.css` en de README's
+  van het brand book op v6.13.0 (thema Roest, type- en ruimteschaal, gewichten, `--tap`, de klassen).
+- [x] De voorbeeldprijs (€ 31,40 voor 3 avonden en 2 eters, dus € 5,23 per portie) en de € 4,30 per
+  portie nagelezen tegen `12-wireframes.md` en `03-hellofresh-teardown.md`.
+
 ### DEPLOY: docs/58-prototype-usertest
 
-**Score:**
+Het rollenspel heeft een getest prototype: `docs/studio-hellofresh/14-prototype-en-usertest.md`
+beschrijft twaalf klikbare schermen, de usertest met vijf fictieve deelnemers en de drie opties voor
+go/no-go 2. Het designsysteem in `13-designsysteem.md` volgt nu het DKJ brand book.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
