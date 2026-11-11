@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 48 minor entries** <!-- pending-tally -->
+**10 / 49 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/63-sprint-4-akkoord · 20261111-113134Z
+
+Sprint 4 van het rollenspel is akkoord: Thuiskok vult de verpakkingen van de 31 ingrediënten zelf in
+vóór sprint 6 (#65), één vaste afdelingsvolgorde is genoeg voor de lancering (klachten gemeten in de
+bèta, #69), en de boodschappenlijst is akkoord zoals gedemonstreerd, ook zonder prijzen tot sprint 6.
+Vastgelegd in `docs/studio-hellofresh/18-sprint-4-boodschappenlijst.md` en het logboek; sprint 5 (#64)
+kan beginnen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Record the client's sign-off on sprint 4 of the role-play
+
+[PR #99](https://github.com/DKJ-Solutions/dkj-recipes/pull/99)
+
+---
 
 ### DEPLOY: docs/63-sprint-4-boodschappenlijst · 20261111-112058Z
 
