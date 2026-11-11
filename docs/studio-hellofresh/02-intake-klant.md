@@ -28,7 +28,7 @@ gegarandeerd lukken, precies weten wat je nodig hebt), **zonder de box en zonder
 | HelloFresh doet | Thuiskok doet in plaats daarvan |
 |---|---|
 | Stuurt een box met afgepaste ingrediënten | Maakt een **boodschappenlijst** voor de supermarkt |
-| Rekent ongeveer €6 à €9 per portie | Laat de **geschatte supermarktprijs per portie** zien, met een doel onder €3 |
+| Rekent vanaf €4,30 per portie bij de grootste box, en meer bij kleinere (gecontroleerd in de [teardown](03-hellofresh-teardown.md)) | Laat de **geschatte supermarktprijs per portie** zien, met een doel onder €3 |
 | Abonnement met bezorgdag en deadline | **Geen bezorging**, dus ook geen deadline en geen verplichte afname |
 | Verdient aan de ingrediënten | Verdient met **goedkoop premium** (zie hieronder) |
 
