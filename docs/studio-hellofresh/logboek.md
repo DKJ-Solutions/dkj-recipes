@@ -2,6 +2,13 @@
 
 Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
 
+## Sessie 2 — 11 november 2026: de offerte getekend
+
+- **De offerte is getekend** (taak #46), door Dave namens het bureau en door Thuiskok B.V., zoals
+  hij stond: €72.250 vast voor de discovery en een plafond van €1.198.000 voor de rest. Zie de
+  [offerte](05-offerte.md). Daarmee is fase 0 rond.
+- **Volgende stap:** de kick-off met het kernteam (taak #47), en daarna de discovery.
+
 ## Sessie 1 — 10 november 2026: de aftrap
 
 - **Het bureau** staat: 20 mensen, met een kernteam van 12 op dit project. Zie
@@ -23,4 +30,3 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
 - **De offerte is opgesteld** (taak #46): een vaste prijs van €72.250 voor de discovery, en voor
   de rest een begroting met een plafond van €1.198.000, die na go/no-go 1 definitief wordt. Zie de
   [offerte](05-offerte.md).
-- **Volgende stap:** Dave tekent namens het bureau, en de klant tekent of niet (taak #46).
