@@ -1,7 +1,7 @@
 # 18. Sprint 4: de boodschappenlijst
 
 **Eigenaar:** Wouter (Tech Lead), met Fatima (Delivery Manager) · **Week 13–14:** 8 – 19 februari
-2027 · **Status:** **gebouwd** op 11 november 2026 (taak #63); **de demo ligt bij de klant**
+2027 · **Status:** **gebouwd** op 11 november 2026 (taak #63); **de demo is akkoord** (11 november 2026)
 
 > **Wat deze sprint oplevert.** De winkel, [user flow](11-user-flows.md) 3. Wie zijn weekmenu
 > bevestigt, krijgt één lijst voor de hele week: samengevoegd over de recepten, in hele verpakkingen,
@@ -201,7 +201,19 @@ prijs.
 3. **De demo.** Is de lijst zoals hierboven akkoord, ook zonder prijzen tot sprint 6, of mist Thuiskok
    iets voordat sprint 5 (de kookmodus, de porties en de favorieten, taak #64) begint?
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle drie de vragen:
+
+1. **Thuiskok vult de verpakkingen zelf in**, voor de 31 ingrediënten, vóór sprint 6 begint (taak
+   #65). Tot dan toont de lijst daar de hoeveelheid in plaats van hele verpakkingen.
+2. **Eén vaste volgorde voor alle supermarkten is genoeg voor de lancering**, zoals het bureau
+   adviseerde. Klachten erover worden gemeten in de bèta (taak #69).
+3. **De boodschappenlijst is akkoord** zoals ze in de demo te zien was, ook zonder prijzen tot sprint 6.
+   Sprint 5 begint.
+
+Daarmee is sprint 4 rond.
+
 ## Volgende stap
 
-Sprint 5: de kookmodus, het aantal eters per recept en de favorieten (taak #64), zodra de klant de demo
-heeft gezien.
+Sprint 5: de kookmodus, het aantal eters per recept en de favorieten (taak #64).
