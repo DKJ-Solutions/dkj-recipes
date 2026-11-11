@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 40 minor entries** <!-- pending-tally -->
+**10 / 41 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/58-go-no-go-2 · 20261111-103140Z
+
+Go/no-go 2 van het rollenspel is vastgelegd: go, met klein de prijs per portie onder de weekprijs.
+Het besluit staat in `14-prototype-en-usertest.md`, de weekprijs-kaart in `13-designsysteem.md` en het
+logboek; fase 2 is rond en de bouw begint met sprint 1 (#60).
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: go/no-go 2 vastgelegd (go, met prijs per portie)
+
+[PR #91](https://github.com/DKJ-Solutions/dkj-recipes/pull/91)
+
+---
 
 ### DEPLOY: docs/58-prototype-usertest · 20261111-102131Z
 
