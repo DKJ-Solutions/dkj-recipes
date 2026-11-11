@@ -2,14 +2,15 @@
 
 **Eigenaar:** Fatima (Delivery Manager), met Jesse (DevOps, de monitoring), Joris (Product Owner, wat er
 na de lancering komt) en Sanne (Product Lead, de evaluatie) · **Week 25–28:** 3 – 25 mei 2027 · **Status:**
-**gespeeld** op 11 november 2026 (taak #73): gelanceerd op 11 mei 2027; **drie vragen liggen bij de
-klant**
+**gespeeld** op 11 november 2026 (taak #73): gelanceerd op 11 mei 2027; **de klant heeft geantwoord**
+(11 november 2026), en daarmee is het project rond
 
 > **Wat deze stap oplevert.** Thuiskok in de App Store en de Play Store, en een eerlijke terugblik: wat
 > de lanceringsdag en de eerste twee weken lieten zien, hoe het project liep tegen het plan, en wat het
 > bureau de volgende keer anders doet.
 >
-> **Wat hier nog niet staat: wat er na de garantie gebeurt.** Dat beslist Thuiskok (hieronder).
+> **Wat er na de garantie gebeurt**, besliste Thuiskok op de drie vragen hieronder: een onderhoudscontract
+> en een versie 1.1 die begint met meten met toestemming.
 
 **Wat hieronder staat, is gespeeld**, zoals [de bèta](23-beta.md): de review, de lanceringsdag en de
 cijfers zijn fictie, bedacht door Chris. Ze tellen in dit spel, maar ze bewijzen niet wat echte mensen
@@ -135,7 +136,21 @@ lijst bij van alles wat sinds sprint 4 *voor na de lancering* is gezet:
    door de jurist. Dan beslist de stuurgroep over 1.1 op cijfers, zoals bij go/no-go 3. Het alternatief is
    1.1 bouwen op de mail en de beoordelingen alleen.
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle drie de vragen:
+
+1. **De ingehouden 5 procent: akkoord.** Thuiskok staat in beide stores, dus het bureau factureert de
+   **€ 56.370** van deel B nu.
+2. **Een onderhoudscontract**, zoals het bureau adviseerde: vanaf donderdag 12 augustus 2027, voor minstens
+   een jaar, vier dagen per maand voor € 3.400, plus de hosting tegen kostprijs. Er komt dus geen
+   overdracht in de laatste twee weken van de garantie.
+3. **Versie 1.1 begint met meten met toestemming**, zoals het bureau adviseerde: eerst toetst de jurist het
+   opnieuw, dan deelt wie wil anoniem hoe hij de app gebruikt, en op die cijfers beslist de stuurgroep over
+   1.1.
+
 ## Volgende stap
 
-Na het antwoord van de klant is fase 5 rond, en daarmee het hele project: Thuiskok staat in de App Store en
-de Play Store.
+Fase 5 is rond, en daarmee het hele project: Thuiskok staat in de App Store en de Play Store, het bureau
+factureert de laatste 5 procent, en na de garantie loopt het onderhoudscontract. Versie 1.1 is een nieuw
+traject, dat begint met de toets door de jurist en het meten met toestemming.

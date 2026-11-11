@@ -223,6 +223,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   bij Apple. De les: vóór de lancering besluiten hoe er daarna gemeten wordt. **Drie vragen liggen bij de
   klant**: de ingehouden 5 procent (€ 56.370), een onderhoudscontract na de garantie, en een versie 1.1 met
   meten met toestemming. Zie [de lanceringsdag en de evaluatie](26-lancering-en-evaluatie.md).
+- **De klant heeft geantwoord, en het project is rond** (taak #73). Dave antwoordde als Thuiskok: het
+  bureau factureert de ingehouden 5 procent (€ 56.370), er komt een onderhoudscontract vanaf 12 augustus
+  2027 voor minstens een jaar (vier dagen per maand, € 3.400, plus de hosting tegen kostprijs), en versie
+  1.1 begint met meten met toestemming, na een nieuwe toets door de jurist; de stuurgroep beslist over 1.1
+  op de cijfers. Daarmee is fase 5 rond, en het hele project. Zie
+  [de lanceringsdag en de evaluatie](26-lancering-en-evaluatie.md), hoofdstuk "Het antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
