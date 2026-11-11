@@ -39,19 +39,41 @@
 
 ### PLAN
 
+- [x] Play sprint 3 of the role-play (goal #43) up to the demo, the way sprints 1 and 2 were played
+  (#60, #61): build user flows 1 and 2 from the wireframes and the usertest's adjustments, and end on
+  the client's open questions. The client's answers are never invented; they come back through
+  `awaiting-decision-dev`.
+
+#### Found while building
+
+- The catalogue from sprint 2 and the data model carry no allergens, while wireframe 3 assumes them.
+  Recorded in the sprint document as the team's own fix plus a client question, since the whole story
+  lives in the role-play.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/17-sprint-3-onboarding-en-weekmenu.md`: the sprint document.
+- [x] `docs/studio-hellofresh/README.md`: row 17 in the reading order.
+- [x] `docs/studio-hellofresh/logboek.md`: one line under session 2.
 
 ### TEST
 
+- [x] Docs only; the gates in `ship-pr` cover it.
+
 ### DEPLOY: docs/62-sprint-3-onboarding-weekmenu
 
-**Score:**
+Sprint 3 van het rollenspel is gespeeld tot de demo: de onboarding in drie schermen, het voorstel van
+de week met vijf vaste regels, wisselen, het aantal eters per week en de eerste testversie via
+TestFlight. De catalogus kreeg de allergenen die er nog niet in zaten. Twee vragen liggen bij de klant,
+in `docs/studio-hellofresh/17-sprint-3-onboarding-en-weekmenu.md`.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
