@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 61 minor entries** <!-- pending-tally -->
+**10 / 62 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/72-inzending-voorbereid · 20261111-151242Z
+
+De inzending van het rollenspel is voorbereid tot het woord van de klant: versie 1.0.5 met de
+toestemmingsvraag voor de allergieën en zonder PostHog, de Nederlandse store-pagina's, de vragenlijsten
+over privacy, wat de reviewers nodig hebben, en wat Thuiskok vóór de inzending regelt. Drie vragen liggen
+bij de klant. Vastgelegd in `docs/studio-hellofresh/25-store-paginas-en-inzending.md`, de leesvolgorde en
+het logboek.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Prepare the role-play's store pages and submission up to the client's word
+
+[PR #113](https://github.com/DKJ-Solutions/dkj-recipes/pull/113)
+
+---
 
 ### DEPLOY: docs/70-go-no-go-3-akkoord · 20261111-150826Z
 
