@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 33 minor entries** <!-- pending-tally -->
+**10 / 34 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/52-technische-verkenning · 20261111-091522Z
+
+De technische verkenning voor het rollenspel staat in `docs/studio-hellofresh/09-technische-verkenning.md`: het datamodel voor recepten (hoeveelheden per portie, één ingrediëntencatalogus), het verschil tussen prijs per portie en weekprijs, en een advies voor de prijsbron (een eigen prijstabel, niet scrapen).
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: de technische verkenning van prijzen en receptbron
+
+[PR #84](https://github.com/DKJ-Solutions/dkj-recipes/pull/84)
+
+---
 
 ### DEPLOY: docs/51-personas · 20261111-091005Z
 
