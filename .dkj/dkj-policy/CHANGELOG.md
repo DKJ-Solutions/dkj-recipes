@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 49 minor entries** <!-- pending-tally -->
+**10 / 50 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/64-sprint-5-kookmodus · 20261111-113701Z
+
+Sprint 5 van het rollenspel is gespeeld tot de demo: het aantal eters per recept, de kookmodus met de
+timer als volle knop en een scherm dat aan blijft, en de favorieten. Vastgelegd in
+`docs/studio-hellofresh/19-sprint-5-kookmodus.md` en het logboek; drie vragen liggen bij de klant (#64).
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Play sprint 5 of the role-play up to the demo
+
+[PR #100](https://github.com/DKJ-Solutions/dkj-recipes/pull/100)
+
+---
 
 ### DEPLOY: docs/63-sprint-4-akkoord · 20261111-113134Z
 
