@@ -2,7 +2,7 @@
 
 **Eigenaar:** Nadia (QA Lead), met Jesse (DevOps, de AVG-check), Bram (de toegankelijkheid) en Fatima
 (Delivery Manager) · **Week 23–24:** 19 – 30 april 2027 · **Status:** **voorbereid** op 11 november 2026
-(taak #70); **go/no-go 3 ligt bij de klant**
+(taak #70); **go/no-go 3: go** (11 november 2026)
 
 > **Wat deze stap oplevert.** Een release candidate: de versie die het bureau bij Apple en Google wil
 > indienen. Daarvoor drie dingen naast de bèta: wat de testers vonden oplossen, de AVG-check, en de
@@ -129,7 +129,25 @@ geen open blokkade, en de lat van de bèta die niet gehaald werd, is opgelost en
    ([sprint 8](22-sprint-8-restjes-en-afronden.md)). Het alternatief is doorgaan met de vraag erbij, na
    een nieuwe toets door de jurist.
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle drie de vragen, telkens zoals het bureau
+adviseerde:
+
+1. **Go.** De release candidate (testversie 1.0.4) mag worden ingediend bij Apple en Google, onder de twee
+   voorwaarden: de jurist van Thuiskok keurt de privacyverklaring goed, en de verwerkersovereenkomsten zijn
+   getekend, allebei vóór de inzending in week 25.
+2. **De allergieën: uitdrukkelijk toestemming vragen** in de onboarding, met één zin en een vinkje in de
+   stap waar je je allergie aanvinkt. Een halve dag werk. Het oordeel van de jurist van Thuiskok blijft
+   beslissend: zegt die dat het niet genoeg is, dan geldt dat oordeel.
+3. **Stoppen met meten bij de lancering.** PostHog gaat uit in de versie die naar de stores gaat, en de
+   verwerkersovereenkomst met PostHog is daarna niet meer nodig.
+
+Daarmee is go/no-go 3 genomen, en fase 4 rond zodra de voorwaarden af zijn.
+
 ## Volgende stap
 
-Na een go: de store-pagina's en de inzending bij Apple en Google (taak #72), in week 25. Daarmee is fase 4
-rond.
+De store-pagina's en de inzending bij Apple en Google (taak #72), in week 25. Daarvoor moeten de
+toestemmingsvraag voor de allergieën en het uitzetten van PostHog in de versie zitten die wordt ingediend,
+de jurist moet de privacyverklaring hebben goedgekeurd, en Thuiskok moet de verwerkersovereenkomsten hebben
+getekend.

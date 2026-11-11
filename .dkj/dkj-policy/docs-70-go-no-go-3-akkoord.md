@@ -41,17 +41,28 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Record the client's three answers (decision comment on #70) in
+  `docs/studio-hellofresh/24-afronding-en-go-no-go-3.md`, chapter "Het antwoord van de klant", and set
+  the status to go
+- [x] Add the go line to `docs/studio-hellofresh/logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/70-go-no-go-3-akkoord
 
-**Score:**
+Go/no-go 3 van het rollenspel is genomen: go. Release candidate 1.0.4 mag naar Apple en Google, op
+voorwaarde dat de jurist van Thuiskok de privacyverklaring goedkeurt en de verwerkersovereenkomsten
+getekend zijn; de allergieën krijgen een uitdrukkelijke toestemmingsvraag in de onboarding; en PostHog
+stopt bij de lancering. Vastgelegd in `docs/studio-hellofresh/24-afronding-en-go-no-go-3.md` en het
+logboek; de inzending (#72) is de volgende stap.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

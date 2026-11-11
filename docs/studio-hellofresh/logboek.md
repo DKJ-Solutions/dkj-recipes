@@ -197,6 +197,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   verwerkersovereenkomsten zijn getekend. **Drie vragen liggen bij de klant**: go/no-go 3, hoe de app
   met de allergieën omgaat, en of er na de lancering gemeten wordt. Zie
   [de afronding en go/no-go 3](24-afronding-en-go-no-go-3.md).
+- **Go/no-go 3: go** (taak #70). Dave antwoordde als Thuiskok, telkens zoals het bureau adviseerde: de
+  release candidate mag worden ingediend, op voorwaarde dat de jurist de privacyverklaring goedkeurt en de
+  verwerkersovereenkomsten getekend zijn. Voor de allergieën komt er een uitdrukkelijke toestemmingsvraag
+  in de onboarding (een halve dag; het oordeel van de jurist blijft beslissend), en PostHog stopt bij de
+  lancering. Volgende stap: de inzending (taak #72). Zie
+  [de afronding en go/no-go 3](24-afronding-en-go-no-go-3.md), hoofdstuk "Het antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
