@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 28 minor entries** <!-- pending-tally -->
+**10 / 29 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/47-kick-off · 20261111-082508Z
+
+Het rollenspel krijgt de kick-off met het kernteam: de agenda, wat het team moet onthouden, wie wat doet in de vier weken discovery tot go/no-go 1, de afspraken en tools, en drie vragen aan de klant die nog openstaan.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel studio: de kick-off met het kernteam
+
+[PR #79](https://github.com/DKJ-Solutions/dkj-recipes/pull/79)
+
+---
 
 ### DEPLOY: docs/46-offerte-getekend · 20261111-082115Z
 
