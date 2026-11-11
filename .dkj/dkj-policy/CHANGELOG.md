@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 44 minor entries** <!-- pending-tally -->
+**10 / 45 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/61-sprint-2-akkoord · 20261111-110455Z
+
+Sprint 2 van het rollenspel is akkoord: minstens 30 recepten staan live (12 vegetarisch), de twee
+store-accounts bestaan en de testversie gaat vanaf sprint 3 via TestFlight en de Play Console.
+Vastgelegd in `docs/studio-hellofresh/16-sprint-2-recepten-en-portaal.md` en het logboek; sprint 3
+(#62) kan beginnen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: sprint 2 akkoord van de klant
+
+[PR #95](https://github.com/DKJ-Solutions/dkj-recipes/pull/95)
+
+---
 
 ### DEPLOY: docs/61-sprint-2-recepten-portaal · 20261111-105326Z
 
