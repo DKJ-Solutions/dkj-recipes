@@ -39,19 +39,33 @@
 
 ### PLAN
 
+- [x] Taak #57 van het rollenspel (doel #43): het designsysteem, met het besluit van de klant van
+  11 november 2026 (het bureau stelt het merk voor, zonder logo, binnen het plafond van deel B).
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/13-designsysteem.md`: het merk, de kleuren met gemeten contrast, de
+  typografie, de maten, de onderdelen, de iconen, de foto's, de toon en twee vragen aan de klant.
+- [x] De leesvolgorde in `README.md` en een regel in het `logboek.md`.
 
 ### TEST
 
+- [x] Elke contrastverhouding in de tabel nagerekend met de WCAG-formule voor relatieve luminantie.
+- [x] Elke bewering over de persona's en flows nagelezen tegen `08-personas.md` en `12-wireframes.md`.
+
 ### DEPLOY: docs/57-designsysteem
 
-**Score:**
+Het designsysteem van het rollenspel staat in `docs/studio-hellofresh/13-designsysteem.md`: een
+merkvoorstel zonder logo, met de kleuren en hun gemeten contrast, de letters, de maten en de onderdelen
+van de negen wireframes.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

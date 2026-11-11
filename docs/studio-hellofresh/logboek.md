@@ -51,7 +51,14 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   weekmenu als het belangrijkste scherm (de weekprijs bovenaan, één knop om ja te zeggen) en drie tabs
   onderin: Week, Lijst en Ik. De premiumschermen en het portaal volgen later. Zie de
   [wireframes](12-wireframes.md).
-- **Volgende stap: het designsysteem** (taak #57).
+- **Thuiskok heeft geen eigen merk** (taak #57). Dave besloot als klant: het bureau stelt het merk voor
+  (kleuren en typografie, zonder logo) als deel van het designsysteem, binnen het plafond van deel B.
+- **Het designsysteem ligt als voorstel bij de klant** (taak #57). "Een keukentafel, geen restaurant":
+  paprika, saffraan en basilicum op een crèmekleurige ondergrond, en bewust geen limoengroen. De letters
+  zijn Fraunces voor de koppen en Inter voor de tekst, allebei gratis. Elke kleurcombinatie is
+  nagerekend op WCAG AA. Er staan twee vragen open voor de klant: wie de foto's maakt, en of het
+  merkvoorstel akkoord is. Zie het [designsysteem](13-designsysteem.md).
+- **Volgende stap: het klikbare prototype en de usertest** (taak #58).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
