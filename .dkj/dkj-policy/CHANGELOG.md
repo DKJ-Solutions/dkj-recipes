@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 41 minor entries** <!-- pending-tally -->
+**10 / 42 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/60-sprint-1-fundament · 20261111-103634Z
+
+Sprint 1 van het rollenspel staat in `docs/studio-hellofresh/15-sprint-1-fundament.md`: de technische
+keuzes, inloggen als gast eerst, de lopende band en de demo. Twee vragen liggen bij de klant op #60.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+Part of #60
+
+#### Pull Request
+
+Rollenspel: sprint 1, het fundament (inloggen, database, CI)
+
+[PR #92](https://github.com/DKJ-Solutions/dkj-recipes/pull/92)
+
+---
 
 ### DEPLOY: docs/58-go-no-go-2 · 20261111-103140Z
 
