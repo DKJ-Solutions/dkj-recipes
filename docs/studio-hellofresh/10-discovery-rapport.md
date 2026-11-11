@@ -2,7 +2,7 @@
 
 **Opgesteld door:** Sanne (Product Lead), Joris (Product Owner), Wouter (Tech Lead) en Fatima
 (Delivery Manager) · **Week 4:** 7–11 december 2026 · **Status:** **aangeboden aan de klant** op 11
-november 2026 (taak #53); **het besluit van de klant volgt**
+november 2026 (taak #53); **go, met deze scope** (zie [het besluit](#6-het-besluit-van-de-klant))
 
 > **Wat dit rapport is.** De oplevering van deel A van de [offerte](05-offerte.md): de vastgestelde
 > scope van de MVP, en een **definitieve begroting voor deel B**. Met dit rapport beslist Thuiskok of
@@ -90,3 +90,14 @@ Thuiskok kiest een van deze drie:
 
 Met de oplevering van dit rapport is de tweede helft van deel A verschuldigd (**€ 36.125**), los van het
 besluit.
+
+## 6. Het besluit van de klant
+
+**Thuiskok koos op 11 november 2026 voor optie 1: go, met deze scope.** Dave gaf het besluit in de rol
+van de klant (taak #53). Wat daaruit volgt:
+
+- **Restjesslim plannen is Should (premium).** Bevestigt de usertest (taak #58) dat het wél Must moet
+  zijn, dan is dat een nieuw besluit van de klant, met de meerprijs uit hoofdstuk 3.
+- **Het plafond van deel B is € 1.159.000.** Dat is de definitieve begroting uit hoofdstuk 3, en
+  € 39.000 onder het plafond uit de [offerte](05-offerte.md).
+- **Het design (fase 2) begint**, met de user flows (taak #55) als eerste stap.
