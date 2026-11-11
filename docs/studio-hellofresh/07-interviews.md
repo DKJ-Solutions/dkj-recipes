@@ -1,13 +1,15 @@
 # 7. Interviews met de doelgroep
 
 **Eigenaar:** Bram (UX Researcher) · **Verslag:** Joris (Product Owner) · **Week 2:** 23–27 november
-2026 · **Status:** de leidraad is klaar, de interviews zijn **nog niet afgenomen**
+2026 · **Status:** de interviews zijn **bezig**
 
-> **Hoe we dit spelen.** Dave speelt alle 8 tot 10 deelnemers zelf (besluit van 11 november 2026,
-> taak #50). Hij is tenslotte de echte gebruiker van het product. Bram stelt de vragen uit deze
-> leidraad, Dave antwoordt per deelnemer vanuit het profiel dat hij kiest, en Joris schrijft het
-> verslag. **Een antwoord wordt nooit verzonnen.** De uitkomsten onderaan komen alleen uit wat Dave
-> zegt.
+> **Hoe we dit spelen.** Dave speelt de deelnemers zelf (besluit van 11 november 2026, taak #50).
+> Hij is tenslotte de echte gebruiker van het product. Bram stelt de vragen uit deze leidraad, Dave
+> antwoordt per deelnemer vanuit het profiel dat hij kiest, en Joris schrijft het verslag. **Een
+> antwoord wordt nooit verzonnen zonder dat het erbij staat.** Bij deelnemer 2 liet Dave het invullen
+> aan Chris over ("maak er maar iets leuks van op basis van mijn eerste voorbeeld"). Dat is optie (b)
+> uit de parkeervraag op #50. Zo'n interview heet hieronder **fictief**, en in de uitkomsten telt het
+> apart: het illustreert een hypothese, maar het bewijst niets.
 
 ## Wat we willen weten
 
@@ -148,6 +150,27 @@ ik het moet maken" (vraag 4). Vraagt zich minstens 3 keer per week af wat er geg
 **Kijkt niet naar de prijs van een recept:** "Belangrijkste is dat ik iets lekkers eet" (vraag 15). Dat
 is de eerste aanwijzing tegen het tweede deel van H2, de zichtbare prijs per portie. De afsluitende
 vragen zijn niet beantwoord.
+
+### Deelnemer 2: afhaker (fictief)
+
+> **Fictief.** Geschreven door Chris op Daves verzoek, met deelnemer 1 als basis. Telt niet als bewijs.
+
+| Veld | Wat erin komt |
+|---|---|
+| Deelnemer | 2, afhaker. Had acht maanden HelloFresh en is in juli 2026 gestopt. Woont samen met een vriend. Wie het eerst thuis is, kookt |
+| Reden gestopt, uit zichzelf | "Die dozen. Elke week een berg karton en tien plastic zakjes voor één ui." Pas daarna: "en het was ook niet goedkoop, natuurlijk" |
+| Reden gestopt, geholpen | "Ook wel, maar dat was niet de doorslag. Als het minder troep gaf, had ik het betaald" |
+| Mist het meest | "Dat ik op dinsdag niet hoef te bedenken wat we eten." Mist helemaal niet: "het wachten op de bezorger tussen vijf en negen" |
+| Plant zo | Op zondagavond, met recepten van Instagram en Allerhande. Het lijstje staat in de Notities-app, in de volgorde waarin het in hem opkwam |
+| Gooit weg | Een halve bos koriander en een half bakje crème fraîche: "Een recept vraagt twee eetlepels, en de rest staat een week later nog in de koelkast" |
+| Reactie op het idee | "Klinkt goed, als ik maar niet zelf alles hoef in te typen." Wat hem zou weerhouden: "Als het weer een app is die na drie weken op mijn tweede scherm belandt" |
+| Betaalbereidheid | € 2 à € 3 per maand, "maar alleen als het echt werkt" |
+| Opvallend citaat | "Ik loop elke week twee keer terug naar de groenteafdeling, omdat de koriander onderaan mijn lijstje staat." |
+
+**Verder genoteerd:** begon "omdat we elke avond om half zeven nog naar de koelkast stonden te staren"
+(vraag 4). Geeft nu ongeveer € 110 per week uit aan boodschappen voor twee (vraag 14). Ziet vooraf niet
+wat een recept kost, maar schat het wel in: "zalm is duur, linzen niet" (vraag 15). Vindt de porties in
+recepten meestal te groot voor twee. Wil het prototype graag zien.
 
 ## De uitkomsten
 
