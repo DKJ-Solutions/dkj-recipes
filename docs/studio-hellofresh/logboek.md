@@ -147,6 +147,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   Dave regelt namens Thuiskok de afspraken met de stores vóór de inzending (taak #72). De prijzen, premium
   en het weekbudget zijn akkoord zoals gedemonstreerd, dus sprint 7 begint (taak #66). Zie
   [sprint 6](20-sprint-6-prijzen-en-premium.md), hoofdstuk "Het antwoord van de klant".
+- **Sprint 7 is gebouwd** (taak #66): de boodschappenlijst delen met een link, voor wie premium heeft,
+  en samen afvinken op twee telefoons; zonder bereik wint *afgevinkt*. De huisgenoot doet gratis mee en
+  wisselt niets. Hooguit één herinnering per week als er nog geen menu is, standaard uit, omdat de
+  toestemming bij de timer daar niet over ging. *Hoe was het?* met drie knoppen, en de beoordelingen per
+  recept in het portaal. **Drie vragen liggen bij de klant**: of de herinnering standaard aan of uit
+  staat, of *Niet weer* een recept uit het voorstel mag halen, en of de demo akkoord is. Zie
+  [sprint 7](21-sprint-7-gedeelde-lijst.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
