@@ -41,17 +41,27 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Het besluit van go/no-go 1 (Dave als Thuiskok, 11 november 2026: optie 1) vastgelegd als
+  hoofdstuk 6 van `docs/studio-hellofresh/10-discovery-rapport.md`, met de status bovenaan bijgewerkt
+- [x] Een regel in `docs/studio-hellofresh/logboek.md`, en de volgende stap (taak #55) genoemd
 
 ### TEST
 
+- [x] Alleen documentatie; de gates van ship-pr dekken de rest
+
 ### DEPLOY: docs/53-go-no-go-1
 
-**Score:**
+Go/no-go 1 van het rollenspel is vastgelegd: Thuiskok koos voor **go, met deze scope**. Restjesslim
+plannen wordt Should, het plafond van deel B is € 1.159.000, en het design begint. Het besluit staat
+in hoofdstuk 6 van het discovery-rapport en in het logboek.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

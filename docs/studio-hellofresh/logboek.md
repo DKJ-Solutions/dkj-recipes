@@ -40,8 +40,10 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   het geld van gewone boodschappen", met de weekprijs voorop. Restjesslim plannen gaat van Must naar
   Should, en de prijstabel in het beheerportaal komt erbij. Het plafond van deel B daalt naar
   **€ 1.159.000**, en de lancering blijft in week 26. Zie het [discovery-rapport](10-discovery-rapport.md).
-- **Volgende stap: go/no-go 1.** Thuiskok kiest uit drie opties (zie het rapport, hoofdstuk 5). Dat
-  besluit wordt niet verzonnen: het wacht op Dave als de klant.
+- **Go/no-go 1: go, met deze scope** (taak #53). Dave koos als Thuiskok voor optie 1: restjesslim
+  plannen wordt Should, het plafond van deel B is **€ 1.159.000**, en het design (fase 2) begint.
+  Daarmee is fase 1 rond. Zie het [discovery-rapport](10-discovery-rapport.md), hoofdstuk 6.
+- **Volgende stap: de user flows** (taak #55), de eerste stap van het design.
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
