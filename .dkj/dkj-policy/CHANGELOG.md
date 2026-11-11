@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
-**10 / 32 minor entries** <!-- pending-tally -->
+**10 / 33 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/51-personas · 20261111-091005Z
+
+De persona's voor het rollenspel zijn uitgewerkt in `docs/studio-hellofresh/08-personas.md`: Noor (de boxmoeë, primair, op de echte stem), Marieke (het krappe gezin) en Daan (de starter), de laatste twee alleen op fictie. Met een voorstel voor de MoSCoW van taak #53.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: de persona's uitgewerkt
+
+[PR #83](https://github.com/DKJ-Solutions/dkj-recipes/pull/83)
+
+---
 
 ### DEPLOY: docs/50-interviews-uitkomsten · 20261111-090125Z
 
