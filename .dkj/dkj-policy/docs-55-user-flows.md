@@ -41,17 +41,27 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/11-user-flows.md`: zeven user flows binnen de scope van go/no-go 1, met
+  wat de usertest (taak #58) als eerste moet toetsen
+- [x] Een rij in de leesvolgorde van `README.md` en een regel in `logboek.md`
 
 ### TEST
 
+- [x] Alleen documentatie; de links wijzen naar bestaande documenten in dezelfde map
+
 ### DEPLOY: docs/55-user-flows
 
-**Score:**
+De user flows van het rollenspel staan in `docs/studio-hellofresh/11-user-flows.md`: zeven routes door
+de app, met de week (menu kiezen, boodschappen doen, koken) als hoofdroute, en vier keuzes die de
+usertest als eerste moet toetsen.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

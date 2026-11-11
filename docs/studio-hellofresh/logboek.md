@@ -43,7 +43,11 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
 - **Go/no-go 1: go, met deze scope** (taak #53). Dave koos als Thuiskok voor optie 1: restjesslim
   plannen wordt Should, het plafond van deel B is **€ 1.159.000**, en het design (fase 2) begint.
   Daarmee is fase 1 rond. Zie het [discovery-rapport](10-discovery-rapport.md), hoofdstuk 6.
-- **Volgende stap: de user flows** (taak #55), de eerste stap van het design.
+- **De user flows staan** (taak #55): zeven routes, met de week als hoofdroute (menu kiezen,
+  boodschappen doen, koken). Het account komt ná het eerste weekmenu, de app stelt een menu voor in
+  plaats van te laten kiezen, en premium wordt aangeboden waar het iets oplost. Vier keuzes gaan als
+  eerste naar de usertest (taak #58). Zie de [user flows](11-user-flows.md).
+- **Volgende stap: de wireframes** (taak #56).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
