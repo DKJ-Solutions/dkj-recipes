@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 57 minor entries** <!-- pending-tally -->
+**10 / 58 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/69-beta-voorbereid · 20261111-143546Z
+
+De bèta van het rollenspel is voorbereid tot aan de start, in
+`docs/studio-hellofresh/23-beta.md`: 150 fictieve testers verdeeld over de persona's, het testplan met
+wat een blokkade is en de twaalf metingen die de sprints aan de bèta meegaven, en de lat waaraan de bèta
+vooraf gemeten wordt. Drie vragen liggen bij de klant: de allergenen en de open ingrediënten, meten met
+PostHog in de EU, en een bedankje voor de testers. Taak #69 blijft open voor de bèta zelf.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Prepare the beta of the role-play up to its start
+
+[PR #109](https://github.com/DKJ-Solutions/dkj-recipes/pull/109)
+
+---
 
 ### DEPLOY: docs/67-sprint-8-akkoord · 20261111-143014Z
 
