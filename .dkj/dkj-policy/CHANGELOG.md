@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 62 minor entries** <!-- pending-tally -->
+**10 / 63 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/72-inzending-akkoord · 20261111-152300Z
+
+De klant van het rollenspel is akkoord met de inzending: de voorwaarden van go/no-go 3 zijn af, de
+store-pagina's zijn akkoord zoals geschreven, en de app wordt met de hand vrijgegeven, in beide stores op de
+lanceringsdag. Het bureau dient versie 1.0.5 op 4 mei 2027 in. Vastgelegd in
+`docs/studio-hellofresh/25-store-paginas-en-inzending.md` en het logboek; de lanceringsdag (#73) is de
+volgende stap.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Record the client's answers and the submission of the role-play
+
+[PR #114](https://github.com/DKJ-Solutions/dkj-recipes/pull/114)
+
+---
 
 ### DEPLOY: docs/72-inzending-voorbereid · 20261111-151242Z
 
