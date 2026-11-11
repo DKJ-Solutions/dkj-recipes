@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 54 minor entries** <!-- pending-tally -->
+**10 / 55 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/66-sprint-7-akkoord · 20261111-141114Z
+
+Sprint 7 van het rollenspel is akkoord: de wekelijkse herinnering blijft standaard uit, met één vraag na
+het tweede weekmenu; *Niet weer* wordt de zevende regel van het voorstel, in sprint 8 (#67); en de
+gedeelde lijst, de herinnering en *Hoe was het?* zijn akkoord zoals gedemonstreerd, ook de omweg voor de
+uitnodiging op een iPhone. Vastgelegd in `docs/studio-hellofresh/21-sprint-7-gedeelde-lijst.md` en het
+logboek; sprint 8 (#67) kan beginnen.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Record the client's sign-off on sprint 7 of the role-play
+
+[PR #105](https://github.com/DKJ-Solutions/dkj-recipes/pull/105)
+
+---
 
 ### DEPLOY: docs/66-sprint-7-gedeelde-lijst · 20261111-130456Z
 
