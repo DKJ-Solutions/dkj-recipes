@@ -39,19 +39,29 @@
 
 ### PLAN
 
+Wouter's technical exploration for the role-play: how a recipe sits in the database so portions, the aisle-sorted list, the week price and leftovers follow from it, and which source makes the estimated prices good enough. The client already decided (estimated prices, no supermarket partnership; Thuiskok enters its own recipes), so no client answer is needed. Price-source facts come from a source-cited research pass (Rebecca), with verified and inferred kept apart in the document.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Part 1: the data model (per-portion quantities, one shared ingredient catalogue) and the two prices (per portion vs. week price)
+- [x] Part 2: the price sources compared, with a recommendation (own curated table, Checkjebon only as an aid) and what is still open
+- [x] README reading order and a logbook line
 
 ### TEST
 
+- [x] Every claim about a source is marked verified or inferred, and each verified one links its source
+
 ### DEPLOY: docs/52-technische-verkenning
 
-**Score:**
+De technische verkenning voor het rollenspel staat in `docs/studio-hellofresh/09-technische-verkenning.md`: het datamodel voor recepten (hoeveelheden per portie, één ingrediëntencatalogus), het verschil tussen prijs per portie en weekprijs, en een advies voor de prijsbron (een eigen prijstabel, niet scrapen).
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
