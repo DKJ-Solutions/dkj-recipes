@@ -39,19 +39,31 @@
 
 ### PLAN
 
+- [x] Read the client's decision on #73 (DaveKJohn, 2026-11-11) and the three questions in chapter 'Wat de klant nog moet zeggen'
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Record the answer in `docs/studio-hellofresh/26-lancering-en-evaluatie.md` (status, intro, new section 'Het antwoord van de klant', next step)
+- [x] Add the logbook line in `docs/studio-hellofresh/logboek.md`
 
 ### TEST
 
+- [x] Proofread both changes against the decision comment on #73: amounts, dates and choices match
+
 ### DEPLOY: docs/73-evaluatie-akkoord
 
-**Score:**
+Het antwoord van de klant op de lanceringsdag van het rollenspel is vastgelegd: het bureau factureert de
+ingehouden 5 procent, er komt een onderhoudscontract na de garantie, en versie 1.1 begint met meten met
+toestemming. Daarmee is fase 5 rond, en het hele project. Vastgelegd in
+`docs/studio-hellofresh/26-lancering-en-evaluatie.md` en het logboek.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
