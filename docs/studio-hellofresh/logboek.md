@@ -110,6 +110,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   onboarding en het weekmenu zijn akkoord zoals gedemonstreerd, ook zonder weekprijs tot sprint 6, dus
   sprint 4 begint (taak #63). Zie [sprint 3](17-sprint-3-onboarding-en-weekmenu.md), hoofdstuk "Het
   antwoord van de klant".
+- **Sprint 4 is gebouwd** (taak #63): de boodschappenlijst, samengevoegd over de week, afgerond op hele
+  verpakkingen, per afdeling in één vaste volgorde en af te vinken, ook zonder bereik. "Heb je dit in
+  huis?" staat bovenaan, zoals de usertest vroeg. De catalogus kreeg een omrekening per verpakking, die
+  er nog niet in zat; waar die ontbreekt, toont de lijst de hoeveelheid zelf. **Drie vragen liggen bij
+  de klant**: wie de verpakkingen invult en wanneer, of één afdelingsvolgorde genoeg is voor de
+  lancering, en of de demo akkoord is. Zie [sprint 4](18-sprint-4-boodschappenlijst.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

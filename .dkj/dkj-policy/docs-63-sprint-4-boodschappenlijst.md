@@ -39,19 +39,38 @@
 
 ### PLAN
 
+- [x] Play sprint 4 (the shopping list, flow 3, wireframe 7) up to the demo, the way sprint 3 was
+  played for #62: what was built, the gap found, the demo, and the client's open questions. The
+  client's answers are not invented; #63 stays open and is parked for them.
+
+#### Notes
+
+- Sprint 4 = week 13–14 (8 – 19 February 2027), from the plan van aanpak.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/18-sprint-4-boodschappenlijst.md`: the sprint document.
+- [x] `docs/studio-hellofresh/README.md`: row 18 in the reading order.
+- [x] `docs/studio-hellofresh/logboek.md`: one line under session 2.
 
 ### TEST
 
+- [x] Docs only; the gates in `ship-pr` cover it.
+
 ### DEPLOY: docs/63-sprint-4-boodschappenlijst
 
-**Score:**
+Sprint 4 van het rollenspel is gespeeld tot de demo: de boodschappenlijst, samengevoegd in hele
+verpakkingen, per afdeling, af te vinken en werkend zonder bereik. Vastgelegd in
+`docs/studio-hellofresh/18-sprint-4-boodschappenlijst.md` en het logboek; drie vragen liggen bij de
+klant (#63).
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
