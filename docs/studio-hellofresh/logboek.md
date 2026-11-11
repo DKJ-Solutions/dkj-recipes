@@ -21,8 +21,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   zeggen) als eerste, vier afhakers, drie gezinnen en twee à drie starters, en 21 vragen in 45
   minuten. Over geld begint Bram pas in blok 5, zodat telt wat iemand uit zichzelf noemt. Zie de
   [interviews](07-interviews.md).
-- **Volgende stap:** Dave speelt de interviews; daarna komen de uitkomsten in hetzelfde document
-  (taak #50).
+- **De interviews zijn afgenomen** (taak #50). Dave speelde deelnemer 1 zelf: een afhaker in spe die
+  nog bij HelloFresh zit. Daarna liet hij Chris de andere acht schrijven, als **fictief** gemarkeerd.
+  De echte stem noemt de prijs uit zichzelf als reden om op te zeggen (H2a voorlopig bevestigd), maar
+  kijkt niet naar de prijs van een recept (H2b niet bevestigd). De belofte wordt daarom "het gemak van een box,
+  voor het geld van gewone boodschappen". H3 en H4 blijven open. Zie de [interviews](07-interviews.md).
+- **Volgende stap:** de persona's (taak #51). De usertest (taak #58) toetst daarna met echte gebruikers
+  wat nu alleen voorlopig is.
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

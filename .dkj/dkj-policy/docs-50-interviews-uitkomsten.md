@@ -39,19 +39,31 @@
 
 ### PLAN
 
+Dave plays the interviewees from the guide in `docs/studio-hellofresh/07-interviews.md`; the outcomes come from his answers. Mid-session he chose to let Chris write participants 2 to 9 as labelled fiction (option b on #50).
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Record participant 1 (played by Dave) verbatim
+- [x] Record the switch to fictional participants on #50 and in the document
+- [x] Write participants 2 to 9 as labelled fiction, with deliberate counter-voices
+- [x] Write the outcomes per hypothesis, real and fictional counted apart
+- [x] Add the logbook line
 
 ### TEST
 
+- [x] Every fictional participant is labelled, and the outcomes table keeps the real column separate
+
 ### DEPLOY: docs/50-interviews-uitkomsten
 
-**Score:**
+De interviews voor het rollenspel zijn afgenomen: Dave speelde één deelnemer, Chris schreef er acht als gemarkeerde fictie. De uitkomsten per hypothese staan in `docs/studio-hellofresh/07-interviews.md`, met de echte stem apart geteld. Prijs is de reden om op te zeggen (voorlopig), maar de prijs per recept is geen reden om te kiezen.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

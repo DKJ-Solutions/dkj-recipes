@@ -1,7 +1,7 @@
 # 7. Interviews met de doelgroep
 
 **Eigenaar:** Bram (UX Researcher) · **Verslag:** Joris (Product Owner) · **Week 2:** 23–27 november
-2026 · **Status:** de interviews zijn **bezig**
+2026 · **Status:** **afgenomen** op 11 november 2026, met 1 echte en 8 fictieve deelnemers
 
 > **Hoe we dit spelen.** Dave speelt de deelnemers zelf (besluit van 11 november 2026, taak #50).
 > Hij is tenslotte de echte gebruiker van het product. Bram stelt de vragen uit deze leidraad, Dave
@@ -172,8 +172,107 @@ vragen zijn niet beantwoord.
 wat een recept kost, maar schat het wel in: "zalm is duur, linzen niet" (vraag 15). Vindt de porties in
 recepten meestal te groot voor twee. Wil het prototype graag zien.
 
+### Deelnemers 3 tot en met 9 (fictief)
+
+> **Fictief.** Na deelnemer 2 koos Dave ervoor dat Chris de overige deelnemers schrijft. Ze zijn
+> gevarieerd opgezet, met bewust ook tegengeluid. Ze tellen niet als bewijs. Per deelnemer staan de
+> velden van het verslag kort onder elkaar.
+
+**Deelnemer 3: afhaker.** Woont alleen, 58 jaar. Had een jaar Marley Spoon en stopte in maart 2026.
+- *Uit zichzelf:* "Te duur voor één persoon. Ik betaalde voor twee porties en at de tweede de dag erna koud op."
+- *Geholpen:* "De prijs, ja. Maar vooral omdat ik de helft betaalde voor eten dat ik niet wilde."
+- *Mist het meest:* "Nieuwe recepten. Ik kook nu weer elke week dezelfde vijf dingen."
+- *Plant zo:* in de winkel, zonder lijstje.
+- *Gooit weg:* een halve krop sla en de helft van een zak spinazie.
+- *Reactie op het idee:* "Als ik voor één persoon kan kiezen, graag. Dat kan bijna nergens."
+- *Betaalbereidheid:* niets: "gratis, of ik gebruik het niet."
+- *Citaat:* "Alles in de supermarkt is voor vier personen, behalve de kattenbrokjes."
+
+**Deelnemer 4: afhaker.** Woont met een partner en twee kinderen (7 en 10). Had vijf maanden HelloFresh en stopte in september 2026.
+- *Uit zichzelf:* "Het geld. Negentig euro per week voor vier avonden, en de kinderen lustten de helft niet."
+- *Geholpen:* "De prijs was de druppel. Dat de kinderen het niet aten, maakte het nog duurder."
+- *Mist het meest:* "Dat ik niets hoefde te bedenken." Mist niet: "de dozen in de gang."
+- *Plant zo:* een weekmenu op een briefje aan de koelkast. De boodschappenlijst staat in de AH-app.
+- *Gooit weg:* boterhamkorsten en de restjes van de kinderen.
+- *Reactie op het idee:* "Als ik vooraf zie wat de week kost, ja. Dat is precies wat ik nu in mijn hoofd doe."
+- *Betaalbereidheid:* € 3 per maand.
+- *Citaat:* "Ik wil niet goedkoop eten, ik wil weten wat het kost voordat ik in de rij sta."
+
+**Deelnemer 5: krap gezin.** Twee volwassenen en drie kinderen, met een weekbudget van € 150.
+- *Maaltijdbox overwogen:* "Nooit. Voor vijf personen is dat onbetaalbaar."
+- *Plant zo:* een vast weekschema (maandag pasta, vrijdag pannenkoeken). Het lijstje staat op papier, al in de volgorde van de Lidl: "die ken ik uit mijn hoofd."
+- *Gooit weg:* bijna niets. Restjes gaan mee als lunch.
+- *Reactie op het idee:* "Ik heb mijn vaste rondje al. Leuk voor wat variatie, meer niet."
+- *Betaalbereidheid:* niets.
+- *Citaat:* "Mijn boodschappenlijst ís al gesorteerd. Dat heet ervaring."
+
+**Deelnemer 6: krap gezin.** Twee volwassenen, een peuter en een baby, met een weekbudget van € 120.
+- *Maaltijdbox overwogen:* een proefbox met een kortingscode. "Daarna vergat ik te pauzeren en zat ik vast aan een box van zestig euro. Toen heb ik meteen opgezegd."
+- *Plant zo:* op de dag zelf, met een lijstje dat de helft van de tijd thuis ligt.
+- *Wat ging er mis:* "Ik loop altijd terug, met een kinderwagen. Dat is het ergste."
+- *Gooit weg:* groente die zacht is geworden, "omdat de avond anders liep dan gepland."
+- *Reactie op het idee:* "Ja, als het snel gaat. Ik heb geen tijd voor een app die ik moet leren."
+- *Betaalbereidheid:* € 2 per maand.
+- *Citaat:* "Ik heb geen hekel aan koken. Ik heb een hekel aan teruglopen met een kinderwagen."
+
+**Deelnemer 7: krap gezin.** Een samengesteld gezin: de ene week twee personen, de andere week vijf. Weekbudget € 130.
+- *Maaltijdbox overwogen:* "De boxen zijn er voor twee of voor vier. Wij zijn twee of vijf."
+- *Plant zo:* op zondag, afhankelijk van welke week het is.
+- *Wat ging er mis:* in de kinderweek te weinig gekocht, in de andere week te veel.
+- *Gooit weg:* gekookte pasta en rijst, "omdat ik voor vijf kook uit gewoonte."
+- *Reactie op het idee:* "Alleen als ik per week kan zeggen met hoeveel we zijn."
+- *Betaalbereidheid:* € 4 per maand.
+- *Citaat:* "Elk recept rekent met vier personen. Ik reken met twee of vijf."
+
+**Deelnemer 8: student.** Woont met drie huisgenoten, kookt vier keer per week voor zichzelf, met een budget van € 40 per week.
+- *Maaltijdbox overwogen:* "Dat is voor mensen met een baan."
+- *Plant zo:* niet. Beslist in de winkel, zonder lijstje.
+- *Gooit weg:* een half pak kipfilet dat over de datum was.
+- *Reactie op het idee:* "Als het goedkope recepten heeft, ja. Maar ik betaal er niet voor."
+- *Betaalbereidheid:* niets.
+- *Citaat:* "Mijn menu is wat er in de bonus zit."
+
+**Deelnemer 9: starter.** Woont alleen, 26 jaar, en kookt drie keer per week. Had een proefbox van Ekomenu.
+- *Maaltijdbox overwogen:* "Eén proefbox. Lekker, maar voor één persoon te duur en te veel."
+- *Plant zo:* op zondag mealpreppen, met recepten die als links op Instagram bewaard staan.
+- *Gooit weg:* een halve ui of een halve paprika, bijna elke week.
+- *Reactie op het idee:* "Mag ik er mijn eigen Instagram-recepten in zetten?"
+- *Betaalbereidheid:* € 3 per maand.
+- *Citaat:* "Ik heb honderd recepten bewaard en kook er drie van."
+
 ## De uitkomsten
 
-**Nog niet afgenomen.** Zodra Dave de interviews heeft gespeeld, komen hier per hypothese het
-aantal deelnemers dat hem bevestigt, het aantal dat hem tegenspreekt en de sterkste citaten. Daarna
-werken Bram en Lotte er de persona's uit (taak #51).
+Negen deelnemers: **1 echt** (deelnemer 1, door Dave gespeeld) en **8 fictief** (deelnemers 2 tot en
+met 9, door Chris geschreven). Per hypothese staat apart wat de echte deelnemer zei. **Alleen die
+kolom is bewijs**; de fictieve tellingen laten zien welke kant het op kán gaan.
+
+| # | Hypothese | Echt (1) | Fictief (8) | Oordeel |
+|---|---|---|---|---|
+| **H2a** | Prijs is de reden om op te zeggen, uit zichzelf genoemd | **Bevestigt** (1 van 1 afhaker) | 2 van 3 afhakers bevestigen (3, 4), 1 spreekt tegen (2: verpakking) | **Voorlopig bevestigd**, op één echte stem |
+| **H2b** | Een zichtbare prijs per portie is de reden om voor ons te kiezen | **Spreekt tegen**: "kijk ik ook verder niet naar" | 1 bevestigt (4), de rest zegt er niets over | **Niet bevestigd**. De prijs drijft het opzeggen, maar de prijs per recept trekt geen gebruikers aan |
+| H1 | Wie opzegt, mist het plannen, niet de bezorging | **Bevestigt**: het fijnst is "nooit meer nadenken" | 2 bevestigen (2, 4), 1 mist iets anders (3: nieuwe recepten) | **Voorlopig bevestigd** |
+| H3 | Een lijst per afdeling scheelt merkbaar tijd | Zwak: "soms vergeet ik wel iets" | 2 bevestigen (2, 6), 1 spreekt tegen (5), 2 zonder lijst (3, 8) | **Open**. Teruglopen stoort, maar ervaren shoppers sorteren al zelf |
+| H4 | Restjes hergebruiken bespaart echt geld | **Spreekt tegen**: "er blijft nooit wat over" | 6 gooien wekelijks iets weg (2, 3, 6, 7, 8, 9), 1 niet (5) | **Open**. Echt bewijs ontbreekt en spreekt eerder tegen |
+| H5 | Geen abonnementsdwang: *waarom* stoort het | Niet genoemd | 1: vergeten te pauzeren, daarna betalen (6) | **Waarom nog open**. Het pauzeren is het enige concrete verhaal |
+| H6 | Elke portiegrootte, van 1 tot 6 | Kookt voor twee, past bij de boxen | 4 bevestigen (3, 7, 9 en 2: "te grote porties") | **Voorlopig bevestigd**, maar alleen fictief |
+
+**Betaalbereidheid:** de echte deelnemer noemt € 5 per maand. De fictieve noemen € 0 tot € 4: drie
+niets, de rest € 2 tot € 4. Dat sluit aan bij het verdienmodel "goedkoop premium" van € 2 à € 3 per
+maand ([intake](02-intake-klant.md)).
+
+**Wat dit betekent voor de positionering.** De prijs is de reden waarom mensen afhaken, maar een
+prijskaartje per recept is niet waarom ze kiezen. Deelnemer 1 wil lekker eten, zonder na te denken,
+voor minder geld dan de box kost. De belofte is dus **"het gemak van een box, voor het geld van
+gewone boodschappen"**, met de weekprijs als bewijs. De prijs per portie is daarbij geen
+uithangbord.
+
+**De sterkste citaten**, voor de persona's (taak #51):
+- "Ik zit momenteel nog steeds bij HelloFresh, maar ik ben wanhopig op zoek naar een goedkoper
+  alternatief." *(deelnemer 1, echt)*
+- "Ik wil niet goedkoop eten, ik wil weten wat het kost voordat ik in de rij sta." *(deelnemer 4, fictief)*
+- "Elk recept rekent met vier personen. Ik reken met twee of vijf." *(deelnemer 7, fictief)*
+
+**De grens van dit onderzoek.** Er staat één echte stem in, en die zit nog bij HelloFresh. Elke
+conclusie hierboven is daarom voorlopig. De usertest (taak #58) moet hem met echte gebruikers
+bevestigen of verwerpen, en dan H2b en H4 als eerste. Bram en Lotte werken nu de persona's uit
+(taak #51).
