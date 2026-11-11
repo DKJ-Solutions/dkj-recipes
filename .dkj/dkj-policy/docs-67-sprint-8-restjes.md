@@ -41,17 +41,27 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Write `docs/studio-hellofresh/22-sprint-8-restjes-en-afronden.md`: sprint 8 played up to the
+  demo, with the client's open questions
+- [x] Add the row to `docs/studio-hellofresh/README.md` and the line to `logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/67-sprint-8-restjes
 
-**Score:**
+Sprint 8 van het rollenspel is gespeeld tot de demo, de laatste sprint van de bouw: *Niet weer* als
+zevende regel van het voorstel, restjesslim plannen als stap na de regels met *Over na deze week* op de
+lijst, de blokkerende fouten eruit en de app sneller, klaar voor de bèta. Vastgelegd in
+`docs/studio-hellofresh/22-sprint-8-restjes-en-afronden.md` en het logboek; drie vragen liggen bij de
+klant (#67).
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
