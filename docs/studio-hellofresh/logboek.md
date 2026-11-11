@@ -189,6 +189,14 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   procent naast de kassabon. **Vijf van de zes latten zijn gehaald**; het aantal eters voor deze week
   aanpassen lukte bij 54 procent, en de knop gaat naar boven in taak #70. Restjesslim plannen scheelt op
   de echte catalogus 7 procent. De testers en de getallen zijn fictie. Zie [de bèta](23-beta.md).
+- **Go/no-go 3 is voorbereid** (taak #70). Zes van de zeven hinderlijke meldingen zijn opgelost, en het
+  aantal eters aanpassen lukt nu bij vier van de vijf mensen. De AVG-check vond twee vragen: allergieën
+  zijn gegevens over de gezondheid, en de toestemming voor PostHog gold alleen voor de bèta. Van de 14
+  bevindingen over de toegankelijkheid zijn er 11 opgelost. Testversie 1.0.4 is de release candidate, en
+  het advies is go, onder twee voorwaarden: de jurist van Thuiskok keurt de privacyverklaring goed en de
+  verwerkersovereenkomsten zijn getekend. **Drie vragen liggen bij de klant**: go/no-go 3, hoe de app
+  met de allergieën omgaat, en of er na de lancering gemeten wordt. Zie
+  [de afronding en go/no-go 3](24-afronding-en-go-no-go-3.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

@@ -41,17 +41,30 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Write `docs/studio-hellofresh/24-afronding-en-go-no-go-3.md`: what the beta left behind and what the
+  team did with it, the GDPR check (not legal advice), the accessibility check against WCAG 2.1 AA, the
+  release candidate, the agency's advice for go/no-go 3 and the client's three open questions, marked as
+  fiction
+- [x] Add the chapter to the reading order in `docs/studio-hellofresh/README.md`
+- [x] Add the line to `docs/studio-hellofresh/logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/70-go-no-go-3-voorbereid
 
-**Score:**
+Go/no-go 3 van het rollenspel is voorbereid, in `docs/studio-hellofresh/24-afronding-en-go-no-go-3.md`:
+wat de bèta achterliet en wat het team ermee deed, de AVG-check, de toegankelijkheid tegen WCAG 2.1 AA en
+de release candidate. Het advies is go, onder twee voorwaarden. Drie vragen liggen bij de klant: go/no-go
+3, hoe de app met de allergieën omgaat, en of er na de lancering gemeten wordt. Taak #70 blijft open voor
+het besluit.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
