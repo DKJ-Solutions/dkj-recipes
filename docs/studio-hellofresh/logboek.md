@@ -172,6 +172,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   komt er geen nieuwe functie meer bij; wat de bèta oplevert, wordt opgelost of gaat naar na de
   lancering. De demo is akkoord en de bèta (taak #69) mag beginnen met deze testversie. Zie
   [sprint 8](22-sprint-8-restjes-en-afronden.md), hoofdstuk "Het antwoord van de klant".
+- **De bèta is voorbereid** (taak #69): 150 testers uit 412 aanmeldingen, verdeeld over de persona's,
+  twee weken vanaf 19 april 2027. Nadia legde het testplan en de lat vast vóór het testen: wat een
+  blokkade is, de twaalf metingen die de sprints aan de bèta meegaven, en wanneer de bèta geslaagd is.
+  De testers zijn fictie, gespeeld door Chris. **Drie vragen liggen bij de klant**: of de allergenen en de
+  9 open ingrediënten af zijn, of het bureau mag meten met PostHog in de EU met een privacyverklaring
+  die de jurist van Thuiskok toetst, en of de testers drie maanden premium krijgen. Zie
+  [de bèta](23-beta.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
