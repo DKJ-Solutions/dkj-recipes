@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 38 minor entries** <!-- pending-tally -->
+**10 / 39 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/57-designsysteem · 20261111-095955Z
+
+Het designsysteem van het rollenspel staat in `docs/studio-hellofresh/13-designsysteem.md`: een
+merkvoorstel zonder logo, met de kleuren en hun gemeten contrast, de letters, de maten en de onderdelen
+van de negen wireframes.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: het designsysteem
+
+[PR #89](https://github.com/DKJ-Solutions/dkj-recipes/pull/89)
+
+---
 
 ### DEPLOY: docs/56-wireframes · 20261111-094321Z
 
