@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 53 minor entries** <!-- pending-tally -->
+**10 / 54 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/66-sprint-7-gedeelde-lijst · 20261111-130456Z
+
+Sprint 7 van het rollenspel is gespeeld tot de demo: de gedeelde lijst met samen afvinken, ook zonder
+bereik, hooguit één herinnering per week, en *Hoe was het?* na het koken met de beoordelingen in het
+portaal. Vastgelegd in `docs/studio-hellofresh/21-sprint-7-gedeelde-lijst.md` en het logboek; drie
+vragen liggen bij de klant (#66).
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Play sprint 7 of the role-play up to the demo
+
+[PR #104](https://github.com/DKJ-Solutions/dkj-recipes/pull/104)
+
+---
 
 ### DEPLOY: docs/65-sprint-6-akkoord · 20261111-125940Z
 
