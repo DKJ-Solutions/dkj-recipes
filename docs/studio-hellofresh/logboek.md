@@ -154,6 +154,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   recept in het portaal. **Drie vragen liggen bij de klant**: of de herinnering standaard aan of uit
   staat, of *Niet weer* een recept uit het voorstel mag halen, en of de demo akkoord is. Zie
   [sprint 7](21-sprint-7-gedeelde-lijst.md).
+- **Sprint 7 is akkoord** (taak #66). Dave antwoordde als Thuiskok: de herinnering blijft standaard uit,
+  met één vraag na het tweede weekmenu. *Niet weer* wordt de zevende regel van het voorstel; je kunt zo'n
+  recept nog wel zelf kiezen bij *Meer recepten*, en dat komt in sprint 8 (taak #67). De gedeelde lijst,
+  de herinnering en *Hoe was het?* zijn akkoord zoals gedemonstreerd, ook de omweg voor de uitnodiging op
+  een iPhone, dus sprint 8 begint. Zie [sprint 7](21-sprint-7-gedeelde-lijst.md), hoofdstuk "Het
+  antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
