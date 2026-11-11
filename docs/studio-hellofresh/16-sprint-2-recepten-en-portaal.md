@@ -1,7 +1,7 @@
 # 16. Sprint 2: recepten tonen en het beheerportaal
 
 **Eigenaar:** Wouter (Tech Lead), met Fatima (Delivery Manager) · **Week 9–10:** 11–22 januari 2027 ·
-**Status:** **gebouwd** op 11 november 2026 (taak #61); **de demo ligt bij de klant**
+**Status:** **gebouwd** op 11 november 2026 (taak #61); **de demo is akkoord** (11 november 2026)
 
 > **Wat deze sprint oplevert.** Twee kanten van hetzelfde recept. Aan de ene kant het
 > **beheerportaal**: de webpagina waarin een redacteur van Thuiskok een recept invoert, met de
@@ -138,6 +138,20 @@ prijs in de app.
 3. **De demo.** Is het portaal en het recept in de app zoals hierboven akkoord, of mist Thuiskok iets
    voordat sprint 3 (onboarding en het weekmenu, taak #62) begint?
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle drie de vragen:
+
+1. **De recepten staan erin.** Minstens 30 recepten zijn live in het portaal, waarvan 12
+   vegetarisch. De eigen redacteuren van Thuiskok voeren ze in, en zij hebben dus een login.
+2. **De accounts zijn er.** Het Apple Developer-account en het Google Play-account bestaan allebei, en
+   het bureau krijgt een uitnodiging. Vanaf sprint 3 gaat de testversie via TestFlight en de Play
+   Console in plaats van via Expo.
+3. **Het portaal en het recept in de app zijn akkoord** zoals ze in de demo te zien waren. Thuiskok
+   mist niets, en sprint 3 begint.
+
+Daarmee is sprint 2 rond.
+
 ## Volgende stap
 
-Sprint 3: de onboarding en het weekmenu kiezen (taak #62), zodra de klant de demo heeft gezien.
+Sprint 3: de onboarding en het weekmenu kiezen (taak #62).

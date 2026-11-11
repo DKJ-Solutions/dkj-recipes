@@ -92,6 +92,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   klant**: of de eerste 50 recepten erin staan (sprint 3 heeft er minstens 30 nodig, waarvan 12
   vegetarisch), of de store-accounts er zijn, en of de demo akkoord is. Zie
   [sprint 2](16-sprint-2-recepten-en-portaal.md).
+- **Sprint 2 is akkoord** (taak #61). Dave antwoordde als Thuiskok: minstens 30 recepten staan live
+  in het portaal, waarvan 12 vegetarisch, ingevoerd door de eigen redacteuren van Thuiskok. Het Apple
+  Developer-account en het Google Play-account bestaan, het bureau krijgt een uitnodiging, en vanaf
+  sprint 3 gaat de testversie via TestFlight en de Play Console. Het portaal en het recept zijn akkoord
+  zoals gedemonstreerd, dus sprint 3 begint (taak #62). Zie
+  [sprint 2](16-sprint-2-recepten-en-portaal.md), hoofdstuk "Het antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

@@ -39,19 +39,33 @@
 
 ### PLAN
 
+- [x] Record the client's answers on sprint 2 (decision comment on #61, 2026-11-11) in the sprint
+  document and the logbook, the way sprint 1's sign-off was recorded for #60.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/16-sprint-2-recepten-en-portaal.md`: status line, chapter "Het
+  antwoord van de klant", next step.
+- [x] `docs/studio-hellofresh/logboek.md`: one line under session 2.
 
 ### TEST
 
+- [x] Docs only; the gates in `ship-pr` cover it.
+
 ### DEPLOY: docs/61-sprint-2-akkoord
 
-**Score:**
+Sprint 2 van het rollenspel is akkoord: minstens 30 recepten staan live (12 vegetarisch), de twee
+store-accounts bestaan en de testversie gaat vanaf sprint 3 via TestFlight en de Play Console.
+Vastgelegd in `docs/studio-hellofresh/16-sprint-2-recepten-en-portaal.md` en het logboek; sprint 3
+(#62) kan beginnen.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
