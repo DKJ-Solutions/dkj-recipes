@@ -1,7 +1,7 @@
 # 21. Sprint 7: de gedeelde lijst, de herinnering en *Hoe was het?*
 
 **Eigenaar:** Wouter (Tech Lead), met Fatima (Delivery Manager) · **Week 19–20:** 22 maart – 2 april
-2027 · **Status:** **gebouwd** op 11 november 2026 (taak #66); **de demo ligt bij de klant**
+2027 · **Status:** **gebouwd** op 11 november 2026 (taak #66); **de demo is akkoord** (11 november 2026)
 
 > **Wat deze sprint oplevert.** Samen boodschappen doen. Wie premium heeft, deelt de boodschappenlijst met
 > een huisgenoot, en dan vinken ze samen af, elk op hun eigen telefoon ([user flow](11-user-flows.md) 5).
@@ -215,6 +215,21 @@ elkaar, Wouter beantwoordt de technische vragen.
    de omweg voor de uitnodiging op een iPhone, of mist Thuiskok iets voordat sprint 8 (restjesslim
    plannen en afronden, taak #67) begint?
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle drie de vragen:
+
+1. **De herinnering blijft standaard uit**, met één vraag na het tweede weekmenu, zoals gebouwd en zoals
+   het bureau adviseerde. Er hoeft niets om.
+2. ***Niet weer* wordt de zevende regel**: een recept waar je *Niet weer* bij zei, komt niet meer in je
+   voorstel, en je kunt het nog wel zelf kiezen bij *Meer recepten*. Dat kost ongeveer een dag, in
+   sprint 8 (taak #67).
+3. **De gedeelde lijst, de herinnering en *Hoe was het?* zijn akkoord** zoals ze in de demo te zien
+   waren, ook met de omweg voor de uitnodiging op een iPhone zonder de app. Sprint 8 begint.
+
+Daarmee is sprint 7 rond.
+
 ## Volgende stap
 
-Sprint 8: restjesslim plannen, afronden en de prestaties (taak #67), zodra de klant de demo heeft gezien.
+Sprint 8: restjesslim plannen, afronden en de prestaties (taak #67), met *Niet weer* als zevende regel van
+het voorstel.

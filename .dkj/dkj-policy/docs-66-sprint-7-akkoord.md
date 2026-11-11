@@ -41,17 +41,28 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Record the client's three answers (decision comment on #66) in
+  `docs/studio-hellofresh/21-sprint-7-gedeelde-lijst.md`, chapter "Het antwoord van de klant", and
+  set the status to accepted
+- [x] Add the sign-off line to `docs/studio-hellofresh/logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/66-sprint-7-akkoord
 
-**Score:**
+Sprint 7 van het rollenspel is akkoord: de wekelijkse herinnering blijft standaard uit, met één vraag na
+het tweede weekmenu; *Niet weer* wordt de zevende regel van het voorstel, in sprint 8 (#67); en de
+gedeelde lijst, de herinnering en *Hoe was het?* zijn akkoord zoals gedemonstreerd, ook de omweg voor de
+uitnodiging op een iPhone. Vastgelegd in `docs/studio-hellofresh/21-sprint-7-gedeelde-lijst.md` en het
+logboek; sprint 8 (#67) kan beginnen.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
