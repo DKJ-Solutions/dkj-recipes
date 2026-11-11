@@ -67,5 +67,5 @@ N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert nie
 
 #### Pull Request
 
-docs: Record the client's answers on the role-play's launch and evaluation
+Record the client's answers on the role-play's launch and evaluation
 
