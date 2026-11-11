@@ -98,6 +98,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   sprint 3 gaat de testversie via TestFlight en de Play Console. Het portaal en het recept zijn akkoord
   zoals gedemonstreerd, dus sprint 3 begint (taak #62). Zie
   [sprint 2](16-sprint-2-recepten-en-portaal.md), hoofdstuk "Het antwoord van de klant".
+- **Sprint 3 is gebouwd** (taak #62): de onboarding in drie schermen, in ongeveer 35 seconden tot het
+  eerste weekmenu. Het voorstel van de week volgt vijf vaste regels, een recept wisselen geeft drie
+  alternatieven, en het aantal eters is per week te kiezen. De weekprijs-kaart staat er, nog zonder
+  bedrag tot sprint 6. De catalogus kreeg de allergenen, die er nog niet in zaten; een recept met een
+  ingrediënt dat niet is nagekeken, valt weg voor wie een allergie aanvinkt. De testversie gaat voor het
+  eerst via TestFlight en de Play Console. **Twee vragen liggen bij de klant**: wie de allergenen
+  nakijkt en wanneer, en of de demo akkoord is. Zie [sprint 3](17-sprint-3-onboarding-en-weekmenu.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
