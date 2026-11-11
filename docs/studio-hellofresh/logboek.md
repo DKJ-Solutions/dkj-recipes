@@ -105,6 +105,11 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   ingrediënt dat niet is nagekeken, valt weg voor wie een allergie aanvinkt. De testversie gaat voor het
   eerst via TestFlight en de Play Console. **Twee vragen liggen bij de klant**: wie de allergenen
   nakijkt en wanneer, en of de demo akkoord is. Zie [sprint 3](17-sprint-3-onboarding-en-weekmenu.md).
+- **Sprint 3 is akkoord** (taak #62). Dave antwoordde als Thuiskok: Thuiskok kijkt de allergenen per
+  ingrediënt zelf na in het portaal, vóór de bèta (taak #69), en sprint 4 wacht daar niet op. De
+  onboarding en het weekmenu zijn akkoord zoals gedemonstreerd, ook zonder weekprijs tot sprint 6, dus
+  sprint 4 begint (taak #63). Zie [sprint 3](17-sprint-3-onboarding-en-weekmenu.md), hoofdstuk "Het
+  antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
