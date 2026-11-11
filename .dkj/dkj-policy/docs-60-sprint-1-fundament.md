@@ -39,19 +39,31 @@
 
 ### PLAN
 
+- [x] Play sprint 1 of the role-play (#60) up to the demo; the client's two answers are parked on #60, never invented.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `15-sprint-1-fundament.md`: sprint goal, technical choices, guest-first login, CI, what is done, the demo, two questions for the client.
+- [x] `README.md` reading order and `logboek.md` line.
 
 ### TEST
 
+- [x] Docs only; links checked by hand against the files in `docs/studio-hellofresh/`.
+
 ### DEPLOY: docs/60-sprint-1-fundament
 
-**Score:**
+Sprint 1 van het rollenspel staat in `docs/studio-hellofresh/15-sprint-1-fundament.md`: de technische
+keuzes, inloggen als gast eerst, de lopende band en de demo. Twee vragen liggen bij de klant op #60.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+Part of #60
 
 #### Pull Request
 
