@@ -2,7 +2,7 @@
 
 **Eigenaar:** Joris (Product Owner, de teksten), met Iris (de schermafbeeldingen), Jesse (DevOps, de
 inzending) en Fatima (Delivery Manager) · **Week 25:** 3 – 7 mei 2027 · **Status:** **voorbereid** op
-11 november 2026 (taak #72); **de inzending wacht op de klant**
+11 november 2026 (taak #72); **de klant is akkoord, het bureau dient in** (11 november 2026)
 
 > **Wat deze stap oplevert.** Alles wat klaar moet zijn voordat Thuiskok in de App Store en de Play Store
 > kan staan: de versie die wordt ingediend, de store-pagina's, de antwoorden op de vragenlijsten van Apple
@@ -105,6 +105,20 @@ Het alternatief is vrijgeven zodra een store goedkeurt: sneller, maar zonder vas
 3. **Vrijgeven.** Met de hand, in beide stores op de lanceringsdag (het advies van het bureau), of vanzelf
    zodra een store goedkeurt?
 
+### Het antwoord van de klant
+
+Dave gaf op 11 november 2026 als Thuiskok antwoord op alle drie de vragen:
+
+1. **De voorwaarden zijn af.** De jurist van Thuiskok keurde de privacyverklaring en de zin bij de
+   toestemmingsvraag goed, de verwerkersovereenkomsten zijn getekend, en de afspraken met beide stores voor
+   betaalde apps zijn rond. Het bureau mag indienen.
+2. **De store-pagina's zijn akkoord** zoals hierboven: de naam, de teksten en de zes schermafbeeldingen.
+3. **Met de hand vrijgeven**, in beide stores op de lanceringsdag (taak #73), zoals het bureau adviseerde.
+
+Daarmee staat niets meer tussen versie 1.0.5 en de inzending: Jesse dient op dinsdag 4 mei 2027 in bij Apple
+en Google, met premium erbij, en zet in beide stores *met de hand vrijgeven* aan.
+
 ## Volgende stap
 
-Na het antwoord van de klant: indienen, de review, en daarna de lanceringsdag (taak #73).
+De review door Apple en Google, en daarna de lanceringsdag (taak #73), waarop het bureau de app in beide
+stores tegelijk vrijgeeft. Wijst een store af, dan herstelt het team dat in de buffer van week 25 en 26.

@@ -41,17 +41,28 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Record the client's three answers (decision comment on #72) in
+  `docs/studio-hellofresh/25-store-paginas-en-inzending.md`, chapter "Het antwoord van de klant", and set
+  the status to submitted
+- [x] Add the line to `docs/studio-hellofresh/logboek.md`
 
 ### TEST
 
 ### DEPLOY: docs/72-inzending-akkoord
 
-**Score:**
+De klant van het rollenspel is akkoord met de inzending: de voorwaarden van go/no-go 3 zijn af, de
+store-pagina's zijn akkoord zoals geschreven, en de app wordt met de hand vrijgegeven, in beide stores op de
+lanceringsdag. Het bureau dient versie 1.0.5 op 4 mei 2027 in. Vastgelegd in
+`docs/studio-hellofresh/25-store-paginas-en-inzending.md` en het logboek; de lanceringsdag (#73) is de
+volgende stap.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
