@@ -2,7 +2,29 @@
 
 ## [Unreleased]
 
-**10 / 35 minor entries** <!-- pending-tally -->
+**10 / 36 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/53-go-no-go-1 · 20261111-093120Z
+
+Go/no-go 1 van het rollenspel is vastgelegd: Thuiskok koos voor **go, met deze scope**. Restjesslim
+plannen wordt Should, het plafond van deel B is € 1.159.000, en het design begint. Het besluit staat
+in hoofdstuk 6 van het discovery-rapport en in het logboek.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Rollenspel: go/no-go 1 vastgelegd
+
+[PR #86](https://github.com/DKJ-Solutions/dkj-recipes/pull/86)
+
+---
 
 ### DEPLOY: docs/53-discovery-rapport · 20261111-091917Z
 
