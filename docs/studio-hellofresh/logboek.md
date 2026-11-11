@@ -216,6 +216,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   vrijgegeven, in beide stores op de lanceringsdag. Het bureau dient op 4 mei 2027 in. Volgende stap: de
   lanceringsdag (taak #73). Zie [de store-pagina's en de inzending](25-store-paginas-en-inzending.md),
   hoofdstuk "Het antwoord van de klant".
+- **Thuiskok is gelanceerd** (taak #73, gespeeld). Apple en Google keurden versie 1.0.5 goed zonder
+  afwijzing, en op dinsdag 11 mei 2027 gaf het bureau de app in beide stores tegelijk vrij: week 26, zoals
+  gepland, binnen het plafond (€ 1.127.400 van € 1.159.000), met alle Musts en restjesslim plannen. Na twee
+  weken 6.900 accounts, 410 betalend voor premium (6 procent, tegen 27 procent *ja* in de bèta) en een 4,4
+  bij Apple. De les: vóór de lancering besluiten hoe er daarna gemeten wordt. **Drie vragen liggen bij de
+  klant**: de ingehouden 5 procent (€ 56.370), een onderhoudscontract na de garantie, en een versie 1.1 met
+  meten met toestemming. Zie [de lanceringsdag en de evaluatie](26-lancering-en-evaluatie.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

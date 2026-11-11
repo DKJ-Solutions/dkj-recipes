@@ -41,17 +41,33 @@
 
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] Write `docs/studio-hellofresh/26-lancering-en-evaluatie.md`: the review, launch day, the first two
+  weeks, the project against the plan, the retrospective, what comes after the warranty, and the three
+  questions for the client
+- [x] Add the chapter to the reading order in `docs/studio-hellofresh/README.md`
+- [x] Add the line to `docs/studio-hellofresh/logboek.md`
+
+#### Why the issue stays open
+
+#73 closes once the client has answered the three questions, so this branch ships with `-NoResolves` and
+the issue is parked `awaiting-decision-dev`, as the role-play's own rule says.
 
 ### TEST
 
 ### DEPLOY: docs/73-lancering-voorbereid
 
-**Score:**
+De lanceringsdag van het rollenspel is gespeeld tot het woord van de klant: de review zonder afwijzing,
+Thuiskok op 11 mei 2027 in beide stores, de eerste twee weken, het project tegen het plan en wat het team
+leerde. Drie vragen liggen bij de klant. Vastgelegd in `docs/studio-hellofresh/26-lancering-en-evaluatie.md`,
+de leesvolgorde en het logboek.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 
