@@ -116,6 +116,11 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   er nog niet in zat; waar die ontbreekt, toont de lijst de hoeveelheid zelf. **Drie vragen liggen bij
   de klant**: wie de verpakkingen invult en wanneer, of één afdelingsvolgorde genoeg is voor de
   lancering, en of de demo akkoord is. Zie [sprint 4](18-sprint-4-boodschappenlijst.md).
+- **Sprint 4 is akkoord** (taak #63). Dave antwoordde als Thuiskok: Thuiskok vult de verpakkingen van
+  de 31 ingrediënten zelf in, vóór sprint 6 (taak #65). Eén vaste afdelingsvolgorde is genoeg voor de
+  lancering, en klachten erover worden gemeten in de bèta (taak #69). De lijst is akkoord zoals
+  gedemonstreerd, ook zonder prijzen tot sprint 6, dus sprint 5 begint (taak #64). Zie
+  [sprint 4](18-sprint-4-boodschappenlijst.md), hoofdstuk "Het antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
