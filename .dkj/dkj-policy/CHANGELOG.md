@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**10 / 59 minor entries** <!-- pending-tally -->
+**10 / 60 minor entries** <!-- pending-tally -->
+
+### DEPLOY: docs/70-go-no-go-3-voorbereid · 20261111-150215Z
+
+Go/no-go 3 van het rollenspel is voorbereid, in `docs/studio-hellofresh/24-afronding-en-go-no-go-3.md`:
+wat de bèta achterliet en wat het team ermee deed, de AVG-check, de toegankelijkheid tegen WCAG 2.1 AA en
+de release candidate. Het advies is go, onder twee voorwaarden. Drie vragen liggen bij de klant: go/no-go
+3, hoe de app met de allergieën omgaat, en of er na de lancering gemeten wordt. Taak #70 blijft open voor
+het besluit.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
+
+#### Pull Request
+
+Prepare the role-play's go/no-go 3: beta fixes, GDPR and accessibility
+
+[PR #111](https://github.com/DKJ-Solutions/dkj-recipes/pull/111)
+
+---
 
 ### DEPLOY: docs/69-beta-gespeeld · 20261111-145733Z
 
