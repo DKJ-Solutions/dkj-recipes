@@ -210,6 +210,12 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   lanceringsdag. **Drie vragen liggen bij de klant**: of de jurist, de verwerkersovereenkomsten en de
   afspraken met de stores rond zijn, of de store-pagina's akkoord zijn, en hoe de app wordt vrijgegeven.
   Zie [de store-pagina's en de inzending](25-store-paginas-en-inzending.md).
+- **De klant is akkoord met de inzending** (taak #72). Dave antwoordde als Thuiskok: de jurist keurde de
+  privacyverklaring en de zin bij de toestemmingsvraag goed, de verwerkersovereenkomsten en de afspraken met
+  de stores zijn rond, de store-pagina's zijn akkoord zoals geschreven, en de app wordt met de hand
+  vrijgegeven, in beide stores op de lanceringsdag. Het bureau dient op 4 mei 2027 in. Volgende stap: de
+  lanceringsdag (taak #73). Zie [de store-pagina's en de inzending](25-store-paginas-en-inzending.md),
+  hoofdstuk "Het antwoord van de klant".
 
 ## Sessie 1 — 10 november 2026: de aftrap
 
