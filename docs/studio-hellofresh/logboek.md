@@ -85,6 +85,13 @@ Per sessie wat we samen hebben besloten. Het nieuwste staat bovenaan.
   bij het D-U-N-S-nummer, en de bèta (taak #69) blijft op schema. Het fundament is akkoord zoals
   gedemonstreerd, dus sprint 2 begint (taak #61). Zie [sprint 1](15-sprint-1-fundament.md), hoofdstuk
   "Het antwoord van de klant".
+- **Sprint 2 is gebouwd** (taak #61): het beheerportaal, waarin een redacteur een recept invoert met
+  de ingrediënten uit één catalogus, het voorbeeld ziet en publiceert. De catalogus heeft de prijs, de
+  bron en de peildatum al; het rekenen komt in sprint 6. Bij elke foto vraagt het portaal of hij zelf
+  gemaakt is. De app toont het recept zoals scherm 8, zonder prijs. **Drie vragen liggen bij de
+  klant**: of de eerste 50 recepten erin staan (sprint 3 heeft er minstens 30 nodig, waarvan 12
+  vegetarisch), of de store-accounts er zijn, en of de demo akkoord is. Zie
+  [sprint 2](16-sprint-2-recepten-en-portaal.md).
 
 ## Sessie 1 — 10 november 2026: de aftrap
 

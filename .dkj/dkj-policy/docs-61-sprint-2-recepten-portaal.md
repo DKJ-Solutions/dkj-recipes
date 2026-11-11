@@ -39,19 +39,33 @@
 
 ### PLAN
 
+- [x] Play sprint 2 of the role-play up to the demo, the way sprint 1 (#60, PR #92) was played: the
+  portal (flow 7), the recipe screen (wireframe 8), what is done, the demo, and the client's open
+  questions. No client answer is invented; the issue is parked for them after the merge.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `docs/studio-hellofresh/16-sprint-2-recepten-en-portaal.md`
+- [x] `docs/studio-hellofresh/README.md`: reading-order row 16.
+- [x] `docs/studio-hellofresh/logboek.md`: one line under session 2.
 
 ### TEST
 
+- [x] Docs only; the gates in `ship-pr` cover it.
+
 ### DEPLOY: docs/61-sprint-2-recepten-portaal
 
-**Score:**
+Sprint 2 van het rollenspel staat in `docs/studio-hellofresh/16-sprint-2-recepten-en-portaal.md`: het
+beheerportaal met de catalogus en de prijstabel, en het eerste recept in de app. Drie vragen liggen bij
+de klant op #61.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A: alleen documentatie voor het rollenspel; de recepten-app zelf verandert niet.
+
+**Score:** N/A
 
 #### Pull Request
 

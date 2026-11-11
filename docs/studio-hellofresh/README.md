@@ -31,6 +31,7 @@
 | 13 | [Designsysteem](13-designsysteem.md) | Het merk zonder logo, op het DKJ brand book: de kleuren, de letters, de maten, de onderdelen en de toon |
 | 14 | [Prototype en usertest](14-prototype-en-usertest.md) | Twaalf klikbare schermen, vijf fictieve deelnemers, de uitkomsten per keuze en go/no-go 2 |
 | 15 | [Sprint 1: het fundament](15-sprint-1-fundament.md) | De technische keuzes, inloggen als gast eerst, de lopende band en de eerste demo |
+| 16 | [Sprint 2: recepten en het portaal](16-sprint-2-recepten-en-portaal.md) | Het beheerportaal met de catalogus en de prijstabel, en het eerste recept in de app |
 | — | [Logboek](logboek.md) | Per sessie wat we samen besloten hebben |
 
 ## Waar de voortgang staat
