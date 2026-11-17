@@ -24,7 +24,7 @@
 > into `CHANGELOG.md` at the merge. In each tier, write the reason
 > ABOVE the Score line -- anything below it is discarded.
 >
-> Relative links in that text resolve FROM `.dkj/dkj-policy/`, where `CHANGELOG.md` sits --
+> Relative links in that text resolve FROM `.dkj/dkj-repo-workflow/`, where `CHANGELOG.md` sits --
 > not from this directory.
 >
 > For tier 2 audiences: the user who relies on what this repo ships, and decides whether to take the next version -- a subscriber of a service, or the user of a tool, its own maintainer included. That reader and nobody else -- what matters only
@@ -39,21 +39,47 @@
 
 ### PLAN
 
+Migrate this repo to dkj-marketplace v7.0.0, as the pilot for the other consumers: the steps of the
+release note's "You must" sections (DKJ-Solutions/dkj-marketplace `.dkj/dkj-repo-workflow/releases/audience/7.x/7.0.0.md`),
+plus whatever the pilot finds the note leaves out. Findings in the steps themselves go to the source
+repo as inbound issues.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `.claude/settings.json`: `dkj-policy` -> `dkj-repo-workflow`, `dkj-solutions` -> `dkj-repo-workflow-dkj`, enable `dkj-subagents-developers`; install each at project scope, update `dkj-subagents-alpha` to 7.0.0
+- [x] `.claude/settings.json`: the `*dkj-policy*` allow patterns for new-branch/open-pr/ship-pr now read `*dkj-repo-workflow*`
+- [x] Part 1 (`adopt-workflow-folder -Apply`): `.dkj/dkj-policy/` moved to `.dkj/dkj-repo-workflow/`, seams in `scripts/repo-config.ps1`, PR template and `CLAUDE.md` imports repointed (needed a workaround: DKJ-Solutions/dkj-marketplace#4251)
+- [x] `Get-MojibakePaths` scans `.dkj/dkj-repo-workflow` first, as the blueprint does
+- [x] CI floor: `fold-on-merge`, `merge-on-green`, `verify-resolved`, `repo-settings` re-placed from the v7.0.0 templates (pinned to `6db5751 # v7.0.0`, `plugins/dkj-repo-workflow/...`); `close-parked-recurrences.yml` added
+- [x] `branch-entry`, `always-on-budget`, `house-style` call `DKJ-Solutions/dkj-marketplace/...@v7.0.0` with `scripts-ref: v7.0.0`
+- [x] Statusline shim re-placed so it finds `dkj-repo-workflow@*` (DKJ-Solutions/dkj-marketplace#4252)
+- [x] Derek and Rendall lenses point at their bodies in `dkj-subagents-developers`; lens and CSS prose name the new plugin
 
 ### TEST
 
+- [x] Every plugin path named in `CLAUDE.md` and `.claude/specialists/` exists in the marketplace clone
+- [x] `plugin-versions`: all four plugins at 7.0.0 at project scope
+- [x] Session checks (script-contract, consumer, consumer-prose, always-on) report no `[ERROR]`; always-on path 37,539 B of 100,000 B
+- [x] Statusline shim runs and resolves the payload
+- [x] Old vs new CI runners diffed outside comments: nothing repo-specific lost
+
 ### DEPLOY: fix/migrate-dkj-repo-workflow-v7
 
-**Score:**
+Migrated to dkj-marketplace v7.0.0: the workflow plugin is now `dkj-repo-workflow` (with `dkj-repo-workflow-dkj`
+and the new `dkj-subagents-developers` team), the workflow folder moved to `.dkj/dkj-repo-workflow/`, and
+every CI runner and gate caller is pinned to v7.0.0. The pilot's findings on the release note are
+DKJ-Solutions/dkj-marketplace#4251, #4252 and #4253.
+
+Nothing changes in the recipe app itself; this is the repo's own tooling.
+
+**Score:** N/A
 
 #### What makes this deploy extra special
 
-**Score:**
+The first consumer through the v7.0.0 migration, so its findings fix the route for the others.
+
+**Score:** 2
 
 #### Pull Request
 
 Migrate to dkj-marketplace v7.0.0 (dkj-repo-workflow)
-
