@@ -1,6 +1,7 @@
 # House style -- the vendored house-style.css / house-theme.js are the copies the house-style skill pins,
 # and the app's own layer (src/styles/recepten.css and the pages) redefines no house token or class
-# (DKJ-Solutions/dkj-claude-plugins#3035). Never call it from pull_request_target.
+# (DKJ-Solutions/dkj-marketplace#3035). Pinned to the adopted release, `@vX.Y.Z` plus
+# `scripts-ref: vX.Y.Z` (dkj-marketplace#4246). Never call it from pull_request_target.
 name: House style
 
 on:
@@ -11,4 +12,6 @@ permissions:
 
 jobs:
   house-style:
-    uses: DKJ-Solutions/dkj-claude-plugins/.github/workflows/reusable-house-style.yml@main
+    uses: DKJ-Solutions/dkj-marketplace/.github/workflows/reusable-house-style.yml@v7.0.0
+    with:
+      scripts-ref: v7.0.0

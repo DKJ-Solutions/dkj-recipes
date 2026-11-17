@@ -1,6 +1,6 @@
 /* De eigen laag van de recepten-app, na house-style.css. Hij gebruikt huistokens en definieert er
    geen opnieuw; eigen tokens heten --recept-*. Een waarde die voor elke app fout is, wordt in
-   dkj-claude-plugins (de house style van dkj-policy) aangepast, niet hier. */
+   dkj-marketplace (de house style van dkj-repo-workflow) aangepast, niet hier. */
 
 :root {
   /* In de supermarkt, met één hand: de vinkrijen zijn ruimer dan de 44px van --tap. */
