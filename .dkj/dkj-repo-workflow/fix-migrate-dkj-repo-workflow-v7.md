@@ -68,7 +68,8 @@ repo as inbound issues.
 Migrated to dkj-marketplace v7.0.0: the workflow plugin is now `dkj-repo-workflow` (with `dkj-repo-workflow-dkj`
 and the new `dkj-subagents-developers` team), the workflow folder moved to `.dkj/dkj-repo-workflow/`, and
 every CI runner and gate caller is pinned to v7.0.0. The pilot's findings on the release note are
-DKJ-Solutions/dkj-marketplace#4251, #4252 and #4253.
+DKJ-Solutions/dkj-marketplace#4251, DKJ-Solutions/dkj-marketplace#4252 and
+DKJ-Solutions/dkj-marketplace#4253.
 
 For whoever works in this repo: sessions load the v7 plugins and their twenty-one specialists again,
 and the slash commands are now `/dkj-repo-workflow:*` and `/dkj-subagents-developers:*`.
