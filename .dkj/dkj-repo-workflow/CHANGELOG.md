@@ -2,7 +2,34 @@
 
 ## [Unreleased]
 
-**10 / 67 minor entries** <!-- pending-tally -->
+**10 / 68 minor entries** <!-- pending-tally -->
+
+### DEPLOY: fix/migrate-dkj-repo-workflow-v7 · 20261117-205055Z
+
+Migrated to dkj-marketplace v7.0.0: the workflow plugin is now `dkj-repo-workflow` (with `dkj-repo-workflow-dkj`
+and the new `dkj-subagents-developers` team), the workflow folder moved to `.dkj/dkj-repo-workflow/`, and
+every CI runner and gate caller is pinned to v7.0.0. The pilot's findings on the release note are
+DKJ-Solutions/dkj-marketplace#4251, DKJ-Solutions/dkj-marketplace#4252 and
+DKJ-Solutions/dkj-marketplace#4253.
+
+For whoever works in this repo: sessions load the v7 plugins and their twenty-one specialists again,
+and the slash commands are now `/dkj-repo-workflow:*` and `/dkj-subagents-developers:*`.
+
+**Score:** 4
+
+#### What makes this deploy extra special
+
+Nothing changes in the recipe app itself; its users take nothing from this.
+
+**Score:** N/A
+
+#### Pull Request
+
+Migrate to dkj-marketplace v7.0.0 (dkj-repo-workflow)
+
+[PR #129](https://github.com/DKJ-Solutions/dkj-recipes/pull/129)
+
+---
 
 ### DEPLOY: docs/123-offline-teststappen · 20261111-200232Z
 
