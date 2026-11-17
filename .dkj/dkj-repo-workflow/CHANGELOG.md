@@ -2,7 +2,30 @@
 
 ## [Unreleased]
 
-**10 / 68 minor entries** <!-- pending-tally -->
+**11 / 69 minor entries** <!-- pending-tally -->
+
+### DEPLOY: fix/130-house-style-v7 · 20261117-211542Z
+
+The app follows the brand book at v7.0.0 again. The house style files are the current ones, retired
+colour and size names have their successors, and type weights come from the house scale. The app looks
+slightly different: regular text is weight 500 instead of 400, emphasis goes from 600 to 700, and the
+headings that read the retired 18px step now take the 16px `h3`.
+
+**Score:** 2
+
+#### What makes this deploy extra special
+
+People using the app see the small weight and size changes above, but nothing works differently.
+
+**Score:** 2
+
+#### Pull Request
+
+Bring the house style up to the brand book at v7.0.0
+
+[PR #131](https://github.com/DKJ-Solutions/dkj-recipes/pull/131)
+
+---
 
 ### DEPLOY: fix/migrate-dkj-repo-workflow-v7 · 20261117-205055Z
 
