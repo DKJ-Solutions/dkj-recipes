@@ -146,7 +146,7 @@
      toggle), a click outside it and focus leaving it -- never on a click inside it. Drawing the
      same element twice returns the existing slot. */
   var ICON = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"';
-  var GEAR = ICON + ' class="theme-settings__open"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>';
+  var GEAR = '<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="theme-settings__open"><path fill-rule="evenodd" d="M9.79 4.31L10.55 1.7L13.45 1.7L14.21 4.31A8 8 0 0 1 15.88 5L18.26 3.69L20.31 5.74L19 8.12A8 8 0 0 1 19.69 9.79L22.3 10.55L22.3 13.45L19.69 14.21A8 8 0 0 1 19 15.88L20.31 18.26L18.26 20.31L15.88 19A8 8 0 0 1 14.21 19.69L13.45 22.3L10.55 22.3L9.79 19.69A8 8 0 0 1 8.12 19L5.74 20.31L3.69 18.26L5 15.88A8 8 0 0 1 4.31 14.21L1.7 13.45L1.7 10.55L4.31 9.79A8 8 0 0 1 5 8.12L3.69 5.74L5.74 3.69L8.12 5A8 8 0 0 1 9.79 4.31ZM16.85 12a4.85 4.85 0 1 0-9.7 0a4.85 4.85 0 1 0 9.7 0z"/></svg>';   /* a solid eight-tooth gear with an open centre, measured off Maikel's reference (November 1, 2026) */
   var CROSS = ICON + ' class="theme-settings__close"><path d="M18 6 6 18M6 6l12 12"/></svg>';
   var settingsCount = 0;
   function settings(el, opts) {
@@ -215,11 +215,81 @@
   function set(id) { if (!byId(id)) return; try { localStorage.setItem(key, id); } catch (e) {} apply(); }
   function reset() { try { localStorage.removeItem(key); } catch (e) {} apply(); }
 
+  /* The site header's dialogs (house-product.css, "Site header menu" and "The header's two sheet triggers"): the menu
+     toggle, the path title and the More cell each open the dialog they control as a modal, so Escape, the focus trap
+     and the return of focus to the trigger are the browser's. Listening on the document means a header drawn after
+     this script ran needs no call. A click on the close button or on the backdrop shuts it, and so does its trigger
+     disappearing as the header grows wide (#4095 added the actions sheet; its path sheet is gone). A bottom bar's More
+     (house-product.css, "Bottom bar", #4094) is such a toggle too, and the window outgrowing the bar shuts it the same way. */
+  var TRIGGERS = '.site-header__menu-toggle, .site-header__more, .bottom-bar__more';
+  function menuOf(toggle) { var d = document.getElementById(toggle.getAttribute('aria-controls') || ''); return d && d.showModal ? d : null; }
+  document.addEventListener('click', function (e) {
+    var t = e.target && e.target.closest ? e.target : null;
+    if (!t) return;
+    var toggle = t.closest(TRIGGERS);
+    if (toggle) {
+      var d = menuOf(toggle);
+      if (!d || d.open) return;
+      d.showModal();
+      toggle.setAttribute('aria-expanded', 'true');
+      d.addEventListener('close', function () { toggle.setAttribute('aria-expanded', 'false'); }, { once: true });
+      return;
+    }
+    /* A device preview's version toggle (house-product.css, "Device preview", #4112): the pressed button's
+       data-variant is shown, every other [data-variant] of the same stage hidden. */
+    var pick = t.closest('.device-stage .seg button[data-variant]');
+    if (pick) {
+      var stage = pick.closest('.device-stage'), v = pick.getAttribute('data-variant');
+      var parts = stage.querySelectorAll('[data-variant]');
+      for (var i = 0; i < parts.length; i++) {
+        if (parts[i].closest('.device-stage') !== stage) continue;
+        var on = parts[i].getAttribute('data-variant') === v;
+        if (parts[i].tagName === 'BUTTON') parts[i].setAttribute('aria-pressed', String(on)); else parts[i].hidden = !on;
+      }
+      return;
+    }
+    var menu = t.closest('dialog.site-menu, dialog.dialog--sheet');
+    if (menu && (t === menu || t.closest('.dialog__close'))) menu.close();
+  });
+  window.addEventListener('resize', function () {
+    var toggles = document.querySelectorAll('.site-header [aria-controls][aria-expanded="true"], .bottom-bar__more[aria-expanded="true"]');
+    for (var i = 0; i < toggles.length; i++) {
+      var d = menuOf(toggles[i]);
+      if (d && d.open && !toggles[i].offsetParent) d.close();
+    }
+  });
+
   if (window.matchMedia) {
     var mq = matchMedia('(prefers-color-scheme: dark)');
     var onChange = function () { if (!byId(stored())) apply(); };
     if (mq.addEventListener) mq.addEventListener('change', onChange); else if (mq.addListener) mq.addListener(onChange);
   }
+  /* A table that stacks on a phone (house-style.css, ".table-wrap--stack", #4129): each body cell gets its column
+     head's text as data-label, the name the stacked row shows above its value. A cell that has one keeps it. */
+  function labelStackTables() {
+    var tables = document.querySelectorAll('.table-wrap--stack table');
+    for (var i = 0; i < tables.length; i++) {
+      var head = tables[i].tHead && tables[i].tHead.rows.length ? tables[i].tHead.rows[tables[i].tHead.rows.length - 1] : null;
+      if (!head) continue;
+      var names = [];
+      for (var h = 0; h < head.cells.length; h++) {
+        for (var s = 0; s < (head.cells[h].colSpan || 1); s++) names.push((head.cells[h].textContent || '').replace(/\s+/g, ' ').trim());
+      }
+      for (var b = 0; b < tables[i].tBodies.length; b++) {
+        var rows = tables[i].tBodies[b].rows;
+        for (var r = 0; r < rows.length; r++) {
+          var col = 0;
+          for (var c = 0; c < rows[r].cells.length; c++) {
+            var cell = rows[r].cells[c];
+            if (!cell.hasAttribute('data-label') && names[col]) cell.setAttribute('data-label', names[col]);
+            col += cell.colSpan || 1;
+          }
+        }
+      }
+    }
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', labelStackTables); else labelStackTables();
+
   apply();
   applyWidth();
   window.DKJTheme = { themes: THEMES.slice(), set: set, reset: reset, picker: picker, settings: settings, current: function () { return root.getAttribute('data-theme'); },

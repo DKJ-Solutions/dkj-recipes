@@ -123,7 +123,7 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     position: sticky;
     top: 0;
     z-index: 1;
-    background: var(--paper-1);
+    background: var(--bg-1);
     padding: calc(var(--spacing-3) + env(safe-area-inset-top)) var(--spacing-4) var(--spacing-3);
     max-width: var(--column-narrow);
     margin: 0 auto;
@@ -144,15 +144,15 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     width: 100%;
     min-height: var(--recept-tap);
     font: inherit;
-    font-size: 16px; /* letterlijk: iOS zoomt bij focus in onder 16px */
+    font-size: var(--text-recept-input);
     padding: 0 var(--spacing-4);
-    border: 1px solid var(--paper-3);
+    border: 1px solid var(--bg-3);
     border-radius: var(--recept-radius);
-    background: var(--paper-2);
+    background: var(--bg-2);
     color: var(--fg-1);
   }
   .search input:focus {
-    outline: 2px solid var(--muted);
+    outline: 2px solid var(--primary-muted);
     outline-offset: 1px;
   }
   /* Eén rij die horizontaal scrolt, zodat de lijst bij veel tags niet naar beneden schuift. */
@@ -173,17 +173,17 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     padding: 0 var(--spacing-4);
     font: inherit;
     color: var(--fg-1);
-    background: var(--paper-2);
-    border: 1px solid var(--paper-3);
+    background: var(--bg-2);
+    border: 1px solid var(--bg-3);
     border-radius: 999px;
     cursor: pointer;
   }
   .recept-tag:focus-visible {
-    outline: 2px solid var(--muted);
+    outline: 2px solid var(--primary-muted);
     outline-offset: 2px;
   }
   .recept-tag[aria-pressed='true'] {
-    color: var(--paper-1);
+    color: var(--bg-1);
     background: var(--primary);
     border-color: var(--primary);
   }
@@ -198,27 +198,27 @@ const tags = [...new Set(recipes.flatMap((r) => r.data.tags))].sort((a, b) => a.
     display: block;
     min-height: var(--recept-tap);
     padding: var(--spacing-3-5) var(--spacing-4);
-    background: var(--paper-2);
-    border: 1px solid var(--paper-3);
+    background: var(--bg-2);
+    border: 1px solid var(--bg-3);
     border-radius: var(--recept-radius);
     color: var(--fg-1);
     text-decoration: none;
   }
   .list a:active {
-    background: var(--paper-3);
+    background: var(--bg-3);
   }
   .title {
     display: block;
-    font-weight: 600;
-    font-size: var(--text-lg);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-h3);
   }
   .recept-meta {
     display: block;
-    color: var(--muted);
+    color: var(--primary-muted);
     font-size: var(--text-sm);
   }
   .empty {
-    color: var(--muted);
+    color: var(--primary-muted);
     text-align: center;
     padding: var(--spacing-6) 0;
   }

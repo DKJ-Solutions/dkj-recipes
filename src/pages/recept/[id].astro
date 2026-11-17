@@ -187,7 +187,7 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     margin: var(--spacing-1) 0;
   }
   .recept-meta {
-    color: var(--muted);
+    color: var(--primary-muted);
     margin: 0 0 var(--spacing-3);
   }
   .actions {
@@ -200,15 +200,15 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     display: inline-flex;
     align-items: center;
     margin: 0 0 var(--spacing-4);
-    background: var(--paper-2);
-    border: 1px solid var(--paper-3);
+    background: var(--bg-2);
+    border: 1px solid var(--bg-3);
     border-radius: 999px;
   }
   .porties button {
     width: var(--recept-tap);
     height: var(--recept-tap);
     font: inherit;
-    font-size: var(--text-lg);
+    font-size: var(--text-h3);
     line-height: 1;
     color: var(--primary);
     background: transparent;
@@ -217,7 +217,7 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     cursor: pointer;
   }
   .porties button:focus-visible {
-    outline: 2px solid var(--muted);
+    outline: 2px solid var(--primary-muted);
     outline-offset: 2px;
   }
   .porties button:disabled {
@@ -227,7 +227,7 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
   .porties output {
     min-width: 7.5em;
     text-align: center;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
   }
   .steps {
     margin-top: var(--spacing-7);
@@ -240,7 +240,7 @@ const meta = [tijd && `${tijd} min`, ...tags].filter(Boolean);
     margin-bottom: 0.6em;
   }
   .bron {
-    color: var(--muted);
+    color: var(--primary-muted);
     font-size: var(--text-sm);
     overflow-wrap: anywhere;
   }
