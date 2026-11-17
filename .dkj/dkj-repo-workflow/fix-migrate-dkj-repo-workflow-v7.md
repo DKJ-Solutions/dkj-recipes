@@ -70,15 +70,16 @@ and the new `dkj-subagents-developers` team), the workflow folder moved to `.dkj
 every CI runner and gate caller is pinned to v7.0.0. The pilot's findings on the release note are
 DKJ-Solutions/dkj-marketplace#4251, #4252 and #4253.
 
-Nothing changes in the recipe app itself; this is the repo's own tooling.
+For whoever works in this repo: sessions load the v7 plugins and their twenty-one specialists again,
+and the slash commands are now `/dkj-repo-workflow:*` and `/dkj-subagents-developers:*`.
 
-**Score:** N/A
+**Score:** 4
 
 #### What makes this deploy extra special
 
-The first consumer through the v7.0.0 migration, so its findings fix the route for the others.
+Nothing changes in the recipe app itself; its users take nothing from this.
 
-**Score:** 2
+**Score:** N/A
 
 #### Pull Request
 
