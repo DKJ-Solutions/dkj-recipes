@@ -39,21 +39,37 @@
 
 ### PLAN
 
+Make the house-style gate hold at v7.0.0 (#130). It is a visible result, so it waits for the owner's look.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `src/styles/house-style.css` and `house-theme.js` replaced with the copies served at v7.0.0, unchanged
+- [x] Retired tokens renamed: `--paper-N` to `--bg-N`, `--muted` to `--primary-muted`, `--text-lg` to `--text-h3` (the gate misses the last one: DKJ-Solutions/dkj-marketplace#4254)
+- [x] Font weights read the house weights: 600 and 700 become `--font-weight-bold`, 400 becomes `--font-weight-regular`
+- [x] The search input's 16px (iOS zooms below it) is a domain step `--text-recept-input` in `recepten.css`
+- [x] `scripts/make-icons.mjs`'s PNG background answered in `Get-HouseStyleAllowlist`
 
 ### TEST
 
+- [x] `check-house-style` against the v7.0.0 skill page: `[OK] the brand book holds at v7.0.0`
+- [x] `npm run build` and `scripts/lint/lint.ps1` clean; the home, list and recipe pages serve 200
+- [x] Every `var(--...)` in `src/` resolves to a token the house CSS or the app defines
+
 ### DEPLOY: fix/130-house-style-v7
 
-**Score:**
+The app follows the brand book at v7.0.0 again. The house style files are the current ones, retired
+colour and size names have their successors, and type weights come from the house scale. The app looks
+slightly different: regular text is weight 500 instead of 400, emphasis goes from 600 to 700, and the
+headings that read the retired 18px step now take the 16px `h3`.
+
+**Score:** 2
 
 #### What makes this deploy extra special
 
-**Score:**
+People using the app see the small weight and size changes above, but nothing works differently.
+
+**Score:** 2
 
 #### Pull Request
 
 Bring the house style up to the brand book at v7.0.0
-

@@ -7,7 +7,9 @@
   --recept-tap: 52px;
   --recept-radius: 12px;
   /* Een afgevinkt ingrediënt: grijs en doorgestreept. */
-  --recept-done: var(--muted);
+  --recept-done: var(--primary-muted);
+  /* Een invoerveld: iOS zoomt bij focus in onder 16px, dus dit is geen stap van de huisschaal. */
+  --text-recept-input: 16px;
 }
 
 body {
@@ -26,9 +28,9 @@ body {
   justify-content: space-between;
   gap: var(--spacing-3);
   padding: var(--spacing-2) var(--spacing-2) var(--spacing-2) var(--spacing-4);
-  background: var(--paper-2);
+  background: var(--bg-2);
   color: var(--fg-1);
-  border: 1px solid var(--paper-3);
+  border: 1px solid var(--bg-3);
   border-radius: var(--recept-radius);
   box-shadow: var(--shadow-pop);
 }
@@ -39,8 +41,8 @@ body {
   min-height: var(--tap);
   padding: 0 var(--spacing-4);
   font: inherit;
-  font-weight: 600;
-  color: var(--paper-1);
+  font-weight: var(--font-weight-bold);
+  color: var(--bg-1);
   background: var(--primary);
   border: 0;
   border-radius: 999px;
@@ -59,7 +61,7 @@ body {
   align-items: center;
   min-height: var(--tap);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 .section-head {
   display: flex;
@@ -80,7 +82,7 @@ body {
   font: inherit;
   color: var(--primary);
   background: transparent;
-  border: 1px solid var(--paper-3);
+  border: 1px solid var(--bg-3);
   border-radius: 999px;
   text-decoration: none;
   cursor: pointer;
@@ -89,11 +91,11 @@ body {
   display: none;
 }
 .pill:focus-visible {
-  outline: 2px solid var(--muted);
+  outline: 2px solid var(--primary-muted);
   outline-offset: 2px;
 }
 .pill[aria-pressed='true'] {
-  color: var(--paper-1);
+  color: var(--bg-1);
   background: var(--primary);
   border-color: var(--primary);
 }
@@ -101,13 +103,13 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: var(--paper-2);
-  border: 1px solid var(--paper-3);
+  background: var(--bg-2);
+  border: 1px solid var(--bg-3);
   border-radius: var(--recept-radius);
   overflow: hidden;
 }
 .ingredients li + li {
-  border-top: 1px solid var(--paper-3);
+  border-top: 1px solid var(--bg-3);
 }
 .ingredients + .afdeling {
   margin-top: var(--spacing-4-5);
@@ -116,10 +118,10 @@ body {
   margin: 0 0 var(--spacing-1-5) var(--spacing-1);
   font-family: inherit;
   font-size: var(--text-sm);
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--muted);
+  color: var(--primary-muted);
 }
 .ingredients label {
   display: flex;
@@ -127,7 +129,7 @@ body {
   gap: var(--spacing-3-5);
   min-height: var(--recept-tap);
   padding: var(--spacing-2-5) var(--spacing-4);
-  font-size: var(--text-lg);
+  font-size: var(--text-h3);
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
 }

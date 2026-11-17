@@ -442,7 +442,8 @@ function Get-ReleaseAudienceTier {
 function Get-HouseStyleAllowlist {
     <# Entries the house-style gate reports but that are not a redefinition of the house style. #>
     return @(
-        @{ Path = 'src/lib/afdeling.ts'; Name = '.sort'; Reason = 'Array.prototype.sort() in TypeScript, not a CSS selector' }
+        @{ Path = 'src/lib/afdeling.ts'; Name = '.sort'; Reason = 'Array.prototype.sort() in TypeScript, not a CSS selector' },
+        @{ Path = 'scripts/make-icons.mjs'; Name = '#2f7d4f'; Reason = 'the PNG background sharp paints into the app icons at build time, not a CSS rule' }
     )
 }
 

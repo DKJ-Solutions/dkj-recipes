@@ -177,42 +177,42 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     gap: var(--spacing-2);
   }
   .chips :global(small) {
-    color: var(--muted);
-    font-weight: 400;
+    color: var(--primary-muted);
+    font-weight: var(--font-weight-regular);
     font-size: var(--text-sm);
   }
   .chips :global(li) {
     display: inline-flex;
     align-items: center;
-    background: var(--paper-2);
-    border: 1px solid var(--paper-3);
+    background: var(--bg-2);
+    border: 1px solid var(--bg-3);
     border-radius: 999px;
     padding-left: var(--spacing-3-5);
   }
   .chips :global(a) {
     color: var(--fg-1);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
   }
   .chips :global(.remove) {
     min-width: var(--tap);
     min-height: var(--tap);
     font: inherit;
-    font-size: var(--text-lg);
+    font-size: var(--text-h3);
     line-height: 1;
-    color: var(--muted);
+    color: var(--primary-muted);
     background: transparent;
     border: 0;
     border-radius: 999px;
     cursor: pointer;
   }
   .chips :global(.remove:focus-visible) {
-    outline: 2px solid var(--muted);
+    outline: 2px solid var(--primary-muted);
     outline-offset: 2px;
   }
   #ingredienten :global(small) {
     display: block;
-    color: var(--muted);
+    color: var(--primary-muted);
     font-size: var(--text-sm);
   }
   .clear {
@@ -220,7 +220,7 @@ const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
     text-align: center;
   }
   .empty {
-    color: var(--muted);
+    color: var(--primary-muted);
     text-align: center;
     padding: var(--spacing-6) 0;
   }
