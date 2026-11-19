@@ -1,4 +1,5 @@
-import { roundAmount, searchKey } from './format';
+// Met de extensie, zodat `npm test` dit bestand zonder bundler in Node kan laden.
+import { roundAmount, searchKey } from './format.ts';
 
 type Ingredient = { naam: string; hoeveelheid?: number; eenheid?: string; afdeling?: string };
 /** `factor` is het gekozen aantal porties gedeeld door het aantal in het recept. */
@@ -24,6 +25,73 @@ export function saveList(ids: string[]) {
   } catch {
     /* geen opslag beschikbaar: de lijst geldt dan alleen tot de pagina sluit */
   }
+}
+
+// Eigen items: wat je zelf op de lijst typt ("wc-papier"), los van de recepten, op dit toestel.
+// Elk item heeft een vaste `key` die met `eigen:` begint; de sleutel van een receptingrediënt bevat
+// altijd een `|`, dus een vinkje voor een eigen item kan nooit op een ingrediënt landen.
+export type EigenItem = { key: string; naam: string };
+const EIGEN_KEY = 'eigen:lijst';
+
+// Zonder opslag (privévenster, geblokkeerde site-data) leeft de lijst in het geheugen tot de pagina sluit.
+let opslag = true;
+let geheugen: EigenItem[] = [];
+
+const isEigenItem = (i: unknown): i is EigenItem =>
+  typeof i === 'object' && i !== null && typeof (i as EigenItem).key === 'string' && typeof (i as EigenItem).naam === 'string';
+
+export function loadEigen(): EigenItem[] {
+  if (!opslag) return [...geheugen];
+  let ruw: string | null;
+  try {
+    ruw = localStorage.getItem(EIGEN_KEY);
+  } catch {
+    opslag = false;
+    return [...geheugen];
+  }
+  try {
+    const items = JSON.parse(ruw ?? '[]');
+    return Array.isArray(items) ? items.filter(isEigenItem) : [];
+  } catch {
+    return []; // rommel in de opslag: een lege lijst, de opslag zelf werkt nog
+  }
+}
+
+export function saveEigen(items: EigenItem[]) {
+  geheugen = [...items];
+  if (!opslag) return;
+  try {
+    if (items.length) localStorage.setItem(EIGEN_KEY, JSON.stringify(items));
+    else localStorage.removeItem(EIGEN_KEY);
+  } catch {
+    opslag = false; /* geen opslag beschikbaar: de eigen items gelden dan alleen tot de pagina sluit */
+  }
+}
+
+let teller = 0;
+const nieuweKey = () => `eigen:${Date.now().toString(36)}${(teller++).toString(36)}${Math.random().toString(36).slice(2, 6)}`;
+
+/** Zet getypte tekst op de lijst, getrimd en verder precies zoals getypt. Leeg of alleen spaties: niets. */
+export function addEigen(tekst: string): EigenItem | undefined {
+  const naam = tekst.trim();
+  if (!naam) return undefined;
+  const item = { key: nieuweKey(), naam };
+  saveEigen([...loadEigen(), item]);
+  return item;
+}
+
+export function removeEigen(key: string) {
+  saveEigen(loadEigen().filter((i) => i.key !== key));
+}
+
+export function clearEigen() {
+  saveEigen([]);
+}
+
+/** Alleen voor de tests: begin weer met werkende opslag en een leeg geheugen. */
+export function resetEigenVoorTest() {
+  opslag = true;
+  geheugen = [];
 }
 
 // Het aantal porties dat op de receptpagina is gekozen. Staat er niets, dan geldt het recept.
