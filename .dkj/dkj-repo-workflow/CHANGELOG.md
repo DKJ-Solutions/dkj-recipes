@@ -2,7 +2,31 @@
 
 ## [Unreleased]
 
-**11 / 69 minor entries** <!-- pending-tally -->
+**11 / 70 minor entries** <!-- pending-tally -->
+
+### DEPLOY: feat/126-own-items-storage · 20261119-115254Z
+
+Own shopping-list items can now be stored on the device, ready for the list page to use in #127.
+Nothing changes on screen yet. The repo also has its first unit tests: `npm test`, run in CI.
+
+Nothing visible yet; it prevents the list UI in #127 from shipping storage bugs (lost items, ticks
+landing on the wrong line) that no test would catch.
+
+**Score:** 1
+
+#### What makes this deploy extra special
+
+N/A
+
+**Score:** N/A
+
+#### Pull Request
+
+Storage helpers for own list items, with unit tests
+
+[PR #132](https://github.com/DKJ-Solutions/dkj-recipes/pull/132)
+
+---
 
 ### DEPLOY: fix/130-house-style-v7 · 20261117-211542Z
 
