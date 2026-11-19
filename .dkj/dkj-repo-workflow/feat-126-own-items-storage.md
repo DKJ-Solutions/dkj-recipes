@@ -39,19 +39,41 @@
 
 ### PLAN
 
+The storage half of #119, no UI (that is #127): helpers for own list items in `src/lib/lijst.ts`,
+and the repo's first test runner (`node:test`, no new dependency).
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] `src/lib/lijst.ts`: `EigenItem`, `loadEigen`, `saveEigen`, `addEigen` (trims, refuses empty or
+  whitespace-only input), `removeEigen`, `clearEigen`. Keys start with `eigen:` and never contain `|`,
+  so a tick for an own item cannot land on a recipe ingredient (whose key always holds `|`). Without
+  storage the items live in memory until the page closes; corrupt stored data reads as an empty list
+  without disabling storage.
+- [x] The `./format` import now names `./format.ts`, so Node loads the module without a bundler
+  (the Astro tsconfig allows `.ts` extensions).
+- [x] `src/lib/lijst.test.ts`: 8 tests with a fake `localStorage` (working and refusing).
+- [x] `npm test` (`node --experimental-strip-types --test`) and a "Unit tests" step in `ci.yml`.
 
 ### TEST
 
+- [x] `npm test` locally on Node 22.15.1: 8 of 8 pass.
+- [x] CI runs the same script before the build, so the required `ci` check now covers the helpers.
+
 ### DEPLOY: feat/126-own-items-storage
 
-**Score:**
+Own shopping-list items can now be stored on the device, ready for the list page to use in #127.
+Nothing changes on screen yet. The repo also has its first unit tests: `npm test`, run in CI.
+
+Nothing visible yet; it prevents the list UI in #127 from shipping storage bugs (lost items, ticks
+landing on the wrong line) that no test would catch.
+
+**Score:** 1
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A
+
+**Score:** N/A
 
 #### Pull Request
 

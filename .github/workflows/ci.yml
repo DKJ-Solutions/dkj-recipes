@@ -1,6 +1,7 @@
 # CI -- what a merge to main has to prove. The job id 'ci' is the check the trunk ruleset requires,
 # and ship-pr dates its staleness guard from it, so it runs on pull_request AND on push to main.
-# It runs the repo's lint gate (scripts/lint/lint.ps1) and proves the app still builds.
+# It runs the repo's lint gate (scripts/lint/lint.ps1), the unit tests (npm test) and proves the app
+# still builds.
 name: CI
 
 on:
@@ -25,5 +26,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Unit tests
+        run: npm test
       - name: Build
         run: npm run build
