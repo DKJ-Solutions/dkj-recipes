@@ -39,19 +39,43 @@
 
 ### PLAN
 
+The UI half of #119, on the storage helpers from #126: add, tick and remove own items on the list
+page. A visible result, so the branch is parked for Dave's look before any PR.
+
 ### CREATE
 
-- [ ] TODO: the first step of this branch
+- [x] A form under the `h1` of `src/pages/lijst.astro`, always visible (also on an empty list): a text
+  field (`enterkeyhint="enter"`, 16px through `--text-recept-input`, so iOS does not zoom) and a
+  "Toevoegen" pill. Enter or the button adds; empty or whitespace-only input adds nothing; the field
+  clears and keeps focus for the next item.
+- [x] Own items join the merged ingredients as rows without an aisle, so `groupByAfdeling` puts them
+  under **Overig**, or in the single untitled group when no recipe has aisles. Same tickable line,
+  ticks stored under their `eigen:` key, so they survive a reload.
+- [x] A `×` remove control per own item, `--tap` (44px) square, `aria-label` "<item> van de lijst halen".
+- [x] A list with only own items shows the list (the recipe chips are hidden), not "Je lijst is leeg".
+- [x] "Lijst leegmaken" also clears own items; "Alles weer aan" un-ticks them (it un-ticks every box in
+  the list). The index link still counts recipes only (`loadList`, unchanged).
+- [ ] Owner's look: Dave checks the list page on his phone.
 
 ### TEST
 
+- [x] `npm test`: 8 of 8 pass (the helpers from #126, unchanged).
+- [x] The dev server serves the page with the form and compiles the page script and `lijst.ts`.
+- [~] Clicking through in a browser was not possible here: the Chrome extension was not connected.
+  The owner's look covers it.
+
 ### DEPLOY: feat/127-own-items-list-ui
 
-**Score:**
+You can now type your own items onto the shopping list ("wc-papier"): they appear under Overig, tick
+like any other line, survive a reload, and each has a × to remove it. "Lijst leegmaken" clears them too.
+
+**Score:** 3
 
 #### What makes this deploy extra special
 
-**Score:**
+N/A
+
+**Score:** N/A
 
 #### Pull Request
 
